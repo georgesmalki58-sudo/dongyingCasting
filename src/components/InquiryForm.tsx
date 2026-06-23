@@ -5,9 +5,12 @@ import type { Dictionary } from '@/i18n/config';
 
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
+const fmtSize = (b: number) => (b < 1024 * 1024 ? `${Math.round(b / 1024)} KB` : `${(b / 1024 / 1024).toFixed(1)} MB`);
+
 export function InquiryForm({ t }: { t: Dictionary }) {
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
   const [showSuccess, setShowSuccess] = useState(false);
+  const [files, setFiles] = useState<{ name: string; size: number }[]>([]);
 
   // Show the centered success notice for 8 seconds, then auto-hide.
   useEffect(() => {
@@ -23,7 +26,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
     const data = new FormData(form);
     try {
       const res = await fetch('/api/contact', { method: 'POST', body: data });
-      if (res.ok) { setStatus('idle'); setShowSuccess(true); form.reset(); } else { setStatus('error'); }
+      if (res.ok) { setStatus('idle'); setShowSuccess(true); form.reset(); setFiles([]); } else { setStatus('error'); }
     } catch { setStatus('error'); }
   }
 
@@ -69,8 +72,26 @@ export function InquiryForm({ t }: { t: Dictionary }) {
         <textarea name="message" required minLength={10} rows={5} className={field} />
       </label>
       <label className="block text-sm font-medium text-steel-800">{t.contact.attachment}
-        <input name="attachment" type="file" multiple accept=".pdf,.docx,.xlsx,.step,.stp,.dwg,.dxf,.zip,.jpg,.jpeg,.png" className="mt-1 block w-full text-sm text-steel-600 file:mr-3 file:rounded file:border-0 file:bg-steel-100 file:px-3 file:py-2 file:text-sm file:font-semibold" />
+        <input
+          name="attachment"
+          type="file"
+          multiple
+          accept=".pdf,.docx,.xlsx,.step,.stp,.dwg,.dxf,.zip,.jpg,.jpeg,.png"
+          onChange={(e) => setFiles(Array.from(e.target.files ?? []).map((f) => ({ name: f.name, size: f.size })))}
+          className="mt-1 block w-full text-sm text-steel-600 file:mr-3 file:rounded file:border-0 file:bg-steel-100 file:px-3 file:py-2 file:text-sm file:font-semibold"
+        />
       </label>
+      {files.length > 0 && (
+        <ul className="space-y-1">
+          {files.map((f, i) => (
+            <li key={i} className="flex items-center gap-2 rounded-md border border-steel-200 bg-steel-50 px-3 py-2 text-sm text-steel-700">
+              <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true" className="shrink-0 text-brand"><path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-6L8 3H4z"/></svg>
+              <span className="truncate">{f.name}</span>
+              <span className="ml-auto shrink-0 text-xs text-steel-400">{fmtSize(f.size)}</span>
+            </li>
+          ))}
+        </ul>
+      )}
       <label className="flex items-start gap-2 text-sm text-steel-700">
         <input name="consent" type="checkbox" required value="true" className="mt-0.5" />
         <span>{t.contact.consent}</span>

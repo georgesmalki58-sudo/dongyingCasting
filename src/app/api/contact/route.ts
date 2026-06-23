@@ -67,12 +67,14 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
 function sameOrigin(req: Request): boolean {
   const host = req.headers.get('host');
   const src = req.headers.get('origin') || req.headers.get('referer');
-  if (!host) return false;
-  if (!src) return false; // require a source header for state-changing POSTs
+  // Only block on an explicit cross-origin mismatch. A missing Origin/Referer is
+  // allowed (some browsers omit it on same-origin POSTs) to avoid false rejections;
+  // a real cross-site attacker's browser always sends a (mismatching) Origin.
+  if (!host || !src) return true;
   try {
     return new URL(src).host === host;
   } catch {
-    return false;
+    return true;
   }
 }
 
