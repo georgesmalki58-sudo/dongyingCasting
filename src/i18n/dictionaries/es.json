@@ -165,7 +165,8 @@
     "error": "Algo salió mal. Inténtelo de nuevo o escríbanos directamente.",
     "info": "Información de la empresa",
     "hours": "Lun–Sáb, 8:00–18:00 (GMT+8)",
-    "wechatHint": "Escanea para hablar con nosotros por WeChat"
+    "wechatHint": "Escanea para hablar con nosotros por WeChat",
+    "sending": "Enviando su mensaje…"
   },
   "footer": {
     "tagline": "Fundición de precisión a la cera perdida y mecanizado CNC desde 2000.",

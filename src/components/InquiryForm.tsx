@@ -57,10 +57,34 @@ export function InquiryForm({ t }: { t: Dictionary }) {
         </>
       ) : null}
       <button type="submit" disabled={status === 'sending'} className="btn-primary w-full sm:w-auto">
-        {status === 'sending' ? '…' : t.contact.submit}
+        {status === 'sending' ? (
+          <span className="flex items-center gap-2">
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white" />
+            {t.contact.sending}
+          </span>
+        ) : (
+          t.contact.submit
+        )}
       </button>
-      {status === 'ok' && <p className="rounded-md bg-green-50 p-3 text-sm text-green-800">{t.contact.success}</p>}
-      {status === 'error' && <p className="rounded-md bg-red-50 p-3 text-sm text-red-800">{t.contact.error}</p>}
+
+      {/* Status notices */}
+      <div aria-live="polite">
+        {status === 'sending' && (
+          <p className="flex items-center gap-2 rounded-md border border-brand/20 bg-blue-50 p-3 text-sm text-brand-dark">
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-brand/30 border-t-brand" />
+            {t.contact.sending}
+          </p>
+        )}
+        {status === 'ok' && (
+          <p className="flex items-start gap-2 rounded-md border border-green-200 bg-green-50 p-3 text-sm font-medium text-green-800">
+            <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true" className="mt-0.5 shrink-0"><path fillRule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 011.4-1.4l3.3 3.3 6.8-6.8a1 1 0 011.4 0z" clipRule="evenodd"/></svg>
+            {t.contact.success}
+          </p>
+        )}
+        {status === 'error' && (
+          <p className="rounded-md border border-red-200 bg-red-50 p-3 text-sm font-medium text-red-800">{t.contact.error}</p>
+        )}
+      </div>
     </form>
   );
 }

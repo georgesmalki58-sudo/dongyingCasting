@@ -165,7 +165,8 @@
     "error": "Something went wrong. Please try again or email us directly.",
     "info": "Company Information",
     "hours": "Mon–Sat, 8:00–18:00 (GMT+8)",
-    "wechatHint": "Scan to chat with us on WeChat"
+    "wechatHint": "Scan to chat with us on WeChat",
+    "sending": "Sending your message…"
   },
   "footer": {
     "tagline": "Precision investment casting & CNC machining since 2000.",

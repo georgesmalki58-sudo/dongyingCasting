@@ -165,7 +165,8 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
     "info": "Firmeninformationen",
     "hours": "Mo–Sa, 8:00–18:00 (GMT+8)",
-    "wechatHint": "Scannen, um mit uns auf WeChat zu chatten"
+    "wechatHint": "Scannen, um mit uns auf WeChat zu chatten",
+    "sending": "Ihre Nachricht wird gesendet…"
   },
   "footer": {
     "tagline": "Präzisions-Feinguss & CNC-Bearbeitung seit 2000.",
