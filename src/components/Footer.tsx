@@ -14,8 +14,8 @@ export function Footer({ locale }: { locale: Locale }) {
             <Image src={IMAGES.logo} alt={SITE.name} width={70} height={84} className="h-9 w-auto" />
             <span className="text-lg font-bold text-white">{SITE.name}</span>
           </div>
-          <p className="mt-3 text-sm text-steel-400">{t.footer.tagline}</p>
-          <p className="mt-4 text-xs text-steel-500">{SITE.legalName}</p>
+          <p className="mt-3 text-sm font-semibold text-steel-200">{SITE.legalName}</p>
+          <p className="mt-2 text-sm text-steel-400">{t.footer.tagline}</p>
         </div>
         <div>
           <p className="text-sm font-semibold text-white">{t.footer.quickLinks}</p>

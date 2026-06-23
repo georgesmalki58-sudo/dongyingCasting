@@ -54,7 +54,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-steel-950 via-steel-950/85 to-brand-dark/40" />
         <div className="container-x py-24 sm:py-32">
-          <p className="eyebrow text-brand-accent">{t.about.title} · ISO 9001:2015</p>
+          <p className="eyebrow text-brand-accent">{SITE.legalName} · ISO 9001:2015</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{t.home.h1}</h1>
           <p className="mt-6 max-w-2xl text-lg text-steel-200">{t.home.heroSub}</p>
           <div className="mt-8 flex flex-wrap gap-3">
