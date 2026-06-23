@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Script from 'next/script';
 import type { Dictionary } from '@/i18n/config';
 
@@ -7,6 +7,14 @@ const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 export function InquiryForm({ t }: { t: Dictionary }) {
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  // Show the centered success notice for 8 seconds, then auto-hide.
+  useEffect(() => {
+    if (!showSuccess) return;
+    const id = setTimeout(() => setShowSuccess(false), 8000);
+    return () => clearTimeout(id);
+  }, [showSuccess]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -15,13 +23,31 @@ export function InquiryForm({ t }: { t: Dictionary }) {
     const data = new FormData(form);
     try {
       const res = await fetch('/api/contact', { method: 'POST', body: data });
-      if (res.ok) { setStatus('ok'); form.reset(); } else { setStatus('error'); }
+      if (res.ok) { setStatus('idle'); setShowSuccess(true); form.reset(); } else { setStatus('error'); }
     } catch { setStatus('error'); }
   }
 
   const field = 'mt-1 w-full rounded-md border border-steel-300 px-3 py-2 text-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand';
 
   return (
+    <>
+    {/* Centered success notice — large, clear, auto-hides after 8s */}
+    {showSuccess && (
+      <div
+        className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4"
+        role="alert"
+        aria-live="assertive"
+        onClick={() => setShowSuccess(false)}
+      >
+        <div className="w-full max-w-md rounded-2xl bg-white p-8 text-center shadow-2xl" onClick={(e) => e.stopPropagation()}>
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600">
+            <svg viewBox="0 0 20 20" width="36" height="36" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 011.4-1.4l3.3 3.3 6.8-6.8a1 1 0 011.4 0z" clipRule="evenodd"/></svg>
+          </div>
+          <p className="mt-5 text-xl font-bold leading-relaxed text-steel-900">{t.contact.success}</p>
+        </div>
+      </div>
+    )}
+
     <form onSubmit={onSubmit} encType="multipart/form-data" className="space-y-4" noValidate>
       {/* Honeypot — visually hidden, bots fill it */}
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
@@ -67,7 +93,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
         )}
       </button>
 
-      {/* Status notices */}
+      {/* Inline status notices (success is shown as a centered overlay above) */}
       <div aria-live="polite">
         {status === 'sending' && (
           <p className="flex items-center gap-2 rounded-md border border-brand/20 bg-blue-50 p-3 text-sm text-brand-dark">
@@ -75,16 +101,11 @@ export function InquiryForm({ t }: { t: Dictionary }) {
             {t.contact.sending}
           </p>
         )}
-        {status === 'ok' && (
-          <p className="flex items-start gap-2 rounded-md border border-green-200 bg-green-50 p-3 text-sm font-medium text-green-800">
-            <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true" className="mt-0.5 shrink-0"><path fillRule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7.5 7.5a1 1 0 01-1.4 0L3.3 9.7a1 1 0 011.4-1.4l3.3 3.3 6.8-6.8a1 1 0 011.4 0z" clipRule="evenodd"/></svg>
-            {t.contact.success}
-          </p>
-        )}
         {status === 'error' && (
           <p className="rounded-md border border-red-200 bg-red-50 p-3 text-sm font-medium text-red-800">{t.contact.error}</p>
         )}
       </div>
     </form>
+    </>
   );
 }
