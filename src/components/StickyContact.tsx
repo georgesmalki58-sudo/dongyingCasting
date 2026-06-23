@@ -1,11 +1,13 @@
 import Link from 'next/link';
-import { whatsappHref } from '@/lib/site';
+import { whatsappHref, SITE } from '@/lib/site';
 import { type Locale, getDictionary } from '@/i18n/config';
+import { WeChatButton } from './WeChatButton';
 
 export function StickyContact({ locale }: { locale: Locale }) {
   const t = getDictionary(locale);
   return (
     <div className="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-3">
+      <WeChatButton id={SITE.wechat} hint={t.contact.wechatHint} />
       <a
         href={whatsappHref()}
         target="_blank"

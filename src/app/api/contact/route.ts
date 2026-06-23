@@ -11,7 +11,7 @@ const escapeHtml = (s: string) =>
 // Sends the inquiry to the company inbox (SITE.email) via Resend's REST API.
 // No SDK dependency — just fetch. Requires RESEND_API_KEY; CONTACT_FROM must be a
 // verified sender on your Resend domain. Returns true if accepted by the provider.
-async function sendInquiryEmail(data: InquiryInput, attachment: File | null): Promise<boolean> {
+async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promise<boolean> {
   const key = process.env.RESEND_API_KEY;
   const from = process.env.CONTACT_FROM || 'Website <noreply@dywanlong.com>';
   if (!key) {
@@ -36,9 +36,13 @@ async function sendInquiryEmail(data: InquiryInput, attachment: File | null): Pr
     html
   };
 
-  if (attachment) {
-    const buf = Buffer.from(await attachment.arrayBuffer());
-    body.attachments = [{ filename: attachment.name, content: buf.toString('base64') }];
+  if (attachments.length) {
+    body.attachments = await Promise.all(
+      attachments.map(async (f) => ({
+        filename: f.name,
+        content: Buffer.from(await f.arrayBuffer()).toString('base64')
+      }))
+    );
   }
 
   try {
@@ -110,23 +114,32 @@ export async function POST(req: Request) {
   const human = await verifyTurnstile(parsed.data.turnstileToken, ip);
   if (!human) return NextResponse.json({ error: 'Verification failed.' }, { status: 403 });
 
-  const file = form.get('attachment');
-  let attachment: File | null = null;
-  if (file && file instanceof File && file.size > 0) {
+  // Multiple attachments are supported. Enforce a per-request file count and total size.
+  const MAX_FILES = 8;
+  const MAX_TOTAL_BYTES = 40 * 1024 * 1024; // 40 MB across all files
+  const files = form.getAll('attachment').filter((f): f is File => f instanceof File && f.size > 0);
+  if (files.length > MAX_FILES) {
+    return NextResponse.json({ error: `Too many files (max ${MAX_FILES}).` }, { status: 422 });
+  }
+  let total = 0;
+  for (const file of files) {
+    total += file.size;
+    if (total > MAX_TOTAL_BYTES) {
+      return NextResponse.json({ error: 'Total attachment size exceeds 40 MB.' }, { status: 422 });
+    }
     // 1) Name / size / extension / MIME checks.
     const err = validateUpload({ name: file.name, size: file.size, type: file.type });
-    if (err) return NextResponse.json({ error: err }, { status: 422 });
+    if (err) return NextResponse.json({ error: `${file.name}: ${err}` }, { status: 422 });
     // 2) Content check — read leading bytes and verify the real file signature.
     const head = new Uint8Array(await file.slice(0, 4096).arrayBuffer());
     const sigErr = verifyFileSignature(file.name, head);
-    if (sigErr) return NextResponse.json({ error: sigErr }, { status: 422 });
-    attachment = file;
-    // For production hardening: scan the file (AV) before persisting/forwarding.
+    if (sigErr) return NextResponse.json({ error: `${file.name}: ${sigErr}` }, { status: 422 });
+    // For production hardening: scan each file (AV) before persisting/forwarding.
   }
 
   // Deliver the inquiry to the company inbox (SITE.email).
-  const sent = await sendInquiryEmail(parsed.data, attachment);
-  console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), hasFile: !!attachment, delivered: sent }));
+  const sent = await sendInquiryEmail(parsed.data, files);
+  console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), files: files.length, delivered: sent }));
 
   return NextResponse.json({ ok: true });
 }

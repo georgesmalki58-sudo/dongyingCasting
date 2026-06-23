@@ -43,7 +43,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
         <textarea name="message" required minLength={10} rows={5} className={field} />
       </label>
       <label className="block text-sm font-medium text-steel-800">{t.contact.attachment}
-        <input name="attachment" type="file" accept=".pdf,.docx,.xlsx,.step,.stp,.dwg,.dxf,.zip,.jpg,.jpeg,.png" className="mt-1 block w-full text-sm text-steel-600 file:mr-3 file:rounded file:border-0 file:bg-steel-100 file:px-3 file:py-2 file:text-sm file:font-semibold" />
+        <input name="attachment" type="file" multiple accept=".pdf,.docx,.xlsx,.step,.stp,.dwg,.dxf,.zip,.jpg,.jpeg,.png" className="mt-1 block w-full text-sm text-steel-600 file:mr-3 file:rounded file:border-0 file:bg-steel-100 file:px-3 file:py-2 file:text-sm file:font-semibold" />
       </label>
       <label className="flex items-start gap-2 text-sm text-steel-700">
         <input name="consent" type="checkbox" required value="true" className="mt-0.5" />
