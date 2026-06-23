@@ -7,7 +7,7 @@ import { SITE } from '@/lib/site';
 import { buildMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema, faqSchema } from '@/lib/schema';
-import { POSTS, getPost } from '@/lib/blog';
+import { POSTS, getPost, postContent, hasLocalizedBody } from '@/lib/blog';
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => POSTS.map((p) => ({ locale, slug: p.slug })));
@@ -18,7 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   const post = getPost(slug);
   if (!post) return {};
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: `blog/${slug}`, title: t.blog.posts[post.key], description: post.excerpt, image: post.image });
+  const c = postContent(post, locale);
+  return buildMetadata({ locale, path: `blog/${slug}`, title: t.blog.posts[post.key], description: c.excerpt, image: post.image, keywords: post.keywords });
 }
 
 export default async function BlogPost({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
@@ -27,17 +28,19 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
   if (!post) notFound();
   const t = getDictionary(locale);
   const title = t.blog.posts[post.key];
+  const c = postContent(post, locale);
+  const bodyLang = hasLocalizedBody(post.slug, locale) ? (locale === 'zh' ? 'zh-CN' : locale) : 'en';
   const related = POSTS.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: title,
-    description: post.excerpt,
+    description: c.excerpt,
     image: post.image.startsWith('http') ? post.image : `${SITE.url}${post.image}`,
     datePublished: post.date,
     dateModified: post.date,
-    inLanguage: 'en', // article bodies are currently English across all locales
+    inLanguage: bodyLang,
     keywords: post.keywords.join(', '),
     author: { '@type': 'Organization', name: SITE.legalName },
     publisher: { '@type': 'Organization', name: SITE.legalName },
@@ -53,7 +56,7 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
           { name: t.blog.title, path: 'blog' },
           { name: title, path: `blog/${post.slug}` }
         ]),
-        faqSchema(post.faq)
+        faqSchema(c.faq)
       ]} />
 
       <article className="container-x py-16">
@@ -66,14 +69,14 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
         <header className="max-w-3xl">
           <p className="font-mono text-xs text-steel-400">{new Date(post.date).toLocaleDateString(locale)} · {post.readMins} min</p>
           <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-steel-900">{title}</h1>
-          <p className="prose-muted mt-4 text-lg">{post.intro}</p>
+          <p className="prose-muted mt-4 text-lg">{c.intro}</p>
         </header>
 
         <Image src={post.image} alt={title} width={1200} height={500}
           className="mt-8 h-72 w-full rounded-xl object-cover sm:h-96" priority />
 
         <div className="mt-10 max-w-3xl space-y-10">
-          {post.sections.map((s) => (
+          {c.sections.map((s) => (
             <section key={s.h}>
               <h2 className="text-2xl font-bold text-steel-900">{s.h}</h2>
               {s.p.map((para, i) => <p key={i} className="prose-muted mt-3">{para}</p>)}
@@ -83,7 +86,7 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
           <section className="rounded-xl border border-steel-200 bg-steel-50 p-6">
             <h2 className="text-xl font-bold text-steel-900">FAQ</h2>
             <dl className="mt-4 space-y-4">
-              {post.faq.map((f) => (
+              {c.faq.map((f) => (
                 <div key={f.q}>
                   <dt className="font-semibold text-steel-800">{f.q}</dt>
                   <dd className="prose-muted mt-1 text-sm">{f.a}</dd>

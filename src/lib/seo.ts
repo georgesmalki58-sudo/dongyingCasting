@@ -11,25 +11,36 @@ const OG_LOCALE: Record<Locale, string> = {
   ar: 'ar_AR'
 };
 
+// hreflang values should carry region/script subtags (Baidu & Google prefer this).
+const HREFLANG: Record<Locale, string> = {
+  en: 'en',
+  zh: 'zh-CN',
+  de: 'de-DE',
+  es: 'es-ES',
+  ar: 'ar'
+};
+
 type Args = {
   locale: Locale;
   path?: string;            // e.g. 'products' (no leading slash)
   title: string;
   description: string;
   image?: string;
+  keywords?: string[];      // Baidu still uses <meta name="keywords">
 };
 
 // Builds canonical + hreflang alternates and OG/Twitter for a page.
-export function buildMetadata({ locale, path = '', title, description, image }: Args): Metadata {
+export function buildMetadata({ locale, path = '', title, description, image, keywords }: Args): Metadata {
   const seg = path ? `/${path}` : '';
   const canonical = `${SITE.url}/${locale}${seg}`;
   const languages: Record<string, string> = {};
-  for (const l of locales) languages[l] = `${SITE.url}/${l}${seg}`;
+  for (const l of locales) languages[HREFLANG[l]] = `${SITE.url}/${l}${seg}`;
   languages['x-default'] = `${SITE.url}/${defaultLocale}${seg}`;
 
   return {
     title,
     description,
+    keywords,
     alternates: { canonical, languages },
     openGraph: {
       type: 'website',

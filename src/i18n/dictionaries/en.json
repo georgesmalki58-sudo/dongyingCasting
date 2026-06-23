@@ -1,13 +1,21 @@
 {
   "nav": {
-    "home": "Home", "about": "About Us", "products": "Products",
-    "industries": "Industries", "quality": "Quality Control",
-    "factory": "Factory", "blog": "Knowledge Center", "contact": "Contact"
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "industries": "Industries",
+    "quality": "Quality Control",
+    "factory": "Factory",
+    "blog": "Knowledge Center",
+    "contact": "Contact"
   },
   "cta": {
-    "quote": "Request a Quote", "contact": "Contact Us",
-    "solutions": "Our Solutions", "downloadProfile": "Download Company Profile",
-    "uploadDrawing": "Upload CAD Drawing", "sendInquiry": "Send Inquiry"
+    "quote": "Request a Quote",
+    "contact": "Contact Us",
+    "solutions": "Our Solutions",
+    "downloadProfile": "Download Company Profile",
+    "uploadDrawing": "Upload CAD Drawing",
+    "sendInquiry": "Send Inquiry"
   },
   "home": {
     "h1": "Precision Investment Casting Manufacturer in China",
@@ -31,7 +39,12 @@
     "subMarine": "Marine Components",
     "subMachinery": "Industrial Machinery Parts",
     "subPump": "Pump and Valve Components",
-    "stats": { "experience": "Years Experience", "centers": "Machining Centers", "markets": "Export Markets", "employees": "Skilled Staff" }
+    "stats": {
+      "experience": "Years Experience",
+      "centers": "Machining Centers",
+      "markets": "Export Markets",
+      "employees": "Skilled Staff"
+    }
   },
   "why": {
     "experience": "25+ years of casting & mould expertise",
@@ -58,21 +71,43 @@
     "title": "Products",
     "intro": "Comprehensive casting and machining solutions across multiple metals and alloys.",
     "items": {
-      "investment": { "name": "Investment Castings", "body": "High-precision lost-wax investment castings for complex industrial components." },
-      "stainless": { "name": "Stainless Steel Castings", "body": "Corrosion-resistant stainless steel casting for marine, food, and medical applications." },
-      "carbon": { "name": "Carbon Steel Castings", "body": "Durable carbon steel castings for machinery and structural parts." },
-      "heat": { "name": "Heat Resistant Steel Castings", "body": "High-temperature alloy castings for turbine blades, vanes, and nozzles." },
-      "cnc": { "name": "CNC Machining Parts", "body": "Tight-tolerance finished parts via 4/5-axis CNC, EDM, and wire-cutting." },
-      "custom": { "name": "Custom Components", "body": "Made-to-drawing components from prototype to series production." }
+      "investment": {
+        "name": "Investment Castings",
+        "body": "High-precision lost-wax investment castings for complex industrial components."
+      },
+      "stainless": {
+        "name": "Stainless Steel Castings",
+        "body": "Corrosion-resistant stainless steel casting for marine, food, and medical applications."
+      },
+      "carbon": {
+        "name": "Carbon Steel Castings",
+        "body": "Durable carbon steel castings for machinery and structural parts."
+      },
+      "heat": {
+        "name": "Heat Resistant Steel Castings",
+        "body": "High-temperature alloy castings for turbine blades, vanes, and nozzles."
+      },
+      "cnc": {
+        "name": "CNC Machining Parts",
+        "body": "Tight-tolerance finished parts via 4/5-axis CNC, EDM, and wire-cutting."
+      },
+      "custom": {
+        "name": "Custom Components",
+        "body": "Made-to-drawing components from prototype to series production."
+      }
     }
   },
   "industries": {
     "title": "Industries We Serve",
     "intro": "Precision castings and machined parts trusted across demanding sectors worldwide.",
     "items": {
-      "automotive": "Automotive", "marine": "Marine", "oilgas": "Oil & Gas",
-      "agriculture": "Agriculture", "machinery": "Industrial Machinery",
-      "construction": "Construction", "medical": "Medical Equipment"
+      "automotive": "Automotive",
+      "marine": "Marine",
+      "oilgas": "Oil & Gas",
+      "agriculture": "Agriculture",
+      "machinery": "Industrial Machinery",
+      "construction": "Construction",
+      "medical": "Medical Equipment"
     }
   },
   "quality": {
@@ -92,7 +127,15 @@
     "equipment": "Equipment",
     "equipmentBody": "21 advanced domestic and imported machining centers, including high-speed CNC engraving and milling machines, CNC mirror EDM machines, slow wire-cutting machines, and 4-axis and 5-axis machining centers.",
     "process": "Manufacturing Process",
-    "processSteps": ["Design & CAM/CAE", "Mould making", "Wax injection", "Shell building", "Casting & pouring", "CNC machining", "Inspection & finishing"]
+    "processSteps": [
+      "Design & CAM/CAE",
+      "Mould making",
+      "Wax injection",
+      "Shell building",
+      "Casting & pouring",
+      "CNC machining",
+      "Inspection & finishing"
+    ]
   },
   "blog": {
     "title": "Knowledge Center",
@@ -110,14 +153,19 @@
   "contact": {
     "title": "Contact Us",
     "intro": "Tell us about your project. Upload drawings and our engineers will respond with a detailed quotation.",
-    "name": "Full name", "email": "Email", "company": "Company", "phone": "Phone",
-    "message": "Message / requirements", "attachment": "Attach drawing (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "name": "Full name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "Message / requirements",
+    "attachment": "Attach drawing (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
     "consent": "I agree to be contacted regarding my inquiry.",
     "submit": "Send Inquiry",
     "success": "Thank you — your inquiry has been received. We will respond shortly.",
     "error": "Something went wrong. Please try again or email us directly.",
     "info": "Company Information",
-    "hours": "Mon–Sat, 8:00–18:00 (GMT+8)"
+    "hours": "Mon–Sat, 8:00–18:00 (GMT+8)",
+    "wechatHint": "Scan to chat with us on WeChat"
   },
   "footer": {
     "tagline": "Precision investment casting & CNC machining since 2000.",

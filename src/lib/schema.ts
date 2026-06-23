@@ -13,12 +13,14 @@ const addr = {
   addressCountry: SITE.address.country
 };
 
-export function organizationSchema() {
+export function organizationSchema(locale: Locale = 'en') {
+  const zh = locale === 'zh';
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: SITE.legalName,
-    alternateName: SITE.name,
+    '@id': `${SITE.url}/#organization`,
+    name: zh ? SITE.legalNameZh : SITE.legalName,
+    alternateName: zh ? SITE.legalName : SITE.legalNameZh,
     url: SITE.url,
     logo: abs(SITE.ogImage),
     foundingDate: SITE.founded,
@@ -29,12 +31,14 @@ export function organizationSchema() {
   };
 }
 
-export function localBusinessSchema() {
+export function localBusinessSchema(locale: Locale = 'en') {
+  const zh = locale === 'zh';
   return {
     '@context': 'https://schema.org',
     '@type': 'Manufacturer',
     '@id': `${SITE.url}/#organization`,
-    name: SITE.legalName,
+    name: zh ? SITE.legalNameZh : SITE.legalName,
+    alternateName: zh ? SITE.legalName : SITE.legalNameZh,
     url: SITE.url,
     image: abs(SITE.ogImage),
     telephone: SITE.phone,

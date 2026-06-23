@@ -32,6 +32,9 @@ export function middleware(req: NextRequest) {
 
   const requestHeaders = new Headers(req.headers);
   requestHeaders.set('x-nonce', nonce);
+  // Expose the active locale so the root layout can server-render <html lang/dir>
+  // (important for Baidu, which doesn't reliably run the client-side patch).
+  requestHeaders.set('x-locale', pathname.split('/')[1] || 'en');
 
   // Strict nonce-based CSP is applied in PRODUCTION only. Next.js dev mode relies on
   // inline scripts, eval, and an HMR websocket that a strict CSP would block (blank page).
@@ -39,12 +42,12 @@ export function middleware(req: NextRequest) {
   if (isProd) {
     csp = [
       `default-src 'self'`,
-      `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://challenges.cloudflare.com`,
+      `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://challenges.cloudflare.com https://hm.baidu.com`,
       `style-src 'self' 'unsafe-inline'`,
-      `img-src 'self' data: blob:`,
+      `img-src 'self' data: blob: https://hm.baidu.com`,
       `font-src 'self' data:`,
       `frame-src https://challenges.cloudflare.com https://www.google.com`,
-      `connect-src 'self' https://challenges.cloudflare.com`,
+      `connect-src 'self' https://challenges.cloudflare.com https://hm.baidu.com`,
       `object-src 'none'`,
       `base-uri 'self'`,
       `form-action 'self'`,

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { NAV, SITE, IMAGES } from '@/lib/site';
+import { NAV, SITE, IMAGES, companyName } from '@/lib/site';
 import { type Locale, getDictionary } from '@/i18n/config';
 
 export function Footer({ locale }: { locale: Locale }) {
@@ -14,7 +14,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <Image src={IMAGES.logo} alt={SITE.name} width={70} height={84} className="h-9 w-auto" />
             <span className="text-lg font-bold text-white">{SITE.name}</span>
           </div>
-          <p className="mt-3 text-sm font-semibold text-steel-200">{SITE.legalName}</p>
+          <p className="mt-3 text-sm font-semibold text-steel-200">{companyName(locale)}</p>
           <p className="mt-2 text-sm text-steel-400">{t.footer.tagline}</p>
         </div>
         <div>
@@ -49,9 +49,16 @@ export function Footer({ locale }: { locale: Locale }) {
       </div>
       <div className="border-t border-steel-800">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-steel-500 sm:flex-row">
-          <p>© {new Date().getFullYear()} {SITE.legalName}. {t.footer.rights}</p>
+          <p>© {new Date().getFullYear()} {companyName(locale)}. {t.footer.rights}</p>
           <p>Incoterms: {SITE.incoterms.join(', ')}</p>
         </div>
+        {locale === 'zh' && SITE.icp ? (
+          <div className="container-x pb-5 text-center text-xs text-steel-500">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-steel-300">
+              {SITE.icp}
+            </a>
+          </div>
+        ) : null}
       </div>
     </footer>
   );

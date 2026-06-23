@@ -1,6 +1,22 @@
 {
-  "nav": { "home": "Inicio", "about": "Quiénes somos", "products": "Productos", "industries": "Industrias", "quality": "Control de calidad", "factory": "Fábrica", "blog": "Centro de conocimiento", "contact": "Contacto" },
-  "cta": { "quote": "Solicitar presupuesto", "contact": "Contáctenos", "solutions": "Nuestras soluciones", "downloadProfile": "Descargar perfil de empresa", "uploadDrawing": "Subir plano CAD", "sendInquiry": "Enviar consulta" },
+  "nav": {
+    "home": "Inicio",
+    "about": "Quiénes somos",
+    "products": "Productos",
+    "industries": "Industrias",
+    "quality": "Control de calidad",
+    "factory": "Fábrica",
+    "blog": "Centro de conocimiento",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "quote": "Solicitar presupuesto",
+    "contact": "Contáctenos",
+    "solutions": "Nuestras soluciones",
+    "downloadProfile": "Descargar perfil de empresa",
+    "uploadDrawing": "Subir plano CAD",
+    "sendInquiry": "Enviar consulta"
+  },
   "home": {
     "h1": "Fabricante de fundición de precisión a la cera perdida en China",
     "heroSub": "Soluciones de fundición y mecanizado CNC del diseño a la entrega. Certificado ISO 9001:2015, con más de 25 años de experiencia en fundición para mercados B2B globales.",
@@ -8,64 +24,155 @@
     "investmentCastingBody": "Fundición a la cera perdida de alta precisión en acero inoxidable, acero al carbono y aleaciones resistentes al calor para componentes industriales exigentes.",
     "cnc": "Servicios de mecanizado CNC",
     "cncBody": "21 centros de mecanizado avanzados — fresado CNC de alta velocidad, electroerosión, corte por hilo y mecanizado de 4/5 ejes para piezas acabadas de tolerancia estrecha.",
-    "industries": "Industrias que atendemos", "whyChoose": "Por qué elegir Dongying Casting", "quality": "Control de calidad y certificaciones",
-    "factory": "Fábrica y capacidad de producción", "global": "Mercados de exportación globales", "requestQuote": "Solicitar un presupuesto a medida",
+    "industries": "Industrias que atendemos",
+    "whyChoose": "Por qué elegir Dongying Casting",
+    "quality": "Control de calidad y certificaciones",
+    "factory": "Fábrica y capacidad de producción",
+    "global": "Mercados de exportación globales",
+    "requestQuote": "Solicitar un presupuesto a medida",
     "requestQuoteBody": "Envíe planos o especificaciones y nuestros ingenieros responderán con un presupuesto detallado, normalmente en 24 horas.",
-    "subStainless": "Fundición de acero inoxidable", "subCarbon": "Fundición de acero al carbono", "subLostWax": "Fundición a la cera perdida", "subCnc": "Mecanizado CNC de precisión",
-    "subAutomotive": "Piezas de automoción", "subMarine": "Componentes marinos", "subMachinery": "Piezas de maquinaria industrial", "subPump": "Componentes de bombas y válvulas",
-    "stats": { "experience": "Años de experiencia", "centers": "Centros de mecanizado", "markets": "Mercados de exportación", "employees": "Personal cualificado" }
+    "subStainless": "Fundición de acero inoxidable",
+    "subCarbon": "Fundición de acero al carbono",
+    "subLostWax": "Fundición a la cera perdida",
+    "subCnc": "Mecanizado CNC de precisión",
+    "subAutomotive": "Piezas de automoción",
+    "subMarine": "Componentes marinos",
+    "subMachinery": "Piezas de maquinaria industrial",
+    "subPump": "Componentes de bombas y válvulas",
+    "stats": {
+      "experience": "Años de experiencia",
+      "centers": "Centros de mecanizado",
+      "markets": "Mercados de exportación",
+      "employees": "Personal cualificado"
+    }
   },
   "why": {
-    "experience": "Más de 25 años de experiencia en fundición y moldes", "experienceBody": "Fundada en 2000 en Dongying, Shandong, con profundos conocimientos prácticos en diseño, fabricación y pruebas en línea de moldes.",
-    "certified": "Calidad certificada ISO 9001:2015", "certifiedBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa en cada etapa de producción.",
-    "export": "Licencia de exportación propia, envío mundial", "exportBody": "Exportación directa por los puertos de Qingdao, Shanghái, Tianjin y Dongying. Incoterms FOB, CIF, EXW y más.",
-    "oneStop": "Todo en uno, del diseño a la entrega", "oneStopBody": "Taller de moldes propio más mecanizado CNC — prototipo, fundición, mecanizado y acabado bajo un mismo techo."
+    "experience": "Más de 25 años de experiencia en fundición y moldes",
+    "experienceBody": "Fundada en 2000 en Dongying, Shandong, con profundos conocimientos prácticos en diseño, fabricación y pruebas en línea de moldes.",
+    "certified": "Calidad certificada ISO 9001:2015",
+    "certifiedBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa en cada etapa de producción.",
+    "export": "Licencia de exportación propia, envío mundial",
+    "exportBody": "Exportación directa por los puertos de Qingdao, Shanghái, Tianjin y Dongying. Incoterms FOB, CIF, EXW y más.",
+    "oneStop": "Todo en uno, del diseño a la entrega",
+    "oneStopBody": "Taller de moldes propio más mecanizado CNC — prototipo, fundición, mecanizado y acabado bajo un mismo techo."
   },
   "about": {
     "title": "Acerca de Dongying Casting",
     "intro": "Dongying Wanlong Mechanical Mould Co., Ltd. fue fundada en 2000 en la ciudad de Dongying, Shandong — la ciudad central del yacimiento petrolífero Shengli del delta del río Amarillo. La empresa integra diseño, producción, montaje de prototipos y prueba de moldes, con los moldes de fundición de precisión como actividad principal.",
-    "history": "Historia de la empresa", "historyBody": "Tras años de desarrollo y experiencia acumulada, hemos construido una amplia competencia en diseño, fabricación, mecanizado y prueba en línea de moldes — especialmente en la creación automatizada de moldes y el mecanizado de moldes de cera sin mantenimiento.",
-    "capacity": "Capacidad de producción", "capacityBody": "101–200 empleados y una capacidad anual que respalda una producción de 50–100 millones de US$, con plazos de entrega de 1–3 meses en temporada alta.",
-    "certs": "Certificaciones", "team": "Nuestro equipo", "teamBody": "Un equipo profesional de ingenieros de diseño sénior que utiliza software de simulación CAM y CAE para optimizar cada molde y componente."
+    "history": "Historia de la empresa",
+    "historyBody": "Tras años de desarrollo y experiencia acumulada, hemos construido una amplia competencia en diseño, fabricación, mecanizado y prueba en línea de moldes — especialmente en la creación automatizada de moldes y el mecanizado de moldes de cera sin mantenimiento.",
+    "capacity": "Capacidad de producción",
+    "capacityBody": "101–200 empleados y una capacidad anual que respalda una producción de 50–100 millones de US$, con plazos de entrega de 1–3 meses en temporada alta.",
+    "certs": "Certificaciones",
+    "team": "Nuestro equipo",
+    "teamBody": "Un equipo profesional de ingenieros de diseño sénior que utiliza software de simulación CAM y CAE para optimizar cada molde y componente."
   },
   "products": {
-    "title": "Productos", "intro": "Soluciones integrales de fundición y mecanizado en múltiples metales y aleaciones.",
+    "title": "Productos",
+    "intro": "Soluciones integrales de fundición y mecanizado en múltiples metales y aleaciones.",
     "items": {
-      "investment": { "name": "Fundición a la cera perdida", "body": "Piezas de fundición a la cera perdida de alta precisión para componentes industriales complejos." },
-      "stainless": { "name": "Fundición de acero inoxidable", "body": "Fundición de acero inoxidable resistente a la corrosión para aplicaciones marinas, alimentarias y médicas." },
-      "carbon": { "name": "Fundición de acero al carbono", "body": "Piezas de fundición de acero al carbono duraderas para maquinaria y piezas estructurales." },
-      "heat": { "name": "Fundición de acero resistente al calor", "body": "Fundición de aleación de alta temperatura para álabes de turbina, paletas y boquillas." },
-      "cnc": { "name": "Piezas mecanizadas CNC", "body": "Piezas acabadas de tolerancia estrecha mediante CNC de 4/5 ejes, electroerosión y corte por hilo." },
-      "custom": { "name": "Componentes personalizados", "body": "Componentes fabricados según plano, del prototipo a la producción en serie." }
+      "investment": {
+        "name": "Fundición a la cera perdida",
+        "body": "Piezas de fundición a la cera perdida de alta precisión para componentes industriales complejos."
+      },
+      "stainless": {
+        "name": "Fundición de acero inoxidable",
+        "body": "Fundición de acero inoxidable resistente a la corrosión para aplicaciones marinas, alimentarias y médicas."
+      },
+      "carbon": {
+        "name": "Fundición de acero al carbono",
+        "body": "Piezas de fundición de acero al carbono duraderas para maquinaria y piezas estructurales."
+      },
+      "heat": {
+        "name": "Fundición de acero resistente al calor",
+        "body": "Fundición de aleación de alta temperatura para álabes de turbina, paletas y boquillas."
+      },
+      "cnc": {
+        "name": "Piezas mecanizadas CNC",
+        "body": "Piezas acabadas de tolerancia estrecha mediante CNC de 4/5 ejes, electroerosión y corte por hilo."
+      },
+      "custom": {
+        "name": "Componentes personalizados",
+        "body": "Componentes fabricados según plano, del prototipo a la producción en serie."
+      }
     }
   },
   "industries": {
-    "title": "Industrias que atendemos", "intro": "Fundición de precisión y piezas mecanizadas en las que confían sectores exigentes de todo el mundo.",
-    "items": { "automotive": "Automoción", "marine": "Marina", "oilgas": "Petróleo y gas", "agriculture": "Agricultura", "machinery": "Maquinaria industrial", "construction": "Construcción", "medical": "Equipos médicos" }
+    "title": "Industrias que atendemos",
+    "intro": "Fundición de precisión y piezas mecanizadas en las que confían sectores exigentes de todo el mundo.",
+    "items": {
+      "automotive": "Automoción",
+      "marine": "Marina",
+      "oilgas": "Petróleo y gas",
+      "agriculture": "Agricultura",
+      "machinery": "Maquinaria industrial",
+      "construction": "Construcción",
+      "medical": "Equipos médicos"
+    }
   },
   "quality": {
-    "title": "Control de calidad y certificaciones", "intro": "Nuestro compromiso con la calidad es inquebrantable, basado en el sistema de gestión de calidad ISO 9001:2015.",
-    "iso": "Certificaciones ISO", "isoBody": "ISO 9001:2015 / GB/T 19001 y CE, abarcando la gestión de la cadena de suministro, el diseño y desarrollo y la gestión de la información del cliente.",
-    "testing": "Equipos de ensayo", "testingBody": "Análisis de simulación CAM y CAE, control estadístico de calidad (SQC) y gráficos de control.",
-    "inspection": "Proceso de inspección", "inspectionBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa."
+    "title": "Control de calidad y certificaciones",
+    "intro": "Nuestro compromiso con la calidad es inquebrantable, basado en el sistema de gestión de calidad ISO 9001:2015.",
+    "iso": "Certificaciones ISO",
+    "isoBody": "ISO 9001:2015 / GB/T 19001 y CE, abarcando la gestión de la cadena de suministro, el diseño y desarrollo y la gestión de la información del cliente.",
+    "testing": "Equipos de ensayo",
+    "testingBody": "Análisis de simulación CAM y CAE, control estadístico de calidad (SQC) y gráficos de control.",
+    "inspection": "Proceso de inspección",
+    "inspectionBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa."
   },
   "factory": {
-    "title": "Fábrica y capacidad de producción", "intro": "Un taller de moldes propio con amplia capacidad de mecanizado CNC.",
-    "line": "Línea de producción", "equipment": "Equipamiento",
+    "title": "Fábrica y capacidad de producción",
+    "intro": "Un taller de moldes propio con amplia capacidad de mecanizado CNC.",
+    "line": "Línea de producción",
+    "equipment": "Equipamiento",
     "equipmentBody": "21 centros de mecanizado avanzados nacionales e importados, incluidas fresadoras y grabadoras CNC de alta velocidad, máquinas de electroerosión de espejo CNC, máquinas de corte por hilo lento y centros de mecanizado de 4 y 5 ejes.",
-    "process": "Proceso de fabricación", "processSteps": ["Diseño y CAM/CAE", "Fabricación de moldes", "Inyección de cera", "Construcción de cáscara", "Colada", "Mecanizado CNC", "Inspección y acabado"]
+    "process": "Proceso de fabricación",
+    "processSteps": [
+      "Diseño y CAM/CAE",
+      "Fabricación de moldes",
+      "Inyección de cera",
+      "Construcción de cáscara",
+      "Colada",
+      "Mecanizado CNC",
+      "Inspección y acabado"
+    ]
   },
   "blog": {
-    "title": "Centro de conocimiento", "intro": "Artículos técnicos sobre procesos de fundición y mecanizado.", "readMore": "Leer más",
-    "posts": { "investment": "Guía práctica de la fundición a la cera perdida", "lostWax": "Fundición a la cera perdida: proceso, ventajas y aplicaciones", "stainless": "Fundición de acero inoxidable: grados y selección", "cnc": "Mecanizado CNC para componentes fundidos", "finishing": "Opciones de acabado superficial para piezas fundidas", "heat": "Tratamiento térmico de piezas de acero fundido" }
+    "title": "Centro de conocimiento",
+    "intro": "Artículos técnicos sobre procesos de fundición y mecanizado.",
+    "readMore": "Leer más",
+    "posts": {
+      "investment": "Guía práctica de la fundición a la cera perdida",
+      "lostWax": "Fundición a la cera perdida: proceso, ventajas y aplicaciones",
+      "stainless": "Fundición de acero inoxidable: grados y selección",
+      "cnc": "Mecanizado CNC para componentes fundidos",
+      "finishing": "Opciones de acabado superficial para piezas fundidas",
+      "heat": "Tratamiento térmico de piezas de acero fundido"
+    }
   },
   "contact": {
-    "title": "Contacto", "intro": "Cuéntenos sobre su proyecto. Suba planos y nuestros ingenieros responderán con un presupuesto detallado.",
-    "name": "Nombre completo", "email": "Correo electrónico", "company": "Empresa", "phone": "Teléfono",
-    "message": "Mensaje / requisitos", "attachment": "Adjuntar plano (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
-    "consent": "Acepto ser contactado en relación con mi consulta.", "submit": "Enviar consulta",
-    "success": "Gracias — hemos recibido su consulta. Le responderemos en breve.", "error": "Algo salió mal. Inténtelo de nuevo o escríbanos directamente.",
-    "info": "Información de la empresa", "hours": "Lun–Sáb, 8:00–18:00 (GMT+8)"
+    "title": "Contacto",
+    "intro": "Cuéntenos sobre su proyecto. Suba planos y nuestros ingenieros responderán con un presupuesto detallado.",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "company": "Empresa",
+    "phone": "Teléfono",
+    "message": "Mensaje / requisitos",
+    "attachment": "Adjuntar plano (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "consent": "Acepto ser contactado en relación con mi consulta.",
+    "submit": "Enviar consulta",
+    "success": "Gracias — hemos recibido su consulta. Le responderemos en breve.",
+    "error": "Algo salió mal. Inténtelo de nuevo o escríbanos directamente.",
+    "info": "Información de la empresa",
+    "hours": "Lun–Sáb, 8:00–18:00 (GMT+8)",
+    "wechatHint": "Escanea para hablar con nosotros por WeChat"
   },
-  "footer": { "tagline": "Fundición de precisión a la cera perdida y mecanizado CNC desde 2000.", "quickLinks": "Enlaces rápidos", "contact": "Contacto", "certifications": "Certificaciones", "rights": "Todos los derechos reservados.", "ports": "Puertos de exportación" }
+  "footer": {
+    "tagline": "Fundición de precisión a la cera perdida y mecanizado CNC desde 2000.",
+    "quickLinks": "Enlaces rápidos",
+    "contact": "Contacto",
+    "certifications": "Certificaciones",
+    "rights": "Todos los derechos reservados.",
+    "ports": "Puertos de exportación"
+  }
 }

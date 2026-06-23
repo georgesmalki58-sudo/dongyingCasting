@@ -1,7 +1,9 @@
 // Central source of truth for NAP (Name/Address/Phone), nav, and contact data.
 export const SITE = {
   name: 'Dongying Casting',
+  nameZh: '东营万隆',
   legalName: 'Dongying Wanlong Mechanical Mould Co., Ltd.',
+  legalNameZh: '东营万隆机械模具有限公司',
   url: 'https://dongying-casting.com',
   founded: '2000',
   email: 'cindy@dywanlong.com',
@@ -18,13 +20,26 @@ export const SITE = {
     countryName: 'China'
   },
   geo: { lat: 37.4346, lng: 118.6747 },
-  certifications: ['ISO 9001:2015', 'GB/T 19001', 'CE'],
+  certifications: ['ISO 9001:2015', 'GB/T 19001', 'CE', 'UN ECE R55'],
   ports: ['Qingdao', 'Dongying', 'Shanghai', 'Tianjin'],
   incoterms: ['FOB', 'CFR', 'CIF', 'EXW', 'FCA', 'CPT', 'CIP'],
   payment: ['L/C', 'T/T'],
   // Local OG image, 1200x630 (resolved to an absolute URL via metadataBase).
-  ogImage: '/images/og.jpg'
+  ogImage: '/images/og.jpg',
+  // China filings — fill once obtained (shown in the zh footer).
+  icp: '', // e.g. '鲁ICP备XXXXXXXX号'
+  // Search-engine site-verification codes (left blank until registered).
+  verification: {
+    baidu: process.env.NEXT_PUBLIC_BAIDU_VERIFICATION || '',
+    sogou: process.env.NEXT_PUBLIC_SOGOU_VERIFICATION || '',
+    so360: process.env.NEXT_PUBLIC_360_VERIFICATION || ''
+  }
 } as const;
+
+// Localized company name (legal name stays Latin for non-zh entity references).
+export function companyName(locale: string): string {
+  return locale === 'zh' ? SITE.legalNameZh : SITE.legalName;
+}
 
 // Opens a direct WhatsApp chat with the company number, with an optional pre-filled message.
 export const WHATSAPP_DEFAULT_MSG = 'Hello Dongying Casting, I would like to request a quote.';

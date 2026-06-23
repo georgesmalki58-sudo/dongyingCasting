@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { type Locale, getDictionary } from '@/i18n/config';
-import { SITE, IMAGES } from '@/lib/site';
+import { SITE, IMAGES, companyName } from '@/lib/site';
 import { buildMetadata } from '@/lib/seo';
 import { SectionHeading } from '@/components/SectionHeading';
 import { JsonLd } from '@/components/JsonLd';
@@ -11,7 +11,11 @@ import { faqSchema } from '@/lib/schema';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: '', title: t.home.h1, description: t.home.heroSub, image: IMAGES.hero });
+  const keywords =
+    locale === 'zh'
+      ? ['精密铸造厂家', '熔模铸造', '失蜡铸造', '不锈钢铸件', '碳钢铸件', '耐热钢铸件', 'CNC加工', '数控加工', '铸件加工', '东营万隆', '山东铸造厂']
+      : ['investment casting', 'lost wax casting', 'precision casting manufacturer', 'stainless steel casting', 'carbon steel casting', 'CNC machining', 'China casting foundry'];
+  return buildMetadata({ locale, path: '', title: t.home.h1, description: t.home.heroSub, image: IMAGES.hero, keywords });
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
@@ -54,7 +58,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-steel-950 via-steel-950/85 to-brand-dark/40" />
         <div className="container-x py-24 sm:py-32">
-          <p className="eyebrow text-brand-accent">{SITE.legalName} · ISO 9001:2015</p>
+          <p className="eyebrow text-brand-accent">{companyName(locale)} · ISO 9001:2015</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{t.home.h1}</h1>
           <p className="mt-6 max-w-2xl text-lg text-steel-200">{t.home.heroSub}</p>
           <div className="mt-8 flex flex-wrap gap-3">

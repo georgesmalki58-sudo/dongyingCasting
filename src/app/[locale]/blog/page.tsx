@@ -6,7 +6,7 @@ import { buildMetadata } from '@/lib/seo';
 import { SectionHeading } from '@/components/SectionHeading';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
-import { POSTS } from '@/lib/blog';
+import { POSTS, postContent } from '@/lib/blog';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -32,7 +32,7 @@ export default async function Blog({ params }: { params: Promise<{ locale: Local
                 <div className="p-5">
                   <p className="font-mono text-xs text-steel-400">{new Date(p.date).toLocaleDateString(locale)} · {p.readMins} min</p>
                   <h2 className="mt-2 text-lg font-semibold text-steel-900">{t.blog.posts[p.key]}</h2>
-                  <p className="prose-muted mt-2 text-sm">{p.excerpt}</p>
+                  <p className="prose-muted mt-2 text-sm">{postContent(p, locale).excerpt}</p>
                   <p className="mt-4 text-sm font-semibold text-brand-light">{t.blog.readMore} →</p>
                 </div>
               </Link>

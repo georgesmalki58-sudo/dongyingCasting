@@ -4,7 +4,6 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StickyContact } from '@/components/StickyContact';
 import { JsonLd } from '@/components/JsonLd';
-import { HtmlLangDir } from '@/components/HtmlLangDir';
 import { organizationSchema, localBusinessSchema } from '@/lib/schema';
 
 export function generateStaticParams() {
@@ -20,8 +19,7 @@ export default async function LocaleLayout({
   const d = dir(l);
   return (
     <div lang={l} dir={d}>
-      <HtmlLangDir lang={l} dir={d} />
-      <JsonLd data={[organizationSchema(), localBusinessSchema()]} />
+      <JsonLd data={[organizationSchema(l), localBusinessSchema(l)]} />
       <Header locale={l} />
       <main id="main">{children}</main>
       <Footer locale={l} />
