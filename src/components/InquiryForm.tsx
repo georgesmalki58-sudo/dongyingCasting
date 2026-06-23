@@ -51,7 +51,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
       </div>
     )}
 
-    <form onSubmit={onSubmit} encType="multipart/form-data" className="space-y-4" noValidate>
+    <form onSubmit={onSubmit} encType="multipart/form-data" className="space-y-4">
       {/* Honeypot — visually hidden, bots fill it */}
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
       <div className="grid gap-4 sm:grid-cols-2">
