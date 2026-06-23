@@ -41,10 +41,11 @@ export function validateUpload(file: { name: string; size: number; type: string 
   if (file.size === 0) return 'File is empty.';
   const ext = extensionOf(file.name);
   if (!(ALLOWED_EXTENSIONS as readonly string[]).includes(ext)) return `File type .${ext} is not allowed.`;
-  // Block double extensions / disguised executables (e.g. "drawing.pdf.exe", "a.php.pdf").
-  const lower = file.name.toLowerCase();
-  const DANGEROUS = ['.exe', '.js', '.html', '.htm', '.svg', '.php', '.bat', '.cmd', '.sh', '.com', '.scr', '.jar', '.msi', '.dll'];
-  if (DANGEROUS.some((d) => lower.includes(d))) return 'File name contains a disallowed extension.';
+  // Block disguised executables via dotted segments (e.g. "drawing.exe.pdf", "a.php.pdf").
+  // Segment match (not substring), so legitimate names like "flashlight.png" are fine.
+  const DANGEROUS = new Set(['exe', 'js', 'html', 'htm', 'svg', 'php', 'bat', 'cmd', 'sh', 'com', 'scr', 'jar', 'msi', 'dll']);
+  const segments = file.name.toLowerCase().split('.').slice(1); // all dotted parts
+  if (segments.some((s) => DANGEROUS.has(s))) return 'File name contains a disallowed extension.';
   // MIME is advisory; extension whitelist is authoritative. Reject obvious mismatches.
   if (file.type && !ALLOWED_MIME.has(file.type) && file.type !== '') {
     if (!file.type.includes('zip') && file.type !== 'application/octet-stream') return 'File MIME type not permitted.';

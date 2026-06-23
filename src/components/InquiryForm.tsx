@@ -10,6 +10,7 @@ const fmtSize = (b: number) => (b < 1024 * 1024 ? `${Math.round(b / 1024)} KB` :
 export function InquiryForm({ t }: { t: Dictionary }) {
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
   const [showSuccess, setShowSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
   const [files, setFiles] = useState<{ name: string; size: number }[]>([]);
 
   // Show the centered success notice for 8 seconds, then auto-hide.
@@ -26,8 +27,16 @@ export function InquiryForm({ t }: { t: Dictionary }) {
     const data = new FormData(form);
     try {
       const res = await fetch('/api/contact', { method: 'POST', body: data });
-      if (res.ok) { setStatus('idle'); setShowSuccess(true); form.reset(); setFiles([]); } else { setStatus('error'); }
-    } catch { setStatus('error'); }
+      if (res.ok) {
+        setStatus('idle'); setShowSuccess(true); form.reset(); setFiles([]);
+      } else {
+        // Surface the server's actual reason (e.g. validation / 429) instead of a generic message.
+        let msg = t.contact.error;
+        try { const j = await res.json(); if (j?.error) msg = j.error; } catch { /* ignore */ }
+        setErrorMsg(msg);
+        setStatus('error');
+      }
+    } catch { setErrorMsg(t.contact.error); setStatus('error'); }
   }
 
   const field = 'mt-1 w-full rounded-md border border-steel-300 px-3 py-2 text-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand';
@@ -123,7 +132,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
           </p>
         )}
         {status === 'error' && (
-          <p className="rounded-md border border-red-200 bg-red-50 p-3 text-sm font-medium text-red-800">{t.contact.error}</p>
+          <p className="rounded-md border border-red-200 bg-red-50 p-3 text-sm font-medium text-red-800">{errorMsg || t.contact.error}</p>
         )}
       </div>
     </form>

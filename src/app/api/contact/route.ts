@@ -84,9 +84,13 @@ export async function POST(req: Request) {
   }
 
   const ip = clientIp(req);
-  const limit = rateLimit(`contact:${ip}`, 5, 60_000);
-  if (!limit.ok) {
-    return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
+  // Rate limit only in production. In dev all requests share the 'unknown' bucket
+  // (no cf-connecting-ip locally), which would falsely trip during testing.
+  if (process.env.NODE_ENV === 'production') {
+    const limit = rateLimit(`contact:${ip}`, 8, 60_000);
+    if (!limit.ok) {
+      return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
+    }
   }
 
   let form: FormData;
