@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Home", "about": "About Us", "products": "Products",
+    "industries": "Industries", "quality": "Quality Control",
+    "factory": "Factory", "blog": "Knowledge Center", "contact": "Contact"
+  },
+  "cta": {
+    "quote": "Request a Quote", "contact": "Contact Us",
+    "solutions": "Our Solutions", "downloadProfile": "Download Company Profile",
+    "uploadDrawing": "Upload CAD Drawing", "sendInquiry": "Send Inquiry"
+  },
+  "home": {
+    "h1": "Precision Investment Casting Manufacturer in China",
+    "heroSub": "Design-to-delivery casting and CNC machining solutions. ISO 9001:2015 certified, with 25+ years of foundry expertise serving global B2B markets.",
+    "investmentCasting": "Investment Casting Solutions",
+    "investmentCastingBody": "High-precision lost-wax (investment) casting in stainless steel, carbon steel, and heat-resistant alloys for demanding industrial components.",
+    "cnc": "CNC Machining Services",
+    "cncBody": "21 advanced machining centers — high-speed CNC milling, EDM, wire-cutting, and 4/5-axis machining for tight-tolerance finished parts.",
+    "industries": "Industries We Serve",
+    "whyChoose": "Why Choose Dongying Casting",
+    "quality": "Quality Control and Certifications",
+    "factory": "Factory and Production Capabilities",
+    "global": "Global Export Markets",
+    "requestQuote": "Request a Custom Quote",
+    "requestQuoteBody": "Send drawings or specifications and our engineers will respond with a detailed quotation, typically within 24 hours.",
+    "subStainless": "Stainless Steel Casting",
+    "subCarbon": "Carbon Steel Casting",
+    "subLostWax": "Lost Wax Casting",
+    "subCnc": "Precision CNC Machining",
+    "subAutomotive": "Automotive Parts",
+    "subMarine": "Marine Components",
+    "subMachinery": "Industrial Machinery Parts",
+    "subPump": "Pump and Valve Components",
+    "stats": { "experience": "Years Experience", "centers": "Machining Centers", "markets": "Export Markets", "employees": "Skilled Staff" }
+  },
+  "why": {
+    "experience": "25+ years of casting & mould expertise",
+    "experienceBody": "Founded in 2000 in Dongying, Shandong, with deep practical know-how in mould design, manufacturing, and online mould testing.",
+    "certified": "ISO 9001:2015 certified quality",
+    "certifiedBody": "Incoming material inspection, in-process monitoring, shipment inspection, and after-sales service across every production stage.",
+    "export": "Own export license, worldwide shipping",
+    "exportBody": "Direct export via Qingdao, Shanghai, Tianjin and Dongying ports. Incoterms FOB, CIF, EXW and more.",
+    "oneStop": "One-stop, design-to-delivery",
+    "oneStopBody": "Independent mould workshop plus deep CNC machining — prototype, casting, machining, and finishing under one roof."
+  },
+  "about": {
+    "title": "About Dongying Casting",
+    "intro": "Dongying Wanlong Mechanical Mould Co., Ltd. was founded in 2000 in Dongying City, Shandong — the core city of the Yellow River Delta's Shengli Oilfield. The company integrates design, production, prototype assembly, and mould testing, with precision casting moulds as its primary business.",
+    "history": "Company History",
+    "historyBody": "Through years of development and accumulated experience, we have built comprehensive expertise in mould design, manufacturing, machining, and online mould testing — particularly in automated mould creation and maintenance-free wax mould machining.",
+    "capacity": "Production Capacity",
+    "capacityBody": "101–200 employees and an annual capacity supporting US$50–100 million in output, with peak-season lead times of 1–3 months.",
+    "certs": "Certifications",
+    "team": "Our Team",
+    "teamBody": "A professional team of senior design engineers leveraging CAM and CAE simulation software to optimize every mould and component."
+  },
+  "products": {
+    "title": "Products",
+    "intro": "Comprehensive casting and machining solutions across multiple metals and alloys.",
+    "items": {
+      "investment": { "name": "Investment Castings", "body": "High-precision lost-wax investment castings for complex industrial components." },
+      "stainless": { "name": "Stainless Steel Castings", "body": "Corrosion-resistant stainless steel casting for marine, food, and medical applications." },
+      "carbon": { "name": "Carbon Steel Castings", "body": "Durable carbon steel castings for machinery and structural parts." },
+      "heat": { "name": "Heat Resistant Steel Castings", "body": "High-temperature alloy castings for turbine blades, vanes, and nozzles." },
+      "cnc": { "name": "CNC Machining Parts", "body": "Tight-tolerance finished parts via 4/5-axis CNC, EDM, and wire-cutting." },
+      "custom": { "name": "Custom Components", "body": "Made-to-drawing components from prototype to series production." }
+    }
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "intro": "Precision castings and machined parts trusted across demanding sectors worldwide.",
+    "items": {
+      "automotive": "Automotive", "marine": "Marine", "oilgas": "Oil & Gas",
+      "agriculture": "Agriculture", "machinery": "Industrial Machinery",
+      "construction": "Construction", "medical": "Medical Equipment"
+    }
+  },
+  "quality": {
+    "title": "Quality Control & Certifications",
+    "intro": "Our commitment to quality is unwavering, built on the ISO 9001:2015 quality management system.",
+    "iso": "ISO Certifications",
+    "isoBody": "ISO 9001:2015 / GB/T 19001 and CE, covering supply-chain management, design and development, and customer information management.",
+    "testing": "Testing Equipment",
+    "testingBody": "CAM and CAE simulation analysis, statistical quality control (SQC), and control charting.",
+    "inspection": "Inspection Process",
+    "inspectionBody": "Incoming material inspection, in-process monitoring, shipment inspection, and after-sales service."
+  },
+  "factory": {
+    "title": "Factory & Production Capabilities",
+    "intro": "An independent mould workshop with deep CNC machining capacity.",
+    "line": "Production Line",
+    "equipment": "Equipment",
+    "equipmentBody": "21 advanced domestic and imported machining centers, including high-speed CNC engraving and milling machines, CNC mirror EDM machines, slow wire-cutting machines, and 4-axis and 5-axis machining centers.",
+    "process": "Manufacturing Process",
+    "processSteps": ["Design & CAM/CAE", "Mould making", "Wax injection", "Shell building", "Casting & pouring", "CNC machining", "Inspection & finishing"]
+  },
+  "blog": {
+    "title": "Knowledge Center",
+    "intro": "Technical articles on casting and machining processes.",
+    "readMore": "Read more",
+    "posts": {
+      "investment": "A Practical Guide to Investment Casting",
+      "lostWax": "Lost Wax Casting: Process, Benefits, and Applications",
+      "stainless": "Stainless Steel Casting: Grades and Selection",
+      "cnc": "CNC Machining for Cast Components",
+      "finishing": "Surface Finishing Options for Cast Parts",
+      "heat": "Heat Treatment of Steel Castings"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Tell us about your project. Upload drawings and our engineers will respond with a detailed quotation.",
+    "name": "Full name", "email": "Email", "company": "Company", "phone": "Phone",
+    "message": "Message / requirements", "attachment": "Attach drawing (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "consent": "I agree to be contacted regarding my inquiry.",
+    "submit": "Send Inquiry",
+    "success": "Thank you — your inquiry has been received. We will respond shortly.",
+    "error": "Something went wrong. Please try again or email us directly.",
+    "info": "Company Information",
+    "hours": "Mon–Sat, 8:00–18:00 (GMT+8)"
+  },
+  "footer": {
+    "tagline": "Precision investment casting & CNC machining since 2000.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "certifications": "Certifications",
+    "rights": "All rights reserved.",
+    "ports": "Export Ports"
+  }
+}

@@ -1,0 +1,132 @@
+import { NextResponse } from 'next/server';
+import { inquirySchema, validateUpload, verifyFileSignature, type InquiryInput } from '@/lib/validation';
+import { rateLimit, clientIp, verifyTurnstile } from '@/lib/rate-limit';
+import { SITE } from '@/lib/site';
+
+export const runtime = 'nodejs';
+
+const escapeHtml = (s: string) =>
+  s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
+
+// Sends the inquiry to the company inbox (SITE.email) via Resend's REST API.
+// No SDK dependency — just fetch. Requires RESEND_API_KEY; CONTACT_FROM must be a
+// verified sender on your Resend domain. Returns true if accepted by the provider.
+async function sendInquiryEmail(data: InquiryInput, attachment: File | null): Promise<boolean> {
+  const key = process.env.RESEND_API_KEY;
+  const from = process.env.CONTACT_FROM || 'Website <noreply@dywanlong.com>';
+  if (!key) {
+    console.warn('[contact] RESEND_API_KEY not set — inquiry not emailed.', { to: SITE.email, name: data.name });
+    return false;
+  }
+  const html = `
+    <h2>New website inquiry</h2>
+    <p><strong>Name:</strong> ${escapeHtml(data.name)}</p>
+    <p><strong>Email:</strong> ${escapeHtml(data.email)}</p>
+    <p><strong>Company:</strong> ${escapeHtml(data.company || '-')}</p>
+    <p><strong>Phone:</strong> ${escapeHtml(data.phone || '-')}</p>
+    <p><strong>Message:</strong></p>
+    <p>${escapeHtml(data.message).replace(/\n/g, '<br>')}</p>`;
+
+  const oneLine = (s: string) => s.replace(/[\r\n]+/g, ' ').trim();
+  const body: Record<string, unknown> = {
+    from,
+    to: [SITE.email],
+    reply_to: data.email,
+    subject: oneLine(`New inquiry from ${data.name}${data.company ? ` (${data.company})` : ''}`),
+    html
+  };
+
+  if (attachment) {
+    const buf = Buffer.from(await attachment.arrayBuffer());
+    body.attachments = [{ filename: attachment.name, content: buf.toString('base64') }];
+  }
+
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'content-type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (!res.ok) {
+      console.error('[contact] Resend error', res.status, await res.text());
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.error('[contact] Resend request failed', e);
+    return false;
+  }
+}
+
+// CSRF mitigation: this endpoint is cookieless, so we verify the request was
+// initiated from our own origin (Origin/Referer must match the Host).
+function sameOrigin(req: Request): boolean {
+  const host = req.headers.get('host');
+  const src = req.headers.get('origin') || req.headers.get('referer');
+  if (!host) return false;
+  if (!src) return false; // require a source header for state-changing POSTs
+  try {
+    return new URL(src).host === host;
+  } catch {
+    return false;
+  }
+}
+
+export async function POST(req: Request) {
+  if (!sameOrigin(req)) {
+    return NextResponse.json({ error: 'Cross-origin request blocked.' }, { status: 403 });
+  }
+
+  const ip = clientIp(req);
+  const limit = rateLimit(`contact:${ip}`, 5, 60_000);
+  if (!limit.ok) {
+    return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
+  }
+
+  let form: FormData;
+  try {
+    form = await req.formData();
+  } catch {
+    return NextResponse.json({ error: 'Invalid form data.' }, { status: 400 });
+  }
+
+  const parsed = inquirySchema.safeParse({
+    name: form.get('name'),
+    email: form.get('email'),
+    company: form.get('company') ?? '',
+    phone: form.get('phone') ?? '',
+    message: form.get('message'),
+    consent: form.get('consent') === 'true',
+    website: form.get('website') ?? '',
+    turnstileToken: form.get('cf-turnstile-response')?.toString()
+  });
+
+  if (!parsed.success) {
+    return NextResponse.json({ error: 'Validation failed.', issues: parsed.error.flatten() }, { status: 422 });
+  }
+  // Honeypot tripped -> silently accept (don't tip off bots), but drop.
+  if (parsed.data.website) return NextResponse.json({ ok: true });
+
+  const human = await verifyTurnstile(parsed.data.turnstileToken, ip);
+  if (!human) return NextResponse.json({ error: 'Verification failed.' }, { status: 403 });
+
+  const file = form.get('attachment');
+  let attachment: File | null = null;
+  if (file && file instanceof File && file.size > 0) {
+    // 1) Name / size / extension / MIME checks.
+    const err = validateUpload({ name: file.name, size: file.size, type: file.type });
+    if (err) return NextResponse.json({ error: err }, { status: 422 });
+    // 2) Content check — read leading bytes and verify the real file signature.
+    const head = new Uint8Array(await file.slice(0, 4096).arrayBuffer());
+    const sigErr = verifyFileSignature(file.name, head);
+    if (sigErr) return NextResponse.json({ error: sigErr }, { status: 422 });
+    attachment = file;
+    // For production hardening: scan the file (AV) before persisting/forwarding.
+  }
+
+  // Deliver the inquiry to the company inbox (SITE.email).
+  const sent = await sendInquiryEmail(parsed.data, attachment);
+  console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), hasFile: !!attachment, delivered: sent }));
+
+  return NextResponse.json({ ok: true });
+}

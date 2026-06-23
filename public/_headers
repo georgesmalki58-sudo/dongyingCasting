@@ -1,0 +1,11 @@
+# NOTE: _headers is honored by Cloudflare *Pages*. This project deploys as a
+# Cloudflare *Worker* (OpenNext), where headers come from middleware.ts +
+# next.config.mjs. This file is kept for a Pages fallback / static hosting.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), browsing-topics=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin

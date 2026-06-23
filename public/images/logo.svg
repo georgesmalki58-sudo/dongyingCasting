@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 104" role="img" aria-label="Dongying Wanlong logo">
+  <title>Dongying Wanlong</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD24A"/>
+      <stop offset="1" stop-color="#E0900F"/>
+    </linearGradient>
+  </defs>
+  <!-- Bold folded "W" emblem (approximation of the 万隆 mark) -->
+  <path d="M12 16 L34 84 L60 38 L86 84 L108 16"
+        fill="none" stroke="url(#g)" stroke-width="15"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- darker right facets for a folded look -->
+  <path d="M60 38 L86 84 L108 16" fill="none" stroke="#C97A06" stroke-width="6"
+        stroke-linejoin="round" stroke-linecap="round" opacity="0.55"/>
+  <!-- navy base bar -->
+  <rect x="14" y="90" width="92" height="10" rx="3" fill="#0b3d91"/>
+</svg>

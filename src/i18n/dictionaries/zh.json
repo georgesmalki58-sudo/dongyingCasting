@@ -1,0 +1,71 @@
+{
+  "nav": { "home": "首页", "about": "关于我们", "products": "产品", "industries": "应用行业", "quality": "质量控制", "factory": "工厂", "blog": "知识中心", "contact": "联系我们" },
+  "cta": { "quote": "获取报价", "contact": "联系我们", "solutions": "我们的方案", "downloadProfile": "下载公司简介", "uploadDrawing": "上传图纸", "sendInquiry": "发送询盘" },
+  "home": {
+    "h1": "中国精密熔模铸造制造商",
+    "heroSub": "从设计到交付的铸造与CNC加工解决方案。通过ISO 9001:2015认证，25年以上铸造经验，服务全球B2B市场。",
+    "investmentCasting": "熔模铸造解决方案",
+    "investmentCastingBody": "采用不锈钢、碳钢及耐热合金的高精度失蜡（熔模）铸造，满足严苛的工业部件需求。",
+    "cnc": "CNC加工服务",
+    "cncBody": "21台先进加工中心——高速CNC铣削、电火花、慢走丝及4/5轴加工，提供高精度成品零件。",
+    "industries": "应用行业", "whyChoose": "为何选择东营铸造", "quality": "质量控制与认证",
+    "factory": "工厂与生产能力", "global": "全球出口市场", "requestQuote": "定制报价",
+    "requestQuoteBody": "发送图纸或规格，我们的工程师通常将在24小时内提供详细报价。",
+    "subStainless": "不锈钢铸造", "subCarbon": "碳钢铸造", "subLostWax": "失蜡铸造", "subCnc": "精密CNC加工",
+    "subAutomotive": "汽车零件", "subMarine": "船舶配件", "subMachinery": "工业机械零件", "subPump": "泵阀部件",
+    "stats": { "experience": "年经验", "centers": "加工中心", "markets": "出口市场", "employees": "熟练员工" }
+  },
+  "why": {
+    "experience": "25年以上铸造与模具经验", "experienceBody": "2000年成立于山东东营，在模具设计、制造及在线试模方面拥有深厚实践经验。",
+    "certified": "ISO 9001:2015认证质量", "certifiedBody": "覆盖每个生产阶段的来料检验、过程监控、出货检验及售后服务。",
+    "export": "自营出口，全球发货", "exportBody": "经青岛、上海、天津及东营港口直接出口。贸易术语包括FOB、CIF、EXW等。",
+    "oneStop": "一站式，从设计到交付", "oneStopBody": "独立模具车间加深度CNC加工——样品、铸造、加工及表面处理一体化。"
+  },
+  "about": {
+    "title": "关于东营铸造",
+    "intro": "东营万隆机械模具有限公司成立于2000年，位于黄河三角洲胜利油田核心城市山东省东营市。公司集设计、生产、样品组装和试模于一体，以精密铸造模具为主营业务。",
+    "history": "公司历史", "historyBody": "经过多年发展与经验积累，我们在模具设计、制造、加工及在线试模方面建立了全面的专业能力，尤其在自动化制模与免维护蜡模加工方面。",
+    "capacity": "生产能力", "capacityBody": "101-200名员工，年产值达5000万至1亿美元，旺季交期为1-3个月。",
+    "certs": "认证", "team": "我们的团队", "teamBody": "由资深设计工程师组成的专业团队，运用CAM和CAE仿真软件优化每一件模具和部件。"
+  },
+  "products": {
+    "title": "产品", "intro": "覆盖多种金属与合金的综合铸造与加工解决方案。",
+    "items": {
+      "investment": { "name": "熔模铸件", "body": "用于复杂工业部件的高精度失蜡熔模铸件。" },
+      "stainless": { "name": "不锈钢铸件", "body": "用于船舶、食品及医疗领域的耐腐蚀不锈钢铸件。" },
+      "carbon": { "name": "碳钢铸件", "body": "用于机械和结构件的耐用碳钢铸件。" },
+      "heat": { "name": "耐热钢铸件", "body": "用于涡轮叶片、导叶和喷嘴的高温合金铸件。" },
+      "cnc": { "name": "CNC加工件", "body": "通过4/5轴CNC、电火花及慢走丝加工的高精度成品件。" },
+      "custom": { "name": "定制部件", "body": "从样品到批量生产的按图定制部件。" }
+    }
+  },
+  "industries": {
+    "title": "应用行业", "intro": "精密铸件与加工件深受全球严苛行业信赖。",
+    "items": { "automotive": "汽车", "marine": "船舶", "oilgas": "石油天然气", "agriculture": "农业", "machinery": "工业机械", "construction": "建筑", "medical": "医疗设备" }
+  },
+  "quality": {
+    "title": "质量控制与认证", "intro": "我们对质量的承诺坚定不移，建立在ISO 9001:2015质量管理体系之上。",
+    "iso": "ISO认证", "isoBody": "ISO 9001:2015 / GB/T 19001及CE，涵盖供应链管理、设计开发及客户信息管理。",
+    "testing": "检测设备", "testingBody": "CAM和CAE仿真分析、统计质量控制（SQC）及控制图。",
+    "inspection": "检验流程", "inspectionBody": "来料检验、过程监控、出货检验及售后服务。"
+  },
+  "factory": {
+    "title": "工厂与生产能力", "intro": "拥有深度CNC加工能力的独立模具车间。",
+    "line": "生产线", "equipment": "设备",
+    "equipmentBody": "21台国内外先进加工中心，包括高速CNC雕刻铣床、CNC镜面电火花机、慢走丝机及4轴和5轴加工中心。",
+    "process": "制造流程", "processSteps": ["设计与CAM/CAE", "制模", "注蜡", "制壳", "浇铸", "CNC加工", "检验与精整"]
+  },
+  "blog": {
+    "title": "知识中心", "intro": "关于铸造与加工工艺的技术文章。", "readMore": "阅读更多",
+    "posts": { "investment": "熔模铸造实用指南", "lostWax": "失蜡铸造：工艺、优势与应用", "stainless": "不锈钢铸造：牌号与选择", "cnc": "铸造部件的CNC加工", "finishing": "铸件表面处理方案", "heat": "钢铸件的热处理" }
+  },
+  "contact": {
+    "title": "联系我们", "intro": "请告知您的项目需求。上传图纸，我们的工程师将提供详细报价。",
+    "name": "姓名", "email": "电子邮箱", "company": "公司", "phone": "电话",
+    "message": "留言／需求", "attachment": "附图纸（PDF、DOCX、XLSX、STEP、DWG、DXF、ZIP、JPG、PNG）",
+    "consent": "我同意就我的询盘接受联系。", "submit": "发送询盘",
+    "success": "感谢您——我们已收到您的询盘，将尽快回复。", "error": "出现问题，请重试或直接发邮件给我们。",
+    "info": "公司信息", "hours": "周一至周六，8:00–18:00（GMT+8）"
+  },
+  "footer": { "tagline": "自2000年起专注精密熔模铸造与CNC加工。", "quickLinks": "快速链接", "contact": "联系方式", "certifications": "认证", "rights": "版权所有。", "ports": "出口港口" }
+}

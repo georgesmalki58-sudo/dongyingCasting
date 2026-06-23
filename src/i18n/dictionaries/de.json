@@ -1,0 +1,71 @@
+{
+  "nav": { "home": "Startseite", "about": "Über uns", "products": "Produkte", "industries": "Branchen", "quality": "Qualitätskontrolle", "factory": "Fabrik", "blog": "Wissenszentrum", "contact": "Kontakt" },
+  "cta": { "quote": "Angebot anfordern", "contact": "Kontakt", "solutions": "Unsere Lösungen", "downloadProfile": "Firmenprofil herunterladen", "uploadDrawing": "CAD-Zeichnung hochladen", "sendInquiry": "Anfrage senden" },
+  "home": {
+    "h1": "Hersteller von Präzisions-Feinguss in China",
+    "heroSub": "Guss- und CNC-Bearbeitungslösungen von der Konstruktion bis zur Lieferung. ISO 9001:2015 zertifiziert, mit über 25 Jahren Gießerei-Erfahrung für globale B2B-Märkte.",
+    "investmentCasting": "Feinguss-Lösungen",
+    "investmentCastingBody": "Hochpräziser Feinguss (Wachsausschmelzverfahren) in Edelstahl, Kohlenstoffstahl und hitzebeständigen Legierungen für anspruchsvolle Industriebauteile.",
+    "cnc": "CNC-Bearbeitungsdienste",
+    "cncBody": "21 moderne Bearbeitungszentren — Hochgeschwindigkeits-CNC-Fräsen, EDM, Drahterodieren sowie 4-/5-Achs-Bearbeitung für eng tolerierte Fertigteile.",
+    "industries": "Branchen, die wir bedienen", "whyChoose": "Warum Dongying Casting", "quality": "Qualitätskontrolle und Zertifizierungen",
+    "factory": "Fabrik und Produktionskapazitäten", "global": "Globale Exportmärkte", "requestQuote": "Individuelles Angebot anfordern",
+    "requestQuoteBody": "Senden Sie Zeichnungen oder Spezifikationen — unsere Ingenieure antworten in der Regel innerhalb von 24 Stunden mit einem detaillierten Angebot.",
+    "subStainless": "Edelstahlguss", "subCarbon": "Kohlenstoffstahlguss", "subLostWax": "Wachsausschmelzguss", "subCnc": "Präzisions-CNC-Bearbeitung",
+    "subAutomotive": "Automobilteile", "subMarine": "Schiffskomponenten", "subMachinery": "Industriemaschinenteile", "subPump": "Pumpen- und Ventilkomponenten",
+    "stats": { "experience": "Jahre Erfahrung", "centers": "Bearbeitungszentren", "markets": "Exportmärkte", "employees": "Fachkräfte" }
+  },
+  "why": {
+    "experience": "Über 25 Jahre Guss- und Formenbau-Expertise", "experienceBody": "Gegründet 2000 in Dongying, Shandong, mit fundiertem Praxiswissen in Formenkonstruktion, -fertigung und Online-Formenprüfung.",
+    "certified": "ISO 9001:2015 zertifizierte Qualität", "certifiedBody": "Wareneingangsprüfung, Prozessüberwachung, Versandprüfung und Kundendienst über alle Produktionsstufen.",
+    "export": "Eigene Exportlizenz, weltweiter Versand", "exportBody": "Direktexport über die Häfen Qingdao, Shanghai, Tianjin und Dongying. Incoterms FOB, CIF, EXW und mehr.",
+    "oneStop": "Alles aus einer Hand, von Design bis Lieferung", "oneStopBody": "Eigene Formenwerkstatt plus CNC-Bearbeitung — Prototyp, Guss, Bearbeitung und Finish unter einem Dach."
+  },
+  "about": {
+    "title": "Über Dongying Casting",
+    "intro": "Die Dongying Wanlong Mechanical Mould Co., Ltd. wurde im Jahr 2000 in Dongying, Shandong, gegründet — der Kernstadt des Shengli-Ölfelds im Gelben-Fluss-Delta. Das Unternehmen vereint Konstruktion, Produktion, Prototypenmontage und Formenprüfung, mit Präzisionsgussformen als Hauptgeschäft.",
+    "history": "Unternehmensgeschichte", "historyBody": "Durch jahrelange Entwicklung und gesammelte Erfahrung haben wir umfassende Kompetenz in Formenkonstruktion, -fertigung, -bearbeitung und Online-Formenprüfung aufgebaut — besonders bei automatisierter Formenerstellung und wartungsfreier Wachsformbearbeitung.",
+    "capacity": "Produktionskapazität", "capacityBody": "101–200 Mitarbeiter und eine Jahreskapazität, die einen Output von 50–100 Mio. US$ trägt, mit Lieferzeiten von 1–3 Monaten in der Hochsaison.",
+    "certs": "Zertifizierungen", "team": "Unser Team", "teamBody": "Ein professionelles Team erfahrener Konstruktionsingenieure nutzt CAM- und CAE-Simulationssoftware zur Optimierung jeder Form und jedes Bauteils."
+  },
+  "products": {
+    "title": "Produkte", "intro": "Umfassende Guss- und Bearbeitungslösungen für verschiedene Metalle und Legierungen.",
+    "items": {
+      "investment": { "name": "Feingussteile", "body": "Hochpräzise Feingussteile im Wachsausschmelzverfahren für komplexe Industriebauteile." },
+      "stainless": { "name": "Edelstahlguss", "body": "Korrosionsbeständiger Edelstahlguss für Marine-, Lebensmittel- und Medizinanwendungen." },
+      "carbon": { "name": "Kohlenstoffstahlguss", "body": "Robuste Kohlenstoffstahlgüsse für Maschinen- und Strukturteile." },
+      "heat": { "name": "Hitzebeständiger Stahlguss", "body": "Hochtemperatur-Legierungsguss für Turbinenschaufeln, Leitschaufeln und Düsen." },
+      "cnc": { "name": "CNC-Bearbeitungsteile", "body": "Eng tolerierte Fertigteile durch 4-/5-Achs-CNC, EDM und Drahterodieren." },
+      "custom": { "name": "Sonderbauteile", "body": "Maßgefertigte Bauteile vom Prototyp bis zur Serienfertigung." }
+    }
+  },
+  "industries": {
+    "title": "Branchen, die wir bedienen", "intro": "Präzisionsguss und bearbeitete Teile, denen anspruchsvolle Branchen weltweit vertrauen.",
+    "items": { "automotive": "Automobil", "marine": "Marine", "oilgas": "Öl & Gas", "agriculture": "Landwirtschaft", "machinery": "Industriemaschinen", "construction": "Bauwesen", "medical": "Medizintechnik" }
+  },
+  "quality": {
+    "title": "Qualitätskontrolle & Zertifizierungen", "intro": "Unser Bekenntnis zur Qualität ist unerschütterlich und basiert auf dem Qualitätsmanagementsystem ISO 9001:2015.",
+    "iso": "ISO-Zertifizierungen", "isoBody": "ISO 9001:2015 / GB/T 19001 und CE, umfassend Lieferkettenmanagement, Entwicklung und Kundeninformationsmanagement.",
+    "testing": "Prüfausrüstung", "testingBody": "CAM- und CAE-Simulationsanalyse, statistische Qualitätskontrolle (SQC) und Regelkarten.",
+    "inspection": "Prüfprozess", "inspectionBody": "Wareneingangsprüfung, Prozessüberwachung, Versandprüfung und Kundendienst."
+  },
+  "factory": {
+    "title": "Fabrik & Produktionskapazitäten", "intro": "Eine eigene Formenwerkstatt mit umfangreicher CNC-Bearbeitungskapazität.",
+    "line": "Produktionslinie", "equipment": "Ausrüstung",
+    "equipmentBody": "21 moderne in- und ausländische Bearbeitungszentren, darunter Hochgeschwindigkeits-CNC-Graviér- und Fräsmaschinen, CNC-Spiegel-EDM-Maschinen, Langsam-Drahtschneidemaschinen sowie 4- und 5-Achs-Bearbeitungszentren.",
+    "process": "Fertigungsprozess", "processSteps": ["Design & CAM/CAE", "Formenbau", "Wachsspritzguss", "Schalenaufbau", "Gießen", "CNC-Bearbeitung", "Prüfung & Finish"]
+  },
+  "blog": {
+    "title": "Wissenszentrum", "intro": "Fachartikel zu Guss- und Bearbeitungsprozessen.", "readMore": "Weiterlesen",
+    "posts": { "investment": "Ein Praxisleitfaden zum Feinguss", "lostWax": "Wachsausschmelzguss: Prozess, Vorteile und Anwendungen", "stainless": "Edelstahlguss: Güten und Auswahl", "cnc": "CNC-Bearbeitung für Gussteile", "finishing": "Oberflächenveredelung für Gussteile", "heat": "Wärmebehandlung von Stahlgussteilen" }
+  },
+  "contact": {
+    "title": "Kontakt", "intro": "Erzählen Sie uns von Ihrem Projekt. Laden Sie Zeichnungen hoch — unsere Ingenieure antworten mit einem detaillierten Angebot.",
+    "name": "Vollständiger Name", "email": "E-Mail", "company": "Firma", "phone": "Telefon",
+    "message": "Nachricht / Anforderungen", "attachment": "Zeichnung anhängen (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "consent": "Ich bin damit einverstanden, bezüglich meiner Anfrage kontaktiert zu werden.", "submit": "Anfrage senden",
+    "success": "Vielen Dank — Ihre Anfrage ist eingegangen. Wir antworten in Kürze.", "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.",
+    "info": "Firmeninformationen", "hours": "Mo–Sa, 8:00–18:00 (GMT+8)"
+  },
+  "footer": { "tagline": "Präzisions-Feinguss & CNC-Bearbeitung seit 2000.", "quickLinks": "Schnelllinks", "contact": "Kontakt", "certifications": "Zertifizierungen", "rights": "Alle Rechte vorbehalten.", "ports": "Exporthäfen" }
+}
