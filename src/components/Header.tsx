@@ -15,7 +15,7 @@ export function Header({ locale }: { locale: Locale }) {
           <span className="text-lg font-bold tracking-tight text-steel-900">Dongying<span className="text-brand">Casting</span></span>
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
-          {NAV.map((item) => (
+          {NAV.filter((item) => item.key !== 'home').map((item) => (
             <Link key={item.key} href={item.href ? `${base}/${item.href}` : base}
               className="text-sm font-medium text-steel-700 hover:text-brand">
               {t.nav[item.key]}
