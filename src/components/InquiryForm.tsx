@@ -145,7 +145,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
       {TURNSTILE_SITE_KEY ? (
         <>
           <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
-          <div className="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} />
+          <div className="cf-turnstile" style={{ minHeight: 65 }} data-sitekey={TURNSTILE_SITE_KEY} />
         </>
       ) : null}
       <button type="submit" disabled={status === 'sending' || overLimit} className="btn-primary w-full sm:w-auto disabled:cursor-not-allowed disabled:opacity-60">

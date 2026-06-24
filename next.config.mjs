@@ -24,6 +24,16 @@ const nextConfig = {
           { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
           { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' }
         ]
+      },
+      // Long cache for hashed build assets (safe — filenames change on rebuild).
+      {
+        source: '/_next/static/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }]
+      },
+      // Static images are unhashed — cache 30 days; rename files when you change them.
+      {
+        source: '/images/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000' }]
       }
     ];
   }

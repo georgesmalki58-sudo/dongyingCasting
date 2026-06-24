@@ -33,7 +33,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <p>{SITE.address.street}, {SITE.address.locality}, {SITE.address.region}, {SITE.address.countryName}</p>
             <p><a className="hover:text-white" href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
             <p><a className="hover:text-white" href={`tel:${SITE.phone}`}>{SITE.phone}</a></p>
-            <p className="text-xs text-steel-500">{t.contact.hours}</p>
+            <p className="text-xs text-steel-400">{t.contact.hours}</p>
           </address>
         </div>
         <div>
@@ -48,12 +48,12 @@ export function Footer({ locale }: { locale: Locale }) {
         </div>
       </div>
       <div className="border-t border-steel-800">
-        <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-steel-500 sm:flex-row">
+        <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-steel-400 sm:flex-row">
           <p>© {new Date().getFullYear()} {companyName(locale)}. {t.footer.rights}</p>
           <p>Incoterms: {SITE.incoterms.join(', ')}</p>
         </div>
         {locale === 'zh' && SITE.icp ? (
-          <div className="container-x pb-5 text-center text-xs text-steel-500">
+          <div className="container-x pb-5 text-center text-xs text-steel-400">
             <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-steel-300">
               {SITE.icp}
             </a>

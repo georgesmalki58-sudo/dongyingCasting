@@ -6,8 +6,10 @@ import { SITE } from '@/lib/site';
 import { dir, isLocale, type Locale } from '@/i18n/config';
 import { BaiduAnalytics } from '@/components/BaiduAnalytics';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const robotoMono = Roboto_Mono({ subsets: ['latin'], variable: '--font-roboto-mono', display: 'swap' });
+// 'swap' with a metric-matched fallback (adjustFontFallback default) avoids the
+// layout shift the page had when the webfont swapped in (was driving CLS 0.304).
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap', fallback: ['system-ui', 'arial'] });
+const robotoMono = Roboto_Mono({ subsets: ['latin'], variable: '--font-roboto-mono', display: 'optional', fallback: ['ui-monospace', 'monospace'] });
 
 async function activeLocale(): Promise<Locale> {
   const l = (await headers()).get('x-locale') ?? 'en';

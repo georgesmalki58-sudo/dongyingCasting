@@ -50,6 +50,7 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
       }))
     );
 
+    // 1) Notify the company.
     await transporter.sendMail({
       from,
       to: SITE.contactTo,
@@ -58,6 +59,26 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
       html,
       attachments: fileAtt
     });
+
+    // 2) Auto-reply confirmation to the sender.
+    const ack = `
+      <p>Dear ${escapeHtml(data.name)},</p>
+      <p>Thank you for contacting <strong>Dongying Casting</strong> (${escapeHtml(SITE.legalName)}). We have received your inquiry and our engineers will respond shortly, typically within 24 hours.</p>
+      <p><strong>Your message:</strong></p>
+      <blockquote style="border-left:3px solid #0b3d91;padding-left:12px;color:#444">${escapeHtml(data.message).replace(/\n/g, '<br>')}</blockquote>
+      <p>Best regards,<br>Dongying Casting Team<br>${escapeHtml(SITE.contactTo)} · ${escapeHtml(SITE.phone)}</p>`;
+    try {
+      await transporter.sendMail({
+        from,
+        to: data.email,
+        replyTo: SITE.contactTo,
+        subject: 'We received your inquiry — Dongying Casting',
+        html: ack
+      });
+    } catch (e) {
+      console.error('[contact] auto-reply failed (inquiry still delivered)', e);
+    }
+
     return true;
   } catch (e) {
     console.error('[contact] SMTP send failed', e);
