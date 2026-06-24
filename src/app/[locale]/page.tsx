@@ -54,7 +54,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 
       {/* HERO */}
       <section className="relative isolate flex min-h-[560px] flex-col justify-center overflow-hidden bg-steel-950 text-white sm:min-h-[640px]">
-        <Image src={IMAGES.hero} alt="" fill priority sizes="100vw"
+        <Image src={IMAGES.hero} alt="Dongying Wanlong precision investment casting factory in Dongying, Shandong, China" fill priority sizes="100vw"
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60" />
         {/* Darker on the left for text legibility, clearer building on the right */}
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-steel-950/95 via-steel-950/80 to-steel-950/55" />
