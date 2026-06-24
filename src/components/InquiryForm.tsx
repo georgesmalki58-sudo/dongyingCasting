@@ -16,11 +16,11 @@ export function InquiryForm({ t }: { t: Dictionary }) {
   const total = files.reduce((sum, f) => sum + f.size, 0);
   const overLimit = total > MAX_TOTAL;
 
-  function addFiles(list: FileList | null) {
-    if (!list) return;
+  function addFiles(picked: File[]) {
+    if (!picked.length) return;
     setFiles((prev) => {
       const merged = [...prev];
-      for (const f of Array.from(list)) {
+      for (const f of picked) {
         if (!merged.some((m) => m.name === f.name && m.size === f.size)) merged.push(f);
       }
       return merged;
@@ -112,7 +112,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
           type="file"
           multiple
           accept=".pdf,.docx,.xlsx,.step,.stp,.dwg,.dxf,.zip,.jpg,.jpeg,.png"
-          onChange={(e) => { addFiles(e.target.files); e.target.value = ''; }}
+          onChange={(e) => { addFiles(Array.from(e.target.files ?? [])); e.target.value = ''; }}
           className="mt-1 block w-full text-sm text-steel-600 file:mr-3 file:rounded file:border-0 file:bg-steel-100 file:px-3 file:py-2 file:text-sm file:font-semibold"
         />
       </label>

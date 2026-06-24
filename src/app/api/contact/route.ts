@@ -79,6 +79,7 @@ function sameOrigin(req: Request): boolean {
 }
 
 export async function POST(req: Request) {
+  try {
   if (!sameOrigin(req)) {
     return NextResponse.json({ error: 'Cross-origin request blocked.' }, { status: 403 });
   }
@@ -148,4 +149,13 @@ export async function POST(req: Request) {
   console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), files: files.length, delivered: sent }));
 
   return NextResponse.json({ ok: true });
+  } catch (e) {
+    // Any unexpected error becomes a readable JSON response instead of an opaque 500.
+    console.error('[contact] unhandled error', e);
+    const msg =
+      process.env.NODE_ENV === 'production'
+        ? 'Server error. Please email us directly at the address shown.'
+        : `Server error: ${(e as Error)?.message ?? String(e)}`;
+    return NextResponse.json({ error: msg }, { status: 500 });
+  }
 }

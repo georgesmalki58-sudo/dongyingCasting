@@ -15,6 +15,11 @@ function detectLocale(req: NextRequest): string {
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
+  // API routes are locale-agnostic — never redirect them (that would break POSTs).
+  if (pathname.startsWith('/api/')) {
+    return NextResponse.next();
+  }
+
   // 1) Locale routing: redirect bare paths to a locale-prefixed path.
   const hasLocale = (locales as readonly string[]).some(
     (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
@@ -75,5 +80,5 @@ export function middleware(req: NextRequest) {
 
 export const config = {
   // Run on everything except static assets and API (API handles its own headers).
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|assets|images|robots.txt|sitemap.xml|.*\\.\\w+$).*)']
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|assets|images|robots.txt|sitemap.xml|.*\\.\\w+$).*)']
 };
