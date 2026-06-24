@@ -55,8 +55,9 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       {/* HERO */}
       <section className="relative isolate overflow-hidden bg-steel-950 text-white">
         <Image src={IMAGES.hero} alt="" fill priority sizes="100vw"
-          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-steel-950 via-steel-950/85 to-brand-dark/40" />
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70" />
+        {/* Darker on the left for text legibility, clearer building on the right */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-steel-950/95 via-steel-950/70 to-steel-950/25" />
         <div className="container-x py-24 sm:py-32">
           <p className="eyebrow text-brand-accent">{companyName(locale)} · ISO 9001:2015</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{t.home.h1}</h1>

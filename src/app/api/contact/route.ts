@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 import { inquirySchema, validateUpload, verifyFileSignature, type InquiryInput } from '@/lib/validation';
 import { rateLimit, clientIp, verifyTurnstile } from '@/lib/rate-limit';
 import { SITE } from '@/lib/site';
@@ -8,16 +9,21 @@ export const runtime = 'nodejs';
 const escapeHtml = (s: string) =>
   s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
 
-// Sends the inquiry to the company inbox (SITE.email) via Resend's REST API.
-// No SDK dependency — just fetch. Requires RESEND_API_KEY; CONTACT_FROM must be a
-// verified sender on your Resend domain. Returns true if accepted by the provider.
+// Sends the inquiry to SITE.contactTo via SMTP (e.g. Hostinger Business Email).
+// Configure SMTP_HOST / SMTP_PORT / SMTP_USER / SMTP_PASS in the environment.
+// Returns true if the message was accepted by the SMTP server.
 async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promise<boolean> {
-  const key = process.env.RESEND_API_KEY;
-  const from = process.env.CONTACT_FROM || 'Website <noreply@dywanlong.com>';
-  if (!key) {
-    console.warn('[contact] RESEND_API_KEY not set — inquiry not emailed.', { to: SITE.contactTo, name: data.name });
+  const host = process.env.SMTP_HOST;
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  if (!host || !user || !pass) {
+    console.warn('[contact] SMTP not configured — inquiry not emailed.', { to: SITE.contactTo, name: data.name });
     return false;
   }
+  const port = Number(process.env.SMTP_PORT || 465);
+  // From must be the authenticated mailbox (or same domain) for good deliverability.
+  const from = process.env.CONTACT_FROM || `Dongying Casting <${user}>`;
+
   const html = `
     <h2>New website inquiry</h2>
     <p><strong>Name:</strong> ${escapeHtml(data.name)}</p>
@@ -28,36 +34,33 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
     <p>${escapeHtml(data.message).replace(/\n/g, '<br>')}</p>`;
 
   const oneLine = (s: string) => s.replace(/[\r\n]+/g, ' ').trim();
-  const body: Record<string, unknown> = {
-    from,
-    to: [SITE.contactTo],
-    reply_to: data.email,
-    subject: oneLine(`New inquiry from ${data.name}${data.company ? ` (${data.company})` : ''}`),
-    html
-  };
-
-  if (attachments.length) {
-    body.attachments = await Promise.all(
-      attachments.map(async (f) => ({
-        filename: f.name,
-        content: Buffer.from(await f.arrayBuffer()).toString('base64')
-      }))
-    );
-  }
 
   try {
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${key}`, 'content-type': 'application/json' },
-      body: JSON.stringify(body)
+    const transporter = nodemailer.createTransport({
+      host,
+      port,
+      secure: port === 465, // 465 = SSL, 587 = STARTTLS
+      auth: { user, pass }
     });
-    if (!res.ok) {
-      console.error('[contact] Resend error', res.status, await res.text());
-      return false;
-    }
+
+    const fileAtt = await Promise.all(
+      attachments.map(async (f) => ({
+        filename: f.name,
+        content: Buffer.from(await f.arrayBuffer())
+      }))
+    );
+
+    await transporter.sendMail({
+      from,
+      to: SITE.contactTo,
+      replyTo: data.email,
+      subject: oneLine(`New inquiry from ${data.name}${data.company ? ` (${data.company})` : ''}`),
+      html,
+      attachments: fileAtt
+    });
     return true;
   } catch (e) {
-    console.error('[contact] Resend request failed', e);
+    console.error('[contact] SMTP send failed', e);
     return false;
   }
 }
