@@ -58,21 +58,21 @@ export const NAV = [
   { key: 'contact', href: 'contact' }
 ] as const;
 
-// Local image assets (reused from the existing website, served from /public/images).
+// Local image assets, pre-compressed to WebP for fast loading (served from /public/images).
 export const IMAGES = {
   logo: '/images/logo.png',
-  hero: '/images/hero.jpg',
-  innovator: '/images/about.jpg',
-  image1: '/images/product-1.jpg',
-  image2: '/images/cnc.jpg',
-  industry1: '/images/industry-1.jpg',
-  industry2: '/images/industry-2.jpg',
-  investment1: '/images/investment-casting-1.jpg',
-  investment2: '/images/investment-casting-2.jpg',
-  lostWax: '/images/lost-wax-casting.jpg',
-  investmentSvc: '/images/service-investment.jpg',
-  product3: '/images/product-3.jpg',
-  product4: '/images/product-4.png',
-  product5: '/images/product-5.png',
-  product6: '/images/product-6.png'
+  hero: '/images/hero.webp',
+  innovator: '/images/about.webp',
+  image1: '/images/product-1.webp',
+  image2: '/images/cnc.webp',
+  industry1: '/images/industry-1.webp',
+  industry2: '/images/industry-2.webp',
+  investment1: '/images/investment-casting-1.webp',
+  investment2: '/images/investment-casting-2.webp',
+  lostWax: '/images/lost-wax-casting.webp',
+  investmentSvc: '/images/service-investment.webp',
+  product3: '/images/product-3.webp',
+  product4: '/images/product-4.webp',
+  product5: '/images/product-5.webp',
+  product6: '/images/product-6.webp'
 } as const;
