@@ -6,7 +6,8 @@ export const SITE = {
   legalNameZh: '东营万隆机械模具有限公司',
   url: 'https://dongying-casting.com',
   founded: '2000',
-  email: 'cindy@dywanlong.com',
+  email: 'cindy@dywanlong.com',          // public contact email (footer/contact/schema)
+  contactTo: 'quote@dongying-casting.com', // where contact/quote form submissions are sent
   phone: '+8613356605369',
   whatsapp: '8613356605369', // digits only, no + (used in https://wa.me/<number>)
   wechat: 'dongyingcasting',

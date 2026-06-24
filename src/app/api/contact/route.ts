@@ -15,7 +15,7 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
   const key = process.env.RESEND_API_KEY;
   const from = process.env.CONTACT_FROM || 'Website <noreply@dywanlong.com>';
   if (!key) {
-    console.warn('[contact] RESEND_API_KEY not set — inquiry not emailed.', { to: SITE.email, name: data.name });
+    console.warn('[contact] RESEND_API_KEY not set — inquiry not emailed.', { to: SITE.contactTo, name: data.name });
     return false;
   }
   const html = `
@@ -30,7 +30,7 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
   const oneLine = (s: string) => s.replace(/[\r\n]+/g, ' ').trim();
   const body: Record<string, unknown> = {
     from,
-    to: [SITE.email],
+    to: [SITE.contactTo],
     reply_to: data.email,
     subject: oneLine(`New inquiry from ${data.name}${data.company ? ` (${data.company})` : ''}`),
     html
