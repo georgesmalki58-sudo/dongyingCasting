@@ -122,7 +122,7 @@ export async function POST(req: Request) {
 
   // Multiple attachments are supported. Enforce a per-request file count and total size.
   const MAX_FILES = 8;
-  const MAX_TOTAL_BYTES = 40 * 1024 * 1024; // 40 MB across all files
+  const MAX_TOTAL_BYTES = 10 * 1024 * 1024; // 10 MB across all files per message
   const files = form.getAll('attachment').filter((f): f is File => f instanceof File && f.size > 0);
   if (files.length > MAX_FILES) {
     return NextResponse.json({ error: `Too many files (max ${MAX_FILES}).` }, { status: 422 });
@@ -131,7 +131,7 @@ export async function POST(req: Request) {
   for (const file of files) {
     total += file.size;
     if (total > MAX_TOTAL_BYTES) {
-      return NextResponse.json({ error: 'Total attachment size exceeds 40 MB.' }, { status: 422 });
+      return NextResponse.json({ error: 'Total attachment size exceeds 10 MB. Please split your files across several submissions.' }, { status: 422 });
     }
     // 1) Name / size / extension / MIME checks.
     const err = validateUpload({ name: file.name, size: file.size, type: file.type });

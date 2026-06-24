@@ -166,7 +166,8 @@
     "info": "Company Information",
     "hours": "Mon–Sat, 8:00–18:00 (GMT+8)",
     "wechatHint": "Scan to chat with us on WeChat",
-    "sending": "Sending your message…"
+    "sending": "Sending your message…",
+    "attachmentNote": "Up to 10 MB per message. If your files are larger, you can send them over several submissions."
   },
   "footer": {
     "tagline": "Precision investment casting & CNC machining since 2000.",

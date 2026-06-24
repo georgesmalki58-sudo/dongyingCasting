@@ -166,7 +166,8 @@
     "info": "Información de la empresa",
     "hours": "Lun–Sáb, 8:00–18:00 (GMT+8)",
     "wechatHint": "Escanea para hablar con nosotros por WeChat",
-    "sending": "Enviando su mensaje…"
+    "sending": "Enviando su mensaje…",
+    "attachmentNote": "Hasta 10 MB por mensaje. Si sus archivos son más grandes, puede enviarlos en varios envíos."
   },
   "footer": {
     "tagline": "Fundición de precisión a la cera perdida y mecanizado CNC desde 2000.",
