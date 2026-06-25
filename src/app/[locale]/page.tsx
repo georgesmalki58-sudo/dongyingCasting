@@ -102,6 +102,13 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
             </div>
           ))}
         </div>
+        <div className="mt-8 text-center">
+          <a href={SITE.alibaba} target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center gap-2 rounded-md bg-[#FF6A00] px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.02]">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7zm9 .8L6 5.4 4.5 6 12 9.2 19.5 6 18 5.4 12 7.8z"/></svg>
+            {t.cta.alibaba}
+          </a>
+        </div>
       </section>
 
       {/* INDUSTRIES */}

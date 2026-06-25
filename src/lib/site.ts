@@ -11,6 +11,7 @@ export const SITE = {
   phone: '+8613356605369',
   whatsapp: '8613356605369', // digits only, no + (used in https://wa.me/<number>)
   wechat: 'dongyingcasting',
+  alibaba: 'https://dywl.en.alibaba.com',
   linkedin: 'https://www.linkedin.com/in/elina-xing-0143a5224/',
   address: {
     street: 'No. 17, Chuanghui Road, Niuzhuang Innovation Park',

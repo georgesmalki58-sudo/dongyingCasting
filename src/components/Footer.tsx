@@ -25,6 +25,9 @@ export function Footer({ locale }: { locale: Locale }) {
                 <Link href={i.href ? `${base}/${i.href}` : base} className="text-steel-400 hover:text-white">{t.nav[i.key]}</Link>
               </li>
             ))}
+            <li>
+              <a href={SITE.alibaba} target="_blank" rel="noopener noreferrer" className="font-medium text-[#FF8A3D] hover:text-white">{t.cta.alibaba}</a>
+            </li>
           </ul>
         </div>
         <div>
