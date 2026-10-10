@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { NAV, SITE, IMAGES, companyName } from '@/lib/site';
+import { EmailLink } from '@/components/EmailLink';
 import { type Locale, getDictionary } from '@/i18n/config';
 
 export function Footer({ locale }: { locale: Locale }) {
@@ -34,7 +35,7 @@ export function Footer({ locale }: { locale: Locale }) {
           <p className="text-sm font-semibold text-white">{t.footer.contact}</p>
           <address className="mt-3 space-y-2 text-sm not-italic text-steel-400">
             <p>{SITE.address.street}, {SITE.address.locality}, {SITE.address.region}, {SITE.address.countryName}</p>
-            <p><a className="hover:text-white" href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+            <p><EmailLink email={SITE.email} className="hover:text-white" /></p>
             <p><a className="hover:text-white" href={`tel:${SITE.phone}`}>{SITE.phone}</a></p>
             <p className="text-xs text-steel-400">{t.contact.hours}</p>
           </address>
