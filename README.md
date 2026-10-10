@@ -33,19 +33,20 @@ npm run typecheck            # tsc --noEmit
 
 **Images** are self-hosted in `public/images` (WebP, auto-optimized by `scripts/optimize-images.mjs` on `prebuild`). No remote image hosts.
 
-## Deploy to Cloudflare
+## Deploy (production)
 
-Recommended: **Cloudflare Workers via OpenNext**.
+Production runs on the **Hostinger VPS** (`srv1083692`, `72.60.34.211`) behind Cloudflare:
+`/var/www/dongyingCasting` → `next start` on port **3002** (pm2 app `dongying`) → nginx vhost `dongying` → Cloudflare proxy.
 
-```bash
-npm i -D @opennextjs/cloudflare wrangler
-npx opennextjs-cloudflare build
-npx wrangler deploy
+```powershell
+# from C:\dongyingCasting, after pushing to GitHub main:
+Get-Content -Raw scripts\deploy-vps.sh | ssh -i $env:USERPROFILE\.ssh\ashtar_vps root@72.60.34.211 "tr -d '\r\357\273\277' | bash -s"
 ```
+The script clones `main` into a release dir, builds it, swaps it in, restarts pm2 and rolls back automatically if the health check fails (previous build kept as `/var/www/dongyingCasting-prev-<ts>`).
 
-Then in the Cloudflare dashboard, enable: WAF + rate-limiting rules, Bot Fight Mode / Turnstile, "Always Use HTTPS", automatic HTTPS rewrites, and Tiered Cache. Set secrets with `npx wrangler secret put TURNSTILE_SECRET_KEY` etc. Bind KV for distributed rate limiting and R2 for attachment storage (scan uploads with an AV step before persisting).
+Server notes: secrets live in `/var/www/dongyingCasting/.env.local` (copied on each deploy). nginx `client_max_body_size 22M`; origin accepts **Cloudflare IPs only** (`snippets/cloudflare-origin-only.conf` + `conf.d/cloudflare-geo.conf`), real client IP from `CF-Connecting-IP`.
 
-> Static-export alternative (Cloudflare Pages) is possible but drops the API routes and nonce-based middleware CSP; the Workers path above preserves them.
+> Cloudflare Workers is NOT used for production: Hostinger SMTP sits on Cloudflare IPs, which Workers sockets cannot reach. `wrangler.jsonc` only drives the optional `preview.dongying-casting.com` staging Worker.
 
 ## TODO
 - Fill China filings / verification: `SITE.icp`, Baidu/Sogou/360 verification env vars, `NEXT_PUBLIC_CF_BEACON_TOKEN`.
