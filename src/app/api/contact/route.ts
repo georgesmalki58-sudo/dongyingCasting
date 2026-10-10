@@ -50,14 +50,42 @@ async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): 
     const fileAtt = attachments;
 
     // 1) Notify the company.
+    const subject = oneLine(`New inquiry from ${data.name}${data.company ? ` (${data.company})` : ''}`);
     await transporter.sendMail({
       from,
       to: SITE.contactTo,
       replyTo: data.email,
-      subject: oneLine(`New inquiry from ${data.name}${data.company ? ` (${data.company})` : ''}`),
+      subject,
       html,
       attachments: fileAtt
     });
+
+    // 1b) Separate private copy (own message, not CC/BCC) to CONTACT_COPY_TO.
+    //     Configured only on the server so the address never appears in the public repo.
+    //     Attachments ride along up to COPY_MAX_ATTACH_BYTES (raw) — larger sets would
+    //     exceed consumer mailbox limits (e.g. Outlook.com) after base64, so the copy
+    //     then carries a note instead. A failed copy never affects the main delivery.
+    const copyTo = process.env.CONTACT_COPY_TO?.trim();
+    if (copyTo) {
+      const COPY_MAX_ATTACH_BYTES = 10 * 1024 * 1024;
+      const attBytes = attachments.reduce((n, a) => n + a.content.length, 0);
+      const withFiles = attBytes <= COPY_MAX_ATTACH_BYTES;
+      const note = attachments.length && !withFiles
+        ? `<p style="color:#b45309"><em>${attachments.length} attachment(s), ${(attBytes / 1048576).toFixed(1)} MB in total — too large for this copy; they are in the ${escapeHtml(SITE.contactTo)} inbox.</em></p>`
+        : '';
+      try {
+        await transporter.sendMail({
+          from,
+          to: copyTo,
+          replyTo: data.email,
+          subject: oneLine(`[Copy] ${subject}`),
+          html: html + note,
+          attachments: withFiles ? fileAtt : []
+        });
+      } catch (e) {
+        console.error('[contact] private copy failed (inquiry still delivered)', e);
+      }
+    }
 
     // 2) Auto-reply confirmation to the sender.
     const ack = `
