@@ -44,7 +44,7 @@ Get-Content -Raw scripts\deploy-vps.sh | ssh -i $env:USERPROFILE\.ssh\ashtar_vps
 ```
 The script clones `main` into a release dir, builds it, swaps it in, restarts pm2 and rolls back automatically if the health check fails (previous build kept as `/var/www/dongyingCasting-prev-<ts>`).
 
-Server notes: secrets live in `/var/www/dongyingCasting/.env.local` (copied on each deploy). nginx `client_max_body_size 22M`; origin accepts **Cloudflare IPs only** (`snippets/cloudflare-origin-only.conf` + `conf.d/cloudflare-geo.conf`), real client IP from `CF-Connecting-IP`.
+Server notes: secrets live in `/var/www/dongyingCasting/.env.local` (copied on each deploy). nginx `client_max_body_size 22M`; origin accepts **Cloudflare IPs only** (`snippets/cloudflare-origin-only.conf` + `conf.d/cloudflare-geo.conf`), real client IP from `CF-Connecting-IP`. TLS origin: Let's Encrypt cert `/etc/letsencrypt/live/dongying-casting.com` (auto-renew via certbot.timer) on a 443 server block → Cloudflare SSL mode should be **Full (strict)**.
 
 > Cloudflare Workers is NOT used for production: Hostinger SMTP sits on Cloudflare IPs, which Workers sockets cannot reach. `wrangler.jsonc` only drives the optional `preview.dongying-casting.com` staging Worker.
 
