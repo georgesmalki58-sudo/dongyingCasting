@@ -1,5 +1,6 @@
 import { IMAGES } from './site';
 import type { Dictionary } from '@/i18n/config';
+import { DE_CONTENT, ES_CONTENT, AR_CONTENT } from './blog-content';
 
 export type PostKey = keyof Dictionary['blog']['posts'];
 
@@ -385,11 +386,19 @@ const ZH_CONTENT: Record<string, LocalizedContent> = {
 
 // Returns the article content in the requested locale (Simplified Chinese for zh,
 // otherwise the English source).
+const LOCALE_CONTENT: Record<string, Record<string, LocalizedContent>> = {
+  zh: ZH_CONTENT,
+  de: DE_CONTENT,
+  es: ES_CONTENT,
+  ar: AR_CONTENT
+};
+
 export function postContent(post: BlogPost, locale: string): LocalizedContent {
-  if (locale === 'zh' && ZH_CONTENT[post.slug]) return ZH_CONTENT[post.slug];
+  const loc = LOCALE_CONTENT[locale]?.[post.slug];
+  if (loc) return loc;
   return { excerpt: post.excerpt, intro: post.intro, sections: post.sections, faq: post.faq };
 }
 
 export function hasLocalizedBody(slug: string, locale: string): boolean {
-  return locale === 'en' || (locale === 'zh' && !!ZH_CONTENT[slug]);
+  return locale === 'en' || !!LOCALE_CONTENT[locale]?.[slug];
 }
