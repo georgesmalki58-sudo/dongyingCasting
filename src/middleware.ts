@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { locales, defaultLocale } from '@/i18n/config';
+import { PRODUCT_SLUGS, BLOG_SLUGS } from '@/lib/known-slugs';
 
 function detectLocale(req: NextRequest): string {
   const header = req.headers.get('accept-language');
@@ -64,7 +65,13 @@ export function middleware(req: NextRequest) {
     requestHeaders.set('Content-Security-Policy', csp);
   }
 
-  const res = NextResponse.next({ request: { headers: requestHeaders } });
+  // Unknown product/blog slugs -> rewrite to an unmatched route so Next serves the
+  // not-found page with a real 404 status (instead of a streamed 200 soft-404).
+  const m = pathname.match(/^\/([a-z]{2})\/(products|blog)\/([^/]+)\/?$/);
+  const unknownSlug = !!m && !(m[2] === 'products' ? PRODUCT_SLUGS : BLOG_SLUGS).has(m[3]);
+  const res = unknownSlug
+    ? NextResponse.rewrite(new URL(`/${m![1]}/__not-found__`, req.url), { request: { headers: requestHeaders } })
+    : NextResponse.next({ request: { headers: requestHeaders } });
   if (csp) res.headers.set('Content-Security-Policy', csp);
   // Static security headers (nosniff, HSTS, frame/referrer/permissions, COOP/CORP, DNS-prefetch)
   // come from next.config.mjs headers() so they're sent exactly once on every route.

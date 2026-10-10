@@ -3,6 +3,11 @@ import { SITE, NAV } from '@/lib/site';
 import { locales } from '@/i18n/config';
 import { POSTS } from '@/lib/blog';
 import { PRODUCT_LINES } from '@/lib/product-lines';
+import { BLOG_SLUGS } from '@/lib/known-slugs';
+
+// Build-time guard: the middleware's 404 allow-list must cover every article.
+const missing = POSTS.filter((p) => !BLOG_SLUGS.has(p.slug)).map((p) => p.slug);
+if (missing.length) throw new Error(`known-slugs.ts BLOG_SLUGS is missing: ${missing.join(', ')}`);
 
 // Stable last-modified for static pages so every deploy doesn't churn <lastmod>.
 const SITE_UPDATED = new Date('2026-06-23');
