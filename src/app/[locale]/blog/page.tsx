@@ -11,7 +11,7 @@ import { POSTS, postContent } from '@/lib/blog';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: 'blog', title: t.blog.title, description: t.blog.intro, keywords: t.seo.keywords.blog });
+  return buildMetadata({ locale, path: 'blog', title: t.blog.title, description: t.seo.metaDesc.blog, keywords: t.seo.keywords.blog });
 }
 
 export default async function Blog({ params }: { params: Promise<{ locale: Locale }> }) {

@@ -11,7 +11,7 @@ import { breadcrumbSchema } from '@/lib/schema';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: 'contact', title: t.contact.title, description: t.contact.intro, keywords: t.seo.keywords.contact });
+  return buildMetadata({ locale, path: 'contact', title: t.contact.title, description: t.seo.metaDesc.contact, keywords: t.seo.keywords.contact });
 }
 
 export default async function Contact({ params }: { params: Promise<{ locale: Locale }> }) {
