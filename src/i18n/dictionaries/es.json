@@ -183,5 +183,87 @@
     "certifications": "Certificaciones",
     "rights": "Todos los derechos reservados.",
     "ports": "Puertos de exportación"
+  },
+  "lines": {
+    "labels": {
+      "title": "Líneas de productos",
+      "intro": "Descubra nuestros principales programas de fundición: cada pieza según su plano, desde un prototipo hasta la producción en serie.",
+      "materials": "Materiales",
+      "process": "Proceso",
+      "applications": "Aplicaciones típicas",
+      "moq": "Pedido mínimo",
+      "moqOne": "Desde 1 pieza",
+      "moqTwo": "Desde 2 piezas",
+      "moqMany": "Desde {n} piezas",
+      "viewDetails": "Ver detalles",
+      "viewAlibaba": "Ver en Alibaba",
+      "others": "Otras líneas de productos",
+      "drawingNote": "Todas las piezas se fabrican según sus planos y especificaciones. Envíe un plano 2D/3D y reciba una cotización en 24 horas."
+    },
+    "superalloy": {
+      "name": "Componentes de turbina en superaleaciones",
+      "summary": "Álabes guía de tobera (NGV), anillos de estator y piezas de sección caliente en Inconel y otras superaleaciones base níquel, por microfusión al vacío.",
+      "body": "Para turbinas de gas y turbocompresores fundimos álabes guía de pared delgada y anillos de álabes integrales mediante microfusión al vacío (cera perdida), que protege las superaleaciones reactivas de la oxidación durante la colada. Suministramos las piezas en bruto de fundición o mecanizadas en nuestros centros CNC, desde un solo prototipo.",
+      "materials": "Inconel, superaleaciones base níquel, acero refractario",
+      "process": "Microfusión al vacío (cera perdida) + mecanizado CNC",
+      "apps": [
+        "Álabes guía de tobera (NGV) para turbinas de gas",
+        "Anillos de estator y de álabes",
+        "Piezas de sección caliente para turbocompresores",
+        "Componentes industriales de alta temperatura"
+      ]
+    },
+    "pump": {
+      "name": "Impulsores y carcasas de bombas",
+      "summary": "Impulsores abiertos y semiabiertos y carcasas de bomba en acero inoxidable 316L y hierro dúctil, por microfusión y mecanizado de precisión.",
+      "body": "Nuestros impulsores de 316L resisten la corrosión y la obstrucción en aguas residuales, agua de mar y medios químicos suaves, mientras que los de hierro dúctil ofrecen alta resistencia mecánica y al desgaste para bombas centrífugas. Las carcasas de SS316 se funden casi a forma final y se mecanizan con tolerancias estrictas para bombas de petróleo, químicas e industriales.",
+      "materials": "Acero inoxidable 316L / SS316, hierro dúctil",
+      "process": "Microfusión + mecanizado CNC",
+      "apps": [
+        "Bombas de aguas residuales",
+        "Bombas de agua de mar y marinas",
+        "Bombas de proceso químico y petrolero",
+        "Bombas centrífugas industriales"
+      ]
+    },
+    "exhaust": {
+      "name": "Colectores y headers de escape",
+      "summary": "Colectores de escape, colectores turbo y headers de competición en acero inoxidable y aleaciones de alta temperatura, fundidos a la cera perdida.",
+      "body": "La microfusión permite colectores de una sola pieza con conductos lisos y optimizados y espesor de pared uniforme, ideales para preparación y aplicaciones turbo donde importan la resistencia al calor y a la fatiga. Las bridas y superficies de montaje se mecanizan para un ajuste preciso.",
+      "materials": "Acero inoxidable, aleaciones de alta temperatura",
+      "process": "Microfusión a la cera perdida + mecanizado de bridas",
+      "apps": [
+        "Headers de escape de alto rendimiento y competición",
+        "Colectores para turbocompresores",
+        "Posventa y preparación de automóviles",
+        "Programas OEM de motores"
+      ]
+    },
+    "impeller": {
+      "name": "Rodetes y ruedas de ventilador",
+      "summary": "Rodetes y ruedas de ventilador de acero inoxidable por microfusión para turbomaquinaria, soplantes y ventiladores.",
+      "body": "Los álabes finos y curvados y la geometría compleja del cubo se funden en una sola pieza, reduciendo soldaduras y mecanizado. Equilibramos las ruedas y mecanizamos agujeros y chaveteros según su especificación, listas para el montaje.",
+      "materials": "Acero inoxidable (incl. 316L)",
+      "process": "Microfusión + mecanizado CNC",
+      "apps": [
+        "Componentes de turbomaquinaria",
+        "Soplantes y ventiladores industriales",
+        "Ruedas de compresor",
+        "Rodetes de bombas y mezcladores"
+      ]
+    },
+    "mould": {
+      "name": "Moldes de fundición y prototipos",
+      "summary": "Moldes de inyección de cera, de gravedad y de fundición a presión, además de prototipos rápidos por impresión 3D y mecanizado CNC en aluminio 6061/7075 y latón.",
+      "body": "Con nuestro propio taller de moldes y 14 ingenieros de I+D, diseñamos y fabricamos internamente el utillaje para sus piezas, desde moldes de cera con múltiples correderas para anillos de álabes de turbina hasta moldes de fundición a presión. Los modelos impresos en 3D y los moldes prototipo mecanizados por CNC acortan el desarrollo antes del utillaje de serie.",
+      "materials": "Aluminio 6061 / 7075, latón",
+      "process": "Mecanizado CNC · impresión 3D · diseño de moldes",
+      "apps": [
+        "Moldes de inyección de cera para microfusión",
+        "Moldes de gravedad y de fundición a presión",
+        "Prototipos rápidos y preseries",
+        "Utillaje para ruedas de turbina y NGV"
+      ]
+    }
   }
 }

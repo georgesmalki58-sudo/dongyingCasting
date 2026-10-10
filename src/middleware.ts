@@ -66,15 +66,8 @@ export function middleware(req: NextRequest) {
 
   const res = NextResponse.next({ request: { headers: requestHeaders } });
   if (csp) res.headers.set('Content-Security-Policy', csp);
-  res.headers.set('X-Content-Type-Options', 'nosniff');
-  res.headers.set('X-Frame-Options', 'SAMEORIGIN');
-  res.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-  res.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), browsing-topics=()');
-  res.headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
-  res.headers.set('X-DNS-Prefetch-Control', 'off');
-  // Cross-origin isolation hardening.
-  res.headers.set('Cross-Origin-Opener-Policy', 'same-origin');
-  res.headers.set('Cross-Origin-Resource-Policy', 'same-origin');
+  // Static security headers (nosniff, HSTS, frame/referrer/permissions, COOP/CORP, DNS-prefetch)
+  // come from next.config.mjs headers() so they're sent exactly once on every route.
   return res;
 }
 

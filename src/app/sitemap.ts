@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { SITE, NAV } from '@/lib/site';
 import { locales } from '@/i18n/config';
 import { POSTS } from '@/lib/blog';
+import { PRODUCT_LINES } from '@/lib/product-lines';
 
 // Stable last-modified for static pages so every deploy doesn't churn <lastmod>.
 const SITE_UPDATED = new Date('2026-06-23');
@@ -21,6 +22,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
           languages: Object.fromEntries(
             locales.map((l) => [l, `${SITE.url}/${l}${item.href ? `/${item.href}` : ''}`])
           )
+        }
+      });
+    }
+  }
+
+  for (const line of PRODUCT_LINES) {
+    for (const locale of locales) {
+      entries.push({
+        url: `${SITE.url}/${locale}/products/${line.slug}`,
+        lastModified: new Date('2026-10-10'),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: Object.fromEntries(locales.map((l) => [l, `${SITE.url}/${l}/products/${line.slug}`]))
         }
       });
     }

@@ -8,6 +8,7 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { Card } from '@/components/Card';
 import { JsonLd } from '@/components/JsonLd';
 import { productSchema, breadcrumbSchema } from '@/lib/schema';
+import { PRODUCT_LINES, moqText } from '@/lib/product-lines';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -40,14 +41,43 @@ export default async function Products({ params }: { params: Promise<{ locale: L
             </span>
             <h2 className="text-2xl font-bold text-steel-900">{t.products.featured.title}</h2>
             <p className="prose-muted">{t.products.featured.body}</p>
-            <Link href={`/${locale}/contact`}
-                  className="inline-flex w-fit rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
-              {t.cta.quote}
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <Link href={`/${locale}/contact`}
+                    className="inline-flex w-fit rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+                {t.cta.quote}
+              </Link>
+              <Link href={`/${locale}/products/superalloy-turbine-components`}
+                    className="inline-flex w-fit rounded-md border border-brand px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-white">
+                {t.lines.labels.viewDetails}
+              </Link>
+            </div>
           </div>
         </article>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Product lines with dedicated detail pages */}
+        <div className="mt-14">
+          <h2 className="text-2xl font-bold text-steel-900">{t.lines.labels.title}</h2>
+          <p className="prose-muted mt-2">{t.lines.labels.intro}</p>
+          <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {PRODUCT_LINES.map((l) => (
+              <li key={l.slug}>
+                <Link href={`/${locale}/products/${l.slug}`}
+                      className="group flex h-full flex-col overflow-hidden rounded-xl border border-steel-200 bg-white transition-shadow hover:shadow-md">
+                  <div className="relative aspect-[4/3] bg-white">
+                    <Image src={l.images[0]} alt={t.lines[l.key].name} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-contain p-4" />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-2 border-t border-steel-200 p-5">
+                    <h3 className="text-lg font-semibold text-steel-900 group-hover:text-brand">{t.lines[l.key].name}</h3>
+                    <p className="prose-muted text-sm">{t.lines[l.key].summary}</p>
+                    <p className="mt-auto pt-2 text-xs font-semibold text-steel-500">{t.lines.labels.moq}: {moqText(t, l.moq)}</p>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((i) => <Card key={i.name} title={i.name} body={i.body} />)}
         </div>
         <div className="mt-12 text-center">

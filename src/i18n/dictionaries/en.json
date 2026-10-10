@@ -183,5 +183,87 @@
     "certifications": "Certifications",
     "rights": "All rights reserved.",
     "ports": "Export Ports"
+  },
+  "lines": {
+    "labels": {
+      "title": "Product lines",
+      "intro": "Explore our main casting programmes — every part made to your drawing, from a single prototype to series production.",
+      "materials": "Materials",
+      "process": "Process",
+      "applications": "Typical applications",
+      "moq": "Minimum order",
+      "moqOne": "From 1 piece",
+      "moqTwo": "From 2 pieces",
+      "moqMany": "From {n} pieces",
+      "viewDetails": "View details",
+      "viewAlibaba": "View on Alibaba",
+      "others": "Other product lines",
+      "drawingNote": "All parts are made to your drawings and specifications. Send a 2D/3D drawing and receive a quotation within 24 hours."
+    },
+    "superalloy": {
+      "name": "Superalloy Turbine Components",
+      "summary": "Vacuum investment cast nozzle guide vanes (NGV), stator rings and hot-section parts in Inconel and other nickel-based superalloys.",
+      "body": "For gas turbines and turbochargers we cast complex, thin-walled guide vanes and integral vane rings by vacuum investment (lost-wax) casting, which protects reactive superalloys from oxidation during pouring. Parts are supplied as-cast or finish-machined on our CNC centres — starting from a single prototype.",
+      "materials": "Inconel, nickel-based superalloys, heat-resistant steel",
+      "process": "Vacuum investment casting (lost-wax) + CNC machining",
+      "apps": [
+        "Gas turbine nozzle guide vanes (NGV)",
+        "Stator and vane rings",
+        "Turbocharger hot-section parts",
+        "High-temperature industrial components"
+      ]
+    },
+    "pump": {
+      "name": "Pump Impellers & Housings",
+      "summary": "Open and semi-open impellers and pump casings in 316L stainless steel and ductile iron — investment cast and precision machined.",
+      "body": "Our 316L impellers are designed to resist corrosion and clogging in sewage, seawater and mild chemical service, while ductile-iron impellers deliver high strength and wear resistance for centrifugal pumps. SS316 pump housings are cast close to final shape and machined to tight tolerances for oil, chemical and industrial fluid pumps.",
+      "materials": "316L / SS316 stainless steel, ductile iron",
+      "process": "Investment casting + CNC machining",
+      "apps": [
+        "Sewage and wastewater pumps",
+        "Seawater and marine pumps",
+        "Chemical and oil process pumps",
+        "Industrial centrifugal pumps"
+      ]
+    },
+    "exhaust": {
+      "name": "Exhaust Manifolds & Headers",
+      "summary": "Lost-wax cast exhaust manifolds, turbo manifolds and racing headers in stainless steel and high-temperature alloys.",
+      "body": "Investment casting produces one-piece manifolds with smooth, optimised runners and uniform wall thickness — ideal for performance tuning and turbo applications where heat resistance and fatigue life matter. Flanges and mounting faces are machined for a precise fit.",
+      "materials": "Stainless steel, high-temperature alloys",
+      "process": "Lost-wax investment casting + flange machining",
+      "apps": [
+        "Performance and racing exhaust headers",
+        "Turbocharger manifolds",
+        "Automotive aftermarket and tuning",
+        "Engine OEM programmes"
+      ]
+    },
+    "impeller": {
+      "name": "Impellers & Fan Wheels",
+      "summary": "Stainless steel investment-cast impellers and fan wheels for turbomachinery, blowers and fans.",
+      "body": "Thin, curved blades and complex hub geometry are cast in one piece, reducing welding and machining. We balance the wheels and machine bores and keyways to your specification, so they arrive ready for assembly.",
+      "materials": "Stainless steel (incl. 316L)",
+      "process": "Investment casting + CNC machining",
+      "apps": [
+        "Turbomachinery components",
+        "Industrial blowers and fans",
+        "Compressor wheels",
+        "Pump and mixer impellers"
+      ]
+    },
+    "mould": {
+      "name": "Casting Moulds & Prototypes",
+      "summary": "Wax-injection, gravity-casting and die-casting moulds, plus rapid prototypes by 3D printing and CNC machining in aluminium 6061/7075 and brass.",
+      "body": "With our own mould shop and 14 R&D engineers, we design and build the tooling for your castings in-house — from multi-slide wax moulds for turbine vane rings to die-casting moulds. 3D-printed patterns and CNC-machined prototype moulds shorten development before series tooling.",
+      "materials": "Aluminium 6061 / 7075, brass",
+      "process": "CNC machining · 3D printing · mould design",
+      "apps": [
+        "Wax injection moulds for investment casting",
+        "Gravity and die-casting moulds",
+        "Rapid prototypes and pilot runs",
+        "Turbine wheel and NGV tooling"
+      ]
+    }
   }
 }

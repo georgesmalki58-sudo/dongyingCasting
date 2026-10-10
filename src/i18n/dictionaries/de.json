@@ -183,5 +183,87 @@
     "certifications": "Zertifizierungen",
     "rights": "Alle Rechte vorbehalten.",
     "ports": "Exporthäfen"
+  },
+  "lines": {
+    "labels": {
+      "title": "Produktlinien",
+      "intro": "Entdecken Sie unsere wichtigsten Gussprogramme – jedes Teil nach Ihrer Zeichnung, vom Einzelprototyp bis zur Serienfertigung.",
+      "materials": "Werkstoffe",
+      "process": "Verfahren",
+      "applications": "Typische Anwendungen",
+      "moq": "Mindestbestellmenge",
+      "moqOne": "Ab 1 Stück",
+      "moqTwo": "Ab 2 Stück",
+      "moqMany": "Ab {n} Stück",
+      "viewDetails": "Details ansehen",
+      "viewAlibaba": "Auf Alibaba ansehen",
+      "others": "Weitere Produktlinien",
+      "drawingNote": "Alle Teile werden nach Ihren Zeichnungen und Spezifikationen gefertigt. Senden Sie eine 2D-/3D-Zeichnung und erhalten Sie innerhalb von 24 Stunden ein Angebot."
+    },
+    "superalloy": {
+      "name": "Turbinenkomponenten aus Superlegierungen",
+      "summary": "Im Vakuum-Feinguss hergestellte Leitschaufeln (NGV), Statorringe und Heißgasteile aus Inconel und anderen Nickelbasis-Superlegierungen.",
+      "body": "Für Gasturbinen und Turbolader gießen wir komplexe, dünnwandige Leitschaufeln und integrale Schaufelringe im Vakuum-Feinguss (Wachsausschmelzverfahren), der reaktive Superlegierungen beim Abguss vor Oxidation schützt. Wir liefern im Gusszustand oder auf unseren CNC-Bearbeitungszentren fertigbearbeitet – bereits ab einem einzelnen Prototyp.",
+      "materials": "Inconel, Nickelbasis-Superlegierungen, hitzebeständiger Stahl",
+      "process": "Vakuum-Feinguss (Wachsausschmelzverfahren) + CNC-Bearbeitung",
+      "apps": [
+        "Leitschaufeln (NGV) für Gasturbinen",
+        "Stator- und Schaufelringe",
+        "Heißgasteile für Turbolader",
+        "Hochtemperatur-Industriekomponenten"
+      ]
+    },
+    "pump": {
+      "name": "Pumpenlaufräder und -gehäuse",
+      "summary": "Offene und halboffene Laufräder sowie Pumpengehäuse aus Edelstahl 316L und Sphäroguss – feingegossen und präzisionsbearbeitet.",
+      "body": "Unsere 316L-Laufräder sind auf Korrosions- und Verstopfungsbeständigkeit in Abwasser, Meerwasser und leicht chemischen Medien ausgelegt, während Laufräder aus Sphäroguss hohe Festigkeit und Verschleißbeständigkeit für Kreiselpumpen bieten. Pumpengehäuse aus SS316 werden endkonturnah gegossen und für Öl-, Chemie- und Industriepumpen mit engen Toleranzen bearbeitet.",
+      "materials": "Edelstahl 316L / SS316, Sphäroguss",
+      "process": "Feinguss + CNC-Bearbeitung",
+      "apps": [
+        "Abwasser- und Schmutzwasserpumpen",
+        "Meerwasser- und Schiffspumpen",
+        "Chemie- und Ölprozesspumpen",
+        "Industrielle Kreiselpumpen"
+      ]
+    },
+    "exhaust": {
+      "name": "Abgas- und Fächerkrümmer",
+      "summary": "Im Wachsausschmelzverfahren gegossene Abgaskrümmer, Turbokrümmer und Rennsport-Fächerkrümmer aus Edelstahl und Hochtemperaturlegierungen.",
+      "body": "Der Feinguss ermöglicht einteilige Krümmer mit glatter, strömungsoptimierter Kanalgeometrie und gleichmäßiger Wandstärke – ideal für Tuning- und Turboanwendungen, bei denen Hitzebeständigkeit und Dauerfestigkeit zählen. Flansche und Anlageflächen werden für eine exakte Passung bearbeitet.",
+      "materials": "Edelstahl, Hochtemperaturlegierungen",
+      "process": "Feinguss im Wachsausschmelzverfahren + Flanschbearbeitung",
+      "apps": [
+        "Performance- und Rennsport-Fächerkrümmer",
+        "Turboladerkrümmer",
+        "Automobil-Aftermarket und Tuning",
+        "Motoren-OEM-Programme"
+      ]
+    },
+    "impeller": {
+      "name": "Laufräder und Lüfterräder",
+      "summary": "Feingegossene Laufräder und Lüfterräder aus Edelstahl für Turbomaschinen, Gebläse und Ventilatoren.",
+      "body": "Dünne, gekrümmte Schaufeln und komplexe Nabengeometrien werden in einem Stück gegossen, was Schweiß- und Bearbeitungsaufwand reduziert. Wir wuchten die Räder und bearbeiten Bohrungen und Passfedernuten nach Ihrer Spezifikation – einbaufertig geliefert.",
+      "materials": "Edelstahl (u. a. 316L)",
+      "process": "Feinguss + CNC-Bearbeitung",
+      "apps": [
+        "Komponenten für Turbomaschinen",
+        "Industriegebläse und Ventilatoren",
+        "Verdichterräder",
+        "Pumpen- und Rührwerkslaufräder"
+      ]
+    },
+    "mould": {
+      "name": "Gießformen und Prototypen",
+      "summary": "Wachsspritzformen, Schwerkraft- und Druckgussformen sowie schnelle Prototypen per 3D-Druck und CNC-Bearbeitung aus Aluminium 6061/7075 und Messing.",
+      "body": "Mit eigenem Formenbau und 14 Entwicklungsingenieuren konstruieren und fertigen wir die Werkzeuge für Ihre Gussteile im eigenen Haus – von Wachsformen mit mehreren Schiebern für Leitschaufelringe bis zu Druckgussformen. 3D-gedruckte Modelle und CNC-gefräste Prototypenformen verkürzen die Entwicklung vor dem Serienwerkzeug.",
+      "materials": "Aluminium 6061 / 7075, Messing",
+      "process": "CNC-Bearbeitung · 3D-Druck · Formenkonstruktion",
+      "apps": [
+        "Wachsspritzformen für den Feinguss",
+        "Schwerkraft- und Druckgussformen",
+        "Schnelle Prototypen und Vorserien",
+        "Werkzeuge für Turbinenräder und NGV"
+      ]
+    }
   }
 }

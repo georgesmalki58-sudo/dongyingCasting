@@ -4,9 +4,9 @@
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat"],
   "main": ".open-next/worker.js",
-  // Staging hostname (Workers Custom Domain). Switch/add the apex once verified.
+  // NOTE: production runs on the Hostinger VPS (see README). The Workers staging
+  // deployment was removed; add a route here only if you deliberately redeploy it.
   "workers_dev": false,
-  "routes": [{ "pattern": "preview.dongying-casting.com", "custom_domain": true }],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
   // Globally-consistent rate limit for /api/contact & /api/quote (5 req / 60 s per IP).
   "ratelimits": [
