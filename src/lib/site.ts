@@ -31,6 +31,7 @@ export const SITE = {
   icp: '', // e.g. '鲁ICP备XXXXXXXX号'
   // Search-engine site-verification codes (left blank until registered).
   verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
     baidu: process.env.NEXT_PUBLIC_BAIDU_VERIFICATION || '',
     sogou: process.env.NEXT_PUBLIC_SOGOU_VERIFICATION || '',
     so360: process.env.NEXT_PUBLIC_360_VERIFICATION || ''

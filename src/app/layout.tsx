@@ -35,7 +35,10 @@ export async function generateMetadata(): Promise<Metadata> {
     applicationName: SITE.name,
     authors: [{ name: SITE.legalName }],
     formatDetection: { telephone: true, email: true },
-    verification: SITE.verification.baidu ? { other: { 'baidu-site-verification': SITE.verification.baidu } } : undefined,
+    verification: {
+      ...(SITE.verification.google ? { google: SITE.verification.google } : {}),
+      ...(SITE.verification.baidu ? { other: { 'baidu-site-verification': SITE.verification.baidu } } : {})
+    },
     other: {
       ...(SITE.verification.sogou ? { 'sogou_site_verification': SITE.verification.sogou } : {}),
       ...(SITE.verification.so360 ? { '360-site-verification': SITE.verification.so360 } : {})
