@@ -1,6 +1,7 @@
 import { IMAGES } from './site';
 import type { Dictionary } from '@/i18n/config';
 import { DE_CONTENT, ES_CONTENT, AR_CONTENT } from './blog-content';
+import { FR_CONTENT, IT_CONTENT, RU_CONTENT, PT_CONTENT } from './blog-content-extra';
 
 export type PostKey = keyof Dictionary['blog']['posts'];
 
@@ -390,7 +391,11 @@ const LOCALE_CONTENT: Record<string, Record<string, LocalizedContent>> = {
   zh: ZH_CONTENT,
   de: DE_CONTENT,
   es: ES_CONTENT,
-  ar: AR_CONTENT
+  ar: AR_CONTENT,
+  fr: FR_CONTENT,
+  it: IT_CONTENT,
+  ru: RU_CONTENT,
+  pt: PT_CONTENT
 };
 
 export function postContent(post: BlogPost, locale: string): LocalizedContent {
