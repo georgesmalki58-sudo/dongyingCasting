@@ -33,6 +33,24 @@ export default async function Quality({ params }: { params: Promise<{ locale: Lo
             </div>
           ))}
         </div>
+        {/* International type approval reference (UN ECE R55) */}
+        <div className="mt-12 overflow-hidden rounded-xl border border-steel-200 bg-steel-50">
+          <div className="grid gap-6 p-6 md:grid-cols-[1.3fr_1fr] md:p-8">
+            <div>
+              <h2 className="text-xl font-bold text-steel-900">{t.quality.approval.title}</h2>
+              <p className="prose-muted mt-3">{t.quality.approval.body}</p>
+            </div>
+            <dl className="divide-y divide-steel-200 self-start rounded-lg border border-steel-200 bg-white text-sm">
+              {t.quality.approval.rows.map(([k, v]) => (
+                <div key={k} className="px-4 py-3">
+                  <dt className="font-semibold text-steel-700">{k}</dt>
+                  <dd className="mt-0.5 text-steel-900">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+
         <ul className="mt-8 flex flex-wrap gap-3">
           {SITE.certifications.map((c) => (
             <li key={c} className="rounded-md bg-brand px-4 py-2 text-sm font-semibold text-white">{c}</li>

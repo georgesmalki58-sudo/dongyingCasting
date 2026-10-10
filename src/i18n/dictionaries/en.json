@@ -190,7 +190,29 @@
     "testing": "Testing Equipment",
     "testingBody": "CAM and CAE simulation analysis, statistical quality control (SQC), and control charting.",
     "inspection": "Inspection Process",
-    "inspectionBody": "Incoming material inspection, in-process monitoring, shipment inspection, and after-sales service."
+    "inspectionBody": "Incoming material inspection, in-process monitoring, shipment inspection, and after-sales service.",
+    "approval": {
+      "title": "International Type Approval (UN ECE R55)",
+      "body": "Dongying Wanlong is named as the company responsible for conformity of production of a mechanical coupling device that holds European type approval under UN ECE Regulation No. 55 — confirmation that castings produced by our foundry meet international type-approval requirements.",
+      "rows": [
+        [
+          "Standard",
+          "UN ECE Regulation No. 55 — mechanical coupling devices"
+        ],
+        [
+          "Approval mark",
+          "E57 · 55R-03 0158 (Republic of San Marino)"
+        ],
+        [
+          "Component",
+          "Class B50-X mechanical coupling (D/Dc 14.2 kN, S 150 kg)"
+        ],
+        [
+          "Granted",
+          "July 2025"
+        ]
+      ]
+    }
   },
   "factory": {
     "title": "Factory & Production Capabilities",

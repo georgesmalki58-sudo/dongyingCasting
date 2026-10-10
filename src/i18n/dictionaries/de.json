@@ -190,7 +190,29 @@
     "testing": "Prüfausrüstung",
     "testingBody": "CAM- und CAE-Simulationsanalyse, statistische Qualitätskontrolle (SQC) und Regelkarten.",
     "inspection": "Prüfprozess",
-    "inspectionBody": "Wareneingangsprüfung, Prozessüberwachung, Versandprüfung und Kundendienst."
+    "inspectionBody": "Wareneingangsprüfung, Prozessüberwachung, Versandprüfung und Kundendienst.",
+    "approval": {
+      "title": "Internationale Typgenehmigung (UN ECE R55)",
+      "body": "Dongying Wanlong ist als das für die Übereinstimmung der Produktion verantwortliche Unternehmen einer mechanischen Verbindungseinrichtung benannt, die eine europäische Typgenehmigung nach UN-ECE-Regelung Nr. 55 besitzt — ein Beleg dafür, dass die Gussteile unserer Gießerei internationale Typgenehmigungsanforderungen erfüllen.",
+      "rows": [
+        [
+          "Norm",
+          "UN-ECE-Regelung Nr. 55 — mechanische Verbindungseinrichtungen"
+        ],
+        [
+          "Genehmigungszeichen",
+          "E57 · 55R-03 0158 (Republik San Marino)"
+        ],
+        [
+          "Bauteil",
+          "Mechanische Verbindung Klasse B50-X (D/Dc 14,2 kN, S 150 kg)"
+        ],
+        [
+          "Erteilt",
+          "Juli 2025"
+        ]
+      ]
+    }
   },
   "factory": {
     "title": "Fabrik & Produktionskapazitäten",

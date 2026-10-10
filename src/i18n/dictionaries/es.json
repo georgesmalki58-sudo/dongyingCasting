@@ -190,7 +190,29 @@
     "testing": "Equipos de ensayo",
     "testingBody": "Análisis de simulación CAM y CAE, control estadístico de calidad (SQC) y gráficos de control.",
     "inspection": "Proceso de inspección",
-    "inspectionBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa."
+    "inspectionBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa.",
+    "approval": {
+      "title": "Homologación de tipo internacional (UN ECE R55)",
+      "body": "Dongying Wanlong figura como la empresa responsable de la conformidad de la producción de un dispositivo de acoplamiento mecánico que cuenta con homologación de tipo europea según el Reglamento N.º 55 de la CEPE-ONU, lo que confirma que las piezas fundidas por nuestra fundición cumplen los requisitos internacionales de homologación de tipo.",
+      "rows": [
+        [
+          "Norma",
+          "Reglamento N.º 55 de la CEPE-ONU — dispositivos de acoplamiento mecánico"
+        ],
+        [
+          "Marca de homologación",
+          "E57 · 55R-03 0158 (República de San Marino)"
+        ],
+        [
+          "Componente",
+          "Acoplamiento mecánico clase B50-X (D/Dc 14,2 kN, S 150 kg)"
+        ],
+        [
+          "Concedida",
+          "Julio de 2025"
+        ]
+      ]
+    }
   },
   "factory": {
     "title": "Fábrica y capacidad de producción",
