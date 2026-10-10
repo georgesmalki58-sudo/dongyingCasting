@@ -24,7 +24,6 @@ export function organizationSchema(locale: Locale = 'en') {
     url: SITE.url,
     logo: abs(SITE.ogImage),
     foundingDate: SITE.founded,
-    email: SITE.email,
     telephone: SITE.phone,
     address: addr,
     sameAs: [SITE.linkedin]

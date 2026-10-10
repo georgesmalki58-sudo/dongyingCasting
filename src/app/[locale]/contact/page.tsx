@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { type Locale, getDictionary } from '@/i18n/config';
-import { EmailLink } from '@/components/EmailLink';
 import { SITE, whatsappHref } from '@/lib/site';
 import { buildMetadata } from '@/lib/seo';
 import { SectionHeading } from '@/components/SectionHeading';
@@ -20,7 +19,6 @@ export default async function Contact({ params }: { params: Promise<{ locale: Lo
   const t = getDictionary(locale);
   const info: [string, React.ReactNode][] = [
     [t.contact.info, `${SITE.address.street}, ${SITE.address.locality}, ${SITE.address.region}, ${SITE.address.countryName}`],
-    ['Email', <EmailLink key="email" email={SITE.email} className="hover:text-brand" />],
     ['Phone', SITE.phone],
     ['WeChat', SITE.wechat],
     [t.contact.hours, '']
