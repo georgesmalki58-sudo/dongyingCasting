@@ -8,7 +8,11 @@ const OG_LOCALE: Record<Locale, string> = {
   zh: 'zh_CN',
   de: 'de_DE',
   es: 'es_ES',
-  ar: 'ar_AR'
+  ar: 'ar_AR',
+  fr: 'fr_FR',
+  it: 'it_IT',
+  ru: 'ru_RU',
+  pt: 'pt_PT'
 };
 
 // hreflang values should carry region/script subtags (Baidu & Google prefer this).
@@ -17,7 +21,11 @@ const HREFLANG: Record<Locale, string> = {
   zh: 'zh-CN',
   de: 'de-DE',
   es: 'es-ES',
-  ar: 'ar'
+  ar: 'ar',
+  fr: 'fr-FR',
+  it: 'it-IT',
+  ru: 'ru-RU',
+  pt: 'pt-PT'
 };
 
 type Args = {

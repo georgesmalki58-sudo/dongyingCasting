@@ -1,0 +1,492 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "products": "Prodotti",
+    "industries": "Settori",
+    "quality": "Controllo qualità",
+    "factory": "Stabilimento",
+    "blog": "Centro conoscenze",
+    "contact": "Contatti"
+  },
+  "cta": {
+    "quote": "Richiedi un preventivo",
+    "contact": "Contattaci",
+    "solutions": "Le nostre soluzioni",
+    "downloadProfile": "Scarica il profilo aziendale",
+    "uploadDrawing": "Carica un disegno CAD",
+    "sendInquiry": "Invia richiesta",
+    "alibaba": "Vedi i nostri prodotti su Alibaba"
+  },
+  "home": {
+    "h1": "Produttore di microfusione di precisione in Cina",
+    "heroSub": "Soluzioni di fusione e lavorazione CNC dalla progettazione alla consegna. Certificato ISO 9001:2015, con oltre 25 anni di esperienza in fonderia al servizio dei mercati B2B mondiali.",
+    "investmentCasting": "Soluzioni di microfusione",
+    "investmentCastingBody": "Microfusione a cera persa di alta precisione in acciaio inossidabile, acciaio al carbonio e leghe resistenti al calore per componenti industriali impegnativi.",
+    "cnc": "Servizi di lavorazione CNC",
+    "cncBody": "21 centri di lavoro avanzati — fresatura CNC ad alta velocità, elettroerosione, taglio a filo e lavorazione a 4/5 assi per pezzi finiti a tolleranze strette.",
+    "industries": "Settori che serviamo",
+    "whyChoose": "Perché scegliere Dongying Casting",
+    "quality": "Controllo qualità e certificazioni",
+    "factory": "Stabilimento e capacità produttive",
+    "global": "Mercati di esportazione mondiali",
+    "requestQuote": "Richiedi un preventivo personalizzato",
+    "requestQuoteBody": "Invia disegni o specifiche e i nostri ingegneri risponderanno con un preventivo dettagliato, di norma entro 24 ore.",
+    "subStainless": "Fusione di acciaio inossidabile",
+    "subCarbon": "Fusione di acciaio al carbonio",
+    "subLostWax": "Fusione a cera persa",
+    "subCnc": "Lavorazione CNC di precisione",
+    "subAutomotive": "Componenti automotive",
+    "subMarine": "Componenti navali",
+    "subMachinery": "Componenti per macchine industriali",
+    "subPump": "Componenti per pompe e valvole",
+    "stats": {
+      "experience": "Anni di esperienza",
+      "centers": "Centri di lavoro",
+      "markets": "Mercati di esportazione",
+      "employees": "Personale qualificato"
+    },
+    "trust": {
+      "title": "Un produttore comprovato e verificato",
+      "intro": "Nove anni come fornitore verificato su Alibaba.com con una valutazione di 5,0 e collaborazioni con aziende Fortune 500.",
+      "items": [
+        [
+          "18",
+          "Anni di esportazione"
+        ],
+        [
+          "14",
+          "Ingegneri R&S"
+        ],
+        [
+          "6",
+          "Ispettori qualità"
+        ],
+        [
+          "5.000 m²",
+          "Superficie produttiva"
+        ]
+      ]
+    },
+    "foundry": {
+      "title": "Fonderia di microfusione in Cina",
+      "intro": "In quanto fonderia di precisione a Dongying, Shandong, fondiamo e lavoriamo pezzi metallici secondo il vostro disegno attraverso quattro programmi di fonderia principali.",
+      "items": [
+        [
+          "Fonderia di microfusione di precisione",
+          "Fusione a cera persa di pezzi complessi near-net-shape in un'ampia gamma di leghe, dal singolo prototipo alla produzione in serie."
+        ],
+        [
+          "Fonderia di acciaio inossidabile",
+          "Getti in acciaio inossidabile 316L, 304 e duplex resistenti alla corrosione per applicazioni navali, chimiche, alimentari e medicali."
+        ],
+        [
+          "Fonderia di acciaio",
+          "Getti in acciaio al carbonio, legato e resistente al calore ad alta resistenza e resistenza all'usura per macchinari e parti strutturali."
+        ],
+        [
+          "Fonderia a cera persa",
+          "Fusione a cera persa sotto vuoto e in aria, inclusi componenti di turbina in superlega, finiti sui nostri centri CNC interni."
+        ]
+      ]
+    }
+  },
+  "why": {
+    "experience": "Oltre 25 anni di esperienza in fusione e stampi",
+    "experienceBody": "Fondata nel 2000 a Dongying, Shandong, con profondo know-how pratico nella progettazione, produzione e collaudo online degli stampi.",
+    "certified": "Qualità certificata ISO 9001:2015",
+    "certifiedBody": "Controllo dei materiali in ingresso, monitoraggio in corso di lavorazione, controllo alla spedizione e assistenza post-vendita in ogni fase produttiva.",
+    "export": "Licenza di esportazione propria, spedizioni in tutto il mondo",
+    "exportBody": "Esportazione diretta tramite i porti di Qingdao, Shanghai, Tianjin e Dongying. Incoterms FOB, CIF, EXW e altri.",
+    "oneStop": "Soluzione completa, dalla progettazione alla consegna",
+    "oneStopBody": "Officina stampi indipendente più lavorazione CNC approfondita — prototipo, fusione, lavorazione e finitura sotto un unico tetto."
+  },
+  "about": {
+    "title": "Chi è Dongying Casting",
+    "intro": "Dongying Wanlong Mechanical Mould Co., Ltd. è stata fondata nel 2000 a Dongying, Shandong — città centrale del giacimento petrolifero di Shengli nel delta del Fiume Giallo. L'azienda integra progettazione, produzione, assemblaggio di prototipi e collaudo stampi, con gli stampi di precisione come attività principale.",
+    "history": "Storia aziendale",
+    "historyBody": "Attraverso anni di sviluppo ed esperienza accumulata, abbiamo costruito una competenza completa nella progettazione, produzione, lavorazione e collaudo online degli stampi — in particolare nella creazione automatizzata degli stampi e nella lavorazione di stampi per cera esenti da manutenzione.",
+    "capacity": "Capacità produttiva",
+    "capacityBody": "Da 101 a 200 dipendenti e una capacità annua che sostiene una produzione di 50-100 milioni di dollari USA, con tempi di consegna di 1-3 mesi in alta stagione.",
+    "certs": "Certificazioni",
+    "team": "Il nostro team",
+    "teamBody": "Un team professionale di ingegneri progettisti senior che utilizza software di simulazione CAM e CAE per ottimizzare ogni stampo e componente."
+  },
+  "products": {
+    "title": "Prodotti",
+    "intro": "Soluzioni complete di fusione e lavorazione per numerosi metalli e leghe.",
+    "items": {
+      "investment": {
+        "name": "Getti di microfusione",
+        "body": "Getti di microfusione a cera persa di alta precisione per componenti industriali complessi."
+      },
+      "stainless": {
+        "name": "Getti in acciaio inossidabile",
+        "body": "Fusione di acciaio inossidabile resistente alla corrosione per applicazioni navali, alimentari e medicali."
+      },
+      "carbon": {
+        "name": "Getti in acciaio al carbonio",
+        "body": "Getti in acciaio al carbonio durevoli per macchinari e parti strutturali."
+      },
+      "heat": {
+        "name": "Getti in acciaio resistente al calore",
+        "body": "Getti in lega ad alta temperatura per palette, distributori e ugelli di turbina."
+      },
+      "cnc": {
+        "name": "Pezzi lavorati CNC",
+        "body": "Pezzi finiti a tolleranze strette tramite CNC a 4/5 assi, elettroerosione e taglio a filo."
+      },
+      "custom": {
+        "name": "Componenti su misura",
+        "body": "Componenti realizzati su disegno dal prototipo alla produzione in serie."
+      }
+    },
+    "featured": {
+      "badge": "Serie di leghe ad alta temperatura",
+      "title": "Getti in lega ad alta temperatura",
+      "body": "Palette, rotori, distributori e componenti strutturali ottenuti per microfusione in acciaio resistente al calore e gradi di superlega — da piccoli lotti su misura alla produzione in grande serie.",
+      "alt": "Ruota di turbina e palette di rotore in lega ad alta temperatura ottenute per microfusione"
+    }
+  },
+  "industries": {
+    "title": "Settori che serviamo",
+    "intro": "Getti di precisione e pezzi lavorati affidabili nei settori più esigenti di tutto il mondo.",
+    "items": {
+      "automotive": {
+        "name": "Automotive",
+        "desc": "Collettori turbo, collettori di scarico e getti per powertrain per veicoli OEM e aftermarket."
+      },
+      "marine": {
+        "name": "Navale",
+        "desc": "Ferramenta inox resistente alla corrosione, componenti di pompe e propulsione per ambienti marini."
+      },
+      "oilgas": {
+        "name": "Petrolio e gas",
+        "desc": "Getti per valvole, pompe e condotte resistenti a calore e corrosione per il settore oil & gas."
+      },
+      "agriculture": {
+        "name": "Agricoltura",
+        "desc": "Componenti fusi resistenti all'usura per trattori, mietitrebbie e macchine agricole."
+      },
+      "machinery": {
+        "name": "Macchine industriali",
+        "desc": "Pezzi fusi e lavorati di precisione per costruttori di macchine e impianti industriali."
+      },
+      "construction": {
+        "name": "Edilizia",
+        "desc": "Ferramenta, raccordi e getti strutturali durevoli per applicazioni edili."
+      },
+      "medical": {
+        "name": "Apparecchiature medicali",
+        "desc": "Getti di microfusione in acciaio inossidabile pulito per dispositivi e apparecchiature medicali."
+      }
+    }
+  },
+  "quality": {
+    "title": "Controllo qualità e certificazioni",
+    "intro": "Il nostro impegno per la qualità è incrollabile, fondato sul sistema di gestione della qualità ISO 9001:2015.",
+    "iso": "Certificazioni ISO",
+    "isoBody": "ISO 9001:2015 / GB/T 19001 e CE, che coprono la gestione della catena di fornitura, la progettazione e lo sviluppo e la gestione delle informazioni dei clienti.",
+    "testing": "Apparecchiature di prova",
+    "testingBody": "Analisi di simulazione CAM e CAE, controllo statistico della qualità (SQC) e carte di controllo.",
+    "inspection": "Processo di ispezione",
+    "inspectionBody": "Controllo dei materiali in ingresso, monitoraggio in corso di lavorazione, controllo alla spedizione e assistenza post-vendita.",
+    "approval": {
+      "title": "Omologazione internazionale (UN ECE R55)",
+      "body": "Dongying Wanlong è indicata come l'azienda responsabile della conformità della produzione di un dispositivo di aggancio meccanico che detiene l'omologazione europea ai sensi del Regolamento UN ECE n. 55 — conferma che i getti prodotti dalla nostra fonderia soddisfano i requisiti internazionali di omologazione.",
+      "rows": [
+        [
+          "Norma",
+          "Regolamento UN ECE n. 55 — dispositivi di aggancio meccanico"
+        ],
+        [
+          "Marchio di omologazione",
+          "E57 · 55R-03 0158 (Repubblica di San Marino)"
+        ],
+        [
+          "Componente",
+          "Aggancio meccanico classe B50-X (D/Dc 14,2 kN, S 150 kg)"
+        ],
+        [
+          "Rilasciata",
+          "Luglio 2025"
+        ]
+      ]
+    }
+  },
+  "factory": {
+    "title": "Stabilimento e capacità produttive",
+    "intro": "Un'officina stampi indipendente con ampia capacità di lavorazione CNC.",
+    "line": "Linea di produzione",
+    "equipment": "Attrezzature",
+    "equipmentBody": "21 centri di lavoro avanzati nazionali e importati, tra cui macchine CNC per incisione e fresatura ad alta velocità, elettroerosione a specchio CNC, macchine per taglio a filo lento e centri di lavoro a 4 e 5 assi.",
+    "process": "Processo di produzione",
+    "processSteps": [
+      "Progettazione e CAM/CAE",
+      "Realizzazione dello stampo",
+      "Iniezione della cera",
+      "Formazione del guscio",
+      "Fusione e colata",
+      "Lavorazione CNC",
+      "Ispezione e finitura"
+    ]
+  },
+  "blog": {
+    "title": "Centro conoscenze",
+    "intro": "Articoli tecnici sui processi di fusione e lavorazione.",
+    "readMore": "Leggi di più",
+    "posts": {
+      "investment": "Guida pratica alla microfusione",
+      "lostWax": "Fusione a cera persa: processo, vantaggi e applicazioni",
+      "stainless": "Fusione di acciaio inossidabile: gradi e selezione",
+      "cnc": "Lavorazione CNC per componenti fusi",
+      "finishing": "Opzioni di finitura superficiale per pezzi fusi",
+      "heat": "Trattamento termico dei getti in acciaio"
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "intro": "Parlaci del tuo progetto. Carica i disegni e i nostri ingegneri risponderanno con un preventivo dettagliato.",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "company": "Azienda",
+    "phone": "Telefono",
+    "message": "Messaggio / requisiti",
+    "attachment": "Allega disegno (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "consent": "Acconsento a essere contattato in merito alla mia richiesta.",
+    "submit": "Invia richiesta",
+    "success": "Grazie — la tua richiesta è stata ricevuta. Ti risponderemo a breve.",
+    "error": "Si è verificato un errore. Riprova o scrivici direttamente via e-mail.",
+    "info": "Informazioni aziendali",
+    "hours": "Lun–Sab, 8:00–18:00 (GMT+8)",
+    "wechatHint": "Scansiona per chattare con noi su WeChat",
+    "sending": "Invio del messaggio in corso…",
+    "attachmentNote": "Fino a 20 MB per invio. Devi inviare altro? Carica i file rimanenti in un secondo invio."
+  },
+  "footer": {
+    "tagline": "Microfusione di precisione e lavorazione CNC dal 2000.",
+    "quickLinks": "Link rapidi",
+    "contact": "Contatti",
+    "certifications": "Certificazioni",
+    "rights": "Tutti i diritti riservati.",
+    "ports": "Porti di esportazione"
+  },
+  "lines": {
+    "labels": {
+      "title": "Linee di prodotto",
+      "intro": "Esplora i nostri principali programmi di fusione — ogni pezzo realizzato secondo il tuo disegno, dal singolo prototipo alla produzione in serie.",
+      "materials": "Materiali",
+      "process": "Processo",
+      "surface": "Trattamento superficiale",
+      "applications": "Applicazioni tipiche",
+      "moq": "Ordine minimo",
+      "moqOne": "A partire da 1 pezzo",
+      "moqTwo": "A partire da 2 pezzi",
+      "moqMany": "A partire da {n} pezzi",
+      "viewDetails": "Vedi dettagli",
+      "viewAlibaba": "Vedi su Alibaba",
+      "others": "Altre linee di prodotto",
+      "drawingNote": "Tutti i pezzi sono realizzati secondo i tuoi disegni e specifiche. Invia un disegno 2D/3D e ricevi un preventivo entro 24 ore."
+    },
+    "superalloy": {
+      "name": "Componenti di turbina in superlega",
+      "summary": "Distributori (NGV), anelli statorici e parti della sezione calda ottenuti per microfusione sotto vuoto in Inconel e altre superleghe a base di nichel.",
+      "body": "Per turbine a gas, turbocompressori e sezioni calde per la generazione di energia fondiamo distributori a parete sottile complessi, palette di rotore e anelli di palette integrali mediante microfusione sotto vuoto (cera persa), che protegge le reattive superleghe a base di nichel dall'ossidazione durante la colata. I pezzi vengono finiti sui nostri centri CNC e possono essere forniti con rivestimenti protettivi ad alta temperatura — alluminuro, PtAl, MCrAlY e rivestimenti barriera termica (TBC) — per impieghi nell'aerospaziale, nelle turbine a gas per energia, nel navale e nell'oil & gas. Dal singolo prototipo alla produzione in serie.",
+      "materials": "Inconel, superleghe a base di nichel, acciaio resistente al calore",
+      "process": "Microfusione sotto vuoto (cera persa) + lavorazione CNC + rivestimento",
+      "surface": "Sabbiatura · Alluminuro · PtAl · MCrAlY · rivestimento barriera termica (TBC)",
+      "apps": [
+        "Distributori per turbine a gas (NGV)",
+        "Palette di rotore e anelli statorici / di palette",
+        "Parti della sezione calda del turbocompressore",
+        "Componenti aerospaziali e per la generazione di energia",
+        "Parti ad alta temperatura per navale e oil & gas"
+      ],
+      "keywords": [
+        "microfusione di distributori NGV",
+        "microfusione NGV",
+        "microfusione di palette di turbina",
+        "microfusione Inconel",
+        "microfusione di superlega di nichel",
+        "microfusione sotto vuoto",
+        "componenti per turbine a gas",
+        "rivestimento barriera termica TBC",
+        "rivestimento MCrAlY",
+        "microfusione aerospaziale"
+      ]
+    },
+    "pump": {
+      "name": "Giranti e corpi pompa",
+      "summary": "Giranti aperte e semiaperte e corpi pompa in acciaio inossidabile 316L e ghisa sferoidale — ottenuti per microfusione e lavorati con precisione.",
+      "body": "Le nostre giranti in 316L sono progettate per resistere a corrosione e intasamenti nelle acque reflue, nell'acqua di mare e in servizi chimici leggeri, mentre le giranti in ghisa sferoidale offrono elevata resistenza e resistenza all'usura per pompe centrifughe. I corpi pompa in SS316 sono fusi vicino alla forma finale e lavorati a tolleranze strette per pompe di fluidi petroliferi, chimici e industriali.",
+      "materials": "Acciaio inossidabile 316L / SS316, ghisa sferoidale",
+      "process": "Microfusione + lavorazione CNC",
+      "apps": [
+        "Pompe per acque reflue e liquami",
+        "Pompe per acqua di mare e navali",
+        "Pompe di processo chimico e petrolifero",
+        "Pompe centrifughe industriali"
+      ],
+      "keywords": [
+        "girante 316L",
+        "corpo pompa in acciaio inossidabile",
+        "girante in ghisa sferoidale",
+        "pezzi di pompa per microfusione",
+        "girante resistente alla corrosione"
+      ]
+    },
+    "exhaust": {
+      "name": "Collettori di scarico",
+      "summary": "Collettori di scarico, collettori turbo e collettori racing ottenuti per fusione a cera persa in acciaio inossidabile e leghe ad alta temperatura.",
+      "body": "La microfusione produce collettori monoblocco con condotti lisci e ottimizzati e spessore di parete uniforme — ideali per l'elaborazione delle prestazioni e le applicazioni turbo dove contano la resistenza al calore e la durata a fatica. Flange e superfici di montaggio sono lavorate per un accoppiamento preciso.",
+      "materials": "Acciaio inossidabile, leghe ad alta temperatura",
+      "process": "Microfusione a cera persa + lavorazione delle flange",
+      "apps": [
+        "Collettori di scarico per prestazioni e racing",
+        "Collettori per turbocompressore",
+        "Aftermarket automotive ed elaborazione",
+        "Programmi motore OEM"
+      ],
+      "keywords": [
+        "collettore di scarico in acciaio inossidabile",
+        "microfusione di collettore turbo",
+        "collettore di scarico racing",
+        "collettore di scarico a cera persa"
+      ]
+    },
+    "impeller": {
+      "name": "Giranti e ventole",
+      "summary": "Giranti e ventole in acciaio inossidabile ottenute per microfusione per turbomacchine, soffianti e ventilatori.",
+      "body": "Le palette sottili e curve e la geometria complessa del mozzo sono fuse in un unico pezzo, riducendo saldatura e lavorazione. Bilanciamo le ruote e lavoriamo fori e sedi di chiavetta secondo le tue specifiche, così da arrivare pronte per il montaggio.",
+      "materials": "Acciaio inossidabile (incl. 316L)",
+      "process": "Microfusione + lavorazione CNC",
+      "apps": [
+        "Componenti per turbomacchine",
+        "Soffianti e ventilatori industriali",
+        "Giranti per compressori",
+        "Giranti per pompe e miscelatori"
+      ],
+      "keywords": [
+        "girante in acciaio inossidabile fuso",
+        "microfusione di ventole",
+        "girante per compressore",
+        "girante per turbomacchine"
+      ]
+    },
+    "mould": {
+      "name": "Stampi di fusione e prototipi",
+      "summary": "Stampi per iniezione di cera, fusione in gravità e pressofusione, oltre a prototipi rapidi tramite stampa 3D e lavorazione CNC in alluminio 6061/7075 e ottone.",
+      "body": "Con la nostra officina stampi e 14 ingegneri R&S, progettiamo e costruiamo internamente l'attrezzatura per i tuoi getti — dagli stampi per cera multi-slitta per anelli di palette di turbina agli stampi di pressofusione. Modelli stampati in 3D e stampi prototipo lavorati CNC accorciano lo sviluppo prima dell'attrezzatura di serie.",
+      "materials": "Alluminio 6061 / 7075, ottone",
+      "process": "Lavorazione CNC · stampa 3D · progettazione stampi",
+      "apps": [
+        "Stampi per iniezione di cera per microfusione",
+        "Stampi per fusione in gravità e pressofusione",
+        "Prototipi rapidi e preserie",
+        "Attrezzature per ruote di turbina e NGV"
+      ],
+      "keywords": [
+        "stampo per iniezione di cera",
+        "stampo di pressofusione",
+        "stampo prototipo CNC",
+        "attrezzatura per microfusione",
+        "stampo in alluminio"
+      ]
+    }
+  },
+  "seo": {
+    "keywords": {
+      "home": [
+        "microfusione",
+        "fusione a cera persa",
+        "produttore di microfusione di precisione",
+        "fusione di acciaio inossidabile",
+        "fusione di acciaio al carbonio",
+        "fusione di superleghe",
+        "lavorazione CNC",
+        "fonderia in Cina",
+        "fusione metallica OEM",
+        "fonderia di microfusione",
+        "fonderia di precisione",
+        "fonderia di acciaio inossidabile",
+        "fonderia di acciaio",
+        "fonderia a cera persa",
+        "fonderia in Cina",
+        "fonderia Dongying"
+      ],
+      "products": [
+        "prodotti di microfusione",
+        "getti in acciaio inossidabile",
+        "getti in acciaio al carbonio",
+        "getti in superlega",
+        "getti per pompe",
+        "pezzi lavorati CNC",
+        "getti metallici su misura Cina",
+        "fonderia di microfusione",
+        "fonderia di precisione",
+        "fonderia di acciaio inossidabile",
+        "fonderia di acciaio",
+        "fonderia a cera persa",
+        "fonderia in Cina",
+        "fonderia Dongying",
+        "microfusione"
+      ],
+      "about": [
+        "produttore di microfusione Cina",
+        "Dongying Wanlong",
+        "fonderia di precisione",
+        "fornitore di fusione certificato ISO 9001",
+        "fabbrica di fusione a cera persa",
+        "fonderia di microfusione",
+        "fonderia di acciaio inossidabile",
+        "fonderia di acciaio",
+        "fonderia a cera persa",
+        "fonderia in Cina",
+        "fonderia Dongying",
+        "microfusione"
+      ],
+      "industries": [
+        "fusione per automotive",
+        "getti di ferramenta navale",
+        "getti per pompe e valvole",
+        "componenti per macchine industriali",
+        "fornitore di fusione OEM"
+      ],
+      "quality": [
+        "fusione ISO 9001:2015",
+        "getti certificati CE",
+        "controllo qualità della fusione",
+        "ispezione CMM",
+        "prove sui materiali getti"
+      ],
+      "factory": [
+        "fabbrica di fusione Cina",
+        "capacità di fonderia",
+        "centri di lavoro CNC",
+        "capacità produttiva di fusione",
+        "fonderia dello Shandong"
+      ],
+      "contact": [
+        "preventivo di fusione",
+        "richiesta preventivo di fusione",
+        "contatto fornitore di microfusione",
+        "richiesta di fusione su misura"
+      ],
+      "blog": [
+        "conoscenze sulla fusione",
+        "guida alla microfusione",
+        "articoli di metallurgia",
+        "consigli sul processo di fusione"
+      ]
+    },
+    "metaDesc": {
+      "about": "Produttore di microfusione e lavorazione CNC certificato ISO 9001:2015 a Dongying, Cina, dal 2000 — pezzi in superlega, acciaio inossidabile e al carbonio secondo il tuo disegno.",
+      "products": "Prodotti di microfusione e lavorazione CNC in acciaio inossidabile, acciaio al carbonio e superleghe — pezzi per pompe, turbine, scarico e stampi realizzati secondo il tuo disegno in Cina.",
+      "industries": "Getti di precisione per automotive, navale, oil & gas, pompe, macchinari, edilizia e apparecchiature medicali — una fonderia di microfusione ISO 9001 al servizio di oltre 40 mercati.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE e UN ECE R55 — scopri come la nostra fonderia cinese di microfusione controlla la qualità con prove sui materiali, ispezione CMM e rapporti documentati.",
+      "factory": "Dentro la nostra fonderia di Dongying: 21 centri di lavoro CNC, un'officina stampi interna, 14 ingegneri R&S e circa 5.000 m² di spazio produttivo per fusione e lavorazione.",
+      "contact": "Richiedi un preventivo di fusione a Dongying Casting. Carica i tuoi disegni 2D/3D e i nostri ingegneri rispondono con un preventivo dettagliato, di norma entro 24 ore.",
+      "blog": "Guide tecniche su microfusione, fusione a cera persa, gradi di acciaio inossidabile, lavorazione CNC, finitura superficiale e trattamento termico dei pezzi metallici fusi."
+    }
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre nós",
+    "products": "Produtos",
+    "industries": "Setores",
+    "quality": "Controle de qualidade",
+    "factory": "Fábrica",
+    "blog": "Centro de conhecimento",
+    "contact": "Contato"
+  },
+  "cta": {
+    "quote": "Solicitar orçamento",
+    "contact": "Fale conosco",
+    "solutions": "Nossas soluções",
+    "downloadProfile": "Baixar perfil da empresa",
+    "uploadDrawing": "Enviar desenho CAD",
+    "sendInquiry": "Enviar solicitação",
+    "alibaba": "Veja nossos produtos no Alibaba"
+  },
+  "home": {
+    "h1": "Fabricante de fundição de precisão por cera perdida na China",
+    "heroSub": "Soluções de fundição e usinagem CNC do projeto à entrega. Certificado ISO 9001:2015, com mais de 25 anos de experiência em fundição atendendo mercados B2B globais.",
+    "investmentCasting": "Soluções de fundição de precisão",
+    "investmentCastingBody": "Fundição de precisão por cera perdida de alta precisão em aço inoxidável, aço-carbono e ligas resistentes ao calor para componentes industriais exigentes.",
+    "cnc": "Serviços de usinagem CNC",
+    "cncBody": "21 centros de usinagem avançados — fresamento CNC de alta velocidade, eletroerosão, corte a fio e usinagem de 4/5 eixos para peças acabadas de tolerância apertada.",
+    "industries": "Setores que atendemos",
+    "whyChoose": "Por que escolher a Dongying Casting",
+    "quality": "Controle de qualidade e certificações",
+    "factory": "Fábrica e capacidade de produção",
+    "global": "Mercados de exportação globais",
+    "requestQuote": "Solicitar orçamento personalizado",
+    "requestQuoteBody": "Envie desenhos ou especificações e nossos engenheiros responderão com um orçamento detalhado, normalmente em até 24 horas.",
+    "subStainless": "Fundição de aço inoxidável",
+    "subCarbon": "Fundição de aço-carbono",
+    "subLostWax": "Fundição por cera perdida",
+    "subCnc": "Usinagem CNC de precisão",
+    "subAutomotive": "Peças automotivas",
+    "subMarine": "Componentes navais",
+    "subMachinery": "Peças de máquinas industriais",
+    "subPump": "Componentes de bombas e válvulas",
+    "stats": {
+      "experience": "Anos de experiência",
+      "centers": "Centros de usinagem",
+      "markets": "Mercados de exportação",
+      "employees": "Equipe qualificada"
+    },
+    "trust": {
+      "title": "Um fabricante comprovado e verificado",
+      "intro": "Nove anos como fornecedor verificado no Alibaba.com com avaliação 5,0 e colaboração com empresas da Fortune 500.",
+      "items": [
+        [
+          "18",
+          "Anos de exportação"
+        ],
+        [
+          "14",
+          "Engenheiros de P&D"
+        ],
+        [
+          "6",
+          "Inspetores de qualidade"
+        ],
+        [
+          "5.000 m²",
+          "Área de produção"
+        ]
+      ]
+    },
+    "foundry": {
+      "title": "Fundição de precisão por cera perdida na China",
+      "intro": "Como fundição de precisão em Dongying, Shandong, vazamos e usinamos peças metálicas conforme seu desenho em quatro programas de fundição principais.",
+      "items": [
+        [
+          "Fundição de precisão por cera perdida",
+          "Fundição por cera perdida de peças complexas near-net-shape em uma ampla gama de ligas, do protótipo único à produção em série."
+        ],
+        [
+          "Fundição de aço inoxidável",
+          "Peças fundidas em aço inoxidável 316L, 304 e duplex resistentes à corrosão para aplicações navais, químicas, alimentícias e médicas."
+        ],
+        [
+          "Fundição de aço",
+          "Peças fundidas em aço-carbono, liga e resistente ao calor com alta resistência e resistência ao desgaste para máquinas e peças estruturais."
+        ],
+        [
+          "Fundição por cera perdida",
+          "Fundição por cera perdida a vácuo e ao ar, incluindo componentes de turbina em superliga, acabados em nossos centros CNC internos."
+        ]
+      ]
+    }
+  },
+  "why": {
+    "experience": "Mais de 25 anos de experiência em fundição e moldes",
+    "experienceBody": "Fundada em 2000 em Dongying, Shandong, com profundo conhecimento prático em projeto, fabricação e teste online de moldes.",
+    "certified": "Qualidade certificada ISO 9001:2015",
+    "certifiedBody": "Inspeção de materiais recebidos, monitoramento em processo, inspeção de expedição e serviço pós-venda em cada etapa da produção.",
+    "export": "Licença de exportação própria, envio para todo o mundo",
+    "exportBody": "Exportação direta pelos portos de Qingdao, Xangai, Tianjin e Dongying. Incoterms FOB, CIF, EXW e outros.",
+    "oneStop": "Solução completa, do projeto à entrega",
+    "oneStopBody": "Oficina de moldes independente e usinagem CNC avançada — protótipo, fundição, usinagem e acabamento sob o mesmo teto."
+  },
+  "about": {
+    "title": "Sobre a Dongying Casting",
+    "intro": "A Dongying Wanlong Mechanical Mould Co., Ltd. foi fundada em 2000 na cidade de Dongying, Shandong — cidade central do campo petrolífero de Shengli, no delta do Rio Amarelo. A empresa integra projeto, produção, montagem de protótipos e teste de moldes, tendo os moldes de precisão como atividade principal.",
+    "history": "História da empresa",
+    "historyBody": "Ao longo de anos de desenvolvimento e experiência acumulada, construímos ampla competência em projeto, fabricação, usinagem e teste online de moldes — especialmente na criação automatizada de moldes e na usinagem de moldes de cera sem manutenção.",
+    "capacity": "Capacidade de produção",
+    "capacityBody": "De 101 a 200 funcionários e uma capacidade anual que sustenta uma produção de US$ 50 a 100 milhões, com prazos de 1 a 3 meses na alta temporada.",
+    "certs": "Certificações",
+    "team": "Nossa equipe",
+    "teamBody": "Uma equipe profissional de engenheiros projetistas sênior que utiliza softwares de simulação CAM e CAE para otimizar cada molde e componente."
+  },
+  "products": {
+    "title": "Produtos",
+    "intro": "Soluções completas de fundição e usinagem em diversos metais e ligas.",
+    "items": {
+      "investment": {
+        "name": "Peças de fundição de precisão",
+        "body": "Peças de fundição de precisão por cera perdida de alta precisão para componentes industriais complexos."
+      },
+      "stainless": {
+        "name": "Peças fundidas em aço inoxidável",
+        "body": "Fundição de aço inoxidável resistente à corrosão para aplicações navais, alimentícias e médicas."
+      },
+      "carbon": {
+        "name": "Peças fundidas em aço-carbono",
+        "body": "Peças fundidas em aço-carbono duráveis para máquinas e peças estruturais."
+      },
+      "heat": {
+        "name": "Peças fundidas em aço resistente ao calor",
+        "body": "Peças fundidas em liga de alta temperatura para pás, palhetas e bocais de turbina."
+      },
+      "cnc": {
+        "name": "Peças usinadas em CNC",
+        "body": "Peças acabadas de tolerância apertada via CNC de 4/5 eixos, eletroerosão e corte a fio."
+      },
+      "custom": {
+        "name": "Componentes sob medida",
+        "body": "Componentes feitos conforme desenho, do protótipo à produção em série."
+      }
+    },
+    "featured": {
+      "badge": "Série de ligas de alta temperatura",
+      "title": "Peças fundidas em liga de alta temperatura",
+      "body": "Pás, rotores, palhetas do distribuidor e componentes estruturais fundidos por precisão em aço resistente ao calor e graus de superliga — de pequenos lotes sob medida à produção em grande série.",
+      "alt": "Roda de turbina e pás de rotor em liga de alta temperatura fundidas por precisão"
+    }
+  },
+  "industries": {
+    "title": "Setores que atendemos",
+    "intro": "Peças fundidas de precisão e peças usinadas de confiança em setores exigentes no mundo todo.",
+    "items": {
+      "automotive": {
+        "name": "Automotivo",
+        "desc": "Coletores turbo, coletores de escape e peças fundidas de powertrain para veículos OEM e de reposição."
+      },
+      "marine": {
+        "name": "Naval",
+        "desc": "Ferragens inox resistentes à corrosão, peças de bombas e propulsão para ambientes marinhos."
+      },
+      "oilgas": {
+        "name": "Petróleo e gás",
+        "desc": "Peças fundidas de válvulas, bombas e dutos resistentes ao calor e à corrosão para o setor de óleo e gás."
+      },
+      "agriculture": {
+        "name": "Agricultura",
+        "desc": "Componentes fundidos resistentes ao desgaste para tratores, colheitadeiras e máquinas agrícolas."
+      },
+      "machinery": {
+        "name": "Máquinas industriais",
+        "desc": "Peças fundidas e usinadas de precisão para fabricantes de máquinas e equipamentos industriais."
+      },
+      "construction": {
+        "name": "Construção",
+        "desc": "Ferragens, conexões e peças fundidas estruturais duráveis para aplicações de construção."
+      },
+      "medical": {
+        "name": "Equipamentos médicos",
+        "desc": "Peças fundidas de precisão em aço inoxidável limpo para dispositivos e equipamentos médicos."
+      }
+    }
+  },
+  "quality": {
+    "title": "Controle de qualidade e certificações",
+    "intro": "Nosso compromisso com a qualidade é inabalável, baseado no sistema de gestão da qualidade ISO 9001:2015.",
+    "iso": "Certificações ISO",
+    "isoBody": "ISO 9001:2015 / GB/T 19001 e CE, abrangendo gestão da cadeia de suprimentos, projeto e desenvolvimento e gestão de informações do cliente.",
+    "testing": "Equipamentos de ensaio",
+    "testingBody": "Análise por simulação CAM e CAE, controle estatístico de qualidade (SQC) e cartas de controle.",
+    "inspection": "Processo de inspeção",
+    "inspectionBody": "Inspeção de materiais recebidos, monitoramento em processo, inspeção de expedição e serviço pós-venda.",
+    "approval": {
+      "title": "Homologação internacional de tipo (UN ECE R55)",
+      "body": "A Dongying Wanlong é indicada como a empresa responsável pela conformidade de produção de um dispositivo de engate mecânico que detém homologação de tipo europeia nos termos do Regulamento UN ECE n.º 55 — confirmação de que as peças fundidas produzidas por nossa fundição atendem aos requisitos internacionais de homologação de tipo.",
+      "rows": [
+        [
+          "Norma",
+          "Regulamento UN ECE n.º 55 — dispositivos de engate mecânico"
+        ],
+        [
+          "Marca de homologação",
+          "E57 · 55R-03 0158 (República de San Marino)"
+        ],
+        [
+          "Componente",
+          "Engate mecânico classe B50-X (D/Dc 14,2 kN, S 150 kg)"
+        ],
+        [
+          "Concedida",
+          "Julho de 2025"
+        ]
+      ]
+    }
+  },
+  "factory": {
+    "title": "Fábrica e capacidade de produção",
+    "intro": "Uma oficina de moldes independente com ampla capacidade de usinagem CNC.",
+    "line": "Linha de produção",
+    "equipment": "Equipamentos",
+    "equipmentBody": "21 centros de usinagem avançados nacionais e importados, incluindo máquinas CNC de gravação e fresamento de alta velocidade, máquinas de eletroerosão a espelho CNC, máquinas de corte a fio lento e centros de usinagem de 4 e 5 eixos.",
+    "process": "Processo de fabricação",
+    "processSteps": [
+      "Projeto e CAM/CAE",
+      "Fabricação do molde",
+      "Injeção de cera",
+      "Formação da casca",
+      "Fundição e vazamento",
+      "Usinagem CNC",
+      "Inspeção e acabamento"
+    ]
+  },
+  "blog": {
+    "title": "Centro de conhecimento",
+    "intro": "Artigos técnicos sobre processos de fundição e usinagem.",
+    "readMore": "Leia mais",
+    "posts": {
+      "investment": "Guia prático de fundição de precisão",
+      "lostWax": "Fundição por cera perdida: processo, benefícios e aplicações",
+      "stainless": "Fundição de aço inoxidável: graus e seleção",
+      "cnc": "Usinagem CNC para componentes fundidos",
+      "finishing": "Opções de acabamento superficial para peças fundidas",
+      "heat": "Tratamento térmico de peças fundidas de aço"
+    }
+  },
+  "contact": {
+    "title": "Fale conosco",
+    "intro": "Conte-nos sobre seu projeto. Envie os desenhos e nossos engenheiros responderão com um orçamento detalhado.",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "company": "Empresa",
+    "phone": "Telefone",
+    "message": "Mensagem / requisitos",
+    "attachment": "Anexar desenho (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "consent": "Concordo em ser contatado sobre minha solicitação.",
+    "submit": "Enviar solicitação",
+    "success": "Obrigado — sua solicitação foi recebida. Responderemos em breve.",
+    "error": "Algo deu errado. Tente novamente ou envie-nos um e-mail diretamente.",
+    "info": "Informações da empresa",
+    "hours": "Seg–Sáb, 8:00–18:00 (GMT+8)",
+    "wechatHint": "Escaneie para conversar conosco no WeChat",
+    "sending": "Enviando sua mensagem…",
+    "attachmentNote": "Até 20 MB por envio. Precisa enviar mais? Carregue os arquivos restantes em um segundo envio."
+  },
+  "footer": {
+    "tagline": "Fundição de precisão por cera perdida e usinagem CNC desde 2000.",
+    "quickLinks": "Links rápidos",
+    "contact": "Contato",
+    "certifications": "Certificações",
+    "rights": "Todos os direitos reservados.",
+    "ports": "Portos de exportação"
+  },
+  "lines": {
+    "labels": {
+      "title": "Linhas de produtos",
+      "intro": "Explore nossos principais programas de fundição — cada peça feita conforme seu desenho, do protótipo único à produção em série.",
+      "materials": "Materiais",
+      "process": "Processo",
+      "surface": "Tratamento de superfície",
+      "applications": "Aplicações típicas",
+      "moq": "Pedido mínimo",
+      "moqOne": "A partir de 1 peça",
+      "moqTwo": "A partir de 2 peças",
+      "moqMany": "A partir de {n} peças",
+      "viewDetails": "Ver detalhes",
+      "viewAlibaba": "Ver no Alibaba",
+      "others": "Outras linhas de produtos",
+      "drawingNote": "Todas as peças são feitas conforme seus desenhos e especificações. Envie um desenho 2D/3D e receba um orçamento em até 24 horas."
+    },
+    "superalloy": {
+      "name": "Componentes de turbina em superliga",
+      "summary": "Palhetas do distribuidor (NGV), anéis do estator e peças da seção quente fundidas por precisão a vácuo em Inconel e outras superligas à base de níquel.",
+      "body": "Para turbinas a gás, turbocompressores e seções quentes de geração de energia, fundimos palhetas do distribuidor de paredes finas complexas, pás de rotor e anéis de palhetas integrais por fundição de precisão a vácuo (cera perdida), que protege as reativas superligas à base de níquel da oxidação durante o vazamento. As peças recebem acabamento em nossos centros CNC e podem ser fornecidas com revestimentos protetores de alta temperatura — alumineto, PtAl, MCrAlY e revestimentos de barreira térmica (TBC) — para uso em aeroespacial, turbinas a gás de energia, naval e óleo e gás. Do protótipo único à produção em série.",
+      "materials": "Inconel, superligas à base de níquel, aço resistente ao calor",
+      "process": "Fundição de precisão a vácuo (cera perdida) + usinagem CNC + revestimento",
+      "surface": "Jateamento · alumineto · PtAl · MCrAlY · revestimento de barreira térmica (TBC)",
+      "apps": [
+        "Palhetas do distribuidor de turbina a gás (NGV)",
+        "Pás de rotor e anéis do estator / de palhetas",
+        "Peças da seção quente do turbocompressor",
+        "Componentes aeroespaciais e de geração de energia",
+        "Peças de alta temperatura para naval e óleo e gás"
+      ],
+      "keywords": [
+        "fundição de palhetas NGV",
+        "fundição NGV",
+        "fundição de pás de turbina",
+        "fundição de precisão Inconel",
+        "fundição de superliga de níquel",
+        "fundição de precisão a vácuo",
+        "componentes de turbina a gás",
+        "revestimento de barreira térmica TBC",
+        "revestimento MCrAlY",
+        "fundição aeroespacial"
+      ]
+    },
+    "pump": {
+      "name": "Rotores e carcaças de bombas",
+      "summary": "Rotores abertos e semiabertos e carcaças de bombas em aço inoxidável 316L e ferro fundido dúctil — fundição de precisão e usinagem de precisão.",
+      "body": "Nossos rotores em 316L são projetados para resistir à corrosão e ao entupimento em esgoto, água do mar e serviço químico leve, enquanto os rotores em ferro fundido dúctil oferecem alta resistência e resistência ao desgaste para bombas centrífugas. As carcaças de bomba em SS316 são fundidas próximas à forma final e usinadas com tolerâncias apertadas para bombas de fluidos de petróleo, químicos e industriais.",
+      "materials": "Aço inoxidável 316L / SS316, ferro fundido dúctil",
+      "process": "Fundição de precisão + usinagem CNC",
+      "apps": [
+        "Bombas de esgoto e águas residuais",
+        "Bombas de água do mar e navais",
+        "Bombas de processo químico e de petróleo",
+        "Bombas centrífugas industriais"
+      ],
+      "keywords": [
+        "rotor 316L",
+        "carcaça de bomba em aço inoxidável",
+        "rotor de ferro fundido dúctil",
+        "peças de bomba de fundição de precisão",
+        "rotor resistente à corrosão"
+      ]
+    },
+    "exhaust": {
+      "name": "Coletores de escape",
+      "summary": "Coletores de escape, coletores turbo e coletores de corrida fundidos por cera perdida em aço inoxidável e ligas de alta temperatura.",
+      "body": "A fundição de precisão produz coletores de peça única com dutos lisos e otimizados e espessura de parede uniforme — ideais para preparação de desempenho e aplicações turbo onde importam resistência ao calor e vida em fadiga. Flanges e faces de montagem são usinadas para um encaixe preciso.",
+      "materials": "Aço inoxidável, ligas de alta temperatura",
+      "process": "Fundição de precisão por cera perdida + usinagem de flanges",
+      "apps": [
+        "Coletores de escape de desempenho e corrida",
+        "Coletores de turbocompressor",
+        "Reposição automotiva e preparação",
+        "Programas de motor OEM"
+      ],
+      "keywords": [
+        "coletor de escape em aço inoxidável",
+        "fundição de coletor turbo",
+        "coletor de escape de corrida",
+        "coletor de escape por cera perdida"
+      ]
+    },
+    "impeller": {
+      "name": "Rotores e ventiladores",
+      "summary": "Rotores e ventiladores em aço inoxidável fundidos por precisão para turbomáquinas, sopradores e ventiladores.",
+      "body": "As pás finas e curvas e a geometria complexa do cubo são fundidas em uma única peça, reduzindo soldagem e usinagem. Balanceamos as rodas e usinamos furos e rasgos de chaveta conforme sua especificação, para que cheguem prontas para montagem.",
+      "materials": "Aço inoxidável (incl. 316L)",
+      "process": "Fundição de precisão + usinagem CNC",
+      "apps": [
+        "Componentes de turbomáquinas",
+        "Sopradores e ventiladores industriais",
+        "Rotores de compressores",
+        "Rotores de bombas e misturadores"
+      ],
+      "keywords": [
+        "rotor de aço inoxidável fundido",
+        "fundição de ventilador",
+        "roda de compressor",
+        "rotor de turbomáquina"
+      ]
+    },
+    "mould": {
+      "name": "Moldes de fundição e protótipos",
+      "summary": "Moldes de injeção de cera, fundição por gravidade e fundição sob pressão, além de protótipos rápidos por impressão 3D e usinagem CNC em alumínio 6061/7075 e latão.",
+      "body": "Com nossa própria oficina de moldes e 14 engenheiros de P&D, projetamos e construímos internamente o ferramental para suas peças fundidas — de moldes de cera multideslizantes para anéis de palhetas de turbina a moldes de fundição sob pressão. Modelos impressos em 3D e moldes-protótipo usinados em CNC encurtam o desenvolvimento antes do ferramental de série.",
+      "materials": "Alumínio 6061 / 7075, latão",
+      "process": "Usinagem CNC · impressão 3D · projeto de moldes",
+      "apps": [
+        "Moldes de injeção de cera para fundição de precisão",
+        "Moldes de fundição por gravidade e sob pressão",
+        "Protótipos rápidos e lotes-piloto",
+        "Ferramental para rodas de turbina e NGV"
+      ],
+      "keywords": [
+        "molde de injeção de cera",
+        "molde de fundição sob pressão",
+        "molde-protótipo CNC",
+        "ferramental para fundição de precisão",
+        "molde de alumínio"
+      ]
+    }
+  },
+  "seo": {
+    "keywords": {
+      "home": [
+        "fundição de precisão",
+        "fundição por cera perdida",
+        "fabricante de fundição de precisão",
+        "fundição de aço inoxidável",
+        "fundição de aço-carbono",
+        "fundição de superligas",
+        "usinagem CNC",
+        "fundição na China",
+        "fundição de metal OEM",
+        "fundição de precisão por cera perdida",
+        "fundição de precisão",
+        "fundição de aço inoxidável",
+        "fundição de aço",
+        "fundição por cera perdida",
+        "fundição na China",
+        "fundição Dongying"
+      ],
+      "products": [
+        "produtos de fundição de precisão",
+        "peças fundidas em aço inoxidável",
+        "peças fundidas em aço-carbono",
+        "peças fundidas em superliga",
+        "peças fundidas de bombas",
+        "peças usinadas em CNC",
+        "peças fundidas de metal sob medida China",
+        "fundição de precisão por cera perdida",
+        "fundição de precisão",
+        "fundição de aço inoxidável",
+        "fundição de aço",
+        "fundição por cera perdida",
+        "fundição na China",
+        "fundição Dongying",
+        "fundição de precisão"
+      ],
+      "about": [
+        "fabricante de fundição de precisão China",
+        "Dongying Wanlong",
+        "fundição de precisão",
+        "fornecedor de fundição certificado ISO 9001",
+        "fábrica de fundição por cera perdida",
+        "fundição de precisão por cera perdida",
+        "fundição de aço inoxidável",
+        "fundição de aço",
+        "fundição por cera perdida",
+        "fundição na China",
+        "fundição Dongying",
+        "fundição de precisão"
+      ],
+      "industries": [
+        "fundição para automotivo",
+        "peças fundidas de ferragens navais",
+        "peças fundidas de bombas e válvulas",
+        "peças de máquinas industriais",
+        "fornecedor de fundição OEM"
+      ],
+      "quality": [
+        "fundição ISO 9001:2015",
+        "peças fundidas certificadas CE",
+        "controle de qualidade de fundição",
+        "inspeção CMM",
+        "ensaios de materiais de peças fundidas"
+      ],
+      "factory": [
+        "fábrica de fundição China",
+        "capacidades de fundição",
+        "centros de usinagem CNC",
+        "capacidade de produção de fundição",
+        "fundição de Shandong"
+      ],
+      "contact": [
+        "orçamento de fundição",
+        "solicitar orçamento de fundição",
+        "contato de fornecedor de fundição de precisão",
+        "solicitação de fundição sob medida"
+      ],
+      "blog": [
+        "conhecimento sobre fundição",
+        "guia de fundição de precisão",
+        "artigos de metalurgia",
+        "dicas sobre o processo de fundição"
+      ]
+    },
+    "metaDesc": {
+      "about": "Fabricante de fundição de precisão e usinagem CNC certificado ISO 9001:2015 em Dongying, China, desde 2000 — peças em superliga, aço inoxidável e aço-carbono conforme seu desenho.",
+      "products": "Produtos de fundição de precisão e usinagem CNC em aço inoxidável, aço-carbono e superligas — peças de bombas, turbinas, escape e moldes feitas conforme seu desenho na China.",
+      "industries": "Peças fundidas de precisão para automotivo, naval, óleo e gás, bombas, máquinas, construção e equipamentos médicos — uma fundição de precisão ISO 9001 atendendo mais de 40 mercados.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE e UN ECE R55 — veja como nossa fundição chinesa de precisão controla a qualidade com ensaios de materiais, inspeção CMM e relatórios documentados.",
+      "factory": "Dentro da nossa fundição em Dongying: 21 centros de usinagem CNC, uma oficina de moldes interna, 14 engenheiros de P&D e cerca de 5.000 m² de área de produção para fundição e usinagem.",
+      "contact": "Solicite um orçamento de fundição à Dongying Casting. Envie seus desenhos 2D/3D e nossos engenheiros respondem com um orçamento detalhado, normalmente em até 24 horas.",
+      "blog": "Guias técnicos sobre fundição de precisão, fundição por cera perdida, graus de aço inoxidável, usinagem CNC, acabamento superficial e tratamento térmico de peças metálicas fundidas."
+    }
+  }
+}

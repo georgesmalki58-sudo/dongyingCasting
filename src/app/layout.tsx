@@ -9,7 +9,7 @@ import { CloudflareAnalytics } from '@/components/CloudflareAnalytics';
 
 // 'swap' with a metric-matched fallback (adjustFontFallback default) avoids the
 // layout shift the page had when the webfont swapped in (was driving CLS 0.304).
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap', fallback: ['system-ui', 'arial'] });
+const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter', display: 'swap', fallback: ['system-ui', 'arial'] });
 const robotoMono = Roboto_Mono({ subsets: ['latin'], variable: '--font-roboto-mono', display: 'optional', fallback: ['ui-monospace', 'monospace'] });
 
 async function activeLocale(): Promise<Locale> {

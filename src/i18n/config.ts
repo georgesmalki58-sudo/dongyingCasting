@@ -1,4 +1,4 @@
-export const locales = ['en', 'zh', 'de', 'es', 'ar'] as const;
+export const locales = ['en', 'zh', 'de', 'es', 'ar', 'fr', 'it', 'ru', 'pt'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'en';
 
@@ -7,7 +7,11 @@ export const localeNames: Record<Locale, string> = {
   zh: '中文',
   de: 'Deutsch',
   es: 'Español',
-  ar: 'العربية'
+  ar: 'العربية',
+  fr: 'Français',
+  it: 'Italiano',
+  ru: 'Русский',
+  pt: 'Português'
 };
 
 // Right-to-left locales.
@@ -25,6 +29,10 @@ import zh from './dictionaries/zh.json';
 import de from './dictionaries/de.json';
 import es from './dictionaries/es.json';
 import ar from './dictionaries/ar.json';
+import fr from './dictionaries/fr.json';
+import it from './dictionaries/it.json';
+import ru from './dictionaries/ru.json';
+import pt from './dictionaries/pt.json';
 
 export type Dictionary = typeof en;
 const dictionaries: Record<Locale, Dictionary> = {
@@ -32,7 +40,11 @@ const dictionaries: Record<Locale, Dictionary> = {
   zh: zh as Dictionary,
   de: de as Dictionary,
   es: es as Dictionary,
-  ar: ar as Dictionary
+  ar: ar as Dictionary,
+  fr: fr as Dictionary,
+  it: it as Dictionary,
+  ru: ru as Dictionary,
+  pt: pt as Dictionary
 };
 
 export function getDictionary(locale: Locale): Dictionary {

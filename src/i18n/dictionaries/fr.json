@@ -1,0 +1,492 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "industries": "Secteurs",
+    "quality": "Contrôle qualité",
+    "factory": "Usine",
+    "blog": "Centre de connaissances",
+    "contact": "Contact"
+  },
+  "cta": {
+    "quote": "Demander un devis",
+    "contact": "Nous contacter",
+    "solutions": "Nos solutions",
+    "downloadProfile": "Télécharger la présentation",
+    "uploadDrawing": "Téléverser un plan CAO",
+    "sendInquiry": "Envoyer la demande",
+    "alibaba": "Voir nos produits sur Alibaba"
+  },
+  "home": {
+    "h1": "Fabricant de moulage de précision à la cire perdue en Chine",
+    "heroSub": "Solutions de moulage et d'usinage CNC, de la conception à la livraison. Certifié ISO 9001:2015, avec plus de 25 ans d'expertise en fonderie au service des marchés B2B mondiaux.",
+    "investmentCasting": "Solutions de moulage de précision",
+    "investmentCastingBody": "Moulage de précision à la cire perdue de haute précision en acier inoxydable, acier au carbone et alliages réfractaires pour des composants industriels exigeants.",
+    "cnc": "Services d'usinage CNC",
+    "cncBody": "21 centres d'usinage avancés — fraisage CNC à grande vitesse, électroérosion, découpe par fil et usinage 4/5 axes pour des pièces finies à tolérances serrées.",
+    "industries": "Secteurs que nous servons",
+    "whyChoose": "Pourquoi choisir Dongying Casting",
+    "quality": "Contrôle qualité et certifications",
+    "factory": "Usine et capacités de production",
+    "global": "Marchés d'exportation mondiaux",
+    "requestQuote": "Demander un devis personnalisé",
+    "requestQuoteBody": "Envoyez vos plans ou spécifications et nos ingénieurs vous répondront avec un devis détaillé, généralement sous 24 heures.",
+    "subStainless": "Moulage d'acier inoxydable",
+    "subCarbon": "Moulage d'acier au carbone",
+    "subLostWax": "Moulage à la cire perdue",
+    "subCnc": "Usinage CNC de précision",
+    "subAutomotive": "Pièces automobiles",
+    "subMarine": "Composants marins",
+    "subMachinery": "Pièces de machines industrielles",
+    "subPump": "Composants de pompes et vannes",
+    "stats": {
+      "experience": "Ans d'expérience",
+      "centers": "Centres d'usinage",
+      "markets": "Marchés d'exportation",
+      "employees": "Personnel qualifié"
+    },
+    "trust": {
+      "title": "Un fabricant éprouvé et vérifié",
+      "intro": "Neuf ans en tant que fournisseur vérifié sur Alibaba.com avec une note de 5,0 et une collaboration avec des entreprises du Fortune 500.",
+      "items": [
+        [
+          "18",
+          "Ans d'exportation"
+        ],
+        [
+          "14",
+          "Ingénieurs R&D"
+        ],
+        [
+          "6",
+          "Inspecteurs qualité"
+        ],
+        [
+          "5 000 m²",
+          "Surface de production"
+        ]
+      ]
+    },
+    "foundry": {
+      "title": "Fonderie de moulage de précision en Chine",
+      "intro": "En tant que fonderie de précision à Dongying, Shandong, nous coulons et usinons des pièces métalliques selon vos plans à travers quatre programmes de fonderie principaux.",
+      "items": [
+        [
+          "Fonderie de moulage de précision",
+          "Moulage à la cire perdue de pièces complexes de forme quasi finie dans une large gamme d'alliages, du prototype unique à la production en série."
+        ],
+        [
+          "Fonderie d'acier inoxydable",
+          "Pièces moulées en acier inoxydable 316L, 304 et duplex résistant à la corrosion pour les applications marines, chimiques, alimentaires et médicales."
+        ],
+        [
+          "Fonderie d'acier",
+          "Pièces moulées en acier au carbone, allié et réfractaire à haute résistance et résistance à l'usure pour les machines et pièces structurelles."
+        ],
+        [
+          "Fonderie à la cire perdue",
+          "Moulage à la cire perdue sous vide et à l'air, y compris les composants de turbine en superalliage, finis sur nos centres CNC internes."
+        ]
+      ]
+    }
+  },
+  "why": {
+    "experience": "Plus de 25 ans d'expertise en moulage et moules",
+    "experienceBody": "Fondée en 2000 à Dongying, Shandong, avec un savoir-faire pratique approfondi en conception, fabrication et essais de moules en ligne.",
+    "certified": "Qualité certifiée ISO 9001:2015",
+    "certifiedBody": "Inspection des matières premières, suivi en cours de production, contrôle à l'expédition et service après-vente à chaque étape de production.",
+    "export": "Licence d'exportation propre, expédition mondiale",
+    "exportBody": "Exportation directe via les ports de Qingdao, Shanghai, Tianjin et Dongying. Incoterms FOB, CIF, EXW et plus.",
+    "oneStop": "Guichet unique, de la conception à la livraison",
+    "oneStopBody": "Atelier de moules indépendant et usinage CNC approfondi — prototype, moulage, usinage et finition sous un même toit."
+  },
+  "about": {
+    "title": "À propos de Dongying Casting",
+    "intro": "Dongying Wanlong Mechanical Mould Co., Ltd. a été fondée en 2000 à Dongying, Shandong — ville centrale du champ pétrolier de Shengli dans le delta du fleuve Jaune. L'entreprise intègre conception, production, assemblage de prototypes et essais de moules, avec les moules de précision comme activité principale.",
+    "history": "Histoire de l'entreprise",
+    "historyBody": "Grâce à des années de développement et d'expérience accumulée, nous avons bâti une expertise complète en conception, fabrication, usinage et essais de moules en ligne — notamment dans la création automatisée de moules et l'usinage de moules à cire sans entretien.",
+    "capacity": "Capacité de production",
+    "capacityBody": "101 à 200 employés et une capacité annuelle soutenant une production de 50 à 100 millions de dollars US, avec des délais de 1 à 3 mois en haute saison.",
+    "certs": "Certifications",
+    "team": "Notre équipe",
+    "teamBody": "Une équipe professionnelle d'ingénieurs concepteurs seniors utilisant des logiciels de simulation CAM et CAE pour optimiser chaque moule et composant."
+  },
+  "products": {
+    "title": "Produits",
+    "intro": "Des solutions complètes de moulage et d'usinage pour de nombreux métaux et alliages.",
+    "items": {
+      "investment": {
+        "name": "Pièces de moulage de précision",
+        "body": "Pièces de moulage de précision à la cire perdue de haute précision pour composants industriels complexes."
+      },
+      "stainless": {
+        "name": "Pièces moulées en acier inoxydable",
+        "body": "Moulage d'acier inoxydable résistant à la corrosion pour applications marines, alimentaires et médicales."
+      },
+      "carbon": {
+        "name": "Pièces moulées en acier au carbone",
+        "body": "Pièces moulées en acier au carbone durables pour machines et pièces structurelles."
+      },
+      "heat": {
+        "name": "Pièces moulées en acier réfractaire",
+        "body": "Pièces moulées en alliage haute température pour aubes, distributeurs et tuyères de turbine."
+      },
+      "cnc": {
+        "name": "Pièces usinées CNC",
+        "body": "Pièces finies à tolérances serrées par usinage CNC 4/5 axes, électroérosion et découpe par fil."
+      },
+      "custom": {
+        "name": "Composants sur mesure",
+        "body": "Composants fabriqués sur plan, du prototype à la production en série."
+      }
+    },
+    "featured": {
+      "badge": "Série d'alliages haute température",
+      "title": "Pièces moulées en alliage haute température",
+      "body": "Aubes, rotors, distributeurs et composants structurels moulés de précision en acier réfractaire et nuances de superalliage — des petites séries sur mesure à la production en grande série.",
+      "alt": "Roue de turbine et aubes de rotor en alliage haute température moulées de précision"
+    }
+  },
+  "industries": {
+    "title": "Secteurs que nous servons",
+    "intro": "Pièces moulées de précision et pièces usinées de confiance dans des secteurs exigeants du monde entier.",
+    "items": {
+      "automotive": {
+        "name": "Automobile",
+        "desc": "Collecteurs turbo, collecteurs d'échappement et pièces moulées de groupe motopropulseur pour véhicules OEM et de rechange."
+      },
+      "marine": {
+        "name": "Marine",
+        "desc": "Quincaillerie inox résistante à la corrosion, pièces de pompe et de propulsion pour environnements marins."
+      },
+      "oilgas": {
+        "name": "Pétrole et gaz",
+        "desc": "Pièces moulées de vannes, pompes et pipelines résistant à la chaleur et à la corrosion pour le secteur pétrolier et gazier."
+      },
+      "agriculture": {
+        "name": "Agriculture",
+        "desc": "Composants moulés résistants à l'usure pour tracteurs, moissonneuses et machines agricoles."
+      },
+      "machinery": {
+        "name": "Machines industrielles",
+        "desc": "Pièces moulées et usinées de précision pour les constructeurs de machines et d'équipements industriels."
+      },
+      "construction": {
+        "name": "Construction",
+        "desc": "Quincaillerie, raccords et pièces moulées structurelles durables pour applications du bâtiment."
+      },
+      "medical": {
+        "name": "Équipement médical",
+        "desc": "Pièces moulées de précision en acier inoxydable propre pour dispositifs et équipements médicaux."
+      }
+    }
+  },
+  "quality": {
+    "title": "Contrôle qualité et certifications",
+    "intro": "Notre engagement envers la qualité est inébranlable, fondé sur le système de management de la qualité ISO 9001:2015.",
+    "iso": "Certifications ISO",
+    "isoBody": "ISO 9001:2015 / GB/T 19001 et CE, couvrant la gestion de la chaîne d'approvisionnement, la conception et le développement, et la gestion des informations clients.",
+    "testing": "Équipement d'essai",
+    "testingBody": "Analyse par simulation CAM et CAE, contrôle statistique de la qualité (SQC) et cartes de contrôle.",
+    "inspection": "Processus d'inspection",
+    "inspectionBody": "Inspection des matières premières, suivi en cours de production, contrôle à l'expédition et service après-vente.",
+    "approval": {
+      "title": "Homologation internationale de type (UN ECE R55)",
+      "body": "Dongying Wanlong est désignée comme la société responsable de la conformité de production d'un dispositif d'attelage mécanique bénéficiant d'une homologation de type européenne au titre du Règlement UN ECE n° 55 — la confirmation que les pièces moulées produites par notre fonderie répondent aux exigences internationales d'homologation de type.",
+      "rows": [
+        [
+          "Norme",
+          "Règlement UN ECE n° 55 — dispositifs d'attelage mécanique"
+        ],
+        [
+          "Marque d'homologation",
+          "E57 · 55R-03 0158 (République de Saint-Marin)"
+        ],
+        [
+          "Composant",
+          "Attelage mécanique classe B50-X (D/Dc 14,2 kN, S 150 kg)"
+        ],
+        [
+          "Délivrée",
+          "Juillet 2025"
+        ]
+      ]
+    }
+  },
+  "factory": {
+    "title": "Usine et capacités de production",
+    "intro": "Un atelier de moules indépendant doté d'une grande capacité d'usinage CNC.",
+    "line": "Ligne de production",
+    "equipment": "Équipement",
+    "equipmentBody": "21 centres d'usinage avancés nationaux et importés, dont des machines de gravure et de fraisage CNC à grande vitesse, des machines d'électroérosion CNC à miroir, des machines de découpe par fil lent et des centres d'usinage 4 et 5 axes.",
+    "process": "Processus de fabrication",
+    "processSteps": [
+      "Conception et CAM/CAE",
+      "Fabrication du moule",
+      "Injection de cire",
+      "Fabrication de la carapace",
+      "Coulée et moulage",
+      "Usinage CNC",
+      "Inspection et finition"
+    ]
+  },
+  "blog": {
+    "title": "Centre de connaissances",
+    "intro": "Articles techniques sur les procédés de moulage et d'usinage.",
+    "readMore": "Lire la suite",
+    "posts": {
+      "investment": "Guide pratique du moulage de précision",
+      "lostWax": "Moulage à la cire perdue : procédé, avantages et applications",
+      "stainless": "Moulage d'acier inoxydable : nuances et sélection",
+      "cnc": "Usinage CNC des composants moulés",
+      "finishing": "Options de finition de surface pour pièces moulées",
+      "heat": "Traitement thermique des pièces moulées en acier"
+    }
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "intro": "Parlez-nous de votre projet. Téléversez vos plans et nos ingénieurs vous répondront avec un devis détaillé.",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "company": "Entreprise",
+    "phone": "Téléphone",
+    "message": "Message / exigences",
+    "attachment": "Joindre un plan (PDF, DOCX, XLSX, STEP, DWG, DXF, ZIP, JPG, PNG)",
+    "consent": "J'accepte d'être contacté au sujet de ma demande.",
+    "submit": "Envoyer la demande",
+    "success": "Merci — votre demande a bien été reçue. Nous vous répondrons sous peu.",
+    "error": "Une erreur s'est produite. Veuillez réessayer ou nous envoyer un e-mail directement.",
+    "info": "Informations sur l'entreprise",
+    "hours": "Lun–Sam, 8h00–18h00 (GMT+8)",
+    "wechatHint": "Scannez pour discuter avec nous sur WeChat",
+    "sending": "Envoi de votre message…",
+    "attachmentNote": "Jusqu'à 20 Mo par envoi. Besoin d'envoyer plus ? Téléversez les fichiers restants dans un second envoi."
+  },
+  "footer": {
+    "tagline": "Moulage de précision à la cire perdue et usinage CNC depuis 2000.",
+    "quickLinks": "Liens rapides",
+    "contact": "Contact",
+    "certifications": "Certifications",
+    "rights": "Tous droits réservés.",
+    "ports": "Ports d'exportation"
+  },
+  "lines": {
+    "labels": {
+      "title": "Gammes de produits",
+      "intro": "Découvrez nos principaux programmes de moulage — chaque pièce fabriquée selon vos plans, du prototype unique à la production en série.",
+      "materials": "Matériaux",
+      "process": "Procédé",
+      "surface": "Traitement de surface",
+      "applications": "Applications typiques",
+      "moq": "Commande minimale",
+      "moqOne": "À partir de 1 pièce",
+      "moqTwo": "À partir de 2 pièces",
+      "moqMany": "À partir de {n} pièces",
+      "viewDetails": "Voir les détails",
+      "viewAlibaba": "Voir sur Alibaba",
+      "others": "Autres gammes de produits",
+      "drawingNote": "Toutes les pièces sont fabriquées selon vos plans et spécifications. Envoyez un plan 2D/3D et recevez un devis sous 24 heures."
+    },
+    "superalloy": {
+      "name": "Composants de turbine en superalliage",
+      "summary": "Distributeurs (NGV), anneaux statoriques et pièces de section chaude moulés de précision sous vide en Inconel et autres superalliages à base de nickel.",
+      "body": "Pour les turbines à gaz, les turbocompresseurs et les sections chaudes de production d'énergie, nous moulons des distributeurs à parois minces complexes, des aubes de rotor et des anneaux de distributeur intégrés par moulage de précision sous vide (cire perdue), qui protège les superalliages réactifs à base de nickel de l'oxydation pendant la coulée. Les pièces sont usinées à la finition sur nos centres CNC et peuvent être fournies avec des revêtements protecteurs haute température — aluminure, PtAl, MCrAlY et revêtements barrière thermique (TBC) — pour un service dans l'aérospatiale, les turbines à gaz de production d'énergie, le marine et le pétrole et gaz. Du prototype unique à la production en série.",
+      "materials": "Inconel, superalliages à base de nickel, acier réfractaire",
+      "process": "Moulage de précision sous vide (cire perdue) + usinage CNC + revêtement",
+      "surface": "Sablage · Aluminure · PtAl · MCrAlY · revêtement barrière thermique (TBC)",
+      "apps": [
+        "Distributeurs de turbine à gaz (NGV)",
+        "Aubes de rotor et anneaux statoriques / de distributeur",
+        "Pièces de section chaude de turbocompresseur",
+        "Composants aérospatiaux et de production d'énergie",
+        "Pièces haute température marines et pétrole et gaz"
+      ],
+      "keywords": [
+        "moulage de distributeur NGV",
+        "moulage NGV",
+        "moulage d'aube de turbine",
+        "moulage de précision Inconel",
+        "moulage de superalliage de nickel",
+        "moulage de précision sous vide",
+        "composants de turbine à gaz",
+        "revêtement barrière thermique TBC",
+        "revêtement MCrAlY",
+        "moulage aérospatial"
+      ]
+    },
+    "pump": {
+      "name": "Roues et corps de pompes",
+      "summary": "Roues ouvertes et semi-ouvertes et corps de pompes en acier inoxydable 316L et fonte ductile — moulés de précision et usinés avec précision.",
+      "body": "Nos roues en 316L sont conçues pour résister à la corrosion et au colmatage dans les eaux usées, l'eau de mer et le service chimique léger, tandis que les roues en fonte ductile offrent une haute résistance et une résistance à l'usure pour les pompes centrifuges. Les corps de pompe en SS316 sont moulés au plus près de la forme finale et usinés à des tolérances serrées pour les pompes à fluides pétroliers, chimiques et industriels.",
+      "materials": "Acier inoxydable 316L / SS316, fonte ductile",
+      "process": "Moulage de précision + usinage CNC",
+      "apps": [
+        "Pompes à eaux usées et effluents",
+        "Pompes à eau de mer et marines",
+        "Pompes de procédé chimique et pétrolier",
+        "Pompes centrifuges industrielles"
+      ],
+      "keywords": [
+        "roue 316L",
+        "corps de pompe en acier inoxydable",
+        "roue en fonte ductile",
+        "pièces de pompe moulées de précision",
+        "roue résistante à la corrosion"
+      ]
+    },
+    "exhaust": {
+      "name": "Collecteurs d'échappement",
+      "summary": "Collecteurs d'échappement, collecteurs turbo et collecteurs de compétition moulés à la cire perdue en acier inoxydable et alliages haute température.",
+      "body": "Le moulage de précision produit des collecteurs monobloc aux conduits lisses et optimisés et à épaisseur de paroi uniforme — idéal pour la préparation de performance et les applications turbo où la résistance à la chaleur et la tenue en fatigue comptent. Les brides et faces de montage sont usinées pour un ajustement précis.",
+      "materials": "Acier inoxydable, alliages haute température",
+      "process": "Moulage de précision à la cire perdue + usinage des brides",
+      "apps": [
+        "Collecteurs d'échappement de performance et de compétition",
+        "Collecteurs de turbocompresseur",
+        "Rechange automobile et préparation",
+        "Programmes moteur OEM"
+      ],
+      "keywords": [
+        "collecteur d'échappement en acier inoxydable",
+        "moulage de collecteur turbo",
+        "collecteur d'échappement de compétition",
+        "collecteur d'échappement cire perdue"
+      ]
+    },
+    "impeller": {
+      "name": "Roues et turbines de ventilation",
+      "summary": "Roues et turbines de ventilation moulées de précision en acier inoxydable pour turbomachines, soufflantes et ventilateurs.",
+      "body": "Les aubes minces et courbes et la géométrie complexe du moyeu sont moulées en une seule pièce, réduisant le soudage et l'usinage. Nous équilibrons les roues et usinons les alésages et rainures de clavette selon vos spécifications, afin qu'elles arrivent prêtes à l'assemblage.",
+      "materials": "Acier inoxydable (dont 316L)",
+      "process": "Moulage de précision + usinage CNC",
+      "apps": [
+        "Composants de turbomachines",
+        "Soufflantes et ventilateurs industriels",
+        "Roues de compresseur",
+        "Roues de pompe et d'agitateur"
+      ],
+      "keywords": [
+        "roue en acier inoxydable moulée",
+        "moulage de turbine de ventilation",
+        "roue de compresseur",
+        "roue de turbomachine"
+      ]
+    },
+    "mould": {
+      "name": "Moules de moulage et prototypes",
+      "summary": "Moules d'injection de cire, de moulage par gravité et de moulage sous pression, ainsi que des prototypes rapides par impression 3D et usinage CNC en aluminium 6061/7075 et laiton.",
+      "body": "Avec notre propre atelier de moules et 14 ingénieurs R&D, nous concevons et fabriquons en interne l'outillage de vos pièces moulées — des moules à cire multi-tiroirs pour anneaux de distributeur de turbine aux moules de moulage sous pression. Les modèles imprimés en 3D et les moules prototypes usinés CNC raccourcissent le développement avant l'outillage de série.",
+      "materials": "Aluminium 6061 / 7075, laiton",
+      "process": "Usinage CNC · impression 3D · conception de moules",
+      "apps": [
+        "Moules d'injection de cire pour moulage de précision",
+        "Moules de moulage par gravité et sous pression",
+        "Prototypes rapides et préséries",
+        "Outillage de roues de turbine et NGV"
+      ],
+      "keywords": [
+        "moule d'injection de cire",
+        "moule de moulage sous pression",
+        "moule prototype CNC",
+        "outillage de moulage de précision",
+        "moule en aluminium"
+      ]
+    }
+  },
+  "seo": {
+    "keywords": {
+      "home": [
+        "moulage de précision",
+        "moulage à la cire perdue",
+        "fabricant de moulage de précision",
+        "moulage d'acier inoxydable",
+        "moulage d'acier au carbone",
+        "moulage de superalliage",
+        "usinage CNC",
+        "fonderie en Chine",
+        "moulage métallique OEM",
+        "fonderie de moulage de précision",
+        "fonderie de précision",
+        "fonderie d'acier inoxydable",
+        "fonderie d'acier",
+        "fonderie à la cire perdue",
+        "fonderie en Chine",
+        "fonderie Dongying"
+      ],
+      "products": [
+        "produits de moulage de précision",
+        "pièces moulées en acier inoxydable",
+        "pièces moulées en acier au carbone",
+        "pièces moulées en superalliage",
+        "pièces moulées de pompes",
+        "pièces usinées CNC",
+        "pièces moulées métalliques sur mesure Chine",
+        "fonderie de moulage de précision",
+        "fonderie de précision",
+        "fonderie d'acier inoxydable",
+        "fonderie d'acier",
+        "fonderie à la cire perdue",
+        "fonderie en Chine",
+        "fonderie Dongying",
+        "moulage de précision"
+      ],
+      "about": [
+        "fabricant de moulage de précision Chine",
+        "Dongying Wanlong",
+        "fonderie de précision",
+        "fournisseur de moulage certifié ISO 9001",
+        "usine de moulage à la cire perdue",
+        "fonderie de moulage de précision",
+        "fonderie d'acier inoxydable",
+        "fonderie d'acier",
+        "fonderie à la cire perdue",
+        "fonderie en Chine",
+        "fonderie Dongying",
+        "moulage de précision"
+      ],
+      "industries": [
+        "moulage pour l'automobile",
+        "pièces moulées de quincaillerie marine",
+        "pièces moulées de pompes et vannes",
+        "pièces de machines industrielles",
+        "fournisseur de moulage OEM"
+      ],
+      "quality": [
+        "moulage ISO 9001:2015",
+        "pièces moulées certifiées CE",
+        "contrôle qualité du moulage",
+        "inspection MMT",
+        "essais de matériaux pièces moulées"
+      ],
+      "factory": [
+        "usine de moulage Chine",
+        "capacités de fonderie",
+        "centres d'usinage CNC",
+        "capacité de production de moulage",
+        "fonderie du Shandong"
+      ],
+      "contact": [
+        "devis de moulage",
+        "demander un devis de moulage",
+        "contact fournisseur de moulage de précision",
+        "demande de moulage sur mesure"
+      ],
+      "blog": [
+        "connaissances sur le moulage",
+        "guide du moulage de précision",
+        "articles de métallurgie",
+        "conseils sur le procédé de moulage"
+      ]
+    },
+    "metaDesc": {
+      "about": "Fabricant de moulage de précision et d'usinage CNC certifié ISO 9001:2015 à Dongying, Chine, depuis 2000 — pièces en superalliage, acier inoxydable et acier au carbone selon vos plans.",
+      "products": "Produits de moulage de précision et d'usinage CNC en acier inoxydable, acier au carbone et superalliages — pièces de pompe, de turbine, d'échappement et de moule fabriquées selon vos plans en Chine.",
+      "industries": "Pièces moulées de précision pour l'automobile, le marine, le pétrole et gaz, les pompes, les machines, la construction et l'équipement médical — une fonderie de moulage de précision ISO 9001 au service de plus de 40 marchés.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE et UN ECE R55 — découvrez comment notre fonderie chinoise de moulage de précision contrôle la qualité par essais de matériaux, inspection MMT et rapports documentés.",
+      "factory": "Dans notre fonderie de Dongying : 21 centres d'usinage CNC, un atelier de moules interne, 14 ingénieurs R&D et environ 5 000 m² d'espace de production pour le moulage et l'usinage.",
+      "contact": "Demandez un devis de moulage à Dongying Casting. Téléversez vos plans 2D/3D et nos ingénieurs répondent avec un devis détaillé, généralement sous 24 heures.",
+      "blog": "Guides techniques sur le moulage de précision, le moulage à la cire perdue, les nuances d'acier inoxydable, l'usinage CNC, la finition de surface et le traitement thermique des pièces métalliques moulées."
+    }
+  }
+}
