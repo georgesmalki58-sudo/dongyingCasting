@@ -10,7 +10,7 @@ import { breadcrumbSchema } from '@/lib/schema';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: 'about', title: t.about.title, description: t.about.intro });
+  return buildMetadata({ locale, path: 'about', title: t.about.title, description: t.seo.metaDesc.about, keywords: t.seo.keywords.about });
 }
 
 export default async function About({ params }: { params: Promise<{ locale: Locale }> }) {

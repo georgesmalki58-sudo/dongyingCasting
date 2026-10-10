@@ -45,6 +45,50 @@
       "centers": "Bearbeitungszentren",
       "markets": "Exportmärkte",
       "employees": "Fachkräfte"
+    },
+    "trust": {
+      "title": "Ein geprüfter, verifizierter Hersteller",
+      "intro": "Neun Jahre verifizierter Lieferant auf Alibaba.com mit 5,0-Bewertung und Zusammenarbeit mit Fortune-500-Unternehmen.",
+      "items": [
+        [
+          "18",
+          "Jahre Export"
+        ],
+        [
+          "14",
+          "F&E-Ingenieure"
+        ],
+        [
+          "6",
+          "QS-Prüfer"
+        ],
+        [
+          "5.000 m²",
+          "Produktionsfläche"
+        ]
+      ]
+    },
+    "foundry": {
+      "title": "Feinguss-Gießerei in China",
+      "intro": "Als Präzisionsgießerei in Dongying, Shandong, gießen und bearbeiten wir Metallteile nach Ihrer Zeichnung in vier zentralen Gießereiprogrammen.",
+      "items": [
+        [
+          "Präzisions-Feinguss-Gießerei",
+          "Wachsausschmelz-(Fein-)Guss komplexer, endkonturnaher Teile in zahlreichen Legierungen, vom Einzelprototyp bis zur Serie."
+        ],
+        [
+          "Edelstahlgießerei",
+          "Korrosionsbeständige Gussteile aus 316L, 304 und Duplex-Edelstahl für Schiffbau, Chemie, Lebensmittel und Medizin."
+        ],
+        [
+          "Stahlgießerei",
+          "Guss aus Kohlenstoff-, legiertem und hitzebeständigem Stahl mit hoher Festigkeit und Verschleißbeständigkeit für Maschinen- und Strukturteile."
+        ],
+        [
+          "Wachsausschmelz-Gießerei",
+          "Vakuum- und Luftschmelz-Wachsausschmelzguss, inkl. Turbinenteilen aus Superlegierungen, fertigbearbeitet auf eigenen CNC-Zentren."
+        ]
+      ]
     }
   },
   "why": {
@@ -108,13 +152,34 @@
     "title": "Branchen, die wir bedienen",
     "intro": "Präzisionsguss und bearbeitete Teile, denen anspruchsvolle Branchen weltweit vertrauen.",
     "items": {
-      "automotive": "Automobil",
-      "marine": "Marine",
-      "oilgas": "Öl & Gas",
-      "agriculture": "Landwirtschaft",
-      "machinery": "Industriemaschinen",
-      "construction": "Bauwesen",
-      "medical": "Medizintechnik"
+      "automotive": {
+        "name": "Automobil",
+        "desc": "Turbokrümmer, Abgaskrümmer und Antriebsstrangguss für OEM- und Aftermarket-Fahrzeuge."
+      },
+      "marine": {
+        "name": "Marine",
+        "desc": "Korrosionsbeständige Edelstahlbeschläge, Pumpen- und Antriebsteile für maritime Umgebungen."
+      },
+      "oilgas": {
+        "name": "Öl & Gas",
+        "desc": "Hitze- und korrosionsbeständige Ventil-, Pumpen- und Pipelineguss für die Öl- und Gasindustrie."
+      },
+      "agriculture": {
+        "name": "Landwirtschaft",
+        "desc": "Verschleißfeste Gussteile für Traktoren, Erntemaschinen und Landmaschinen."
+      },
+      "machinery": {
+        "name": "Industriemaschinen",
+        "desc": "Präzisionsgegossene und bearbeitete Teile für Maschinen- und Anlagenbauer."
+      },
+      "construction": {
+        "name": "Bauwesen",
+        "desc": "Langlebige Beschläge, Fittings und Strukturguss für Bauanwendungen."
+      },
+      "medical": {
+        "name": "Medizintechnik",
+        "desc": "Saubere Edelstahl-Feingussteile für Medizingeräte und -ausrüstung."
+      }
     }
   },
   "quality": {
@@ -211,6 +276,13 @@
         "Stator- und Schaufelringe",
         "Heißgasteile für Turbolader",
         "Hochtemperatur-Industriekomponenten"
+      ],
+      "keywords": [
+        "Inconel-Guss",
+        "NGV Leitschaufel",
+        "Turbinenschaufelguss",
+        "Vakuum-Feinguss",
+        "Superlegierungs-Turbinenteile"
       ]
     },
     "pump": {
@@ -224,6 +296,13 @@
         "Meerwasser- und Schiffspumpen",
         "Chemie- und Ölprozesspumpen",
         "Industrielle Kreiselpumpen"
+      ],
+      "keywords": [
+        "316L-Laufrad",
+        "Edelstahl-Pumpengehäuse",
+        "Sphäroguss-Laufrad",
+        "feingegossene Pumpenteile",
+        "korrosionsbeständiges Laufrad"
       ]
     },
     "exhaust": {
@@ -237,6 +316,12 @@
         "Turboladerkrümmer",
         "Automobil-Aftermarket und Tuning",
         "Motoren-OEM-Programme"
+      ],
+      "keywords": [
+        "Edelstahl-Abgaskrümmer",
+        "Turbokrümmer-Guss",
+        "Rennsport-Fächerkrümmer",
+        "Feinguss-Abgaskrümmer"
       ]
     },
     "impeller": {
@@ -250,6 +335,12 @@
         "Industriegebläse und Ventilatoren",
         "Verdichterräder",
         "Pumpen- und Rührwerkslaufräder"
+      ],
+      "keywords": [
+        "gegossenes Edelstahl-Laufrad",
+        "Lüfterradguss",
+        "Verdichterrad",
+        "Turbomaschinen-Laufrad"
       ]
     },
     "mould": {
@@ -263,7 +354,103 @@
         "Schwerkraft- und Druckgussformen",
         "Schnelle Prototypen und Vorserien",
         "Werkzeuge für Turbinenräder und NGV"
+      ],
+      "keywords": [
+        "Wachsspritzform",
+        "Druckgussform",
+        "CNC-Prototypenform",
+        "Feinguss-Werkzeug",
+        "Aluminiumform"
       ]
+    }
+  },
+  "seo": {
+    "keywords": {
+      "home": [
+        "Feinguss",
+        "Wachsausschmelzguss",
+        "Präzisionsguss Hersteller",
+        "Edelstahlguss",
+        "Stahlguss",
+        "Superlegierungsguss",
+        "CNC-Bearbeitung",
+        "Gießerei China",
+        "OEM Metallguss",
+        "Feinguss-Gießerei",
+        "Präzisionsgießerei",
+        "Edelstahlgießerei",
+        "Stahlgießerei",
+        "Wachsausschmelz-Gießerei",
+        "Gießerei in China",
+        "Dongying Gießerei"
+      ],
+      "products": [
+        "Feingussprodukte",
+        "Edelstahlguss",
+        "Stahlguss",
+        "Superlegierungsguss",
+        "Pumpenguss",
+        "CNC-Bearbeitungsteile",
+        "kundenspezifischer Metallguss China",
+        "Feinguss-Gießerei",
+        "Präzisionsgießerei",
+        "Edelstahlgießerei",
+        "Stahlgießerei",
+        "Wachsausschmelz-Gießerei",
+        "Gießerei in China",
+        "Dongying Gießerei",
+        "Feinguss"
+      ],
+      "about": [
+        "Feingusshersteller China",
+        "Dongying Wanlong",
+        "Präzisionsgießerei",
+        "ISO 9001 Gusslieferant",
+        "Wachsausschmelzguss Fabrik",
+        "Feinguss-Gießerei",
+        "Edelstahlgießerei",
+        "Stahlgießerei",
+        "Wachsausschmelz-Gießerei",
+        "Gießerei in China",
+        "Dongying Gießerei",
+        "Feinguss"
+      ],
+      "industries": [
+        "Guss für Automobil",
+        "Schiffsbeschläge Guss",
+        "Pumpen- und Ventilguss",
+        "Industriemaschinenteile",
+        "OEM-Gusslieferant"
+      ],
+      "quality": [
+        "ISO 9001:2015 Guss",
+        "CE-zertifizierte Gussteile",
+        "Gussqualitätskontrolle",
+        "CMM-Prüfung",
+        "Werkstoffprüfung Guss"
+      ],
+      "factory": [
+        "Gießerei China",
+        "Gießereikapazitäten",
+        "CNC-Bearbeitungszentren",
+        "Gussproduktionskapazität",
+        "Shandong Gießerei"
+      ],
+      "contact": [
+        "Gussangebot",
+        "Gussangebot anfordern",
+        "Feingusslieferant Kontakt",
+        "kundenspezifische Gussanfrage"
+      ],
+      "blog": [
+        "Gusswissen",
+        "Feinguss-Leitfaden",
+        "Metallurgie-Artikel",
+        "Gussprozess-Tipps"
+      ]
+    },
+    "metaDesc": {
+      "about": "ISO 9001:2015-zertifizierter Feinguss- und CNC-Hersteller in Dongying, China, seit 2000 — Teile aus Superlegierungen, Edelstahl und Stahl nach Ihrer Zeichnung."
     }
   }
 }

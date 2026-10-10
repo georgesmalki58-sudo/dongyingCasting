@@ -11,11 +11,7 @@ import { faqSchema } from '@/lib/schema';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  const keywords =
-    locale === 'zh'
-      ? ['精密铸造厂家', '熔模铸造', '失蜡铸造', '不锈钢铸件', '碳钢铸件', '耐热钢铸件', 'CNC加工', '数控加工', '铸件加工', '东营万隆', '山东铸造厂']
-      : ['investment casting', 'lost wax casting', 'precision casting manufacturer', 'stainless steel casting', 'carbon steel casting', 'CNC machining', 'China casting foundry'];
-  return buildMetadata({ locale, path: '', title: t.home.h1, description: t.home.heroSub, image: IMAGES.hero, keywords });
+  return buildMetadata({ locale, path: '', title: t.home.h1, description: t.home.heroSub, image: IMAGES.hero, keywords: t.seo.keywords.home });
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
@@ -111,6 +107,21 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
         </div>
       </section>
 
+      {/* FOUNDRY — keyword-rich H2/H3 section */}
+      <section className="bg-steel-50 py-20">
+        <div className="container-x">
+          <SectionHeading title={t.home.foundry.title} intro={t.home.foundry.intro} center />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {t.home.foundry.items.map(([h, b]) => (
+              <div key={h} className="card h-full">
+                <h3 className="text-base font-semibold text-steel-900">{h}</h3>
+                <p className="prose-muted mt-2 text-sm">{b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* INDUSTRIES */}
       <section className="bg-steel-50 py-20">
         <div className="container-x">
@@ -139,6 +150,21 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* TRUST SIGNALS — verified-manufacturer facts (Alibaba) */}
+      <section className="bg-steel-50 py-16">
+        <div className="container-x">
+          <SectionHeading title={t.home.trust.title} intro={t.home.trust.intro} center />
+          <dl className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-6 sm:grid-cols-4">
+            {t.home.trust.items.map(([v, l]) => (
+              <div key={l} className="rounded-xl border border-steel-200 bg-white px-4 py-6 text-center">
+                <dt className="text-3xl font-extrabold text-brand">{v}</dt>
+                <dd className="prose-muted mt-1 text-sm">{l}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 

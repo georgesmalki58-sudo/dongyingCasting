@@ -45,6 +45,50 @@
       "centers": "Centros de mecanizado",
       "markets": "Mercados de exportación",
       "employees": "Personal cualificado"
+    },
+    "trust": {
+      "title": "Un fabricante comprobado y verificado",
+      "intro": "Nueve años como proveedor verificado en Alibaba.com con calificación 5.0 y colaboración con empresas Fortune 500.",
+      "items": [
+        [
+          "18",
+          "Años exportando"
+        ],
+        [
+          "14",
+          "Ingenieros de I+D"
+        ],
+        [
+          "6",
+          "Inspectores de calidad"
+        ],
+        [
+          "5.000 m²",
+          "Superficie de fábrica"
+        ]
+      ]
+    },
+    "foundry": {
+      "title": "Fundición de microfusión en China",
+      "intro": "Como fundición de precisión en Dongying, Shandong, colamos y mecanizamos piezas metálicas según su plano en cuatro programas de fundición principales.",
+      "items": [
+        [
+          "Fundición de microfusión de precisión",
+          "Fundición a la cera perdida de piezas complejas de forma casi neta en numerosas aleaciones, desde un prototipo hasta la serie."
+        ],
+        [
+          "Fundición de acero inoxidable",
+          "Piezas de acero inoxidable 316L, 304 y dúplex resistentes a la corrosión para sectores marino, químico, alimentario y médico."
+        ],
+        [
+          "Fundición de acero",
+          "Piezas de acero al carbono, aleado y refractario con alta resistencia mecánica y al desgaste para maquinaria y estructuras."
+        ],
+        [
+          "Fundición a la cera perdida",
+          "Fundición a la cera perdida al vacío y al aire, incluidos componentes de turbina en superaleación, acabados en nuestros centros CNC."
+        ]
+      ]
     }
   },
   "why": {
@@ -108,13 +152,34 @@
     "title": "Industrias que atendemos",
     "intro": "Fundición de precisión y piezas mecanizadas en las que confían sectores exigentes de todo el mundo.",
     "items": {
-      "automotive": "Automoción",
-      "marine": "Marina",
-      "oilgas": "Petróleo y gas",
-      "agriculture": "Agricultura",
-      "machinery": "Maquinaria industrial",
-      "construction": "Construcción",
-      "medical": "Equipos médicos"
+      "automotive": {
+        "name": "Automoción",
+        "desc": "Colectores turbo, headers de escape y piezas de tren motriz para vehículos OEM y de posventa."
+      },
+      "marine": {
+        "name": "Marina",
+        "desc": "Herrajes de acero inoxidable resistentes a la corrosión, piezas de bombas y propulsión para entornos marinos."
+      },
+      "oilgas": {
+        "name": "Petróleo y gas",
+        "desc": "Piezas de válvulas, bombas y tuberías resistentes al calor y la corrosión para petróleo y gas."
+      },
+      "agriculture": {
+        "name": "Agricultura",
+        "desc": "Componentes fundidos resistentes al desgaste para tractores, cosechadoras y maquinaria agrícola."
+      },
+      "machinery": {
+        "name": "Maquinaria industrial",
+        "desc": "Piezas fundidas y mecanizadas de precisión para fabricantes de maquinaria y equipos industriales."
+      },
+      "construction": {
+        "name": "Construcción",
+        "desc": "Herrajes, accesorios y piezas estructurales duraderas para construcción."
+      },
+      "medical": {
+        "name": "Equipos médicos",
+        "desc": "Piezas de microfusión de acero inoxidable limpias para dispositivos y equipos médicos."
+      }
     }
   },
   "quality": {
@@ -211,6 +276,13 @@
         "Anillos de estator y de álabes",
         "Piezas de sección caliente para turbocompresores",
         "Componentes industriales de alta temperatura"
+      ],
+      "keywords": [
+        "piezas de Inconel",
+        "álabe guía NGV",
+        "fundición de álabes de turbina",
+        "microfusión al vacío",
+        "piezas de turbina en superaleación"
       ]
     },
     "pump": {
@@ -224,6 +296,13 @@
         "Bombas de agua de mar y marinas",
         "Bombas de proceso químico y petrolero",
         "Bombas centrífugas industriales"
+      ],
+      "keywords": [
+        "impulsor 316L",
+        "carcasa de bomba inoxidable",
+        "impulsor de hierro dúctil",
+        "piezas de bomba por microfusión",
+        "impulsor resistente a corrosión"
       ]
     },
     "exhaust": {
@@ -237,6 +316,12 @@
         "Colectores para turbocompresores",
         "Posventa y preparación de automóviles",
         "Programas OEM de motores"
+      ],
+      "keywords": [
+        "colector de escape inoxidable",
+        "colector turbo fundido",
+        "header de competición",
+        "colector de escape cera perdida"
       ]
     },
     "impeller": {
@@ -250,6 +335,12 @@
         "Soplantes y ventiladores industriales",
         "Ruedas de compresor",
         "Rodetes de bombas y mezcladores"
+      ],
+      "keywords": [
+        "rodete de acero inoxidable fundido",
+        "rueda de ventilador fundida",
+        "rueda de compresor",
+        "rodete de turbomaquinaria"
       ]
     },
     "mould": {
@@ -263,7 +354,102 @@
         "Moldes de gravedad y de fundición a presión",
         "Prototipos rápidos y preseries",
         "Utillaje para ruedas de turbina y NGV"
+      ],
+      "keywords": [
+        "molde de inyección de cera",
+        "molde de fundición a presión",
+        "molde prototipo CNC",
+        "utillaje de microfusión",
+        "molde de aluminio"
       ]
+    }
+  },
+  "seo": {
+    "keywords": {
+      "home": [
+        "microfusión",
+        "fundición a la cera perdida",
+        "fabricante de fundición de precisión",
+        "acero inoxidable fundido",
+        "acero al carbono fundido",
+        "superaleación fundida",
+        "mecanizado CNC",
+        "fundición China",
+        "fundición metálica OEM",
+        "fundición de microfusión",
+        "fundición de precisión",
+        "fundición de acero inoxidable",
+        "fundición de acero",
+        "fundición en China",
+        "fundición Dongying"
+      ],
+      "products": [
+        "productos de microfusión",
+        "piezas de acero inoxidable",
+        "piezas de acero al carbono",
+        "piezas de superaleación",
+        "piezas de bombas",
+        "piezas mecanizadas CNC",
+        "fundición metálica personalizada China",
+        "fundición de microfusión",
+        "fundición de precisión",
+        "fundición de acero inoxidable",
+        "fundición de acero",
+        "fundición a la cera perdida",
+        "fundición en China",
+        "fundición Dongying",
+        "microfusión"
+      ],
+      "about": [
+        "fabricante de microfusión China",
+        "Dongying Wanlong",
+        "fundición de precisión",
+        "proveedor de fundición ISO 9001",
+        "fábrica de fundición a la cera perdida",
+        "fundición de microfusión",
+        "fundición de acero inoxidable",
+        "fundición de acero",
+        "fundición a la cera perdida",
+        "fundición en China",
+        "fundición Dongying",
+        "microfusión"
+      ],
+      "industries": [
+        "fundición para automoción",
+        "herrajes marinos",
+        "fundición de bombas y válvulas",
+        "piezas de maquinaria industrial",
+        "proveedor de fundición OEM"
+      ],
+      "quality": [
+        "fundición ISO 9001:2015",
+        "piezas con certificación CE",
+        "control de calidad de fundición",
+        "inspección CMM",
+        "ensayo de materiales fundición"
+      ],
+      "factory": [
+        "fábrica de fundición China",
+        "capacidades de fundición",
+        "centros de mecanizado CNC",
+        "capacidad de producción de fundición",
+        "fundición Shandong"
+      ],
+      "contact": [
+        "cotización de fundición",
+        "solicitar cotización de fundición",
+        "contacto proveedor de microfusión",
+        "consulta de fundición personalizada"
+      ],
+      "blog": [
+        "conocimiento de fundición",
+        "guía de microfusión",
+        "artículos de metalurgia",
+        "consejos de proceso de fundición"
+      ]
+    },
+    "metaDesc": {
+      "about": "Fabricante de microfusión y mecanizado CNC en Dongying, China, certificado ISO 9001:2015 desde 2000: piezas de superaleación, acero inoxidable y al carbono según su plano."
     }
   }
 }

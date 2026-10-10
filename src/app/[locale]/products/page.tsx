@@ -13,7 +13,7 @@ import { PRODUCT_LINES, moqText } from '@/lib/product-lines';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: 'products', title: t.products.title, description: t.products.intro, image: IMAGES.investment1 });
+  return buildMetadata({ locale, path: 'products', title: t.products.title, description: t.products.intro, image: IMAGES.investment1, keywords: t.seo.keywords.products });
 }
 
 export default async function Products({ params }: { params: Promise<{ locale: Locale }> }) {

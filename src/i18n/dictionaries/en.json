@@ -45,6 +45,50 @@
       "centers": "Machining Centers",
       "markets": "Export Markets",
       "employees": "Skilled Staff"
+    },
+    "trust": {
+      "title": "A proven, verified manufacturer",
+      "intro": "Nine years as a verified supplier on Alibaba.com with a 5.0 rating and collaboration with Fortune 500 companies.",
+      "items": [
+        [
+          "18",
+          "Years exporting"
+        ],
+        [
+          "14",
+          "R&D engineers"
+        ],
+        [
+          "6",
+          "QC inspectors"
+        ],
+        [
+          "5,000 m²",
+          "Factory floor space"
+        ]
+      ]
+    },
+    "foundry": {
+      "title": "Investment Casting Foundry in China",
+      "intro": "As a precision casting foundry in Dongying, Shandong, we pour and machine metal parts to your drawing across four core foundry programmes.",
+      "items": [
+        [
+          "Precision Investment Casting Foundry",
+          "Lost-wax (investment) casting of complex, near-net-shape parts in a wide range of alloys, from a single prototype to series production."
+        ],
+        [
+          "Stainless Steel Foundry",
+          "Corrosion-resistant 316L, 304 and duplex stainless steel castings for marine, chemical, food and medical applications."
+        ],
+        [
+          "Steel Casting Foundry",
+          "Carbon, alloy and heat-resistant steel castings with high strength and wear resistance for machinery and structural parts."
+        ],
+        [
+          "Lost Wax Casting Foundry",
+          "Vacuum and air-melt lost wax casting, including superalloy turbine components, finished on our in-house CNC centres."
+        ]
+      ]
     }
   },
   "why": {
@@ -108,13 +152,34 @@
     "title": "Industries We Serve",
     "intro": "Precision castings and machined parts trusted across demanding sectors worldwide.",
     "items": {
-      "automotive": "Automotive",
-      "marine": "Marine",
-      "oilgas": "Oil & Gas",
-      "agriculture": "Agriculture",
-      "machinery": "Industrial Machinery",
-      "construction": "Construction",
-      "medical": "Medical Equipment"
+      "automotive": {
+        "name": "Automotive",
+        "desc": "Turbo manifolds, exhaust headers and powertrain castings for OEM and aftermarket vehicles."
+      },
+      "marine": {
+        "name": "Marine",
+        "desc": "Corrosion-resistant stainless hardware, pump and propulsion parts for marine environments."
+      },
+      "oilgas": {
+        "name": "Oil & Gas",
+        "desc": "Heat- and corrosion-resistant valve, pump and pipeline castings for oil and gas service."
+      },
+      "agriculture": {
+        "name": "Agriculture",
+        "desc": "Wear-resistant cast components for tractors, harvesters and farm machinery."
+      },
+      "machinery": {
+        "name": "Industrial Machinery",
+        "desc": "Precision cast and machined parts for industrial machinery and equipment builders."
+      },
+      "construction": {
+        "name": "Construction",
+        "desc": "Durable hardware, fittings and structural castings for construction applications."
+      },
+      "medical": {
+        "name": "Medical Equipment",
+        "desc": "Clean stainless steel investment castings for medical devices and equipment."
+      }
     }
   },
   "quality": {
@@ -211,6 +276,13 @@
         "Stator and vane rings",
         "Turbocharger hot-section parts",
         "High-temperature industrial components"
+      ],
+      "keywords": [
+        "Inconel castings",
+        "NGV nozzle guide vane",
+        "turbine blade casting",
+        "vacuum investment casting",
+        "superalloy turbine parts"
       ]
     },
     "pump": {
@@ -224,6 +296,13 @@
         "Seawater and marine pumps",
         "Chemical and oil process pumps",
         "Industrial centrifugal pumps"
+      ],
+      "keywords": [
+        "316L impeller",
+        "stainless steel pump housing",
+        "ductile iron impeller",
+        "investment cast pump parts",
+        "corrosion resistant impeller"
       ]
     },
     "exhaust": {
@@ -237,6 +316,12 @@
         "Turbocharger manifolds",
         "Automotive aftermarket and tuning",
         "Engine OEM programmes"
+      ],
+      "keywords": [
+        "stainless steel exhaust manifold",
+        "turbo manifold casting",
+        "racing exhaust header",
+        "lost wax exhaust manifold"
       ]
     },
     "impeller": {
@@ -250,6 +335,12 @@
         "Industrial blowers and fans",
         "Compressor wheels",
         "Pump and mixer impellers"
+      ],
+      "keywords": [
+        "cast stainless steel impeller",
+        "fan wheel casting",
+        "compressor wheel",
+        "turbomachinery impeller"
       ]
     },
     "mould": {
@@ -263,7 +354,103 @@
         "Gravity and die-casting moulds",
         "Rapid prototypes and pilot runs",
         "Turbine wheel and NGV tooling"
+      ],
+      "keywords": [
+        "wax injection mould",
+        "die casting mould",
+        "CNC prototype mould",
+        "investment casting tooling",
+        "aluminium mould"
       ]
+    }
+  },
+  "seo": {
+    "keywords": {
+      "home": [
+        "investment casting",
+        "lost wax casting",
+        "precision casting manufacturer",
+        "stainless steel casting",
+        "carbon steel casting",
+        "superalloy casting",
+        "CNC machining",
+        "China casting foundry",
+        "OEM metal casting",
+        "investment casting foundry",
+        "precision casting foundry",
+        "stainless steel foundry",
+        "steel casting foundry",
+        "lost wax casting foundry",
+        "foundry in China",
+        "Dongying foundry"
+      ],
+      "products": [
+        "investment casting products",
+        "stainless steel castings",
+        "carbon steel castings",
+        "superalloy castings",
+        "pump castings",
+        "CNC machined parts",
+        "custom metal castings China",
+        "investment casting foundry",
+        "precision casting foundry",
+        "stainless steel foundry",
+        "steel casting foundry",
+        "lost wax casting foundry",
+        "foundry in China",
+        "Dongying foundry",
+        "investment casting"
+      ],
+      "about": [
+        "investment casting manufacturer China",
+        "Dongying Wanlong",
+        "precision casting foundry",
+        "ISO 9001 casting supplier",
+        "lost wax casting factory",
+        "investment casting foundry",
+        "stainless steel foundry",
+        "steel casting foundry",
+        "lost wax casting foundry",
+        "foundry in China",
+        "Dongying foundry",
+        "investment casting"
+      ],
+      "industries": [
+        "casting for automotive",
+        "marine hardware castings",
+        "pump and valve castings",
+        "industrial machinery parts",
+        "OEM casting supplier"
+      ],
+      "quality": [
+        "ISO 9001:2015 casting",
+        "CE certified castings",
+        "casting quality control",
+        "CMM inspection",
+        "material testing castings"
+      ],
+      "factory": [
+        "casting factory China",
+        "foundry capabilities",
+        "CNC machining centers",
+        "casting production capacity",
+        "Shandong foundry"
+      ],
+      "contact": [
+        "casting quote",
+        "request casting quotation",
+        "investment casting supplier contact",
+        "custom casting inquiry"
+      ],
+      "blog": [
+        "casting knowledge",
+        "investment casting guide",
+        "metallurgy articles",
+        "casting process tips"
+      ]
+    },
+    "metaDesc": {
+      "about": "ISO 9001:2015-certified investment casting and CNC machining manufacturer in Dongying, China, since 2000 — superalloy, stainless and carbon steel parts to your drawing."
     }
   }
 }

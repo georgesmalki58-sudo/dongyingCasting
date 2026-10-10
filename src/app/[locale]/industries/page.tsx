@@ -8,7 +8,7 @@ import { breadcrumbSchema } from '@/lib/schema';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = getDictionary(locale);
-  return buildMetadata({ locale, path: 'industries', title: t.industries.title, description: t.industries.intro });
+  return buildMetadata({ locale, path: 'industries', title: t.industries.title, description: t.industries.intro, keywords: t.seo.keywords.industries });
 }
 
 export default async function Industries({ params }: { params: Promise<{ locale: Locale }> }) {
@@ -20,11 +20,14 @@ export default async function Industries({ params }: { params: Promise<{ locale:
       <JsonLd data={breadcrumbSchema(locale, [{ name: t.nav.home, path: '' }, { name: t.industries.title, path: 'industries' }])} />
       <section className="container-x py-16">
         <SectionHeading as="h1" title={t.industries.title} intro={t.industries.intro} />
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((i) => (
-            <div key={i} className="card flex items-center gap-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-brand-accent" />
-              <span className="font-semibold text-steel-900">{i}</span>
+            <div key={i.name} className="card">
+              <div className="flex items-center gap-3">
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-accent" />
+                <h2 className="text-lg font-semibold text-steel-900">{i.name}</h2>
+              </div>
+              <p className="prose-muted mt-2 text-sm">{i.desc}</p>
             </div>
           ))}
         </div>
