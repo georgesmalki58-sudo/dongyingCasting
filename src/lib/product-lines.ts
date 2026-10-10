@@ -12,6 +12,7 @@ export type ProductLine = {
   slug: string;
   images: string[];          // first = main image
   moq: number;               // minimum order quantity (pieces)
+  banner?: string;           // optional full-width banner image
   alibaba: string;           // representative Alibaba listing
 };
 
@@ -19,35 +20,36 @@ export const PRODUCT_LINES: ProductLine[] = [
   {
     key: 'superalloy',
     slug: 'superalloy-turbine-components',
-    images: ['/images/products/superalloy-ngv-1.webp', '/images/products/superalloy-ngv-2.webp', '/images/high-temp-alloy.webp'],
+    images: ['/images/products/dongying-casting-inconel-superalloy-ngv-guide-vane.webp', '/images/products/dongying-casting-superalloy-turbine-nozzle-guide-vane.webp', '/images/dongying-casting-high-temperature-alloy-turbine-wheel.webp'],
+    banner: '/images/products/dongying-casting-high-temperature-alloy-turbine-components.webp',
     moq: 1,
     alibaba: `${ALI}Custom-Inconel-Superalloy-Nozzle-Guide-Vane_1601975332980.html`
   },
   {
     key: 'pump',
     slug: 'pump-impellers-housings',
-    images: ['/images/products/pump-impeller-316l.webp', '/images/products/pump-housing-ss316.webp', '/images/products/pump-impeller-ductile.webp'],
+    images: ['/images/products/dongying-casting-316l-stainless-steel-pump-impeller.webp', '/images/products/dongying-casting-ss316-investment-cast-pump-housing.webp', '/images/products/dongying-casting-ductile-iron-pump-impeller.webp'],
     moq: 1,
     alibaba: `${ALI}316L-Stainless-Steel-Anti-Corrosion-Anti_1601974624278.html`
   },
   {
     key: 'exhaust',
     slug: 'exhaust-manifolds',
-    images: ['/images/products/exhaust-manifold-hta.webp', '/images/products/exhaust-header.webp'],
+    images: ['/images/products/dongying-casting-high-temp-alloy-exhaust-manifold.webp', '/images/products/dongying-casting-stainless-steel-exhaust-header.webp'],
     moq: 5,
     alibaba: `${ALI}High-Temperature-Alloy-Exhaust-Manifold-Lost_1601974228015.html`
   },
   {
     key: 'impeller',
     slug: 'impellers-fan-wheels',
-    images: ['/images/products/impeller-fan-wheel.webp', '/images/products/pump-impeller-316l.webp'],
+    images: ['/images/products/dongying-casting-stainless-steel-impeller-fan-wheel.webp', '/images/products/dongying-casting-316l-stainless-steel-pump-impeller.webp'],
     moq: 2,
     alibaba: `${ALI}OEM-Investment-Cast-Stainless-Steel-Impellers_1601974160477.html`
   },
   {
     key: 'mould',
     slug: 'casting-moulds-prototypes',
-    images: ['/images/products/mould-prototype-ngv.webp', '/images/products/mould-die-cast.webp', '/images/product-6.webp', '/images/product-5.webp'],
+    images: ['/images/products/dongying-casting-cnc-ngv-prototype-mould.webp', '/images/products/dongying-casting-die-casting-mould.webp', '/images/dongying-casting-transmission-castings.webp', '/images/dongying-casting-precision-casting-mould.webp'],
     moq: 1,
     alibaba: `${ALI}Mold-Prototype-3D-Print-NGV-Molds_1601974536191.html`
   }

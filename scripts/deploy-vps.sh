@@ -16,7 +16,7 @@ test -f .next/BUILD_ID || { echo "BUILD FAILED - live site untouched"; exit 1; }
 echo "== swap"; mv "$LIVE" "$PREV"; mv "$NEW" "$LIVE"
 pm2 restart dongying --update-env >/dev/null; sleep 6
 CODE=$(curl -s -o /dev/null -w '%{http_code}' -H 'Host: dongying-casting.com' http://127.0.0.1:3002/en/products)
-HAS=$(curl -s -H 'Host: dongying-casting.com' http://127.0.0.1:3002/en/products | grep -c high-temp-alloy || true)
+HAS=$(curl -s -H 'Host: dongying-casting.com' http://127.0.0.1:3002/en/products | grep -c superalloy-turbine-components || true)
 echo "local check: HTTP $CODE, new section: $HAS"
 if [ "$CODE" != "200" ] || [ "$HAS" = "0" ]; then
   echo "== ROLLBACK"; mv "$LIVE" "$NEW.failed"; mv "$PREV" "$LIVE"; pm2 restart dongying >/dev/null; exit 1

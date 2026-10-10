@@ -67,6 +67,12 @@ export default async function ProductLinePage({ params }: Params) {
           <span className="text-steel-700">{c.name}</span>
         </nav>
 
+        {line.banner ? (
+          <div className="relative mb-10 aspect-[1600/463] w-full overflow-hidden rounded-xl border border-steel-200">
+            <Image src={line.banner} alt={c.name} fill priority sizes="100vw" className="object-cover" />
+          </div>
+        ) : null}
+
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <div className="relative aspect-square overflow-hidden rounded-xl border border-steel-200 bg-white">
@@ -87,11 +93,12 @@ export default async function ProductLinePage({ params }: Params) {
             <h1 className="text-3xl font-bold text-steel-900 md:text-4xl">{c.name}</h1>
             <p className="text-lg text-steel-700">{c.summary}</p>
             <dl className="divide-y divide-steel-200 rounded-xl border border-steel-200 text-sm">
-              {[
+              {([
                 [L.materials, c.materials],
                 [L.process, c.process],
+                ...('surface' in c ? [[L.surface, (c as { surface: string }).surface]] : []),
                 [L.moq, moqText(t, line.moq)]
-              ].map(([k, v]) => (
+              ] as [string, string][]).map(([k, v]) => (
                 <div key={k} className="grid grid-cols-3 gap-4 px-4 py-3">
                   <dt className="font-semibold text-steel-700">{k}</dt>
                   <dd className="col-span-2 text-steel-900">{v}</dd>

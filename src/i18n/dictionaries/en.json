@@ -277,6 +277,7 @@
       "intro": "Explore our main casting programmes — every part made to your drawing, from a single prototype to series production.",
       "materials": "Materials",
       "process": "Process",
+      "surface": "Surface treatment",
       "applications": "Typical applications",
       "moq": "Minimum order",
       "moqOne": "From 1 piece",
@@ -290,21 +291,28 @@
     "superalloy": {
       "name": "Superalloy Turbine Components",
       "summary": "Vacuum investment cast nozzle guide vanes (NGV), stator rings and hot-section parts in Inconel and other nickel-based superalloys.",
-      "body": "For gas turbines and turbochargers we cast complex, thin-walled guide vanes and integral vane rings by vacuum investment (lost-wax) casting, which protects reactive superalloys from oxidation during pouring. Parts are supplied as-cast or finish-machined on our CNC centres — starting from a single prototype.",
+      "body": "For gas turbines, turbochargers and power-generation hot sections we cast complex, thin-walled nozzle guide vanes, rotor blades and integral vane rings by vacuum investment (lost-wax) casting, which protects reactive nickel-based superalloys from oxidation during pouring. Parts are finish-machined on our CNC centres and can be supplied with protective high-temperature coatings — aluminide, PtAl, MCrAlY and thermal barrier coatings (TBC) — for service in aerospace, power gas turbines, marine and oil & gas. From a single prototype to series production.",
       "materials": "Inconel, nickel-based superalloys, heat-resistant steel",
-      "process": "Vacuum investment casting (lost-wax) + CNC machining",
+      "process": "Vacuum investment casting (lost-wax) + CNC machining + coating",
+      "surface": "Grit blasting · Aluminide · PtAl · MCrAlY · thermal barrier coating (TBC)",
       "apps": [
         "Gas turbine nozzle guide vanes (NGV)",
-        "Stator and vane rings",
+        "Rotor blades and stator / vane rings",
         "Turbocharger hot-section parts",
-        "High-temperature industrial components"
+        "Aerospace and power-generation components",
+        "Marine and oil & gas high-temperature parts"
       ],
       "keywords": [
-        "Inconel castings",
-        "NGV nozzle guide vane",
+        "nozzle guide vane casting",
+        "NGV casting",
         "turbine blade casting",
+        "Inconel investment casting",
+        "nickel superalloy casting",
         "vacuum investment casting",
-        "superalloy turbine parts"
+        "gas turbine components",
+        "TBC thermal barrier coating",
+        "MCrAlY coating",
+        "aerospace casting"
       ]
     },
     "pump": {

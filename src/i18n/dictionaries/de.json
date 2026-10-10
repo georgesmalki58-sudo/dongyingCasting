@@ -277,6 +277,7 @@
       "intro": "Entdecken Sie unsere wichtigsten Gussprogramme – jedes Teil nach Ihrer Zeichnung, vom Einzelprototyp bis zur Serienfertigung.",
       "materials": "Werkstoffe",
       "process": "Verfahren",
+      "surface": "Oberflächenbehandlung",
       "applications": "Typische Anwendungen",
       "moq": "Mindestbestellmenge",
       "moqOne": "Ab 1 Stück",
@@ -290,21 +291,28 @@
     "superalloy": {
       "name": "Turbinenkomponenten aus Superlegierungen",
       "summary": "Im Vakuum-Feinguss hergestellte Leitschaufeln (NGV), Statorringe und Heißgasteile aus Inconel und anderen Nickelbasis-Superlegierungen.",
-      "body": "Für Gasturbinen und Turbolader gießen wir komplexe, dünnwandige Leitschaufeln und integrale Schaufelringe im Vakuum-Feinguss (Wachsausschmelzverfahren), der reaktive Superlegierungen beim Abguss vor Oxidation schützt. Wir liefern im Gusszustand oder auf unseren CNC-Bearbeitungszentren fertigbearbeitet – bereits ab einem einzelnen Prototyp.",
+      "body": "Für Gasturbinen, Turbolader und Heißgasteile der Energieerzeugung gießen wir komplexe, dünnwandige Leitschaufeln, Rotorschaufeln und integrale Schaufelringe im Vakuum-Feinguss (Wachsausschmelzverfahren), der reaktive Nickelbasis-Superlegierungen beim Abguss vor Oxidation schützt. Die Teile werden auf unseren CNC-Zentren fertigbearbeitet und können mit Hochtemperatur-Schutzschichten geliefert werden – Aluminid, PtAl, MCrAlY und Wärmedämmschichten (TBC) – für Luft- und Raumfahrt, Gasturbinen, Schiffbau sowie Öl & Gas. Vom Einzelprototyp bis zur Serie.",
       "materials": "Inconel, Nickelbasis-Superlegierungen, hitzebeständiger Stahl",
-      "process": "Vakuum-Feinguss (Wachsausschmelzverfahren) + CNC-Bearbeitung",
+      "process": "Vakuum-Feinguss (Wachsausschmelz) + CNC-Bearbeitung + Beschichtung",
+      "surface": "Strahlen · Aluminid · PtAl · MCrAlY · Wärmedämmschicht (TBC)",
       "apps": [
         "Leitschaufeln (NGV) für Gasturbinen",
-        "Stator- und Schaufelringe",
+        "Rotorschaufeln und Stator-/Schaufelringe",
         "Heißgasteile für Turbolader",
-        "Hochtemperatur-Industriekomponenten"
+        "Komponenten für Luftfahrt und Energieerzeugung",
+        "Hochtemperaturteile für Schiffbau und Öl & Gas"
       ],
       "keywords": [
-        "Inconel-Guss",
-        "NGV Leitschaufel",
+        "Leitschaufelguss",
+        "NGV-Guss",
         "Turbinenschaufelguss",
+        "Inconel-Feinguss",
+        "Nickel-Superlegierungsguss",
         "Vakuum-Feinguss",
-        "Superlegierungs-Turbinenteile"
+        "Gasturbinenkomponenten",
+        "TBC Wärmedämmschicht",
+        "MCrAlY-Beschichtung",
+        "Luftfahrtguss"
       ]
     },
     "pump": {

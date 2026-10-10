@@ -277,6 +277,7 @@
       "intro": "Descubra nuestros principales programas de fundición: cada pieza según su plano, desde un prototipo hasta la producción en serie.",
       "materials": "Materiales",
       "process": "Proceso",
+      "surface": "Tratamiento superficial",
       "applications": "Aplicaciones típicas",
       "moq": "Pedido mínimo",
       "moqOne": "Desde 1 pieza",
@@ -290,21 +291,28 @@
     "superalloy": {
       "name": "Componentes de turbina en superaleaciones",
       "summary": "Álabes guía de tobera (NGV), anillos de estator y piezas de sección caliente en Inconel y otras superaleaciones base níquel, por microfusión al vacío.",
-      "body": "Para turbinas de gas y turbocompresores fundimos álabes guía de pared delgada y anillos de álabes integrales mediante microfusión al vacío (cera perdida), que protege las superaleaciones reactivas de la oxidación durante la colada. Suministramos las piezas en bruto de fundición o mecanizadas en nuestros centros CNC, desde un solo prototipo.",
+      "body": "Para turbinas de gas, turbocompresores y secciones calientes de generación eléctrica fundimos álabes guía, álabes de rotor y anillos de álabes integrales de pared delgada por microfusión al vacío (cera perdida), que protege las superaleaciones base níquel reactivas de la oxidación durante la colada. Las piezas se mecanizan en nuestros centros CNC y pueden suministrarse con recubrimientos protectores de alta temperatura —aluminuro, PtAl, MCrAlY y recubrimientos de barrera térmica (TBC)— para aeronáutica, turbinas de gas, sector naval y petróleo y gas. Desde un prototipo hasta la producción en serie.",
       "materials": "Inconel, superaleaciones base níquel, acero refractario",
-      "process": "Microfusión al vacío (cera perdida) + mecanizado CNC",
+      "process": "Microfusión al vacío (cera perdida) + mecanizado CNC + recubrimiento",
+      "surface": "Granallado · Aluminuro · PtAl · MCrAlY · barrera térmica (TBC)",
       "apps": [
         "Álabes guía de tobera (NGV) para turbinas de gas",
-        "Anillos de estator y de álabes",
-        "Piezas de sección caliente para turbocompresores",
-        "Componentes industriales de alta temperatura"
+        "Álabes de rotor y anillos de estator/álabes",
+        "Piezas de sección caliente de turbocompresores",
+        "Componentes aeronáuticos y de generación eléctrica",
+        "Piezas de alta temperatura para naval y petróleo y gas"
       ],
       "keywords": [
-        "piezas de Inconel",
-        "álabe guía NGV",
+        "fundición de álabes guía",
+        "fundición NGV",
         "fundición de álabes de turbina",
+        "microfusión de Inconel",
+        "fundición de superaleación de níquel",
         "microfusión al vacío",
-        "piezas de turbina en superaleación"
+        "componentes de turbina de gas",
+        "recubrimiento de barrera térmica TBC",
+        "recubrimiento MCrAlY",
+        "fundición aeronáutica"
       ]
     },
     "pump": {
