@@ -174,7 +174,7 @@
     "hours": "Mo–Sa, 8:00–18:00 (GMT+8)",
     "wechatHint": "Scannen, um mit uns auf WeChat zu chatten",
     "sending": "Ihre Nachricht wird gesendet…",
-    "attachmentNote": "Bis zu 10 MB pro Nachricht. Bei größeren Dateien können Sie diese über mehrere Sendungen verschicken."
+    "attachmentNote": "Bis zu 20 MB pro Sendung. Mehr Dateien? Laden Sie die restlichen Dateien in einer zweiten Sendung hoch."
   },
   "footer": {
     "tagline": "Präzisions-Feinguss & CNC-Bearbeitung seit 2000.",

@@ -3,6 +3,9 @@ import nodemailer from 'nodemailer';
 import { inquirySchema, validateUpload, verifyFileSignature, type InquiryInput } from '@/lib/validation';
 import { edgeRateLimit, clientIp, verifyTurnstile } from '@/lib/rate-limit';
 import { SITE } from '@/lib/site';
+import { scanUpload, safeAttachmentName } from '@/lib/file-scan';
+
+type Attachment = { filename: string; content: Buffer };
 
 export const runtime = 'nodejs';
 
@@ -12,7 +15,7 @@ const escapeHtml = (s: string) =>
 // Sends the inquiry to SITE.contactTo via SMTP (e.g. Hostinger Business Email).
 // Configure SMTP_HOST / SMTP_PORT / SMTP_USER / SMTP_PASS in the environment.
 // Returns true if the message was accepted by the SMTP server.
-async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promise<boolean> {
+async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): Promise<boolean> {
   const host = process.env.SMTP_HOST;
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
@@ -43,12 +46,8 @@ async function sendInquiryEmail(data: InquiryInput, attachments: File[]): Promis
       auth: { user, pass }
     });
 
-    const fileAtt = await Promise.all(
-      attachments.map(async (f) => ({
-        filename: f.name,
-        content: Buffer.from(await f.arrayBuffer())
-      }))
-    );
+    // Files were fully scanned before this point; names are sanitized.
+    const fileAtt = attachments;
 
     // 1) Notify the company.
     await transporter.sendMail({
@@ -117,8 +116,8 @@ export async function POST(req: Request) {
     }
   }
 
-  // Reject oversized bodies before buffering them (10 MB of files + form overhead).
-  const MAX_BODY_BYTES = 11 * 1024 * 1024;
+  // Reject oversized bodies before buffering them (20 MB of files + form overhead).
+  const MAX_BODY_BYTES = 21 * 1024 * 1024;
   const declared = Number(req.headers.get('content-length') || 0);
   if (declared > MAX_BODY_BYTES) {
     return NextResponse.json({ error: 'Request too large.' }, { status: 413 });
@@ -156,29 +155,42 @@ export async function POST(req: Request) {
 
   // Multiple attachments are supported. Enforce a per-request file count and total size.
   const MAX_FILES = 8;
-  const MAX_TOTAL_BYTES = 10 * 1024 * 1024; // 10 MB across all files per message
+  // 20 MB raw ≈ 27 MB after base64 — under Hostinger's 35 MB outbound / 25 MB per-attachment caps.
+  const MAX_TOTAL_BYTES = 20 * 1024 * 1024; // 20 MB across all files per submission
   const files = form.getAll('attachment').filter((f): f is File => f instanceof File && f.size > 0);
   if (files.length > MAX_FILES) {
     return NextResponse.json({ error: `Too many files (max ${MAX_FILES}).` }, { status: 422 });
   }
   let total = 0;
+  const attachments: Attachment[] = [];
   for (const file of files) {
     total += file.size;
     if (total > MAX_TOTAL_BYTES) {
-      return NextResponse.json({ error: 'Total attachment size exceeds 10 MB. Please split your files across several submissions.' }, { status: 422 });
+      return NextResponse.json({ error: 'Total attachment size exceeds 20 MB. Please upload the remaining files in a second submission.' }, { status: 422 });
     }
     // 1) Name / size / extension / MIME checks.
     const err = validateUpload({ name: file.name, size: file.size, type: file.type });
-    if (err) return NextResponse.json({ error: `${file.name}: ${err}` }, { status: 422 });
-    // 2) Content check — read leading bytes and verify the real file signature.
-    const head = new Uint8Array(await file.slice(0, 4096).arrayBuffer());
-    const sigErr = verifyFileSignature(file.name, head);
-    if (sigErr) return NextResponse.json({ error: `${file.name}: ${sigErr}` }, { status: 422 });
-    // For production hardening: scan each file (AV) before persisting/forwarding.
+    if (err) return NextResponse.json({ error: `${safeAttachmentName(file.name)}: ${err}` }, { status: 422 });
+    // 2) Read the whole file once: magic-byte check + deep content scan
+    //    (macros, PDF JavaScript/launch actions, executables in archives, zip bombs,
+    //    polyglot images, spoofed names). Rejections are logged with the reason but
+    //    the client only gets a generic message (don't teach attackers the rules).
+    const buf = Buffer.from(await file.arrayBuffer());
+    const sigErr = verifyFileSignature(file.name, buf.subarray(0, 4096));
+    if (sigErr) return NextResponse.json({ error: `${safeAttachmentName(file.name)}: ${sigErr}` }, { status: 422 });
+    const threat = scanUpload(file.name, buf);
+    if (threat) {
+      console.warn(JSON.stringify({ evt: 'upload_blocked', ip, ts: Date.now(), file: safeAttachmentName(file.name), size: file.size, reason: threat }));
+      return NextResponse.json(
+        { error: `${safeAttachmentName(file.name)}: this file was rejected by our security scan. Please send a plain PDF, STEP, DWG/DXF or image file (no macros, passwords or nested archives).` },
+        { status: 422 }
+      );
+    }
+    attachments.push({ filename: safeAttachmentName(file.name), content: buf });
   }
 
   // Deliver the inquiry to the company inbox (SITE.email).
-  const sent = await sendInquiryEmail(parsed.data, files);
+  const sent = await sendInquiryEmail(parsed.data, attachments);
   console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), files: files.length, delivered: sent }));
 
   return NextResponse.json({ ok: true });

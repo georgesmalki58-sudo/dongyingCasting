@@ -21,7 +21,8 @@ npm run typecheck            # tsc --noEmit
 - `src/middleware.ts`: per-request **CSP with nonce** (`strict-dynamic`, no `unsafe-inline`/`unsafe-eval` in prod), HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy.
 - `public/_headers`: same headers for Cloudflare-served static assets.
 - `next.config.mjs`: header fallback + `poweredByHeader: false`.
-- Forms: Zod validation, honeypot, in-memory rate limiting (`src/lib/rate-limit.ts`), Cloudflare Turnstile verification, secure upload validation with extension whitelist (PDF/DOCX/XLSX/STEP/DWG/DXF/ZIP), 15 MB cap, MIME checks (`src/lib/validation.ts`).
+- Forms: Zod validation (control-char/CRLF filtering), honeypot, Workers Rate Limiting binding (`src/lib/rate-limit.ts`), Cloudflare Turnstile, upload whitelist (PDF/DOCX/XLSX/STEP/DWG/DXF/ZIP/JPG/PNG), 20 MB per submission, magic-byte checks (`src/lib/validation.ts`).
+- Upload malware scan (`src/lib/file-scan.ts`): blocks Office macros/ActiveX/OLE embeddings and external-template injection, PDF JavaScript/Launch/EmbeddedFile (incl. #xx-obfuscated names and compressed object streams), encrypted PDFs/ZIPs, executables or nested archives in ZIPs, zip bombs, path traversal, polyglot images, RTL-override file names. No database ⇒ no SQL injection surface.
 - API routes set `runtime = 'nodejs'`; cookies (when added) should be `HttpOnly; Secure; SameSite=Strict`.
 
 **SEO**

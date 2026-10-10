@@ -12,7 +12,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
   const [showSuccess, setShowSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
   const [files, setFiles] = useState<File[]>([]);
-  const MAX_TOTAL = 10 * 1024 * 1024;
+  const MAX_TOTAL = 20 * 1024 * 1024;
   const total = files.reduce((sum, f) => sum + f.size, 0);
   const overLimit = total > MAX_TOTAL;
 
@@ -40,7 +40,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    // Client-side 10 MB cap so the user is told before a long upload.
+    // Client-side 20 MB cap so the user is told before a long upload.
     if (overLimit) {
       setErrorMsg(t.contact.attachmentNote);
       setStatus('error');
@@ -133,7 +133,7 @@ export function InquiryForm({ t }: { t: Dictionary }) {
             ))}
           </ul>
           <p className={`text-xs ${overLimit ? 'font-semibold text-red-600' : 'text-steel-500'}`}>
-            {files.length} {files.length === 1 ? 'file' : 'files'} · {fmtSize(total)} / 10 MB
+            {files.length} {files.length === 1 ? 'file' : 'files'} · {fmtSize(total)} / 20 MB
           </p>
         </>
       )}

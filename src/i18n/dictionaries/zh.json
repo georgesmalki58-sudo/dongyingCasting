@@ -174,7 +174,7 @@
     "hours": "周一至周六，8:00–18:00（GMT+8）",
     "wechatHint": "扫码添加微信咨询",
     "sending": "正在发送您的消息…",
-    "attachmentNote": "每次提交最大 10 MB。如文件较大，可分多次提交发送。"
+    "attachmentNote": "每次提交最多 20 MB。文件更多？请在第二次提交中上传其余文件。"
   },
   "footer": {
     "tagline": "自2000年起专注精密熔模铸造与CNC加工。",

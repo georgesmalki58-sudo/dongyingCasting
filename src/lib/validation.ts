@@ -15,18 +15,25 @@ export const ALLOWED_MIME = new Set([
   'image/jpeg',
   'image/png'
 ]);
-export const MAX_FILE_BYTES = 15 * 1024 * 1024; // 15 MB
+export const MAX_FILE_BYTES = 20 * 1024 * 1024; // 20 MB (= per-submission total)
 
 // Honeypot field `website` must stay empty (basic spam protection).
+// Text fields: trimmed, length-capped, no control characters (blocks header/CRLF
+// injection and invisible-character tricks). Everything is HTML-escaped again when
+// the email is built. There is no database, so SQL/NoSQL injection has no sink.
+const CTRL = /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f\u202a-\u202e\u2066-\u2069]/;
+const line = (min: number, max: number) =>
+  z.string().trim().min(min).max(max).refine((v) => !CTRL.test(v) && !/[\r\n]/.test(v), 'Invalid characters.');
+
 export const inquirySchema = z.object({
-  name: z.string().min(2).max(100),
-  email: z.string().email().max(150),
-  company: z.string().max(150).optional().default(''),
-  phone: z.string().max(40).optional().default(''),
-  message: z.string().min(10).max(5000),
+  name: line(2, 100),
+  email: z.string().trim().toLowerCase().email().max(150),
+  company: line(0, 150).optional().default(''),
+  phone: z.string().trim().max(40).regex(/^[0-9+()\-.\s]*$/, 'Invalid phone number.').optional().default(''),
+  message: z.string().trim().min(10).max(5000).refine((v) => !CTRL.test(v), 'Invalid characters.'),
   consent: z.literal(true),
   website: z.string().max(0).optional().default(''), // honeypot
-  turnstileToken: z.string().min(1).optional()
+  turnstileToken: z.string().min(1).max(2048).optional()
 });
 
 export type InquiryInput = z.infer<typeof inquirySchema>;
@@ -37,7 +44,7 @@ export function extensionOf(filename: string): string {
 }
 
 export function validateUpload(file: { name: string; size: number; type: string }): string | null {
-  if (file.size > MAX_FILE_BYTES) return 'File exceeds 15 MB limit.';
+  if (file.size > MAX_FILE_BYTES) return 'File exceeds 20 MB limit.';
   if (file.size === 0) return 'File is empty.';
   const ext = extensionOf(file.name);
   if (!(ALLOWED_EXTENSIONS as readonly string[]).includes(ext)) return `File type .${ext} is not allowed.`;
