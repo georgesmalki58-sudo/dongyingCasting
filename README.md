@@ -15,7 +15,7 @@ npm run typecheck            # tsc --noEmit
 
 ## What's included
 
-**Pages** (i18n: `en`, `zh`, `de`, `es`) — Home, About, Products, Industries, Quality, Factory, Knowledge Center (Blog), Contact.
+**Pages** (i18n: `en`, `zh`, `de`, `es`, `ar` — Arabic is RTL) — Home, About, Products, Industries, Quality, Factory, Knowledge Center (Blog), Contact.
 
 **Security (defense in depth)**
 - `src/middleware.ts`: per-request **CSP with nonce** (`strict-dynamic`, no `unsafe-inline`/`unsafe-eval` in prod), HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy.
@@ -30,7 +30,7 @@ npm run typecheck            # tsc --noEmit
 - `app/sitemap.ts` (with language alternates) and `app/robots.ts`.
 - `next/image` with AVIF/WebP, lazy loading, and Core Web Vitals-friendly layout.
 
-**Images** are reused from the existing site via `next/image` `remotePatterns` (`dongying-casting.com`). For full self-hosting, download assets into `public/images` and update `src/lib/site.ts`.
+**Images** are self-hosted in `public/images` (WebP, auto-optimized by `scripts/optimize-images.mjs` on `prebuild`). No remote image hosts.
 
 ## Deploy to Cloudflare
 
@@ -46,8 +46,8 @@ Then in the Cloudflare dashboard, enable: WAF + rate-limiting rules, Bot Fight M
 
 > Static-export alternative (Cloudflare Pages) is possible but drops the API routes and nonce-based middleware CSP; the Workers path above preserves them.
 
-## TODO before launch
-- Replace placeholder phone/WhatsApp/WeChat/geo in `src/lib/site.ts`.
-- Wire email/CRM delivery in `src/app/api/contact/route.ts`.
-- Add real blog article routes and Company Profile PDF.
-- Move reused images to local `public/` for full control.
+## TODO
+- Fill China filings / verification: `SITE.icp`, Baidu/Sogou/360 verification env vars, `NEXT_PUBLIC_CF_BEACON_TOKEN`.
+- Verify SMTP (nodemailer) delivery from the Cloudflare Worker runtime; fall back to an HTTP email API if TCP SMTP is unavailable.
+- Back the in-memory rate limiter with KV / a Cloudflare WAF rate-limit rule (Workers isolates don't share memory).
+- Add a downloadable Company Profile PDF.

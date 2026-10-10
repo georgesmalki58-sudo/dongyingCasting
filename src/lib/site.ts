@@ -76,5 +76,6 @@ export const IMAGES = {
   product3: '/images/product-3.webp',
   product4: '/images/product-4.webp',
   product5: '/images/product-5.webp',
-  product6: '/images/product-6.webp'
+  product6: '/images/product-6.webp',
+  highTempAlloy: '/images/high-temp-alloy.webp'
 } as const;

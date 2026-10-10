@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 import { type Locale, getDictionary } from '@/i18n/config';
 import { IMAGES, SITE } from '@/lib/site';
 import { buildMetadata } from '@/lib/seo';
@@ -21,10 +23,30 @@ export default async function Products({ params }: { params: Promise<{ locale: L
     <>
       <JsonLd data={[
         breadcrumbSchema(locale, [{ name: t.nav.home, path: '' }, { name: t.products.title, path: 'products' }]),
+        productSchema({ name: t.products.featured.title, description: t.products.featured.body, image: IMAGES.highTempAlloy }),
         ...items.map((i) => productSchema({ name: i.name, description: i.body, image: IMAGES.investment1 }))
       ]} />
       <section className="container-x py-16">
         <SectionHeading as="h1" title={t.products.title} intro={t.products.intro} />
+        {/* Featured: High-Temperature Alloy Series */}
+        <article className="mt-10 grid overflow-hidden rounded-xl border border-steel-200 bg-white shadow-sm md:grid-cols-2">
+          <div className="relative aspect-[910/556] md:aspect-auto md:min-h-[320px]">
+            <Image src={IMAGES.highTempAlloy} alt={t.products.featured.alt} fill
+                   sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+          </div>
+          <div className="flex flex-col justify-center gap-4 p-6 md:p-10">
+            <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+              {t.products.featured.badge}
+            </span>
+            <h2 className="text-2xl font-bold text-steel-900">{t.products.featured.title}</h2>
+            <p className="prose-muted">{t.products.featured.body}</p>
+            <Link href={`/${locale}/contact`}
+                  className="inline-flex w-fit rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+              {t.cta.quote}
+            </Link>
+          </div>
+        </article>
+
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((i) => <Card key={i.name} title={i.name} body={i.body} />)}
         </div>

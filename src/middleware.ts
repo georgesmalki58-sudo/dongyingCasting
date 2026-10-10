@@ -47,12 +47,12 @@ export function middleware(req: NextRequest) {
   if (isProd) {
     csp = [
       `default-src 'self'`,
-      `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://challenges.cloudflare.com https://hm.baidu.com`,
+      `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://challenges.cloudflare.com https://hm.baidu.com https://static.cloudflareinsights.com`,
       `style-src 'self' 'unsafe-inline'`,
       `img-src 'self' data: blob: https://hm.baidu.com`,
       `font-src 'self' data:`,
       `frame-src https://challenges.cloudflare.com https://www.google.com`,
-      `connect-src 'self' https://challenges.cloudflare.com https://hm.baidu.com`,
+      `connect-src 'self' https://challenges.cloudflare.com https://hm.baidu.com https://cloudflareinsights.com`,
       `object-src 'none'`,
       `base-uri 'self'`,
       `form-action 'self'`,

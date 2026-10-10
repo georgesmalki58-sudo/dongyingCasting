@@ -96,6 +96,12 @@
         "name": "Componentes personalizados",
         "body": "Componentes fabricados según plano, del prototipo a la producción en serie."
       }
+    },
+    "featured": {
+      "badge": "Serie de aleaciones de alta temperatura",
+      "title": "Fundición de aleaciones de alta temperatura",
+      "body": "Álabes, rotores, distribuidores y componentes estructurales fabricados por fundición a la cera perdida en aceros refractarios y superaleaciones, desde lotes pequeños personalizados hasta producción en gran serie.",
+      "alt": "Rueda de turbina y álabes de rotor fundidos en aleación de alta temperatura"
     }
   },
   "industries": {

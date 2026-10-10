@@ -4,7 +4,11 @@
   "compatibility_date": "2025-03-01",
   "compatibility_flags": ["nodejs_compat"],
   "main": ".open-next/worker.js",
-  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" }
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  // Globally-consistent rate limit for /api/contact & /api/quote (5 req / 60 s per IP).
+  "ratelimits": [
+    { "name": "CONTACT_RATE_LIMITER", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } }
+  ]
   // Add bindings here when wired:
   // "kv_namespaces": [{ "binding": "RATE_LIMIT", "id": "<kv-id>" }],
   // "r2_buckets": [{ "binding": "UPLOADS", "bucket_name": "dongying-uploads" }]

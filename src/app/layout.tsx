@@ -5,6 +5,7 @@ import './globals.css';
 import { SITE } from '@/lib/site';
 import { dir, isLocale, type Locale } from '@/i18n/config';
 import { BaiduAnalytics } from '@/components/BaiduAnalytics';
+import { CloudflareAnalytics } from '@/components/CloudflareAnalytics';
 
 // 'swap' with a metric-matched fallback (adjustFontFallback default) avoids the
 // layout shift the page had when the webfont swapped in (was driving CLS 0.304).
@@ -47,7 +48,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const htmlLang = locale === 'zh' ? 'zh-CN' : locale;
   return (
     <html lang={htmlLang} dir={dir(locale)} className={`${inter.variable} ${robotoMono.variable}`} suppressHydrationWarning>
-      <body className="font-sans">{children}<BaiduAnalytics /></body>
+      <body className="font-sans">{children}<BaiduAnalytics /><CloudflareAnalytics /></body>
     </html>
   );
 }

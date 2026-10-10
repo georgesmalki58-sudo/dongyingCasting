@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { inquirySchema, validateUpload, verifyFileSignature, type InquiryInput } from '@/lib/validation';
-import { rateLimit, clientIp, verifyTurnstile } from '@/lib/rate-limit';
+import { edgeRateLimit, clientIp, verifyTurnstile } from '@/lib/rate-limit';
 import { SITE } from '@/lib/site';
 
 export const runtime = 'nodejs';
@@ -112,10 +112,19 @@ export async function POST(req: Request) {
   // Rate limit only in production. In dev all requests share the 'unknown' bucket
   // (no cf-connecting-ip locally), which would falsely trip during testing.
   if (process.env.NODE_ENV === 'production') {
-    const limit = rateLimit(`contact:${ip}`, 8, 60_000);
-    if (!limit.ok) {
+    if (!(await edgeRateLimit(`contact:${ip}`, 5, 60_000))) {
       return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
     }
+  }
+
+  // Reject oversized bodies before buffering them (10 MB of files + form overhead).
+  const MAX_BODY_BYTES = 11 * 1024 * 1024;
+  const declared = Number(req.headers.get('content-length') || 0);
+  if (declared > MAX_BODY_BYTES) {
+    return NextResponse.json({ error: 'Request too large.' }, { status: 413 });
+  }
+  if (!(req.headers.get('content-type') || '').toLowerCase().startsWith('multipart/form-data')) {
+    return NextResponse.json({ error: 'Unsupported content type.' }, { status: 415 });
   }
 
   let form: FormData;

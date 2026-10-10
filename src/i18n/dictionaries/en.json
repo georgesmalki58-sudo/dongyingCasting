@@ -96,6 +96,12 @@
         "name": "Custom Components",
         "body": "Made-to-drawing components from prototype to series production."
       }
+    },
+    "featured": {
+      "badge": "High-temperature alloy series",
+      "title": "High-Temperature Alloy Castings",
+      "body": "Investment-cast blades, rotors, guide vanes and structural components in heat-resistant steel and superalloy grades — from small-batch custom orders to large-scale series production.",
+      "alt": "Investment-cast high-temperature alloy turbine wheel and rotor blades"
     }
   },
   "industries": {

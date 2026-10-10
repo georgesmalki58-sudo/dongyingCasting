@@ -96,6 +96,12 @@
         "name": "Sonderbauteile",
         "body": "Maßgefertigte Bauteile vom Prototyp bis zur Serienfertigung."
       }
+    },
+    "featured": {
+      "badge": "Hochtemperaturlegierungen",
+      "title": "Feinguss aus Hochtemperaturlegierungen",
+      "body": "Im Feingussverfahren hergestellte Schaufeln, Rotoren, Leitapparate und Strukturbauteile aus hitzebeständigen Stählen und Superlegierungen – von kundenspezifischen Kleinserien bis zur Großserienfertigung.",
+      "alt": "Feingegossenes Turbinenrad und Rotorschaufeln aus Hochtemperaturlegierung"
     }
   },
   "industries": {

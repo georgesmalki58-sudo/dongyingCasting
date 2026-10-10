@@ -1,5 +1,22 @@
-// Lightweight in-memory sliding-window limiter. For production on Cloudflare,
-// back this with KV or Durable Objects / a WAF rate-limiting rule.
+import { getCloudflareContext } from '@opennextjs/cloudflare';
+
+// Rate limiting: on Cloudflare Workers the globally-consistent Workers Rate Limiting
+// binding (CONTACT_RATE_LIMITER in wrangler.jsonc) is used. Each Worker isolate has
+// its own memory, so the in-memory limiter below is only a per-isolate fallback
+// (local `next start`, or if the binding is missing).
+type RateLimiterBinding = { limit: (opts: { key: string }) => Promise<{ success: boolean }> };
+
+export async function edgeRateLimit(key: string, fallbackLimit = 5, windowMs = 60_000): Promise<boolean> {
+  try {
+    const { env } = getCloudflareContext();
+    const rl = (env as unknown as Record<string, RateLimiterBinding | undefined>).CONTACT_RATE_LIMITER;
+    if (rl) return (await rl.limit({ key })).success;
+  } catch {
+    // Not running on Workers (local dev / next start) — fall through.
+  }
+  return rateLimit(key, fallbackLimit, windowMs).ok;
+}
+
 type Bucket = { count: number; reset: number };
 const store = new Map<string, Bucket>();
 
@@ -29,7 +46,12 @@ export function clientIp(req: Request): string {
 // so local/dev builds work; set TURNSTILE_SECRET_KEY in production.
 export async function verifyTurnstile(token: string | undefined, ip: string): Promise<boolean> {
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return true;
+  if (!secret) {
+    if (process.env.NODE_ENV === 'production') {
+      console.error('[security] TURNSTILE_SECRET_KEY is not set — contact form has no bot verification.');
+    }
+    return true;
+  }
   if (!token) return false;
   try {
     const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
