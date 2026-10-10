@@ -192,6 +192,13 @@ export async function POST(req: Request) {
   // Deliver the inquiry to the company inbox (SITE.email).
   const sent = await sendInquiryEmail(parsed.data, attachments);
   console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), files: files.length, delivered: sent }));
+  if (!sent) {
+    // Never report success for an inquiry that didn't reach the inbox.
+    return NextResponse.json(
+      { error: `Your message could not be delivered right now. Please email us directly at ${SITE.email} or contact us on WhatsApp.` },
+      { status: 502 }
+    );
+  }
 
   return NextResponse.json({ ok: true });
   } catch (e) {

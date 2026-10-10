@@ -1,7 +1,7 @@
 {
   // Cloudflare deployment via @opennextjs/cloudflare (Workers) — see README.
   "name": "dongying-casting",
-  "compatibility_date": "2025-03-01",
+  "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat"],
   "main": ".open-next/worker.js",
   // Staging hostname (Workers Custom Domain). Switch/add the apex once verified.
