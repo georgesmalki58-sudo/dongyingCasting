@@ -21,7 +21,7 @@ export const SITE = {
     countryName: 'China'
   },
   geo: { lat: 37.4346, lng: 118.6747 },
-  certifications: ['ISO 9001:2015', 'GB/T 19001', 'CE', 'UN ECE R55'],
+  certifications: ['ISO 9001:2015', 'GB/T 19001', 'CE', 'UN ECE R55 · E57 55R-03 0158'],
   ports: ['Qingdao', 'Dongying', 'Shanghai', 'Tianjin'],
   incoterms: ['FOB', 'CFR', 'CIF', 'EXW', 'FCA', 'CPT', 'CIP'],
   payment: ['L/C', 'T/T'],
