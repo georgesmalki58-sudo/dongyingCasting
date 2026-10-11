@@ -27,7 +27,7 @@ export default async function Industries({ params }: { params: Promise<{ locale:
                 <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-accent" />
                 <h2 className="text-lg font-semibold text-brand">{i.name}</h2>
               </div>
-              <p className="prose-muted mt-2 text-base">{i.desc}</p>
+              <p className="prose-muted mt-2 text-lg">{i.desc}</p>
             </div>
           ))}
         </div>
