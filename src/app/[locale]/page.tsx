@@ -57,7 +57,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
         <div className="container-x py-24 sm:py-32">
           <p className="eyebrow text-brand-accent">{companyName(locale)} · ISO 9001:2015</p>
           <h1 className="mt-3 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">{t.home.h1}</h1>
-          <p className="mt-6 max-w-2xl text-lg text-steel-200">{t.home.heroSub}</p>
+          <p className="mt-6 max-w-2xl text-xl text-steel-200">{t.home.heroSub}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href={`${base}/contact`} className="btn-accent">{t.cta.quote}</Link>
             <Link href={`${base}/products`} className="btn-ghost border-white/30 text-white hover:bg-white/10">{t.cta.solutions}</Link>
@@ -115,7 +115,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
             {t.home.foundry.items.map(([h, b]) => (
               <div key={h} className="card h-full">
                 <h3 className="text-base font-semibold text-brand">{h}</h3>
-                <p className="prose-muted mt-2 text-lg">{b}</p>
+                <p className="prose-muted mt-2 text-xl">{b}</p>
               </div>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
               <div className="mt-1 h-8 w-1.5 shrink-0 rounded bg-brand-accent" />
               <div>
                 <h3 className="font-semibold text-brand">{w.t}</h3>
-                <p className="prose-muted mt-1 text-lg">{w.b}</p>
+                <p className="prose-muted mt-1 text-xl">{w.b}</p>
               </div>
             </div>
           ))}
@@ -173,15 +173,15 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
         <div className="container-x grid gap-10 py-16 md:grid-cols-3">
           <div>
             <h2 className="text-xl font-bold">{t.home.quality}</h2>
-            <p className="mt-2 text-sm text-blue-100">{t.quality.isoBody}</p>
+            <p className="mt-2 text-xl font-medium text-blue-50">{t.quality.isoBody}</p>
           </div>
           <div>
             <h2 className="text-xl font-bold">{t.home.factory}</h2>
-            <p className="mt-2 text-sm text-blue-100">{t.factory.equipmentBody}</p>
+            <p className="mt-2 text-xl font-medium text-blue-50">{t.factory.equipmentBody}</p>
           </div>
           <div>
             <h2 className="text-xl font-bold">{t.home.global}</h2>
-            <p className="mt-2 text-sm text-blue-100">{t.why.exportBody}</p>
+            <p className="mt-2 text-xl font-medium text-blue-50">{t.why.exportBody}</p>
           </div>
         </div>
       </section>
@@ -190,7 +190,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       <section className="container-x py-20">
         <div className="rounded-2xl bg-steel-900 px-8 py-14 text-center text-white sm:px-16">
           <h2 className="text-3xl font-bold">{t.home.requestQuote}</h2>
-          <p className="prose-muted mx-auto mt-3 max-w-xl text-steel-300">{t.home.requestQuoteBody}</p>
+          <p className="prose-muted mx-auto mt-3 max-w-xl text-steel-200">{t.home.requestQuoteBody}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link href={`${base}/contact`} className="btn-accent">{t.cta.quote}</Link>
             <Link href={`${base}/contact`} className="btn-ghost border-white/30 text-white hover:bg-white/10">{t.cta.uploadDrawing}</Link>

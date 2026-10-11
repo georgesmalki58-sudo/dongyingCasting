@@ -68,7 +68,7 @@ export default async function Products({ params }: { params: Promise<{ locale: L
                   </div>
                   <div className="flex flex-1 flex-col gap-2 border-t border-steel-200 p-5">
                     <h3 className="text-lg font-semibold text-brand group-hover:text-brand">{t.lines[l.key].name}</h3>
-                    <p className="prose-muted text-lg">{t.lines[l.key].summary}</p>
+                    <p className="prose-muted text-xl">{t.lines[l.key].summary}</p>
                     <p className="mt-auto pt-2 text-sm font-semibold text-steel-800">{t.lines.labels.moq}: {moqText(t, l.moq)}</p>
                   </div>
                 </Link>

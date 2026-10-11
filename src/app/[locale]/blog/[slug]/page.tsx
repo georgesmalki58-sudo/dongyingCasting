@@ -69,7 +69,7 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
         <header className="max-w-3xl">
           <p className="font-mono text-xs text-steel-400">{new Date(post.date).toLocaleDateString(locale)} · {post.readMins} min</p>
           <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-brand">{title}</h1>
-          <p className="prose-muted mt-4 text-lg">{c.intro}</p>
+          <p className="prose-muted mt-4 text-xl">{c.intro}</p>
         </header>
 
         <Image src={post.image} alt={title} width={1200} height={500}
