@@ -29,7 +29,7 @@ export default async function Quality({ params }: { params: Promise<{ locale: Lo
           {blocks.map((x) => (
             <div key={x.h} className="card">
               <h2 className="text-lg font-bold text-brand">{x.h}</h2>
-              <p className="prose-muted mt-2 text-sm">{x.b}</p>
+              <p className="prose-muted mt-2 text-base">{x.b}</p>
             </div>
           ))}
         </div>

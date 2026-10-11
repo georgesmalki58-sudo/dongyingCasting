@@ -115,7 +115,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
             {t.home.foundry.items.map(([h, b]) => (
               <div key={h} className="card h-full">
                 <h3 className="text-base font-semibold text-brand">{h}</h3>
-                <p className="prose-muted mt-2 text-sm">{b}</p>
+                <p className="prose-muted mt-2 text-base">{b}</p>
               </div>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
               <div className="mt-1 h-8 w-1.5 shrink-0 rounded bg-brand-accent" />
               <div>
                 <h3 className="font-semibold text-brand">{w.t}</h3>
-                <p className="prose-muted mt-1 text-sm">{w.b}</p>
+                <p className="prose-muted mt-1 text-base">{w.b}</p>
               </div>
             </div>
           ))}
