@@ -31,13 +31,13 @@ export default async function About({ params }: { params: Promise<{ locale: Loca
         <div className="mt-12 grid gap-10 lg:grid-cols-3">
           {blocks.map((x) => (
             <div key={x.h}>
-              <h2 className="text-xl font-bold text-steel-900">{x.h}</h2>
+              <h2 className="text-xl font-bold text-brand">{x.h}</h2>
               <p className="prose-muted mt-3">{x.b}</p>
             </div>
           ))}
         </div>
         <div className="mt-12">
-          <h2 className="text-xl font-bold text-steel-900">{t.about.certs}</h2>
+          <h2 className="text-xl font-bold text-brand">{t.about.certs}</h2>
           <ul className="mt-4 flex flex-wrap gap-3">
             {SITE.certifications.map((c) => (
               <li key={c} className="rounded-md border border-steel-300 bg-steel-50 px-4 py-2 text-sm font-semibold text-steel-800">{c}</li>

@@ -79,13 +79,13 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           <article className="card">
             <Image src={IMAGES.investmentSvc} alt={t.home.investmentCasting} width={640} height={360}
               className="mb-5 h-52 w-full rounded-lg object-cover" />
-            <h2 className="text-2xl font-bold text-steel-900">{t.home.investmentCasting}</h2>
+            <h2 className="text-2xl font-bold text-brand">{t.home.investmentCasting}</h2>
             <p className="prose-muted mt-3">{t.home.investmentCastingBody}</p>
           </article>
           <article className="card">
             <Image src={IMAGES.image2} alt={t.home.cnc} width={640} height={360}
               className="mb-5 h-52 w-full rounded-lg object-cover" />
-            <h2 className="text-2xl font-bold text-steel-900">{t.home.cnc}</h2>
+            <h2 className="text-2xl font-bold text-brand">{t.home.cnc}</h2>
             <p className="prose-muted mt-3">{t.home.cncBody}</p>
           </article>
         </div>
@@ -94,7 +94,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           {subs.map((s) => (
             <div key={s.t} className="group overflow-hidden rounded-xl border border-steel-200">
               <Image src={s.img} alt={s.t} width={400} height={240} className="h-36 w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-              <h3 className="p-4 text-sm font-semibold text-steel-900">{s.t}</h3>
+              <h3 className="p-4 text-sm font-semibold text-brand">{s.t}</h3>
             </div>
           ))}
         </div>
@@ -114,7 +114,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {t.home.foundry.items.map(([h, b]) => (
               <div key={h} className="card h-full">
-                <h3 className="text-base font-semibold text-steel-900">{h}</h3>
+                <h3 className="text-base font-semibold text-brand">{h}</h3>
                 <p className="prose-muted mt-2 text-sm">{b}</p>
               </div>
             ))}
@@ -145,7 +145,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
             <div key={w.t} className="flex gap-4">
               <div className="mt-1 h-8 w-1.5 shrink-0 rounded bg-brand-accent" />
               <div>
-                <h3 className="font-semibold text-steel-900">{w.t}</h3>
+                <h3 className="font-semibold text-brand">{w.t}</h3>
                 <p className="prose-muted mt-1 text-sm">{w.b}</p>
               </div>
             </div>

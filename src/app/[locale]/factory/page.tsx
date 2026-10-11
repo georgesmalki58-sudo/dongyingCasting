@@ -23,10 +23,10 @@ export default async function Factory({ params }: { params: Promise<{ locale: Lo
       <section className="container-x py-16">
         <SectionHeading as="h1" title={t.factory.title} intro={t.factory.intro} />
         <div className="mt-8 max-w-3xl">
-          <h2 className="text-xl font-bold text-steel-900">{t.factory.equipment}</h2>
+          <h2 className="text-xl font-bold text-brand">{t.factory.equipment}</h2>
           <p className="prose-muted mt-3">{t.factory.equipmentBody}</p>
         </div>
-        <h2 className="mt-12 text-xl font-bold text-steel-900">{t.factory.process}</h2>
+        <h2 className="mt-12 text-xl font-bold text-brand">{t.factory.process}</h2>
         <ol className="mt-4 flex flex-wrap gap-3">
           {t.factory.processSteps.map((s, i) => (
             <li key={s} className="flex items-center gap-2 rounded-md border border-steel-200 bg-steel-50 px-4 py-2 text-sm">
@@ -34,7 +34,7 @@ export default async function Factory({ params }: { params: Promise<{ locale: Lo
             </li>
           ))}
         </ol>
-        <h2 className="mt-12 text-xl font-bold text-steel-900">{t.factory.line}</h2>
+        <h2 className="mt-12 text-xl font-bold text-brand">{t.factory.line}</h2>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {gallery.map((src, i) => (
             <Image key={src} src={src} alt={`${t.factory.line} ${i + 1}`} width={500} height={350}

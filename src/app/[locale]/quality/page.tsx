@@ -28,7 +28,7 @@ export default async function Quality({ params }: { params: Promise<{ locale: Lo
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {blocks.map((x) => (
             <div key={x.h} className="card">
-              <h2 className="text-lg font-bold text-steel-900">{x.h}</h2>
+              <h2 className="text-lg font-bold text-brand">{x.h}</h2>
               <p className="prose-muted mt-2 text-sm">{x.b}</p>
             </div>
           ))}
@@ -37,7 +37,7 @@ export default async function Quality({ params }: { params: Promise<{ locale: Lo
         <div className="mt-12 overflow-hidden rounded-xl border border-steel-200 bg-steel-50">
           <div className="grid gap-6 p-6 md:grid-cols-[1.3fr_1fr] md:p-8">
             <div>
-              <h2 className="text-xl font-bold text-steel-900">{t.quality.approval.title}</h2>
+              <h2 className="text-xl font-bold text-brand">{t.quality.approval.title}</h2>
               <p className="prose-muted mt-3">{t.quality.approval.body}</p>
             </div>
             <dl className="divide-y divide-steel-200 self-start rounded-lg border border-steel-200 bg-white text-sm">

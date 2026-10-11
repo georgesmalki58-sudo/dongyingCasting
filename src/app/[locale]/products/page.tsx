@@ -39,7 +39,7 @@ export default async function Products({ params }: { params: Promise<{ locale: L
             <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
               {t.products.featured.badge}
             </span>
-            <h2 className="text-2xl font-bold text-steel-900">{t.products.featured.title}</h2>
+            <h2 className="text-2xl font-bold text-brand">{t.products.featured.title}</h2>
             <p className="prose-muted">{t.products.featured.body}</p>
             <div className="flex flex-wrap gap-3">
               <Link href={`/${locale}/contact`}
@@ -56,7 +56,7 @@ export default async function Products({ params }: { params: Promise<{ locale: L
 
         {/* Product lines with dedicated detail pages */}
         <div className="mt-14">
-          <h2 className="text-2xl font-bold text-steel-900">{t.lines.labels.title}</h2>
+          <h2 className="text-2xl font-bold text-brand">{t.lines.labels.title}</h2>
           <p className="prose-muted mt-2">{t.lines.labels.intro}</p>
           <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {PRODUCT_LINES.map((l) => (
@@ -67,9 +67,9 @@ export default async function Products({ params }: { params: Promise<{ locale: L
                     <Image src={l.images[0]} alt={t.lines[l.key].name} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-contain p-4" />
                   </div>
                   <div className="flex flex-1 flex-col gap-2 border-t border-steel-200 p-5">
-                    <h3 className="text-lg font-semibold text-steel-900 group-hover:text-brand">{t.lines[l.key].name}</h3>
+                    <h3 className="text-lg font-semibold text-brand group-hover:text-brand">{t.lines[l.key].name}</h3>
                     <p className="prose-muted text-sm">{t.lines[l.key].summary}</p>
-                    <p className="mt-auto pt-2 text-xs font-semibold text-steel-500">{t.lines.labels.moq}: {moqText(t, l.moq)}</p>
+                    <p className="mt-auto pt-2 text-sm font-semibold text-steel-800">{t.lines.labels.moq}: {moqText(t, l.moq)}</p>
                   </div>
                 </Link>
               </li>

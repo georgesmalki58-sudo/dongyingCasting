@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
 
         <header className="max-w-3xl">
           <p className="font-mono text-xs text-steel-400">{new Date(post.date).toLocaleDateString(locale)} · {post.readMins} min</p>
-          <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-steel-900">{title}</h1>
+          <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-brand">{title}</h1>
           <p className="prose-muted mt-4 text-lg">{c.intro}</p>
         </header>
 
@@ -78,13 +78,13 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
         <div className="mt-10 max-w-3xl space-y-10">
           {c.sections.map((s) => (
             <section key={s.h}>
-              <h2 className="text-2xl font-bold text-steel-900">{s.h}</h2>
+              <h2 className="text-2xl font-bold text-brand">{s.h}</h2>
               {s.p.map((para, i) => <p key={i} className="prose-muted mt-3">{para}</p>)}
             </section>
           ))}
 
           <section className="rounded-xl border border-steel-200 bg-steel-50 p-6">
-            <h2 className="text-xl font-bold text-steel-900">FAQ</h2>
+            <h2 className="text-xl font-bold text-brand">FAQ</h2>
             <dl className="mt-4 space-y-4">
               {c.faq.map((f) => (
                 <div key={f.q}>
@@ -103,12 +103,12 @@ export default async function BlogPost({ params }: { params: Promise<{ locale: L
         </div>
 
         <aside className="mt-16">
-          <h2 className="text-xl font-bold text-steel-900">{t.blog.title}</h2>
+          <h2 className="text-xl font-bold text-brand">{t.blog.title}</h2>
           <div className="mt-6 grid gap-6 sm:grid-cols-3">
             {related.map((p) => (
               <Link key={p.slug} href={`/${locale}/blog/${p.slug}`} className="group block overflow-hidden rounded-xl border border-steel-200">
                 <Image src={p.image} alt={t.blog.posts[p.key]} width={400} height={220} className="h-32 w-full object-cover transition-transform group-hover:scale-105" />
-                <h3 className="p-4 text-sm font-semibold text-steel-900">{t.blog.posts[p.key]}</h3>
+                <h3 className="p-4 text-sm font-semibold text-brand">{t.blog.posts[p.key]}</h3>
               </Link>
             ))}
           </div>

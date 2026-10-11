@@ -31,7 +31,7 @@ export default async function Blog({ params }: { params: Promise<{ locale: Local
                   className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                 <div className="p-5">
                   <p className="font-mono text-xs text-steel-400">{new Date(p.date).toLocaleDateString(locale)} · {p.readMins} min</p>
-                  <h2 className="mt-2 text-lg font-semibold text-steel-900">{t.blog.posts[p.key]}</h2>
+                  <h2 className="mt-2 text-lg font-semibold text-brand">{t.blog.posts[p.key]}</h2>
                   <p className="prose-muted mt-2 text-sm">{postContent(p, locale).excerpt}</p>
                   <p className="mt-4 text-sm font-semibold text-brand-light">{t.blog.readMore} →</p>
                 </div>

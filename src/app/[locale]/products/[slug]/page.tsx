@@ -90,7 +90,7 @@ export default async function ProductLinePage({ params }: Params) {
           </div>
 
           <div className="flex flex-col gap-6">
-            <h1 className="text-3xl font-bold text-steel-900 md:text-4xl">{c.name}</h1>
+            <h1 className="text-3xl font-bold text-brand md:text-4xl">{c.name}</h1>
             <p className="text-lg text-steel-700">{c.summary}</p>
             <dl className="divide-y divide-steel-200 rounded-xl border border-steel-200 text-sm">
               {([
@@ -124,7 +124,7 @@ export default async function ProductLinePage({ params }: Params) {
             <p className="leading-relaxed text-steel-700">{c.body}</p>
           </div>
           <div>
-            <h2 className="text-lg font-bold text-steel-900">{L.applications}</h2>
+            <h2 className="text-lg font-bold text-brand">{L.applications}</h2>
             <ul className="mt-3 space-y-2 text-steel-700">
               {c.apps.map((a) => (
                 <li key={a} className="flex gap-2"><span aria-hidden="true" className="text-brand">•</span>{a}</li>
@@ -134,7 +134,7 @@ export default async function ProductLinePage({ params }: Params) {
         </div>
 
         <div className="mt-16">
-          <h2 className="text-xl font-bold text-steel-900">{L.others}</h2>
+          <h2 className="text-xl font-bold text-brand">{L.others}</h2>
           <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {others.map((o) => (
               <li key={o.slug}>
@@ -142,7 +142,7 @@ export default async function ProductLinePage({ params }: Params) {
                   <div className="relative aspect-[4/3] bg-white">
                     <Image src={o.images[0]} alt={t.lines[o.key].name} fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-contain p-3" />
                   </div>
-                  <p className="border-t border-steel-200 px-4 py-3 text-sm font-semibold text-steel-900 group-hover:text-brand">{t.lines[o.key].name}</p>
+                  <p className="border-t border-steel-200 px-4 py-3 text-sm font-semibold text-brand">{t.lines[o.key].name}</p>
                 </Link>
               </li>
             ))}

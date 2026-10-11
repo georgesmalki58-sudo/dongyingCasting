@@ -25,7 +25,7 @@ export default async function Industries({ params }: { params: Promise<{ locale:
             <div key={i.name} className="card">
               <div className="flex items-center gap-3">
                 <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-accent" />
-                <h2 className="text-lg font-semibold text-steel-900">{i.name}</h2>
+                <h2 className="text-lg font-semibold text-brand">{i.name}</h2>
               </div>
               <p className="prose-muted mt-2 text-sm">{i.desc}</p>
             </div>
