@@ -9,6 +9,15 @@ const nextConfig = {
     // Images loader and remove `unoptimized`.
     unoptimized: true
   },
+  // Legacy URLs from the previous site still reported as 404 in Search Console.
+  // Permanent redirects run before middleware, so they bypass locale detection.
+  async redirects() {
+    return [
+      { source: '/index.html', destination: '/en', permanent: true },
+      { source: '/gallery', destination: '/en/factory', permanent: true },
+      { source: '/public/:path*', destination: '/en/:path*', permanent: true }
+    ];
+  },
   // Security headers are also enforced at the edge via middleware.ts (with CSP nonce)
   // and via public/_headers for Cloudflare Pages. This block is a defense-in-depth fallback.
   async headers() {
