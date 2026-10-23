@@ -286,7 +286,38 @@
       "viewDetails": "Ver detalles",
       "viewAlibaba": "Ver en Alibaba",
       "others": "Otras líneas de productos",
-      "drawingNote": "Todas las piezas se fabrican según sus planos y especificaciones. Envíe un plano 2D/3D y reciba una cotización en 24 horas."
+      "drawingNote": "Todas las piezas se fabrican según sus planos y especificaciones. Envíe un plano 2D/3D y reciba una cotización en 24 horas.",
+      "approvedBadge": "Homologado UN ECE R55",
+      "approvalTitle": "Homologación",
+      "approvalNo": "Número de homologación",
+      "approvalMark": "Marca de homologación",
+      "regulation": "Reglamento",
+      "deviceClass": "Clase",
+      "values": "Valores característicos",
+      "authority": "Autoridad de homologación",
+      "granted": "Fecha de concesión",
+      "approvalNote": "Nuestra planta de Dongying figura en la homologación como responsable de la conformidad de la producción."
+    },
+    "coupling": {
+      "name": "Acoplamiento de remolque GMC 3000",
+      "summary": "Cabezal de acoplamiento homologado clase B50-X para remolques con freno y caravanas — homologación UN ECE R55 E57*55R03/00*0158*00.",
+      "body": "El GMC 3000 es un cabezal de acoplamiento clase B50-X para bolas de remolque de 50 mm, homologado según el Reglamento UN ECE n.º 55 (serie 03) por la autoridad de homologación de la República de San Marino el 3 de julio de 2025. Se fabrica en nuestra planta de Dongying, designada en la homologación como responsable de la conformidad de la producción. Los ensayos de Automotive Technical Service S.r.l. (informe ATS-SM-IR-55-22811) cubrieron resistencia, fatiga y articulación: el cabezal gira al menos 90° a cada lado del eje central, cierra con engrane mecánico positivo y se bloquea, y una sola persona puede acoplarlo y desacoplarlo sin herramientas.",
+      "materials": "Acero (todas las piezas portantes, según UN ECE R55 §4.2)",
+      "process": "Fabricado y con control de producción en nuestra planta de Dongying (conformidad de la producción)",
+      "apps": [
+        "Caravanas y remolques de viaje",
+        "Remolques ligeros con freno",
+        "Fabricantes de lanzas de remolque y carroceros",
+        "Cabezales de acoplamiento de recambio"
+      ],
+      "keywords": [
+        "acoplamiento GMC 3000",
+        "cabezal de acoplamiento ECE R55",
+        "acoplamiento B50-X",
+        "homologación E57",
+        "enganche de caravana",
+        "acoplamiento de bola 50 mm"
+      ]
     },
     "superalloy": {
       "name": "Componentes de turbina en superaleaciones",

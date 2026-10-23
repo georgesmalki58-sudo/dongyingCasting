@@ -286,7 +286,38 @@
       "viewDetails": "Vedi dettagli",
       "viewAlibaba": "Vedi su Alibaba",
       "others": "Altre linee di prodotto",
-      "drawingNote": "Tutti i pezzi sono realizzati secondo i tuoi disegni e specifiche. Invia un disegno 2D/3D e ricevi un preventivo entro 24 ore."
+      "drawingNote": "Tutti i pezzi sono realizzati secondo i tuoi disegni e specifiche. Invia un disegno 2D/3D e ricevi un preventivo entro 24 ore.",
+      "approvedBadge": "Omologato UN ECE R55",
+      "approvalTitle": "Omologazione",
+      "approvalNo": "Numero di omologazione",
+      "approvalMark": "Marchio di omologazione",
+      "regulation": "Regolamento",
+      "deviceClass": "Classe",
+      "values": "Valori caratteristici",
+      "authority": "Autorità di omologazione",
+      "granted": "Data di rilascio",
+      "approvalNote": "Il nostro stabilimento di Dongying è indicato nell'omologazione come responsabile della conformità della produzione."
+    },
+    "coupling": {
+      "name": "Giunto di traino GMC 3000",
+      "summary": "Testa di accoppiamento omologata classe B50-X per rimorchi frenati e caravan — omologazione UN ECE R55 E57*55R03/00*0158*00.",
+      "body": "Il GMC 3000 è una testa di accoppiamento di classe B50-X per sfere di traino da 50 mm, omologata secondo il Regolamento UN ECE n. 55 (serie 03) dall'Autorità per l'Omologazione della Repubblica di San Marino il 3 luglio 2025. È prodotto nel nostro stabilimento di Dongying, indicato nell'omologazione come responsabile della conformità della produzione. Le prove di Automotive Technical Service S.r.l. (rapporto ATS-SM-IR-55-22811) hanno riguardato resistenza, fatica e articolazione: la testa ruota di almeno 90° su ciascun lato dell'asse centrale, si chiude con innesto meccanico positivo e si blocca, e può essere agganciata e sganciata da una sola persona senza attrezzi.",
+      "materials": "Acciaio (tutte le parti portanti, secondo UN ECE R55 §4.2)",
+      "process": "Prodotto e controllato in produzione nel nostro stabilimento di Dongying (conformità della produzione)",
+      "apps": [
+        "Caravan e rimorchi da viaggio",
+        "Rimorchi leggeri frenati",
+        "Costruttori di timoni e carrozzieri",
+        "Teste di accoppiamento di ricambio"
+      ],
+      "keywords": [
+        "giunto GMC 3000",
+        "testa di accoppiamento ECE R55",
+        "giunto B50-X",
+        "omologazione E57",
+        "gancio caravan",
+        "giunto a sfera 50 mm"
+      ]
     },
     "superalloy": {
       "name": "Componenti di turbina in superlega",

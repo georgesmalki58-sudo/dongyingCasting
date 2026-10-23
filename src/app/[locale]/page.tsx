@@ -7,6 +7,8 @@ import { buildMetadata } from '@/lib/seo';
 import { SectionHeading } from '@/components/SectionHeading';
 import { JsonLd } from '@/components/JsonLd';
 import { faqSchema } from '@/lib/schema';
+import { FEATURED_LINE } from '@/lib/product-lines';
+import { ApprovalMark } from '@/components/TypeApprovalCard';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -18,6 +20,8 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
   const { locale } = await params;
   const t = getDictionary(locale);
   const base = `/${locale}`;
+  const featured = FEATURED_LINE;
+  const fc = t.lines[featured.key];
 
   const stats = [
     { v: '25+', l: t.home.stats.experience },
@@ -71,6 +75,38 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
             ))}
           </dl>
         </div>
+      </section>
+
+      {/* FEATURED PRODUCT — type-approved GMC 3000 hitch coupling */}
+      <section className="container-x pt-20">
+        <article className="grid overflow-hidden rounded-2xl border border-steel-200 bg-white shadow-sm lg:grid-cols-5">
+          <Link href={`${base}/products/${featured.slug}`} className="relative block aspect-[3/2] bg-steel-950 lg:col-span-3 lg:aspect-auto lg:min-h-[420px]">
+            <Image src={featured.images[1]} alt={fc.name} fill sizes="(min-width: 1024px) 60vw, 100vw" className="object-cover" />
+          </Link>
+          <div className="flex flex-col justify-center gap-4 p-6 md:p-10 lg:col-span-2">
+            <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">{t.lines.labels.approvedBadge}</span>
+            <h2 className="text-2xl font-bold text-brand md:text-3xl">{fc.name}</h2>
+            <p className="prose-muted">{fc.summary}</p>
+            {featured.approval ? <ApprovalMark a={featured.approval} className="text-brand" /> : null}
+            <ul className="grid grid-cols-2 gap-3">
+              {[featured.images[0], featured.images[2]].map((src, i) => (
+                <li key={src} className="relative aspect-[16/9] overflow-hidden rounded-lg border border-steel-200 bg-steel-950">
+                  <Image src={src} alt={`${fc.name} ${i + 2}`} fill sizes="(min-width: 1024px) 18vw, 50vw" className="object-cover" />
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-wrap gap-3">
+              <Link href={`${base}/products/${featured.slug}`}
+                    className="inline-flex w-fit rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+                {t.lines.labels.viewDetails}
+              </Link>
+              <Link href={`${base}/contact`}
+                    className="inline-flex w-fit rounded-md border border-brand px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-white">
+                {t.cta.quote}
+              </Link>
+            </div>
+          </div>
+        </article>
       </section>
 
       {/* INVESTMENT CASTING + CNC */}

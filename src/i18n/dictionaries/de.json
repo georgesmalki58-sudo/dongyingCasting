@@ -286,7 +286,38 @@
       "viewDetails": "Details ansehen",
       "viewAlibaba": "Auf Alibaba ansehen",
       "others": "Weitere Produktlinien",
-      "drawingNote": "Alle Teile werden nach Ihren Zeichnungen und Spezifikationen gefertigt. Senden Sie eine 2D-/3D-Zeichnung und erhalten Sie innerhalb von 24 Stunden ein Angebot."
+      "drawingNote": "Alle Teile werden nach Ihren Zeichnungen und Spezifikationen gefertigt. Senden Sie eine 2D-/3D-Zeichnung und erhalten Sie innerhalb von 24 Stunden ein Angebot.",
+      "approvedBadge": "UN ECE R55 typgenehmigt",
+      "approvalTitle": "Typgenehmigung",
+      "approvalNo": "Genehmigungsnummer",
+      "approvalMark": "Genehmigungszeichen",
+      "regulation": "Regelung",
+      "deviceClass": "Klasse",
+      "values": "Kennwerte",
+      "authority": "Genehmigungsbehörde",
+      "granted": "Erteilt am",
+      "approvalNote": "Unser Werk in Dongying ist in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt."
+    },
+    "coupling": {
+      "name": "GMC 3000 Zugkugelkupplung",
+      "summary": "Typgenehmigter Kupplungskopf der Klasse B50-X für gebremste Anhänger und Wohnwagen — UN ECE R55 Genehmigung E57*55R03/00*0158*00.",
+      "body": "Der GMC 3000 ist ein Kupplungskopf der Klasse B50-X für 50-mm-Kupplungskugeln, typgenehmigt nach UN ECE Regelung Nr. 55 (Änderungsserie 03) durch die Genehmigungsbehörde der Republik San Marino am 3. Juli 2025. Er wird in unserem Werk in Dongying gefertigt, das in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt ist. Die Prüfungen durch Automotive Technical Service S.r.l. (Bericht ATS-SM-IR-55-22811) umfassten Festigkeit, Dauerfestigkeit und Beweglichkeit: Der Kopf dreht mindestens 90° zu jeder Seite der Mittellinie, schließt formschlüssig und verriegelt, und lässt sich von einer Person ohne Werkzeug an- und abkuppeln.",
+      "materials": "Stahl (alle tragenden Teile, gemäß UN ECE R55 §4.2)",
+      "process": "Gefertigt und produktionsüberwacht in unserem Werk in Dongying (Übereinstimmung der Produktion)",
+      "apps": [
+        "Wohnwagen und Reiseanhänger",
+        "Gebremste leichte Anhänger",
+        "Zugdeichsel-Hersteller und Aufbauhersteller",
+        "Ersatz-Kupplungsköpfe"
+      ],
+      "keywords": [
+        "GMC 3000 Kupplung",
+        "ECE R55 Kupplungskopf",
+        "B50-X Kupplung",
+        "E57 Typgenehmigung",
+        "Wohnwagen Anhängerkupplung",
+        "50 mm Kugelkupplung"
+      ]
     },
     "superalloy": {
       "name": "Turbinenkomponenten aus Superlegierungen",

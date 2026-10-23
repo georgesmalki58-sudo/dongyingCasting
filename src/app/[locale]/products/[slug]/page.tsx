@@ -7,6 +7,7 @@ import { SITE } from '@/lib/site';
 import { buildMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
+import { TypeApprovalCard } from '@/components/TypeApprovalCard';
 import { PRODUCT_LINES, getLine, moqText } from '@/lib/product-lines';
 
 type Params = { params: Promise<{ locale: Locale; slug: string }> };
@@ -43,10 +44,20 @@ export default async function ProductLinePage({ params }: Params) {
     image: line.images.map((i) => `${SITE.url}${i}`),
     url,
     material: c.materials,
-    brand: { '@type': 'Brand', name: SITE.name },
+    brand: { '@type': 'Brand', name: line.brand ?? SITE.name },
     manufacturer: { '@type': 'Organization', name: SITE.legalName, url: SITE.url },
-    category: t.products.title
+    category: t.products.title,
+    ...(line.approval ? { additionalProperty: [
+      { '@type': 'PropertyValue', name: L.approvalNo, value: line.approval.number },
+      { '@type': 'PropertyValue', name: L.regulation, value: line.approval.regulation },
+      { '@type': 'PropertyValue', name: L.deviceClass, value: line.approval.deviceClass },
+      ...line.approval.values.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: v }))
+    ] } : {})
   };
+  // Photos / renders fill their frame; white-background product shots stay contained.
+  const fit = line.photo ? 'object-cover' : 'object-contain p-4';
+  const thumbFit = line.photo ? 'object-cover' : 'object-contain p-2';
+  const frame = line.photo ? 'aspect-[16/9] bg-steel-950' : 'aspect-square bg-white';
 
   return (
     <>
@@ -75,14 +86,14 @@ export default async function ProductLinePage({ params }: Params) {
 
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
-            <div className="relative aspect-square overflow-hidden rounded-xl border border-steel-200 bg-white">
-              <Image src={line.images[0]} alt={c.name} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-contain p-4" />
+            <div className={`relative overflow-hidden rounded-xl border border-steel-200 ${frame}`}>
+              <Image src={line.images[0]} alt={c.name} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className={fit} />
             </div>
             {line.images.length > 1 ? (
-              <ul className="mt-4 grid grid-cols-4 gap-3">
+              <ul className={`mt-4 grid gap-3 ${line.photo ? 'grid-cols-2' : 'grid-cols-4'}`}>
                 {line.images.slice(1).map((src, i) => (
-                  <li key={src} className="relative aspect-square overflow-hidden rounded-lg border border-steel-200 bg-white">
-                    <Image src={src} alt={`${c.name} ${i + 2}`} fill sizes="25vw" className="object-contain p-2" />
+                  <li key={src} className={`relative overflow-hidden rounded-lg border border-steel-200 ${line.photo ? 'aspect-[16/9] bg-steel-950' : 'aspect-square bg-white'}`}>
+                    <Image src={src} alt={`${c.name} ${i + 2}`} fill sizes={line.photo ? '(min-width: 1024px) 25vw, 50vw' : '25vw'} className={thumbFit} />
                   </li>
                 ))}
               </ul>
@@ -90,6 +101,9 @@ export default async function ProductLinePage({ params }: Params) {
           </div>
 
           <div className="flex flex-col gap-6">
+            {line.approval ? (
+              <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">{L.approvedBadge}</span>
+            ) : null}
             <h1 className="text-3xl font-bold text-brand md:text-4xl">{c.name}</h1>
             <p className="text-lg text-steel-700">{c.summary}</p>
             <dl className="divide-y divide-steel-200 rounded-xl border border-steel-200 text-sm">
@@ -97,7 +111,7 @@ export default async function ProductLinePage({ params }: Params) {
                 [L.materials, c.materials],
                 [L.process, c.process],
                 ...('surface' in c ? [[L.surface, (c as { surface: string }).surface]] : []),
-                [L.moq, moqText(t, line.moq)]
+                ...(line.moq ? [[L.moq, moqText(t, line.moq)]] : [])
               ] as [string, string][]).map(([k, v]) => (
                 <div key={k} className="grid grid-cols-3 gap-4 px-4 py-3">
                   <dt className="font-semibold text-steel-700">{k}</dt>
@@ -110,12 +124,14 @@ export default async function ProductLinePage({ params }: Params) {
                     className="inline-flex rounded-md bg-brand px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
                 {t.cta.quote}
               </Link>
-              <a href={line.alibaba} target="_blank" rel="noopener noreferrer"
-                 className="inline-flex rounded-md border border-[#FF6A00] px-5 py-3 text-sm font-semibold text-[#c2410c] transition-colors hover:bg-[#FF6A00] hover:text-white">
-                {L.viewAlibaba}
-              </a>
+              {line.alibaba ? (
+                <a href={line.alibaba} target="_blank" rel="noopener noreferrer"
+                   className="inline-flex rounded-md border border-[#FF6A00] px-5 py-3 text-sm font-semibold text-[#c2410c] transition-colors hover:bg-[#FF6A00] hover:text-white">
+                  {L.viewAlibaba}
+                </a>
+              ) : null}
             </div>
-            <p className="text-sm text-steel-500">{L.drawingNote}</p>
+            {line.approval ? <TypeApprovalCard a={line.approval} t={t} locale={locale} /> : <p className="text-sm text-steel-500">{L.drawingNote}</p>}
           </div>
         </div>
 
@@ -139,8 +155,8 @@ export default async function ProductLinePage({ params }: Params) {
             {others.map((o) => (
               <li key={o.slug}>
                 <Link href={`/${locale}/products/${o.slug}`} className="group block overflow-hidden rounded-xl border border-steel-200 bg-white transition-shadow hover:shadow-md">
-                  <div className="relative aspect-[4/3] bg-white">
-                    <Image src={o.images[0]} alt={t.lines[o.key].name} fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-contain p-3" />
+                  <div className={`relative aspect-[4/3] ${o.photo ? 'bg-steel-950' : 'bg-white'}`}>
+                    <Image src={o.cardImage ?? o.images[0]} alt={t.lines[o.key].name} fill sizes="(min-width: 1024px) 25vw, 50vw" className={o.photo ? 'object-cover' : 'object-contain p-3'} />
                   </div>
                   <p className="border-t border-steel-200 px-4 py-3 text-sm font-semibold text-brand">{t.lines[o.key].name}</p>
                 </Link>

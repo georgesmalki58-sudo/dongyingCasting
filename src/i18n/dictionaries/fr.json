@@ -286,7 +286,38 @@
       "viewDetails": "Voir les détails",
       "viewAlibaba": "Voir sur Alibaba",
       "others": "Autres gammes de produits",
-      "drawingNote": "Toutes les pièces sont fabriquées selon vos plans et spécifications. Envoyez un plan 2D/3D et recevez un devis sous 24 heures."
+      "drawingNote": "Toutes les pièces sont fabriquées selon vos plans et spécifications. Envoyez un plan 2D/3D et recevez un devis sous 24 heures.",
+      "approvedBadge": "Homologué UN ECE R55",
+      "approvalTitle": "Homologation",
+      "approvalNo": "Numéro d'homologation",
+      "approvalMark": "Marque d'homologation",
+      "regulation": "Règlement",
+      "deviceClass": "Classe",
+      "values": "Valeurs caractéristiques",
+      "authority": "Autorité d'homologation",
+      "granted": "Date d'octroi",
+      "approvalNote": "Notre usine de Dongying est désignée dans l'homologation comme responsable de la conformité de la production."
+    },
+    "coupling": {
+      "name": "Tête d'attelage GMC 3000",
+      "summary": "Tête d'attelage homologuée classe B50-X pour remorques freinées et caravanes — homologation UN ECE R55 E57*55R03/00*0158*00.",
+      "body": "La GMC 3000 est une tête d'attelage de classe B50-X pour boules de 50 mm, homologuée selon le Règlement UN ECE n° 55 (série 03) par l'autorité d'homologation de la République de Saint-Marin le 3 juillet 2025. Elle est produite dans notre usine de Dongying, désignée dans l'homologation comme responsable de la conformité de la production. Les essais d'Automotive Technical Service S.r.l. (rapport ATS-SM-IR-55-22811) ont porté sur la résistance, la fatigue et l'articulation : la tête pivote d'au moins 90° de chaque côté de l'axe, se ferme par engagement mécanique positif et se verrouille, et une seule personne peut l'atteler et la dételer sans outil.",
+      "materials": "Acier (toutes les pièces porteuses, selon UN ECE R55 §4.2)",
+      "process": "Fabriquée et contrôlée en production dans notre usine de Dongying (conformité de la production)",
+      "apps": [
+        "Caravanes et remorques de voyage",
+        "Remorques légères freinées",
+        "Fabricants de flèches de remorque et carrossiers",
+        "Têtes d'attelage de remplacement"
+      ],
+      "keywords": [
+        "attelage GMC 3000",
+        "tête d'attelage ECE R55",
+        "attelage B50-X",
+        "homologation E57",
+        "attelage caravane",
+        "attelage boule 50 mm"
+      ]
     },
     "superalloy": {
       "name": "Composants de turbine en superalliage",

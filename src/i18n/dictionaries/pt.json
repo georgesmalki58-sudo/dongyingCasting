@@ -286,7 +286,38 @@
       "viewDetails": "Ver detalhes",
       "viewAlibaba": "Ver no Alibaba",
       "others": "Outras linhas de produtos",
-      "drawingNote": "Todas as peças são feitas conforme seus desenhos e especificações. Envie um desenho 2D/3D e receba um orçamento em até 24 horas."
+      "drawingNote": "Todas as peças são feitas conforme seus desenhos e especificações. Envie um desenho 2D/3D e receba um orçamento em até 24 horas.",
+      "approvedBadge": "Homologado UN ECE R55",
+      "approvalTitle": "Homologação",
+      "approvalNo": "Número de homologação",
+      "approvalMark": "Marca de homologação",
+      "regulation": "Regulamento",
+      "deviceClass": "Classe",
+      "values": "Valores característicos",
+      "authority": "Autoridade de homologação",
+      "granted": "Data de concessão",
+      "approvalNote": "A nossa fábrica em Dongying é indicada na homologação como responsável pela conformidade da produção."
+    },
+    "coupling": {
+      "name": "Engate de reboque GMC 3000",
+      "summary": "Cabeça de engate homologada classe B50-X para reboques com travão e caravanas — homologação UN ECE R55 E57*55R03/00*0158*00.",
+      "body": "O GMC 3000 é uma cabeça de engate classe B50-X para bolas de reboque de 50 mm, homologada segundo o Regulamento UN ECE n.º 55 (série 03) pela autoridade de homologação da República de São Marinho em 3 de julho de 2025. É produzido na nossa fábrica em Dongying, indicada na homologação como responsável pela conformidade da produção. Os ensaios da Automotive Technical Service S.r.l. (relatório ATS-SM-IR-55-22811) abrangeram resistência, fadiga e articulação: a cabeça roda pelo menos 90° para cada lado do eixo central, fecha com engate mecânico positivo e bloqueia, e pode ser engatada e desengatada por uma só pessoa sem ferramentas.",
+      "materials": "Aço (todas as peças portantes, conforme UN ECE R55 §4.2)",
+      "process": "Fabricado e com controlo de produção na nossa fábrica em Dongying (conformidade da produção)",
+      "apps": [
+        "Caravanas e reboques de viagem",
+        "Reboques ligeiros com travão",
+        "Fabricantes de lanças de reboque e carroçadores",
+        "Cabeças de engate de substituição"
+      ],
+      "keywords": [
+        "engate GMC 3000",
+        "cabeça de engate ECE R55",
+        "engate B50-X",
+        "homologação E57",
+        "engate de caravana",
+        "engate de bola 50 mm"
+      ]
     },
     "superalloy": {
       "name": "Componentes de turbina em superliga",
