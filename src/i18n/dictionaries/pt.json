@@ -179,6 +179,10 @@
       "medical": {
         "name": "Equipamentos médicos",
         "desc": "Peças fundidas de precisão em aço inoxidável limpo para dispositivos e equipamentos médicos."
+      },
+      "trailer": {
+        "name": "Reboque e atrelados",
+        "desc": "Cabeças de engate homologadas para caravanas e reboques com travão, incluindo o nosso engate GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -296,7 +300,8 @@
       "values": "Valores característicos",
       "authority": "Autoridade de homologação",
       "granted": "Data de concessão",
-      "approvalNote": "A nossa fábrica em Dongying é indicada na homologação como responsável pela conformidade da produção."
+      "approvalNote": "A nossa fábrica em Dongying é indicada na homologação como responsável pela conformidade da produção.",
+      "moreInfo": "Mais informações em"
     },
     "coupling": {
       "name": "Engate de reboque GMC 3000",

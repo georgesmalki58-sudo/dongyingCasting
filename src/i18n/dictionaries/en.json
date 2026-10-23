@@ -179,6 +179,10 @@
       "medical": {
         "name": "Medical Equipment",
         "desc": "Clean stainless steel investment castings for medical devices and equipment."
+      },
+      "trailer": {
+        "name": "Towing & Trailers",
+        "desc": "Type-approved coupling heads for caravans and braked trailers — including our GMC 3000 hitch coupling (UN ECE R55, E57)."
       }
     }
   },
@@ -296,7 +300,8 @@
       "values": "Characteristic values",
       "authority": "Approving authority",
       "granted": "Date granted",
-      "approvalNote": "Our Dongying plant is named in the approval as responsible for conformity of production."
+      "approvalNote": "Our Dongying plant is named in the approval as responsible for conformity of production.",
+      "moreInfo": "More information at"
     },
     "coupling": {
       "name": "GMC 3000 Hitch Coupling",

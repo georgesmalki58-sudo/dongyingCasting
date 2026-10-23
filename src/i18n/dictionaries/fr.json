@@ -179,6 +179,10 @@
       "medical": {
         "name": "Équipement médical",
         "desc": "Pièces moulées de précision en acier inoxydable propre pour dispositifs et équipements médicaux."
+      },
+      "trailer": {
+        "name": "Remorquage et remorques",
+        "desc": "Têtes d'attelage homologuées pour caravanes et remorques freinées, dont notre tête d'attelage GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -296,7 +300,8 @@
       "values": "Valeurs caractéristiques",
       "authority": "Autorité d'homologation",
       "granted": "Date d'octroi",
-      "approvalNote": "Notre usine de Dongying est désignée dans l'homologation comme responsable de la conformité de la production."
+      "approvalNote": "Notre usine de Dongying est désignée dans l'homologation comme responsable de la conformité de la production.",
+      "moreInfo": "Plus d'informations sur"
     },
     "coupling": {
       "name": "Tête d'attelage GMC 3000",

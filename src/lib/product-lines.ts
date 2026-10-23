@@ -29,6 +29,7 @@ export type ProductLine = {
   photo?: boolean;           // full-bleed photos/renders (object-cover) instead of white-background product shots
   cardImage?: string;        // listing-card image when images[0] has text that a 4:3 crop would cut
   brand?: string;            // product brand when it differs from the site name
+  infoUrl?: string;          // brand owner's product page ("more information at …")
   approval?: TypeApproval;
 };
 
@@ -44,6 +45,7 @@ export const PRODUCT_LINES: ProductLine[] = [
     photo: true,
     cardImage: '/images/products/dongying-casting-gmc-3000-hitch-coupling-towbar.webp',
     brand: 'GMC Hitch Coupling',
+    infoUrl: 'https://gmc-innovations.com/hitch-coupling/',
     // Source: Republic of San Marino approval communication E57*55R03/00*0158*00,
     // test report ATS-SM-IR-55-22811 (Automotive Technical Service S.r.l.).
     approval: {

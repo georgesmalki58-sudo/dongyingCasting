@@ -132,6 +132,11 @@ export default async function ProductLinePage({ params }: Params) {
               ) : null}
             </div>
             {line.approval ? <TypeApprovalCard a={line.approval} t={t} locale={locale} /> : <p className="text-sm text-steel-500">{L.drawingNote}</p>}
+            {line.infoUrl ? (
+              <a href={line.infoUrl} target="_blank" rel="noopener" className="text-sm font-semibold text-brand-light hover:underline">
+                {L.moreInfo} <span dir="ltr">{new URL(line.infoUrl).hostname}</span> ↗
+              </a>
+            ) : null}
           </div>
         </div>
 

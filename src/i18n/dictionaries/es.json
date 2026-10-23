@@ -179,6 +179,10 @@
       "medical": {
         "name": "Equipos médicos",
         "desc": "Piezas de microfusión de acero inoxidable limpias para dispositivos y equipos médicos."
+      },
+      "trailer": {
+        "name": "Remolques y enganches",
+        "desc": "Cabezales de acoplamiento homologados para caravanas y remolques con freno, incluido nuestro acoplamiento GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -296,7 +300,8 @@
       "values": "Valores característicos",
       "authority": "Autoridad de homologación",
       "granted": "Fecha de concesión",
-      "approvalNote": "Nuestra planta de Dongying figura en la homologación como responsable de la conformidad de la producción."
+      "approvalNote": "Nuestra planta de Dongying figura en la homologación como responsable de la conformidad de la producción.",
+      "moreInfo": "Más información en"
     },
     "coupling": {
       "name": "Acoplamiento de remolque GMC 3000",

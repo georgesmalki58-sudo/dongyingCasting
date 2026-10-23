@@ -179,6 +179,10 @@
       "medical": {
         "name": "Medizintechnik",
         "desc": "Saubere Edelstahl-Feingussteile für Medizingeräte und -ausrüstung."
+      },
+      "trailer": {
+        "name": "Anhänger & Zugtechnik",
+        "desc": "Typgenehmigte Kupplungsköpfe für Wohnwagen und gebremste Anhänger — darunter unsere GMC 3000 Zugkugelkupplung (UN ECE R55, E57)."
       }
     }
   },
@@ -296,7 +300,8 @@
       "values": "Kennwerte",
       "authority": "Genehmigungsbehörde",
       "granted": "Erteilt am",
-      "approvalNote": "Unser Werk in Dongying ist in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt."
+      "approvalNote": "Unser Werk in Dongying ist in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt.",
+      "moreInfo": "Weitere Informationen unter"
     },
     "coupling": {
       "name": "GMC 3000 Zugkugelkupplung",

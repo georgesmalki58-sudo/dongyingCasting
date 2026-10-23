@@ -179,6 +179,10 @@
       "medical": {
         "name": "Apparecchiature medicali",
         "desc": "Getti di microfusione in acciaio inossidabile pulito per dispositivi e apparecchiature medicali."
+      },
+      "trailer": {
+        "name": "Traino e rimorchi",
+        "desc": "Teste di accoppiamento omologate per caravan e rimorchi frenati, tra cui il nostro giunto GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -296,7 +300,8 @@
       "values": "Valori caratteristici",
       "authority": "Autorità di omologazione",
       "granted": "Data di rilascio",
-      "approvalNote": "Il nostro stabilimento di Dongying è indicato nell'omologazione come responsabile della conformità della produzione."
+      "approvalNote": "Il nostro stabilimento di Dongying è indicato nell'omologazione come responsabile della conformità della produzione.",
+      "moreInfo": "Maggiori informazioni su"
     },
     "coupling": {
       "name": "Giunto di traino GMC 3000",
