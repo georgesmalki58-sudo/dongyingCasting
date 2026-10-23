@@ -90,10 +90,10 @@ export default async function ProductLinePage({ params }: Params) {
               <Image src={line.images[0]} alt={c.name} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className={fit} />
             </div>
             {line.images.length > 1 ? (
-              <ul className={`mt-4 grid gap-3 ${line.photo ? 'grid-cols-2' : 'grid-cols-4'}`}>
+              <ul className={`mt-4 grid gap-3 ${line.photo ? 'grid-cols-3' : 'grid-cols-4'}`}>
                 {line.images.slice(1).map((src, i) => (
                   <li key={src} className={`relative overflow-hidden rounded-lg border border-steel-200 ${line.photo ? 'aspect-[16/9] bg-steel-950' : 'aspect-square bg-white'}`}>
-                    <Image src={src} alt={`${c.name} ${i + 2}`} fill sizes={line.photo ? '(min-width: 1024px) 25vw, 50vw' : '25vw'} className={thumbFit} />
+                    <Image src={src} alt={`${c.name} ${i + 2}`} fill sizes={line.photo ? '(min-width: 1024px) 17vw, 33vw' : '25vw'} className={thumbFit} />
                   </li>
                 ))}
               </ul>

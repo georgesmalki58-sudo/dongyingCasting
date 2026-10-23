@@ -89,7 +89,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
             <p className="prose-muted">{fc.summary}</p>
             {featured.approval ? <ApprovalMark a={featured.approval} className="text-brand" /> : null}
             <ul className="grid grid-cols-2 gap-3">
-              {[featured.images[0], featured.images[2]].map((src, i) => (
+              {[featured.images[0], featured.images[3]].map((src, i) => (
                 <li key={src} className="relative aspect-[16/9] overflow-hidden rounded-lg border border-steel-200 bg-steel-950">
                   <Image src={src} alt={`${fc.name} ${i + 2}`} fill sizes="(min-width: 1024px) 18vw, 50vw" className="object-cover" />
                 </li>

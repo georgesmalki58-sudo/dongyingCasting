@@ -39,11 +39,12 @@ export const PRODUCT_LINES: ProductLine[] = [
     slug: 'gmc-3000-hitch-coupling',
     images: [
       '/images/products/dongying-casting-gmc-3000-hitch-coupling.webp',
-      '/images/products/dongying-casting-gmc-3000-hitch-coupling-caravan.webp',
-      '/images/products/dongying-casting-gmc-3000-hitch-coupling-towbar.webp'
+      '/images/products/dongying-casting-gmc-3000-hitch-coupling-caravan-marked.webp',
+      '/images/products/dongying-casting-gmc-3000-hitch-coupling-towbar-marked.webp',
+      '/images/products/dongying-casting-gmc-3000-hitch-coupling-expo.webp'
     ],
     photo: true,
-    cardImage: '/images/products/dongying-casting-gmc-3000-hitch-coupling-towbar.webp',
+    cardImage: '/images/products/dongying-casting-gmc-3000-hitch-coupling-towbar-marked.webp',
     brand: 'GMC Hitch Coupling',
     infoUrl: 'https://gmc-innovations.com/hitch-coupling/',
     // Source: Republic of San Marino approval communication E57*55R03/00*0158*00,
