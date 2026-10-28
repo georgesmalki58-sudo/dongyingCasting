@@ -87,6 +87,34 @@ async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): 
       }
     }
 
+    // 1c) Copy with a Chinese notice for the factory team (CONTACT_COPY_ZH_TO, server-only).
+    //     Same attachment rule as the private copy. A failed copy never affects the main delivery.
+    const zhTo = process.env.CONTACT_COPY_ZH_TO?.trim();
+    if (zhTo) {
+      const COPY_MAX_ATTACH_BYTES = 10 * 1024 * 1024;
+      const attBytes = attachments.reduce((n, a) => n + a.content.length, 0);
+      const withFiles = attBytes <= COPY_MAX_ATTACH_BYTES;
+      const inbox = escapeHtml(SITE.contactTo);
+      const zhNote = `
+        <div style="border:1px solid #0b3d91;background:#eef3fb;padding:12px 14px;margin-bottom:16px;font-size:15px">
+          <p style="margin:0 0 6px"><strong>【新询价通知】</strong></p>
+          <p style="margin:0">网站询价表单收到一封新邮件，原件已发送至 <strong>${inbox}</strong>。请登录该邮箱查看，并尽快回复客户（直接回复本邮件即可回复客户）。</p>
+          ${attachments.length && !withFiles ? `<p style="margin:6px 0 0;color:#b45309">附件共 ${attachments.length} 个，合计 ${(attBytes / 1048576).toFixed(1)} MB，超出本副本大小限制，请在 ${inbox} 邮箱中查看。</p>` : ''}
+        </div>`;
+      try {
+        await transporter.sendMail({
+          from,
+          to: zhTo,
+          replyTo: data.email,
+          subject: oneLine(`【新询价】已发送至 ${SITE.contactTo} — ${subject}`),
+          html: zhNote + html,
+          attachments: withFiles ? fileAtt : []
+        });
+      } catch (e) {
+        console.error('[contact] Chinese copy failed (inquiry still delivered)', e);
+      }
+    }
+
     // 2) Auto-reply confirmation to the sender.
     const ack = `
       <p>Dear ${escapeHtml(data.name)},</p>
