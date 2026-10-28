@@ -36,7 +36,9 @@ export default async function ProductLinePage({ params }: Params) {
   const others = PRODUCT_LINES.filter((l) => l.slug !== slug);
   const url = `${SITE.url}/${locale}/products/${slug}`;
 
-  const productLd = {
+  // Fixed-price lines → Product with offers; custom castings → Service (no price, so no Product snippet errors).
+  const o = line.offer;
+  const productLd = o ? {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: c.name,
@@ -47,12 +49,36 @@ export default async function ProductLinePage({ params }: Params) {
     brand: { '@type': 'Brand', name: line.brand ?? SITE.name },
     manufacturer: { '@type': 'Organization', name: SITE.legalName, url: SITE.url },
     category: t.products.title,
+    offers: {
+      '@type': 'Offer',
+      url: o.url,
+      price: o.price,
+      priceCurrency: o.currency,
+      priceSpecification: { '@type': 'UnitPriceSpecification', price: o.price, priceCurrency: o.currency, valueAddedTaxIncluded: false },
+      eligibleQuantity: { '@type': 'QuantitativeValue', minValue: o.moq, unitCode: 'C62' },
+      availability: 'https://schema.org/MadeToOrder',
+      businessFunction: 'http://purl.org/goodrelations/v1#Sell',
+      eligibleCustomerType: 'http://purl.org/goodrelations/v1#Business',
+      deliveryLeadTime: { '@type': 'QuantitativeValue', value: o.leadDays, unitCode: 'DAY' },
+      warranty: { '@type': 'WarrantyPromise', durationOfWarranty: { '@type': 'QuantitativeValue', value: o.warrantyYears, unitCode: 'ANN' } },
+      seller: { '@type': 'Organization', name: o.seller, url: 'https://gmc-innovations.com' }
+    },
     ...(line.approval ? { additionalProperty: [
       { '@type': 'PropertyValue', name: L.approvalNo, value: line.approval.number },
       { '@type': 'PropertyValue', name: L.regulation, value: line.approval.regulation },
       { '@type': 'PropertyValue', name: L.deviceClass, value: line.approval.deviceClass },
       ...line.approval.values.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: v }))
     ] } : {})
+  } : {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: c.name,
+    description: `${c.summary} ${c.body}`,
+    image: line.images.map((i) => `${SITE.url}${i}`),
+    url,
+    serviceType: t.products.title,
+    provider: { '@type': 'Organization', name: SITE.legalName, url: SITE.url },
+    areaServed: 'Worldwide'
   };
   // Photos / renders fill their frame; white-background product shots stay contained.
   const fit = line.photo ? 'object-cover' : 'object-contain p-4';

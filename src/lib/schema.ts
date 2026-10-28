@@ -48,15 +48,17 @@ export function localBusinessSchema(locale: Locale = 'en') {
   };
 }
 
+// Custom casting capabilities on the listing page: typed as Service (no fixed price),
+// so Google's product-snippet report does not flag them for missing offers/review/aggregateRating.
 export function productSchema(p: { name: string; description: string; image?: string }) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Product',
+    '@type': 'Service',
     name: p.name,
     description: p.description,
     image: abs(p.image ?? SITE.ogImage),
-    brand: { '@type': 'Brand', name: SITE.name },
-    manufacturer: { '@type': 'Organization', name: SITE.legalName }
+    provider: { '@type': 'Organization', name: SITE.legalName, url: SITE.url },
+    areaServed: 'Worldwide'
   };
 }
 

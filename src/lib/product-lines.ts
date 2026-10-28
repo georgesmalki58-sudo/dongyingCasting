@@ -31,6 +31,9 @@ export type ProductLine = {
   brand?: string;            // product brand when it differs from the site name
   infoUrl?: string;          // brand owner's product page ("more information at …")
   approval?: TypeApproval;
+  // Published B2B price (only lines with a fixed price are typed as schema.org Product with offers;
+  // custom castings are typed as Service, so Google does not flag them for missing offers).
+  offer?: { price: number; currency: string; moq: number; leadDays: number; warrantyYears: number; seller: string; url: string };
 };
 
 export const PRODUCT_LINES: ProductLine[] = [
@@ -47,6 +50,8 @@ export const PRODUCT_LINES: ProductLine[] = [
     cardImage: '/images/products/dongying-casting-gmc-3000-hitch-coupling-towbar-marked.webp',
     brand: 'GMC Hitch Coupling',
     infoUrl: 'https://gmc-innovations.com/hitch-coupling/',
+    // Order terms published on gmc-innovations.com/hitch-coupling/#terms (EUR 149 excl. VAT, MOQ 150, 120 days, 5-year warranty)
+    offer: { price: 149, currency: 'EUR', moq: 150, leadDays: 120, warrantyYears: 5, seller: 'GMC Innovations', url: 'https://gmc-innovations.com/hitch-coupling/#terms' },
     // Source: Republic of San Marino approval communication E57*55R03/00*0158*00,
     // test report ATS-SM-IR-55-22811 (Automotive Technical Service S.r.l.).
     approval: {
