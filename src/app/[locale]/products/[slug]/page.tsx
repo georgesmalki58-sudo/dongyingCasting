@@ -56,7 +56,8 @@ export default async function ProductLinePage({ params }: Params) {
       priceCurrency: o.currency,
       priceSpecification: { '@type': 'UnitPriceSpecification', price: o.price, priceCurrency: o.currency, valueAddedTaxIncluded: false },
       eligibleQuantity: { '@type': 'QuantitativeValue', minValue: o.moq, unitCode: 'C62' },
-      availability: 'https://schema.org/MadeToOrder',
+      // MadeToOrder is not an accepted enum in Google's product snippets; made-to-order goods are InStock + lead time.
+      availability: 'https://schema.org/InStock',
       businessFunction: 'http://purl.org/goodrelations/v1#Sell',
       eligibleCustomerType: 'http://purl.org/goodrelations/v1#Business',
       deliveryLeadTime: { '@type': 'QuantitativeValue', value: o.leadDays, unitCode: 'DAY' },
