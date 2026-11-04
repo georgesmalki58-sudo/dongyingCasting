@@ -304,7 +304,7 @@
       "moreInfo": "Maggiori informazioni su"
     },
     "coupling": {
-      "name": "Giunto di traino GMC 3000",
+      "name": "Testa di traino GMC 3000",
       "summary": "Testa di accoppiamento omologata classe B50-X per rimorchi frenati e caravan — omologazione UN ECE R55 E57*55R03/00*0158*00.",
       "body": "Il GMC 3000 è una testa di accoppiamento di classe B50-X per sfere di traino da 50 mm, omologata secondo il Regolamento UN ECE n. 55 (serie 03) dall'Autorità per l'Omologazione della Repubblica di San Marino il 3 luglio 2025. È prodotto nel nostro stabilimento di Dongying, indicato nell'omologazione come responsabile della conformità della produzione. Le prove di Automotive Technical Service S.r.l. (rapporto ATS-SM-IR-55-22811) hanno riguardato resistenza, fatica e articolazione: la testa ruota di almeno 90° su ciascun lato dell'asse centrale, si chiude con innesto meccanico positivo e si blocca, e può essere agganciata e sganciata da una sola persona senza attrezzi.",
       "materials": "Interamente in acciaio inossidabile (tutte le parti portanti secondo UN ECE R55 §4.2)",
@@ -343,10 +343,12 @@
         "Parti ad alta temperatura per navale e oil & gas"
       ],
       "keywords": [
+        "microfusione Inconel",
+        "fusione superleghe",
+        "palette turbina microfuse",
         "microfusione di distributori NGV",
         "microfusione NGV",
         "microfusione di palette di turbina",
-        "microfusione Inconel",
         "microfusione di superlega di nichel",
         "microfusione sotto vuoto",
         "componenti per turbine a gas",
@@ -368,6 +370,9 @@
         "Pompe centrifughe industriali"
       ],
       "keywords": [
+        "girante pompa acciaio inox",
+        "girante microfusa",
+        "corpo pompa in fusione",
         "girante 316L",
         "corpo pompa in acciaio inossidabile",
         "girante in ghisa sferoidale",
@@ -388,6 +393,9 @@
         "Programmi motore OEM"
       ],
       "keywords": [
+        "collettore di scarico inox",
+        "collettore turbo inox",
+        "collettore di scarico microfuso",
         "collettore di scarico in acciaio inossidabile",
         "microfusione di collettore turbo",
         "collettore di scarico racing",
@@ -407,6 +415,9 @@
         "Giranti per pompe e miscelatori"
       ],
       "keywords": [
+        "girante acciaio inox",
+        "girante microfusa",
+        "girante ventilatore",
         "girante in acciaio inossidabile fuso",
         "microfusione di ventole",
         "girante per compressore",
@@ -426,6 +437,9 @@
         "Attrezzature per ruote di turbina e NGV"
       ],
       "keywords": [
+        "stampo cera persa",
+        "stampo per microfusione",
+        "prototipazione rapida",
         "stampo per iniezione di cera",
         "stampo di pressofusione",
         "stampo prototipo CNC",
@@ -438,7 +452,10 @@
     "keywords": {
       "home": [
         "microfusione",
+        "microfusioni acciaio inox",
+        "fonderia microfusione",
         "fusione a cera persa",
+        "fonderia di precisione",
         "produttore di microfusione di precisione",
         "fusione di acciaio inossidabile",
         "fusione di acciaio al carbonio",
@@ -447,14 +464,15 @@
         "fonderia in Cina",
         "fusione metallica OEM",
         "fonderia di microfusione",
-        "fonderia di precisione",
         "fonderia di acciaio inossidabile",
         "fonderia di acciaio",
         "fonderia a cera persa",
-        "fonderia in Cina",
         "fonderia Dongying"
       ],
       "products": [
+        "microfusioni",
+        "getti in microfusione",
+        "microfusioni acciaio inox",
         "prodotti di microfusione",
         "getti in acciaio inossidabile",
         "getti in acciaio al carbonio",

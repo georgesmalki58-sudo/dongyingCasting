@@ -304,7 +304,7 @@
       "moreInfo": "Más información en"
     },
     "coupling": {
-      "name": "Acoplamiento de remolque GMC 3000",
+      "name": "Enganche de remolque GMC 3000",
       "summary": "Cabezal de acoplamiento homologado clase B50-X para remolques con freno y caravanas — homologación UN ECE R55 E57*55R03/00*0158*00.",
       "body": "El GMC 3000 es un cabezal de acoplamiento clase B50-X para bolas de remolque de 50 mm, homologado según el Reglamento UN ECE n.º 55 (serie 03) por la autoridad de homologación de la República de San Marino el 3 de julio de 2025. Se fabrica en nuestra planta de Dongying, designada en la homologación como responsable de la conformidad de la producción. Los ensayos de Automotive Technical Service S.r.l. (informe ATS-SM-IR-55-22811) cubrieron resistencia, fatiga y articulación: el cabezal gira al menos 90° a cada lado del eje central, cierra con engrane mecánico positivo y se bloquea, y una sola persona puede acoplarlo y desacoplarlo sin herramientas.",
       "materials": "Totalmente de acero inoxidable (todas las piezas portantes según UN ECE R55 §4.2)",
@@ -343,6 +343,9 @@
         "Piezas de alta temperatura para naval y petróleo y gas"
       ],
       "keywords": [
+        "fundición de Inconel",
+        "fundición de superaleaciones",
+        "álabes de turbina fundidos",
         "fundición de álabes guía",
         "fundición NGV",
         "fundición de álabes de turbina",
@@ -368,6 +371,9 @@
         "Bombas centrífugas industriales"
       ],
       "keywords": [
+        "impulsor de bomba de acero inoxidable",
+        "impulsor fundido",
+        "carcasa de bomba fundida",
         "impulsor 316L",
         "carcasa de bomba inoxidable",
         "impulsor de hierro dúctil",
@@ -388,6 +394,9 @@
         "Programas OEM de motores"
       ],
       "keywords": [
+        "múltiple de escape",
+        "colector de escape fundido",
+        "múltiple de escape de acero inoxidable",
         "colector de escape inoxidable",
         "colector turbo fundido",
         "header de competición",
@@ -407,6 +416,9 @@
         "Rodetes de bombas y mezcladores"
       ],
       "keywords": [
+        "rodete de acero inoxidable",
+        "impulsor de acero inoxidable",
+        "turbina de ventilador",
         "rodete de acero inoxidable fundido",
         "rueda de ventilador fundida",
         "rueda de compresor",
@@ -426,6 +438,9 @@
         "Utillaje para ruedas de turbina y NGV"
       ],
       "keywords": [
+        "molde de cera perdida",
+        "molde de fundición",
+        "prototipado rápido",
         "molde de inyección de cera",
         "molde de fundición a presión",
         "molde prototipo CNC",
@@ -437,8 +452,12 @@
   "seo": {
     "keywords": {
       "home": [
+        "fundición de precisión",
         "microfusión",
         "fundición a la cera perdida",
+        "fundición de acero inoxidable",
+        "fundición de precisión China",
+        "fabricante de fundición",
         "fabricante de fundición de precisión",
         "acero inoxidable fundido",
         "acero al carbono fundido",
@@ -447,13 +466,14 @@
         "fundición China",
         "fundición metálica OEM",
         "fundición de microfusión",
-        "fundición de precisión",
-        "fundición de acero inoxidable",
         "fundición de acero",
         "fundición en China",
         "fundición Dongying"
       ],
       "products": [
+        "piezas de fundición",
+        "piezas de microfusión",
+        "piezas de acero inoxidable fundido",
         "productos de microfusión",
         "piezas de acero inoxidable",
         "piezas de acero al carbono",

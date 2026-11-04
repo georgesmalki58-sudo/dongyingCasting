@@ -343,6 +343,9 @@
         "Peças de alta temperatura para naval e óleo e gás"
       ],
       "keywords": [
+        "fundição de Inconel",
+        "fundição de superligas",
+        "palhetas de turbina fundidas",
         "fundição de palhetas NGV",
         "fundição NGV",
         "fundição de pás de turbina",
@@ -368,6 +371,9 @@
         "Bombas centrífugas industriais"
       ],
       "keywords": [
+        "rotor de bomba em aço inox",
+        "rotor fundido",
+        "carcaça de bomba fundida",
         "rotor 316L",
         "carcaça de bomba em aço inoxidável",
         "rotor de ferro fundido dúctil",
@@ -388,6 +394,9 @@
         "Programas de motor OEM"
       ],
       "keywords": [
+        "coletor de escape inox",
+        "coletor de escapamento",
+        "coletor turbo inox",
         "coletor de escape em aço inoxidável",
         "fundição de coletor turbo",
         "coletor de escape de corrida",
@@ -407,6 +416,9 @@
         "Rotores de bombas e misturadores"
       ],
       "keywords": [
+        "rotor em aço inox",
+        "rotor fundido",
+        "rotor de ventilador",
         "rotor de aço inoxidável fundido",
         "fundição de ventilador",
         "roda de compressor",
@@ -426,6 +438,9 @@
         "Ferramental para rodas de turbina e NGV"
       ],
       "keywords": [
+        "molde de cera perdida",
+        "molde de fundição",
+        "prototipagem rápida",
         "molde de injeção de cera",
         "molde de fundição sob pressão",
         "molde-protótipo CNC",
@@ -438,23 +453,25 @@
     "keywords": {
       "home": [
         "fundição de precisão",
+        "microfusão",
         "fundição por cera perdida",
-        "fabricante de fundição de precisão",
         "fundição de aço inoxidável",
+        "fundição de precisão China",
+        "fabricante de fundição",
+        "fabricante de fundição de precisão",
         "fundição de aço-carbono",
         "fundição de superligas",
         "usinagem CNC",
         "fundição na China",
         "fundição de metal OEM",
         "fundição de precisão por cera perdida",
-        "fundição de precisão",
-        "fundição de aço inoxidável",
         "fundição de aço",
-        "fundição por cera perdida",
-        "fundição na China",
         "fundição Dongying"
       ],
       "products": [
+        "peças fundidas",
+        "peças de microfusão",
+        "peças fundidas em aço inox",
         "produtos de fundição de precisão",
         "peças fundidas em aço inoxidável",
         "peças fundidas em aço-carbono",
@@ -468,8 +485,7 @@
         "fundição de aço",
         "fundição por cera perdida",
         "fundição na China",
-        "fundição Dongying",
-        "fundição de precisão"
+        "fundição Dongying"
       ],
       "about": [
         "fabricante de fundição de precisão China",
