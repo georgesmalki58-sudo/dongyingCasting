@@ -77,7 +77,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
         </div>
       </section>
 
-      {/* FEATURED PRODUCT — type-approved GMC 3000 hitch coupling */}
+      {/* FEATURED PRODUCT — type-approved GMC 3000 trailer hitch coupling */}
       <section className="container-x pt-20">
         <article className="grid overflow-hidden rounded-2xl border border-steel-200 bg-white shadow-sm lg:grid-cols-5">
           <Link href={`${base}/products/${featured.slug}`} className="relative block aspect-[3/2] bg-steel-950 lg:col-span-3 lg:aspect-auto lg:min-h-[420px]">
