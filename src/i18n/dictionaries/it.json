@@ -305,6 +305,7 @@
     },
     "coupling": {
       "name": "Testa di traino GMC 3000",
+      "seoTitle": "Testa di traino GMC 3000 – ECE R55",
       "summary": "Testa di accoppiamento omologata classe B50-X per rimorchi frenati e caravan — omologazione UN ECE R55 E57*55R03/00*0158*00.",
       "body": "Il GMC 3000 è una testa di accoppiamento di classe B50-X per sfere di traino da 50 mm, omologata secondo il Regolamento UN ECE n. 55 (serie 03) dall'Autorità per l'Omologazione della Repubblica di San Marino il 3 luglio 2025. È prodotto nel nostro stabilimento di Dongying, indicato nell'omologazione come responsabile della conformità della produzione. Le prove di Automotive Technical Service S.r.l. (rapporto ATS-SM-IR-55-22811) hanno riguardato resistenza, fatica e articolazione: la testa ruota di almeno 90° su ciascun lato dell'asse centrale, si chiude con innesto meccanico positivo e si blocca, e può essere agganciata e sganciata da una sola persona senza attrezzi.",
       "materials": "Interamente in acciaio inossidabile (tutte le parti portanti secondo UN ECE R55 §4.2)",
@@ -330,6 +331,7 @@
     },
     "superalloy": {
       "name": "Componenti di turbina in superlega",
+      "seoTitle": "Microfusione Inconel: palette di turbina e NGV",
       "summary": "Distributori (NGV), anelli statorici e parti della sezione calda ottenuti per microfusione sotto vuoto in Inconel e altre superleghe a base di nichel.",
       "body": "Per turbine a gas, turbocompressori e sezioni calde per la generazione di energia fondiamo distributori a parete sottile complessi, palette di rotore e anelli di palette integrali mediante microfusione sotto vuoto (cera persa), che protegge le reattive superleghe a base di nichel dall'ossidazione durante la colata. I pezzi vengono finiti sui nostri centri CNC e possono essere forniti con rivestimenti protettivi ad alta temperatura — alluminuro, PtAl, MCrAlY e rivestimenti barriera termica (TBC) — per impieghi nell'aerospaziale, nelle turbine a gas per energia, nel navale e nell'oil & gas. Dal singolo prototipo alla produzione in serie.",
       "materials": "Inconel, superleghe a base di nichel, acciaio resistente al calore",
@@ -359,6 +361,7 @@
     },
     "pump": {
       "name": "Giranti e corpi pompa",
+      "seoTitle": "Giranti pompa in acciaio inox microfuse",
       "summary": "Giranti aperte e semiaperte e corpi pompa in acciaio inossidabile 316L e ghisa sferoidale — ottenuti per microfusione e lavorati con precisione.",
       "body": "Le nostre giranti in 316L sono progettate per resistere a corrosione e intasamenti nelle acque reflue, nell'acqua di mare e in servizi chimici leggeri, mentre le giranti in ghisa sferoidale offrono elevata resistenza e resistenza all'usura per pompe centrifughe. I corpi pompa in SS316 sono fusi vicino alla forma finale e lavorati a tolleranze strette per pompe di fluidi petroliferi, chimici e industriali.",
       "materials": "Acciaio inossidabile 316L / SS316, ghisa sferoidale",
@@ -382,6 +385,7 @@
     },
     "exhaust": {
       "name": "Collettori di scarico",
+      "seoTitle": "Collettori di scarico inox microfusi",
       "summary": "Collettori di scarico, collettori turbo e collettori racing ottenuti per fusione a cera persa in acciaio inossidabile e leghe ad alta temperatura.",
       "body": "La microfusione produce collettori monoblocco con condotti lisci e ottimizzati e spessore di parete uniforme — ideali per l'elaborazione delle prestazioni e le applicazioni turbo dove contano la resistenza al calore e la durata a fatica. Flange e superfici di montaggio sono lavorate per un accoppiamento preciso.",
       "materials": "Acciaio inossidabile, leghe ad alta temperatura",
@@ -404,6 +408,7 @@
     },
     "impeller": {
       "name": "Giranti e ventole",
+      "seoTitle": "Giranti in acciaio inox microfuse",
       "summary": "Giranti e ventole in acciaio inossidabile ottenute per microfusione per turbomacchine, soffianti e ventilatori.",
       "body": "Le palette sottili e curve e la geometria complessa del mozzo sono fuse in un unico pezzo, riducendo saldatura e lavorazione. Bilanciamo le ruote e lavoriamo fori e sedi di chiavetta secondo le tue specifiche, così da arrivare pronte per il montaggio.",
       "materials": "Acciaio inossidabile (incl. 316L)",
@@ -426,6 +431,7 @@
     },
     "mould": {
       "name": "Stampi di fusione e prototipi",
+      "seoTitle": "Stampi per microfusione e prototipi",
       "summary": "Stampi per iniezione di cera, fusione in gravità e pressofusione, oltre a prototipi rapidi tramite stampa 3D e lavorazione CNC in alluminio 6061/7075 e ottone.",
       "body": "Con la nostra officina stampi e 14 ingegneri R&S, progettiamo e costruiamo internamente l'attrezzatura per i tuoi getti — dagli stampi per cera multi-slitta per anelli di palette di turbina agli stampi di pressofusione. Modelli stampati in 3D e stampi prototipo lavorati CNC accorciano lo sviluppo prima dell'attrezzatura di serie.",
       "materials": "Alluminio 6061 / 7075, ottone",
@@ -449,6 +455,7 @@
     }
   },
   "seo": {
+    "titles": { "products": "Microfusioni in acciaio e superleghe" },
     "keywords": {
       "home": [
         "microfusione",

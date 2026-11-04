@@ -305,6 +305,7 @@
     },
     "coupling": {
       "name": "Engate de reboque GMC 3000",
+      "seoTitle": "Engate de reboque GMC 3000 – ECE R55",
       "summary": "Cabeça de engate homologada classe B50-X para reboques com travão e caravanas — homologação UN ECE R55 E57*55R03/00*0158*00.",
       "body": "O GMC 3000 é uma cabeça de engate classe B50-X para bolas de reboque de 50 mm, homologada segundo o Regulamento UN ECE n.º 55 (série 03) pela autoridade de homologação da República de São Marinho em 3 de julho de 2025. É produzido na nossa fábrica em Dongying, indicada na homologação como responsável pela conformidade da produção. Os ensaios da Automotive Technical Service S.r.l. (relatório ATS-SM-IR-55-22811) abrangeram resistência, fadiga e articulação: a cabeça roda pelo menos 90° para cada lado do eixo central, fecha com engate mecânico positivo e bloqueia, e pode ser engatada e desengatada por uma só pessoa sem ferramentas.",
       "materials": "Totalmente em aço inoxidável (todas as peças portantes conforme UN ECE R55 §4.2)",
@@ -330,6 +331,7 @@
     },
     "superalloy": {
       "name": "Componentes de turbina em superliga",
+      "seoTitle": "Fundição de Inconel: palhetas de turbina e NGV",
       "summary": "Palhetas do distribuidor (NGV), anéis do estator e peças da seção quente fundidas por precisão a vácuo em Inconel e outras superligas à base de níquel.",
       "body": "Para turbinas a gás, turbocompressores e seções quentes de geração de energia, fundimos palhetas do distribuidor de paredes finas complexas, pás de rotor e anéis de palhetas integrais por fundição de precisão a vácuo (cera perdida), que protege as reativas superligas à base de níquel da oxidação durante o vazamento. As peças recebem acabamento em nossos centros CNC e podem ser fornecidas com revestimentos protetores de alta temperatura — alumineto, PtAl, MCrAlY e revestimentos de barreira térmica (TBC) — para uso em aeroespacial, turbinas a gás de energia, naval e óleo e gás. Do protótipo único à produção em série.",
       "materials": "Inconel, superligas à base de níquel, aço resistente ao calor",
@@ -360,6 +362,7 @@
     },
     "pump": {
       "name": "Rotores e carcaças de bombas",
+      "seoTitle": "Rotores de bomba em aço inox fundido",
       "summary": "Rotores abertos e semiabertos e carcaças de bombas em aço inoxidável 316L e ferro fundido dúctil — fundição de precisão e usinagem de precisão.",
       "body": "Nossos rotores em 316L são projetados para resistir à corrosão e ao entupimento em esgoto, água do mar e serviço químico leve, enquanto os rotores em ferro fundido dúctil oferecem alta resistência e resistência ao desgaste para bombas centrífugas. As carcaças de bomba em SS316 são fundidas próximas à forma final e usinadas com tolerâncias apertadas para bombas de fluidos de petróleo, químicos e industriais.",
       "materials": "Aço inoxidável 316L / SS316, ferro fundido dúctil",
@@ -383,6 +386,7 @@
     },
     "exhaust": {
       "name": "Coletores de escape",
+      "seoTitle": "Coletores de escape inox fundidos",
       "summary": "Coletores de escape, coletores turbo e coletores de corrida fundidos por cera perdida em aço inoxidável e ligas de alta temperatura.",
       "body": "A fundição de precisão produz coletores de peça única com dutos lisos e otimizados e espessura de parede uniforme — ideais para preparação de desempenho e aplicações turbo onde importam resistência ao calor e vida em fadiga. Flanges e faces de montagem são usinadas para um encaixe preciso.",
       "materials": "Aço inoxidável, ligas de alta temperatura",
@@ -405,6 +409,7 @@
     },
     "impeller": {
       "name": "Rotores e ventiladores",
+      "seoTitle": "Rotores em aço inox – microfusão",
       "summary": "Rotores e ventiladores em aço inoxidável fundidos por precisão para turbomáquinas, sopradores e ventiladores.",
       "body": "As pás finas e curvas e a geometria complexa do cubo são fundidas em uma única peça, reduzindo soldagem e usinagem. Balanceamos as rodas e usinamos furos e rasgos de chaveta conforme sua especificação, para que cheguem prontas para montagem.",
       "materials": "Aço inoxidável (incl. 316L)",
@@ -427,6 +432,7 @@
     },
     "mould": {
       "name": "Moldes de fundição e protótipos",
+      "seoTitle": "Moldes de cera perdida e protótipos",
       "summary": "Moldes de injeção de cera, fundição por gravidade e fundição sob pressão, além de protótipos rápidos por impressão 3D e usinagem CNC em alumínio 6061/7075 e latão.",
       "body": "Com nossa própria oficina de moldes e 14 engenheiros de P&D, projetamos e construímos internamente o ferramental para suas peças fundidas — de moldes de cera multideslizantes para anéis de palhetas de turbina a moldes de fundição sob pressão. Modelos impressos em 3D e moldes-protótipo usinados em CNC encurtam o desenvolvimento antes do ferramental de série.",
       "materials": "Alumínio 6061 / 7075, latão",
@@ -450,6 +456,7 @@
     }
   },
   "seo": {
+    "titles": { "products": "Peças de fundição de precisão" },
     "keywords": {
       "home": [
         "fundição de precisão",

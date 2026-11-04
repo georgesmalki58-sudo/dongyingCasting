@@ -305,6 +305,7 @@
     },
     "coupling": {
       "name": "Enganche de remolque GMC 3000",
+      "seoTitle": "Enganche de remolque GMC 3000 – ECE R55",
       "summary": "Cabezal de acoplamiento homologado clase B50-X para remolques con freno y caravanas — homologación UN ECE R55 E57*55R03/00*0158*00.",
       "body": "El GMC 3000 es un cabezal de acoplamiento clase B50-X para bolas de remolque de 50 mm, homologado según el Reglamento UN ECE n.º 55 (serie 03) por la autoridad de homologación de la República de San Marino el 3 de julio de 2025. Se fabrica en nuestra planta de Dongying, designada en la homologación como responsable de la conformidad de la producción. Los ensayos de Automotive Technical Service S.r.l. (informe ATS-SM-IR-55-22811) cubrieron resistencia, fatiga y articulación: el cabezal gira al menos 90° a cada lado del eje central, cierra con engrane mecánico positivo y se bloquea, y una sola persona puede acoplarlo y desacoplarlo sin herramientas.",
       "materials": "Totalmente de acero inoxidable (todas las piezas portantes según UN ECE R55 §4.2)",
@@ -330,6 +331,7 @@
     },
     "superalloy": {
       "name": "Componentes de turbina en superaleaciones",
+      "seoTitle": "Fundición de Inconel: álabes de turbina y NGV",
       "summary": "Álabes guía de tobera (NGV), anillos de estator y piezas de sección caliente en Inconel y otras superaleaciones base níquel, por microfusión al vacío.",
       "body": "Para turbinas de gas, turbocompresores y secciones calientes de generación eléctrica fundimos álabes guía, álabes de rotor y anillos de álabes integrales de pared delgada por microfusión al vacío (cera perdida), que protege las superaleaciones base níquel reactivas de la oxidación durante la colada. Las piezas se mecanizan en nuestros centros CNC y pueden suministrarse con recubrimientos protectores de alta temperatura —aluminuro, PtAl, MCrAlY y recubrimientos de barrera térmica (TBC)— para aeronáutica, turbinas de gas, sector naval y petróleo y gas. Desde un prototipo hasta la producción en serie.",
       "materials": "Inconel, superaleaciones base níquel, acero refractario",
@@ -360,6 +362,7 @@
     },
     "pump": {
       "name": "Impulsores y carcasas de bombas",
+      "seoTitle": "Impulsores de bomba inox – microfusión",
       "summary": "Impulsores abiertos y semiabiertos y carcasas de bomba en acero inoxidable 316L y hierro dúctil, por microfusión y mecanizado de precisión.",
       "body": "Nuestros impulsores de 316L resisten la corrosión y la obstrucción en aguas residuales, agua de mar y medios químicos suaves, mientras que los de hierro dúctil ofrecen alta resistencia mecánica y al desgaste para bombas centrífugas. Las carcasas de SS316 se funden casi a forma final y se mecanizan con tolerancias estrictas para bombas de petróleo, químicas e industriales.",
       "materials": "Acero inoxidable 316L / SS316, hierro dúctil",
@@ -383,6 +386,7 @@
     },
     "exhaust": {
       "name": "Colectores y headers de escape",
+      "seoTitle": "Colectores de escape inox fundidos",
       "summary": "Colectores de escape, colectores turbo y headers de competición en acero inoxidable y aleaciones de alta temperatura, fundidos a la cera perdida.",
       "body": "La microfusión permite colectores de una sola pieza con conductos lisos y optimizados y espesor de pared uniforme, ideales para preparación y aplicaciones turbo donde importan la resistencia al calor y a la fatiga. Las bridas y superficies de montaje se mecanizan para un ajuste preciso.",
       "materials": "Acero inoxidable, aleaciones de alta temperatura",
@@ -405,6 +409,7 @@
     },
     "impeller": {
       "name": "Rodetes y ruedas de ventilador",
+      "seoTitle": "Rodetes de acero inoxidable – microfusión",
       "summary": "Rodetes y ruedas de ventilador de acero inoxidable por microfusión para turbomaquinaria, soplantes y ventiladores.",
       "body": "Los álabes finos y curvados y la geometría compleja del cubo se funden en una sola pieza, reduciendo soldaduras y mecanizado. Equilibramos las ruedas y mecanizamos agujeros y chaveteros según su especificación, listas para el montaje.",
       "materials": "Acero inoxidable (incl. 316L)",
@@ -427,6 +432,7 @@
     },
     "mould": {
       "name": "Moldes de fundición y prototipos",
+      "seoTitle": "Moldes de cera perdida y prototipos",
       "summary": "Moldes de inyección de cera, de gravedad y de fundición a presión, además de prototipos rápidos por impresión 3D y mecanizado CNC en aluminio 6061/7075 y latón.",
       "body": "Con nuestro propio taller de moldes y 14 ingenieros de I+D, diseñamos y fabricamos internamente el utillaje para sus piezas, desde moldes de cera con múltiples correderas para anillos de álabes de turbina hasta moldes de fundición a presión. Los modelos impresos en 3D y los moldes prototipo mecanizados por CNC acortan el desarrollo antes del utillaje de serie.",
       "materials": "Aluminio 6061 / 7075, latón",
@@ -450,6 +456,7 @@
     }
   },
   "seo": {
+    "titles": { "products": "Piezas de fundición de precisión" },
     "keywords": {
       "home": [
         "fundición de precisión",

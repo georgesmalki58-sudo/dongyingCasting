@@ -305,6 +305,7 @@
     },
     "coupling": {
       "name": "GMC 3000 Trailer Hitch Coupling",
+      "seoTitle": "Trailer Hitch Coupling GMC 3000 – ECE R55",
       "summary": "Type-approved Class B50-X coupling head for braked trailers and caravans — UN ECE R55 approval E57*55R03/00*0158*00.",
       "body": "The GMC 3000 is a Class B50-X coupling head for 50 mm tow balls, type-approved under UN ECE Regulation No. 55 (03 series) by the homologation authority of the Republic of San Marino on 3 July 2025. It is produced at our Dongying plant, which the approval names as responsible for conformity of production. The approval tests by Automotive Technical Service S.r.l. (report ATS-SM-IR-55-22811) covered strength, fatigue and articulation: the head turns at least 90° to each side of the centre line, closes with positive mechanical engagement and locks, and can be coupled and uncoupled by one person without tools.",
       "materials": "Stainless steel throughout (all load-bearing parts per UN ECE R55 §4.2)",
@@ -332,6 +333,7 @@
     },
     "superalloy": {
       "name": "Superalloy Turbine Components",
+      "seoTitle": "Inconel Turbine Vane & NGV Casting",
       "summary": "Vacuum investment cast nozzle guide vanes (NGV), stator rings and hot-section parts in Inconel and other nickel-based superalloys.",
       "body": "For gas turbines, turbochargers and power-generation hot sections we cast complex, thin-walled nozzle guide vanes, rotor blades and integral vane rings by vacuum investment (lost-wax) casting, which protects reactive nickel-based superalloys from oxidation during pouring. Parts are finish-machined on our CNC centres and can be supplied with protective high-temperature coatings — aluminide, PtAl, MCrAlY and thermal barrier coatings (TBC) — for service in aerospace, power gas turbines, marine and oil & gas. From a single prototype to series production.",
       "materials": "Inconel, nickel-based superalloys, heat-resistant steel",
@@ -361,6 +363,7 @@
     },
     "pump": {
       "name": "Pump Impellers & Housings",
+      "seoTitle": "Stainless Steel Pump Impeller Casting",
       "summary": "Open and semi-open impellers and pump casings in 316L stainless steel and ductile iron — investment cast and precision machined.",
       "body": "Our 316L impellers are designed to resist corrosion and clogging in sewage, seawater and mild chemical service, while ductile-iron impellers deliver high strength and wear resistance for centrifugal pumps. SS316 pump housings are cast close to final shape and machined to tight tolerances for oil, chemical and industrial fluid pumps.",
       "materials": "316L / SS316 stainless steel, ductile iron",
@@ -385,6 +388,7 @@
     },
     "exhaust": {
       "name": "Exhaust Manifolds & Headers",
+      "seoTitle": "Stainless Steel Exhaust Manifold Casting",
       "summary": "Lost-wax cast exhaust manifolds, turbo manifolds and racing headers in stainless steel and high-temperature alloys.",
       "body": "Investment casting produces one-piece manifolds with smooth, optimised runners and uniform wall thickness — ideal for performance tuning and turbo applications where heat resistance and fatigue life matter. Flanges and mounting faces are machined for a precise fit.",
       "materials": "Stainless steel, high-temperature alloys",
@@ -407,6 +411,7 @@
     },
     "impeller": {
       "name": "Impellers & Fan Wheels",
+      "seoTitle": "Stainless Steel Impeller Casting",
       "summary": "Stainless steel investment-cast impellers and fan wheels for turbomachinery, blowers and fans.",
       "body": "Thin, curved blades and complex hub geometry are cast in one piece, reducing welding and machining. We balance the wheels and machine bores and keyways to your specification, so they arrive ready for assembly.",
       "materials": "Stainless steel (incl. 316L)",
@@ -430,6 +435,7 @@
     },
     "mould": {
       "name": "Casting Moulds & Prototypes",
+      "seoTitle": "Investment Casting Moulds & Prototypes",
       "summary": "Wax-injection, gravity-casting and die-casting moulds, plus rapid prototypes by 3D printing and CNC machining in aluminium 6061/7075 and brass.",
       "body": "With our own mould shop and 14 R&D engineers, we design and build the tooling for your castings in-house — from multi-slide wax moulds for turbine vane rings to die-casting moulds. 3D-printed patterns and CNC-machined prototype moulds shorten development before series tooling.",
       "materials": "Aluminium 6061 / 7075, brass",
@@ -454,6 +460,7 @@
     }
   },
   "seo": {
+    "titles": { "products": "Investment Casting Parts & Products" },
     "keywords": {
       "home": [
         "investment casting",

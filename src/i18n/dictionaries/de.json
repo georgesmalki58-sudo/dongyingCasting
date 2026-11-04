@@ -305,6 +305,7 @@
     },
     "coupling": {
       "name": "GMC 3000 Zugkugelkupplung",
+      "seoTitle": "Zugkugelkupplung GMC 3000 – ECE R55",
       "summary": "Typgenehmigter Kupplungskopf der Klasse B50-X für gebremste Anhänger und Wohnwagen — UN ECE R55 Genehmigung E57*55R03/00*0158*00.",
       "body": "Der GMC 3000 ist ein Kupplungskopf der Klasse B50-X für 50-mm-Kupplungskugeln, typgenehmigt nach UN ECE Regelung Nr. 55 (Änderungsserie 03) durch die Genehmigungsbehörde der Republik San Marino am 3. Juli 2025. Er wird in unserem Werk in Dongying gefertigt, das in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt ist. Die Prüfungen durch Automotive Technical Service S.r.l. (Bericht ATS-SM-IR-55-22811) umfassten Festigkeit, Dauerfestigkeit und Beweglichkeit: Der Kopf dreht mindestens 90° zu jeder Seite der Mittellinie, schließt formschlüssig und verriegelt, und lässt sich von einer Person ohne Werkzeug an- und abkuppeln.",
       "materials": "Komplett aus Edelstahl (alle tragenden Teile gemäß UN ECE R55 §4.2)",
@@ -329,6 +330,7 @@
     },
     "superalloy": {
       "name": "Turbinenkomponenten aus Superlegierungen",
+      "seoTitle": "Inconel-Feinguss: Turbinenschaufeln & NGV",
       "summary": "Im Vakuum-Feinguss hergestellte Leitschaufeln (NGV), Statorringe und Heißgasteile aus Inconel und anderen Nickelbasis-Superlegierungen.",
       "body": "Für Gasturbinen, Turbolader und Heißgasteile der Energieerzeugung gießen wir komplexe, dünnwandige Leitschaufeln, Rotorschaufeln und integrale Schaufelringe im Vakuum-Feinguss (Wachsausschmelzverfahren), der reaktive Nickelbasis-Superlegierungen beim Abguss vor Oxidation schützt. Die Teile werden auf unseren CNC-Zentren fertigbearbeitet und können mit Hochtemperatur-Schutzschichten geliefert werden – Aluminid, PtAl, MCrAlY und Wärmedämmschichten (TBC) – für Luft- und Raumfahrt, Gasturbinen, Schiffbau sowie Öl & Gas. Vom Einzelprototyp bis zur Serie.",
       "materials": "Inconel, Nickelbasis-Superlegierungen, hitzebeständiger Stahl",
@@ -359,6 +361,7 @@
     },
     "pump": {
       "name": "Pumpenlaufräder und -gehäuse",
+      "seoTitle": "Pumpenlaufräder aus Edelstahl – Feinguss",
       "summary": "Offene und halboffene Laufräder sowie Pumpengehäuse aus Edelstahl 316L und Sphäroguss – feingegossen und präzisionsbearbeitet.",
       "body": "Unsere 316L-Laufräder sind auf Korrosions- und Verstopfungsbeständigkeit in Abwasser, Meerwasser und leicht chemischen Medien ausgelegt, während Laufräder aus Sphäroguss hohe Festigkeit und Verschleißbeständigkeit für Kreiselpumpen bieten. Pumpengehäuse aus SS316 werden endkonturnah gegossen und für Öl-, Chemie- und Industriepumpen mit engen Toleranzen bearbeitet.",
       "materials": "Edelstahl 316L / SS316, Sphäroguss",
@@ -382,6 +385,7 @@
     },
     "exhaust": {
       "name": "Abgas- und Fächerkrümmer",
+      "seoTitle": "Abgaskrümmer aus Edelstahl – Feinguss",
       "summary": "Im Wachsausschmelzverfahren gegossene Abgaskrümmer, Turbokrümmer und Rennsport-Fächerkrümmer aus Edelstahl und Hochtemperaturlegierungen.",
       "body": "Der Feinguss ermöglicht einteilige Krümmer mit glatter, strömungsoptimierter Kanalgeometrie und gleichmäßiger Wandstärke – ideal für Tuning- und Turboanwendungen, bei denen Hitzebeständigkeit und Dauerfestigkeit zählen. Flansche und Anlageflächen werden für eine exakte Passung bearbeitet.",
       "materials": "Edelstahl, Hochtemperaturlegierungen",
@@ -404,6 +408,7 @@
     },
     "impeller": {
       "name": "Laufräder und Lüfterräder",
+      "seoTitle": "Edelstahl-Laufräder im Feinguss",
       "summary": "Feingegossene Laufräder und Lüfterräder aus Edelstahl für Turbomaschinen, Gebläse und Ventilatoren.",
       "body": "Dünne, gekrümmte Schaufeln und komplexe Nabengeometrien werden in einem Stück gegossen, was Schweiß- und Bearbeitungsaufwand reduziert. Wir wuchten die Räder und bearbeiten Bohrungen und Passfedernuten nach Ihrer Spezifikation – einbaufertig geliefert.",
       "materials": "Edelstahl (u. a. 316L)",
@@ -426,6 +431,7 @@
     },
     "mould": {
       "name": "Gießformen und Prototypen",
+      "seoTitle": "Feingusswerkzeuge & Prototypen",
       "summary": "Wachsspritzformen, Schwerkraft- und Druckgussformen sowie schnelle Prototypen per 3D-Druck und CNC-Bearbeitung aus Aluminium 6061/7075 und Messing.",
       "body": "Mit eigenem Formenbau und 14 Entwicklungsingenieuren konstruieren und fertigen wir die Werkzeuge für Ihre Gussteile im eigenen Haus – von Wachsformen mit mehreren Schiebern für Leitschaufelringe bis zu Druckgussformen. 3D-gedruckte Modelle und CNC-gefräste Prototypenformen verkürzen die Entwicklung vor dem Serienwerkzeug.",
       "materials": "Aluminium 6061 / 7075, Messing",
@@ -449,6 +455,7 @@
     }
   },
   "seo": {
+    "titles": { "products": "Feingussteile & Produkte" },
     "keywords": {
       "home": [
         "Feinguss",

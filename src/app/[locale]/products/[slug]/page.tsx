@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const line = getLine(slug);
   if (!line) return {};
   const c = getDictionary(locale).lines[line.key];
-  return buildMetadata({ locale, path: `products/${slug}`, title: c.name, description: c.summary, image: line.images[0], keywords: c.keywords });
+  return buildMetadata({ locale, path: `products/${slug}`, title: c.seoTitle ?? c.name, description: c.summary, image: line.images[0], keywords: c.keywords });
 }
 
 export default async function ProductLinePage({ params }: Params) {

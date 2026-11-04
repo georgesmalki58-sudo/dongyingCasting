@@ -305,6 +305,7 @@
     },
     "coupling": {
       "name": "Tête d'attelage GMC 3000",
+      "seoTitle": "Tête d'attelage GMC 3000 – ECE R55",
       "summary": "Tête d'attelage homologuée classe B50-X pour remorques freinées et caravanes — homologation UN ECE R55 E57*55R03/00*0158*00.",
       "body": "La GMC 3000 est une tête d'attelage de classe B50-X pour boules de 50 mm, homologuée selon le Règlement UN ECE n° 55 (série 03) par l'autorité d'homologation de la République de Saint-Marin le 3 juillet 2025. Elle est produite dans notre usine de Dongying, désignée dans l'homologation comme responsable de la conformité de la production. Les essais d'Automotive Technical Service S.r.l. (rapport ATS-SM-IR-55-22811) ont porté sur la résistance, la fatigue et l'articulation : la tête pivote d'au moins 90° de chaque côté de l'axe, se ferme par engagement mécanique positif et se verrouille, et une seule personne peut l'atteler et la dételer sans outil.",
       "materials": "Entièrement en acier inoxydable (toutes les pièces porteuses selon UN ECE R55 §4.2)",
@@ -329,6 +330,7 @@
     },
     "superalloy": {
       "name": "Composants de turbine en superalliage",
+      "seoTitle": "Moulage Inconel : aubes et distributeurs NGV",
       "summary": "Distributeurs (NGV), anneaux statoriques et pièces de section chaude moulés de précision sous vide en Inconel et autres superalliages à base de nickel.",
       "body": "Pour les turbines à gaz, les turbocompresseurs et les sections chaudes de production d'énergie, nous moulons des distributeurs à parois minces complexes, des aubes de rotor et des anneaux de distributeur intégrés par moulage de précision sous vide (cire perdue), qui protège les superalliages réactifs à base de nickel de l'oxydation pendant la coulée. Les pièces sont usinées à la finition sur nos centres CNC et peuvent être fournies avec des revêtements protecteurs haute température — aluminure, PtAl, MCrAlY et revêtements barrière thermique (TBC) — pour un service dans l'aérospatiale, les turbines à gaz de production d'énergie, le marine et le pétrole et gaz. Du prototype unique à la production en série.",
       "materials": "Inconel, superalliages à base de nickel, acier réfractaire",
@@ -359,6 +361,7 @@
     },
     "pump": {
       "name": "Roues et corps de pompes",
+      "seoTitle": "Roues de pompe inox – fonderie cire perdue",
       "summary": "Roues ouvertes et semi-ouvertes et corps de pompes en acier inoxydable 316L et fonte ductile — moulés de précision et usinés avec précision.",
       "body": "Nos roues en 316L sont conçues pour résister à la corrosion et au colmatage dans les eaux usées, l'eau de mer et le service chimique léger, tandis que les roues en fonte ductile offrent une haute résistance et une résistance à l'usure pour les pompes centrifuges. Les corps de pompe en SS316 sont moulés au plus près de la forme finale et usinés à des tolérances serrées pour les pompes à fluides pétroliers, chimiques et industriels.",
       "materials": "Acier inoxydable 316L / SS316, fonte ductile",
@@ -382,6 +385,7 @@
     },
     "exhaust": {
       "name": "Collecteurs d'échappement",
+      "seoTitle": "Collecteurs d'échappement inox moulés",
       "summary": "Collecteurs d'échappement, collecteurs turbo et collecteurs de compétition moulés à la cire perdue en acier inoxydable et alliages haute température.",
       "body": "Le moulage de précision produit des collecteurs monobloc aux conduits lisses et optimisés et à épaisseur de paroi uniforme — idéal pour la préparation de performance et les applications turbo où la résistance à la chaleur et la tenue en fatigue comptent. Les brides et faces de montage sont usinées pour un ajustement précis.",
       "materials": "Acier inoxydable, alliages haute température",
@@ -404,6 +408,7 @@
     },
     "impeller": {
       "name": "Roues et turbines de ventilation",
+      "seoTitle": "Roues inox – moulage cire perdue",
       "summary": "Roues et turbines de ventilation moulées de précision en acier inoxydable pour turbomachines, soufflantes et ventilateurs.",
       "body": "Les aubes minces et courbes et la géométrie complexe du moyeu sont moulées en une seule pièce, réduisant le soudage et l'usinage. Nous équilibrons les roues et usinons les alésages et rainures de clavette selon vos spécifications, afin qu'elles arrivent prêtes à l'assemblage.",
       "materials": "Acier inoxydable (dont 316L)",
@@ -426,6 +431,7 @@
     },
     "mould": {
       "name": "Moules de moulage et prototypes",
+      "seoTitle": "Moules de fonderie cire perdue & prototypes",
       "summary": "Moules d'injection de cire, de moulage par gravité et de moulage sous pression, ainsi que des prototypes rapides par impression 3D et usinage CNC en aluminium 6061/7075 et laiton.",
       "body": "Avec notre propre atelier de moules et 14 ingénieurs R&D, nous concevons et fabriquons en interne l'outillage de vos pièces moulées — des moules à cire multi-tiroirs pour anneaux de distributeur de turbine aux moules de moulage sous pression. Les modèles imprimés en 3D et les moules prototypes usinés CNC raccourcissent le développement avant l'outillage de série.",
       "materials": "Aluminium 6061 / 7075, laiton",
@@ -449,6 +455,7 @@
     }
   },
   "seo": {
+    "titles": { "products": "Pièces de fonderie de précision" },
     "keywords": {
       "home": [
         "fonderie cire perdue",
