@@ -116,13 +116,23 @@ export default async function ProductLinePage({ params }: Params) {
             <div className={`relative overflow-hidden rounded-xl border border-steel-200 ${frame}`}>
               <Image src={line.images[0]} alt={c.name} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className={fit} />
             </div>
-            {line.images.length > 1 ? (
-              <ul className={`mt-4 grid gap-3 ${line.photo ? 'grid-cols-3' : 'grid-cols-4'}`}>
+            {line.images.length > 1 || line.document ? (
+              <ul className={`mt-4 grid gap-3 ${line.photo && !line.document ? 'grid-cols-3' : 'grid-cols-4'}`}>
                 {line.images.slice(1).map((src, i) => (
                   <li key={src} className={`relative overflow-hidden rounded-lg border border-steel-200 ${line.photo ? 'aspect-[16/9] bg-steel-950' : 'aspect-square bg-white'}`}>
                     <Image src={src} alt={`${c.name} ${i + 2}`} fill sizes={line.photo ? '(min-width: 1024px) 17vw, 33vw' : '25vw'} className={thumbFit} />
                   </li>
                 ))}
+                {line.document ? (
+                  <li className={`relative overflow-hidden rounded-lg border border-steel-200 bg-white ${line.photo ? 'aspect-[16/9]' : 'aspect-square'}`}>
+                    <a href={line.document.href} target="_blank" rel="noopener" title={`${line.document.title} (PDF)`}
+                       className="group absolute inset-0 block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
+                      <Image src={line.document.cover} alt={`${line.document.title} — ${c.name}`} fill sizes="(min-width: 1024px) 13vw, 25vw" className="object-cover object-top transition-transform group-hover:scale-105" />
+                      <span className="absolute left-1.5 top-1.5 rounded bg-red-600 px-1.5 py-0.5 text-[10px] font-bold text-white">PDF</span>
+                      <span dir="ltr" className="absolute inset-x-0 bottom-0 bg-brand/90 px-2 py-1 text-center text-xs font-bold text-white">{line.document.title}</span>
+                    </a>
+                  </li>
+                ) : null}
               </ul>
             ) : null}
           </div>
