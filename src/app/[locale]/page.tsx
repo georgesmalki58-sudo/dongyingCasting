@@ -81,13 +81,14 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
       <section className="container-x pt-20">
         <article className="grid overflow-hidden rounded-2xl border border-steel-200 bg-white shadow-sm lg:grid-cols-5">
           <Link href={`${base}/products/${featured.slug}`} className="relative block aspect-[3/2] bg-steel-950 lg:col-span-3 lg:aspect-auto lg:min-h-[420px]">
-            <Image src={featured.images[1]} alt={fc.name} fill sizes="(min-width: 1024px) 60vw, 100vw" className="object-cover" />
+            <Image src={featured.images[1] ?? featured.images[0]} alt={fc.name} fill sizes="(min-width: 1024px) 60vw, 100vw" className="object-cover" />
           </Link>
           <div className="flex flex-col justify-center gap-4 p-6 md:p-10 lg:col-span-2">
             <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">{t.lines.labels.approvedBadge}</span>
             <h2 className="text-2xl font-bold text-brand md:text-3xl">{fc.name}</h2>
             <p className="prose-muted">{fc.summary}</p>
             {featured.approval ? <ApprovalMark a={featured.approval} className="text-brand" /> : null}
+            {featured.images.length >= 4 ? (
             <ul className="grid grid-cols-2 gap-3">
               {[featured.images[0], featured.images[3]].map((src, i) => (
                 <li key={src} className="relative aspect-[16/9] overflow-hidden rounded-lg border border-steel-200 bg-steel-950">
@@ -95,6 +96,7 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
                 </li>
               ))}
             </ul>
+            ) : null}
             <div className="flex flex-wrap gap-3">
               <Link href={`${base}/products/${featured.slug}`}
                     className="inline-flex w-fit rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
