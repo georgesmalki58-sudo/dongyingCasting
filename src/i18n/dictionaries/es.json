@@ -179,10 +179,6 @@
       "medical": {
         "name": "Equipos médicos",
         "desc": "Piezas de microfusión de acero inoxidable limpias para dispositivos y equipos médicos."
-      },
-      "trailer": {
-        "name": "Remolques y enganches",
-        "desc": "Cabezales de acoplamiento homologados para caravanas y remolques con freno, incluido nuestro acoplamiento GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -194,29 +190,7 @@
     "testing": "Equipos de ensayo",
     "testingBody": "Análisis de simulación CAM y CAE, control estadístico de calidad (SQC) y gráficos de control.",
     "inspection": "Proceso de inspección",
-    "inspectionBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa.",
-    "approval": {
-      "title": "Homologación de tipo internacional (UN ECE R55)",
-      "body": "Dongying Wanlong figura como la empresa responsable de la conformidad de la producción de un dispositivo de acoplamiento mecánico que cuenta con homologación de tipo europea según el Reglamento N.º 55 de la CEPE-ONU, lo que confirma que las piezas fundidas por nuestra fundición cumplen los requisitos internacionales de homologación de tipo.",
-      "rows": [
-        [
-          "Norma",
-          "Reglamento N.º 55 de la CEPE-ONU — dispositivos de acoplamiento mecánico"
-        ],
-        [
-          "Marca de homologación",
-          "E57 · 55R-03 0158 (República de San Marino)"
-        ],
-        [
-          "Componente",
-          "Acoplamiento mecánico clase B50-X (D/Dc 14,2 kN, S 150 kg)"
-        ],
-        [
-          "Concedida",
-          "Julio de 2025"
-        ]
-      ]
-    }
+    "inspectionBody": "Inspección de materiales entrantes, control de procesos, inspección de envíos y servicio posventa."
   },
   "factory": {
     "title": "Fábrica y capacidad de producción",
@@ -290,44 +264,7 @@
       "viewDetails": "Ver detalles",
       "viewAlibaba": "Ver en Alibaba",
       "others": "Otras líneas de productos",
-      "drawingNote": "Todas las piezas se fabrican según sus planos y especificaciones. Envíe un plano 2D/3D y reciba una cotización en 24 horas.",
-      "approvedBadge": "Homologado UN ECE R55",
-      "approvalTitle": "Homologación",
-      "approvalNo": "Número de homologación",
-      "approvalMark": "Marca de homologación",
-      "regulation": "Reglamento",
-      "deviceClass": "Clase",
-      "values": "Valores característicos",
-      "authority": "Autoridad de homologación",
-      "granted": "Fecha de concesión",
-      "approvalNote": "Nuestra planta de Dongying figura en la homologación como responsable de la conformidad de la producción.",
-      "moreInfo": "Más información en"
-    },
-    "coupling": {
-      "name": "Enganche de remolque GMC 3000",
-      "seoTitle": "Enganche de remolque GMC 3000 – ECE R55",
-      "summary": "Cabezal de acoplamiento homologado clase B50-X para remolques con freno y caravanas — homologación UN ECE R55 E57*55R03/00*0158*00.",
-      "body": "El GMC 3000 es un cabezal de acoplamiento clase B50-X para bolas de remolque de 50 mm, homologado según el Reglamento UN ECE n.º 55 (serie 03) por la autoridad de homologación de la República de San Marino el 3 de julio de 2025. Se fabrica en nuestra planta de Dongying, designada en la homologación como responsable de la conformidad de la producción. Los ensayos de Automotive Technical Service S.r.l. (informe ATS-SM-IR-55-22811) cubrieron resistencia, fatiga y articulación: el cabezal gira al menos 90° a cada lado del eje central, cierra con engrane mecánico positivo y se bloquea, y una sola persona puede acoplarlo y desacoplarlo sin herramientas.",
-      "materials": "Totalmente de acero inoxidable (todas las piezas portantes según UN ECE R55 §4.2)",
-      "process": "Fabricado y con control de producción en nuestra planta de Dongying (conformidad de la producción)",
-      "apps": [
-        "Caravanas y remolques de viaje",
-        "Remolques ligeros con freno",
-        "Fabricantes de lanzas de remolque y carroceros",
-        "Cabezales de acoplamiento de recambio"
-      ],
-      "keywords": [
-        "enganche de remolque",
-        "cabezal de enganche",
-        "enganche de bola",
-        "acoplamiento de remolque",
-        "enganche caravana",
-        "cabezal de enganche remolque frenado",
-        "enganche bola 50 mm",
-        "enganche ECE R55",
-        "acoplamiento B50-X",
-        "enganche GMC 3000"
-      ]
+      "drawingNote": "Todas las piezas se fabrican según sus planos y especificaciones. Envíe un plano 2D/3D y reciba una cotización en 24 horas."
     },
     "superalloy": {
       "name": "Componentes de turbina en superaleaciones",
@@ -456,7 +393,9 @@
     }
   },
   "seo": {
-    "titles": { "products": "Piezas de fundición de precisión" },
+    "titles": {
+      "products": "Piezas de fundición de precisión"
+    },
     "keywords": {
       "home": [
         "fundición de precisión",
@@ -549,7 +488,7 @@
       "about": "Fabricante de microfusión y mecanizado CNC en Dongying, China, certificado ISO 9001:2015 desde 2000: piezas de superaleación, acero inoxidable y al carbono según su plano.",
       "products": "Productos de microfusión y mecanizado CNC en acero inoxidable, acero al carbono y superaleaciones: piezas de bomba, turbina, escape y moldes según su plano, desde China.",
       "industries": "Fundición de precisión para automoción, naval, petróleo y gas, bombas, maquinaria, construcción y equipos médicos: una fundición ISO 9001 para más de 40 mercados.",
-      "quality": "ISO 9001:2015, GB/T 19001, CE y UN ECE R55: cómo nuestra fundición china controla la calidad con ensayo de materiales, inspección CMM e informes documentados.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE: cómo nuestra fundición china controla la calidad con ensayo de materiales, inspección CMM e informes documentados.",
       "factory": "Dentro de nuestra fundición en Dongying: 21 centros CNC, taller de moldes propio, 14 ingenieros de I+D y unos 5.000 m² de superficie de producción.",
       "contact": "Solicite una cotización de fundición a Dongying Casting. Suba sus planos 2D/3D y nuestros ingenieros responden con un presupuesto detallado, normalmente en 24 horas.",
       "blog": "Guías técnicas sobre microfusión, cera perdida, grados de acero inoxidable, mecanizado CNC, acabado superficial y tratamiento térmico de piezas fundidas."

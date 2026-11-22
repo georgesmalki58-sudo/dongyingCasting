@@ -7,7 +7,6 @@ import { SITE } from '@/lib/site';
 import { buildMetadata } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbSchema } from '@/lib/schema';
-import { TypeApprovalCard } from '@/components/TypeApprovalCard';
 import { PRODUCT_LINES, getLine, moqText } from '@/lib/product-lines';
 
 type Params = { params: Promise<{ locale: Locale; slug: string }> };
@@ -36,41 +35,7 @@ export default async function ProductLinePage({ params }: Params) {
   const others = PRODUCT_LINES.filter((l) => l.slug !== slug);
   const url = `${SITE.url}/${locale}/products/${slug}`;
 
-  // Fixed-price lines → Product with offers; custom castings → Service (no price, so no Product snippet errors).
-  const o = line.offer;
-  const productLd = o ? {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: c.name,
-    description: `${c.summary} ${c.body}`,
-    image: (line.images.length ? line.images : [SITE.ogImage]).map((i) => `${SITE.url}${i}`),
-    url,
-    material: c.materials,
-    brand: { '@type': 'Brand', name: line.brand ?? SITE.name },
-    manufacturer: { '@type': 'Organization', name: SITE.legalName, url: SITE.url },
-    category: t.products.title,
-    offers: {
-      '@type': 'Offer',
-      url: o.url,
-      price: o.price,
-      priceCurrency: o.currency,
-      priceSpecification: { '@type': 'UnitPriceSpecification', price: o.price, priceCurrency: o.currency, valueAddedTaxIncluded: false },
-      eligibleQuantity: { '@type': 'QuantitativeValue', minValue: o.moq, unitCode: 'C62' },
-      // MadeToOrder is not an accepted enum in Google's product snippets; made-to-order goods are InStock + lead time.
-      availability: 'https://schema.org/InStock',
-      businessFunction: 'http://purl.org/goodrelations/v1#Sell',
-      eligibleCustomerType: 'http://purl.org/goodrelations/v1#Business',
-      deliveryLeadTime: { '@type': 'QuantitativeValue', value: o.leadDays, unitCode: 'DAY' },
-      warranty: { '@type': 'WarrantyPromise', durationOfWarranty: { '@type': 'QuantitativeValue', value: o.warrantyYears, unitCode: 'ANN' } },
-      seller: { '@type': 'Organization', name: o.seller, url: 'https://gmc-innovations.com' }
-    },
-    ...(line.approval ? { additionalProperty: [
-      { '@type': 'PropertyValue', name: L.approvalNo, value: line.approval.number },
-      { '@type': 'PropertyValue', name: L.regulation, value: line.approval.regulation },
-      { '@type': 'PropertyValue', name: L.deviceClass, value: line.approval.deviceClass },
-      ...line.approval.values.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: v }))
-    ] } : {})
-  } : {
+  const productLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: c.name,
@@ -117,32 +82,19 @@ export default async function ProductLinePage({ params }: Params) {
             <div className={`relative overflow-hidden rounded-xl border border-steel-200 ${frame}`}>
               <Image src={line.images[0]} alt={c.name} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className={fit} />
             </div>
-            {line.images.length > 1 || line.document ? (
-              <ul className={`mt-4 grid gap-3 ${line.photo && !line.document ? 'grid-cols-3' : 'grid-cols-4'}`}>
+            {line.images.length > 1 ? (
+              <ul className={`mt-4 grid gap-3 ${line.photo ? 'grid-cols-3' : 'grid-cols-4'}`}>
                 {line.images.slice(1).map((src, i) => (
                   <li key={src} className={`relative overflow-hidden rounded-lg border border-steel-200 ${line.photo ? 'aspect-[16/9] bg-steel-950' : 'aspect-square bg-white'}`}>
                     <Image src={src} alt={`${c.name} ${i + 2}`} fill sizes={line.photo ? '(min-width: 1024px) 17vw, 33vw' : '25vw'} className={thumbFit} />
                   </li>
                 ))}
-                {line.document ? (
-                  <li className={`relative overflow-hidden rounded-lg border border-steel-200 bg-white ${line.photo ? 'aspect-[16/9]' : 'aspect-square'}`}>
-                    <a href={line.document.href} target="_blank" rel="noopener" title={`${line.document.title} (PDF)`}
-                       className="group absolute inset-0 block focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
-                      <Image src={line.document.cover} alt={`${line.document.title} — ${c.name}`} fill sizes="(min-width: 1024px) 13vw, 25vw" className="object-cover object-top transition-transform group-hover:scale-105" />
-                      <span className="absolute left-1.5 top-1.5 rounded bg-red-600 px-1.5 py-0.5 text-[10px] font-bold text-white">PDF</span>
-                      <span dir="ltr" className="absolute inset-x-0 bottom-0 bg-brand/90 px-2 py-1 text-center text-xs font-bold text-white">{line.document.title}</span>
-                    </a>
-                  </li>
-                ) : null}
               </ul>
             ) : null}
           </div>
           ) : null}
 
           <div className="flex flex-col gap-6">
-            {line.approval ? (
-              <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">{L.approvedBadge}</span>
-            ) : null}
             <h1 className="text-3xl font-bold text-brand md:text-4xl">{c.name}</h1>
             <p className="text-lg text-steel-700">{c.summary}</p>
             <dl className="divide-y divide-steel-200 rounded-xl border border-steel-200 text-sm">
@@ -170,12 +122,7 @@ export default async function ProductLinePage({ params }: Params) {
                 </a>
               ) : null}
             </div>
-            {line.approval ? <TypeApprovalCard a={line.approval} t={t} locale={locale} /> : <p className="text-sm text-steel-500">{L.drawingNote}</p>}
-            {line.infoUrl ? (
-              <a href={line.infoUrl} target="_blank" rel="noopener" className="text-sm font-semibold text-brand-light hover:underline">
-                {L.moreInfo} <span dir="ltr">{new URL(line.infoUrl).hostname}</span> ↗
-              </a>
-            ) : null}
+            <p className="text-sm text-steel-500">{L.drawingNote}</p>
           </div>
         </div>
 

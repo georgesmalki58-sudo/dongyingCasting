@@ -179,10 +179,6 @@
       "medical": {
         "name": "Apparecchiature medicali",
         "desc": "Getti di microfusione in acciaio inossidabile pulito per dispositivi e apparecchiature medicali."
-      },
-      "trailer": {
-        "name": "Traino e rimorchi",
-        "desc": "Teste di accoppiamento omologate per caravan e rimorchi frenati, tra cui il nostro giunto GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -194,29 +190,7 @@
     "testing": "Apparecchiature di prova",
     "testingBody": "Analisi di simulazione CAM e CAE, controllo statistico della qualità (SQC) e carte di controllo.",
     "inspection": "Processo di ispezione",
-    "inspectionBody": "Controllo dei materiali in ingresso, monitoraggio in corso di lavorazione, controllo alla spedizione e assistenza post-vendita.",
-    "approval": {
-      "title": "Omologazione internazionale (UN ECE R55)",
-      "body": "Dongying Wanlong è indicata come l'azienda responsabile della conformità della produzione di un dispositivo di aggancio meccanico che detiene l'omologazione europea ai sensi del Regolamento UN ECE n. 55 — conferma che i getti prodotti dalla nostra fonderia soddisfano i requisiti internazionali di omologazione.",
-      "rows": [
-        [
-          "Norma",
-          "Regolamento UN ECE n. 55 — dispositivi di aggancio meccanico"
-        ],
-        [
-          "Marchio di omologazione",
-          "E57 · 55R-03 0158 (Repubblica di San Marino)"
-        ],
-        [
-          "Componente",
-          "Aggancio meccanico classe B50-X (D/Dc 14,2 kN, S 150 kg)"
-        ],
-        [
-          "Rilasciata",
-          "Luglio 2025"
-        ]
-      ]
-    }
+    "inspectionBody": "Controllo dei materiali in ingresso, monitoraggio in corso di lavorazione, controllo alla spedizione e assistenza post-vendita."
   },
   "factory": {
     "title": "Stabilimento e capacità produttive",
@@ -290,44 +264,7 @@
       "viewDetails": "Vedi dettagli",
       "viewAlibaba": "Vedi su Alibaba",
       "others": "Altre linee di prodotto",
-      "drawingNote": "Tutti i pezzi sono realizzati secondo i tuoi disegni e specifiche. Invia un disegno 2D/3D e ricevi un preventivo entro 24 ore.",
-      "approvedBadge": "Omologato UN ECE R55",
-      "approvalTitle": "Omologazione",
-      "approvalNo": "Numero di omologazione",
-      "approvalMark": "Marchio di omologazione",
-      "regulation": "Regolamento",
-      "deviceClass": "Classe",
-      "values": "Valori caratteristici",
-      "authority": "Autorità di omologazione",
-      "granted": "Data di rilascio",
-      "approvalNote": "Il nostro stabilimento di Dongying è indicato nell'omologazione come responsabile della conformità della produzione.",
-      "moreInfo": "Maggiori informazioni su"
-    },
-    "coupling": {
-      "name": "Testa di traino GMC 3000",
-      "seoTitle": "Testa di traino GMC 3000 – ECE R55",
-      "summary": "Testa di accoppiamento omologata classe B50-X per rimorchi frenati e caravan — omologazione UN ECE R55 E57*55R03/00*0158*00.",
-      "body": "Il GMC 3000 è una testa di accoppiamento di classe B50-X per sfere di traino da 50 mm, omologata secondo il Regolamento UN ECE n. 55 (serie 03) dall'Autorità per l'Omologazione della Repubblica di San Marino il 3 luglio 2025. È prodotto nel nostro stabilimento di Dongying, indicato nell'omologazione come responsabile della conformità della produzione. Le prove di Automotive Technical Service S.r.l. (rapporto ATS-SM-IR-55-22811) hanno riguardato resistenza, fatica e articolazione: la testa ruota di almeno 90° su ciascun lato dell'asse centrale, si chiude con innesto meccanico positivo e si blocca, e può essere agganciata e sganciata da una sola persona senza attrezzi.",
-      "materials": "Interamente in acciaio inossidabile (tutte le parti portanti secondo UN ECE R55 §4.2)",
-      "process": "Prodotto e controllato in produzione nel nostro stabilimento di Dongying (conformità della produzione)",
-      "apps": [
-        "Caravan e rimorchi da viaggio",
-        "Rimorchi leggeri frenati",
-        "Costruttori di timoni e carrozzieri",
-        "Teste di accoppiamento di ricambio"
-      ],
-      "keywords": [
-        "testa di traino",
-        "giunto sferico",
-        "giunto di traino",
-        "testa di accoppiamento rimorchio",
-        "giunto sferico rimorchio",
-        "testa di traino roulotte",
-        "giunto sferico 50 mm",
-        "giunto ECE R55",
-        "giunto B50-X",
-        "testa di traino GMC 3000"
-      ]
+      "drawingNote": "Tutti i pezzi sono realizzati secondo i tuoi disegni e specifiche. Invia un disegno 2D/3D e ricevi un preventivo entro 24 ore."
     },
     "superalloy": {
       "name": "Componenti di turbina in superlega",
@@ -455,7 +392,9 @@
     }
   },
   "seo": {
-    "titles": { "products": "Microfusioni in acciaio e superleghe" },
+    "titles": {
+      "products": "Microfusioni in acciaio e superleghe"
+    },
     "keywords": {
       "home": [
         "microfusione",
@@ -548,7 +487,7 @@
       "about": "Produttore di microfusione e lavorazione CNC certificato ISO 9001:2015 a Dongying, Cina, dal 2000 — pezzi in superlega, acciaio inossidabile e al carbonio secondo il tuo disegno.",
       "products": "Prodotti di microfusione e lavorazione CNC in acciaio inossidabile, acciaio al carbonio e superleghe — pezzi per pompe, turbine, scarico e stampi realizzati secondo il tuo disegno in Cina.",
       "industries": "Getti di precisione per automotive, navale, oil & gas, pompe, macchinari, edilizia e apparecchiature medicali — una fonderia di microfusione ISO 9001 al servizio di oltre 40 mercati.",
-      "quality": "ISO 9001:2015, GB/T 19001, CE e UN ECE R55 — scopri come la nostra fonderia cinese di microfusione controlla la qualità con prove sui materiali, ispezione CMM e rapporti documentati.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE — scopri come la nostra fonderia cinese di microfusione controlla la qualità con prove sui materiali, ispezione CMM e rapporti documentati.",
       "factory": "Dentro la nostra fonderia di Dongying: 21 centri di lavoro CNC, un'officina stampi interna, 14 ingegneri R&S e circa 5.000 m² di spazio produttivo per fusione e lavorazione.",
       "contact": "Richiedi un preventivo di fusione a Dongying Casting. Carica i tuoi disegni 2D/3D e i nostri ingegneri rispondono con un preventivo dettagliato, di norma entro 24 ore.",
       "blog": "Guide tecniche su microfusione, fusione a cera persa, gradi di acciaio inossidabile, lavorazione CNC, finitura superficiale e trattamento termico dei pezzi metallici fusi."

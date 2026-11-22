@@ -179,10 +179,6 @@
       "medical": {
         "name": "Equipamentos médicos",
         "desc": "Peças fundidas de precisão em aço inoxidável limpo para dispositivos e equipamentos médicos."
-      },
-      "trailer": {
-        "name": "Reboque e atrelados",
-        "desc": "Cabeças de engate homologadas para caravanas e reboques com travão, incluindo o nosso engate GMC 3000 (UN ECE R55, E57)."
       }
     }
   },
@@ -194,29 +190,7 @@
     "testing": "Equipamentos de ensaio",
     "testingBody": "Análise por simulação CAM e CAE, controle estatístico de qualidade (SQC) e cartas de controle.",
     "inspection": "Processo de inspeção",
-    "inspectionBody": "Inspeção de materiais recebidos, monitoramento em processo, inspeção de expedição e serviço pós-venda.",
-    "approval": {
-      "title": "Homologação internacional de tipo (UN ECE R55)",
-      "body": "A Dongying Wanlong é indicada como a empresa responsável pela conformidade de produção de um dispositivo de engate mecânico que detém homologação de tipo europeia nos termos do Regulamento UN ECE n.º 55 — confirmação de que as peças fundidas produzidas por nossa fundição atendem aos requisitos internacionais de homologação de tipo.",
-      "rows": [
-        [
-          "Norma",
-          "Regulamento UN ECE n.º 55 — dispositivos de engate mecânico"
-        ],
-        [
-          "Marca de homologação",
-          "E57 · 55R-03 0158 (República de San Marino)"
-        ],
-        [
-          "Componente",
-          "Engate mecânico classe B50-X (D/Dc 14,2 kN, S 150 kg)"
-        ],
-        [
-          "Concedida",
-          "Julho de 2025"
-        ]
-      ]
-    }
+    "inspectionBody": "Inspeção de materiais recebidos, monitoramento em processo, inspeção de expedição e serviço pós-venda."
   },
   "factory": {
     "title": "Fábrica e capacidade de produção",
@@ -290,44 +264,7 @@
       "viewDetails": "Ver detalhes",
       "viewAlibaba": "Ver no Alibaba",
       "others": "Outras linhas de produtos",
-      "drawingNote": "Todas as peças são feitas conforme seus desenhos e especificações. Envie um desenho 2D/3D e receba um orçamento em até 24 horas.",
-      "approvedBadge": "Homologado UN ECE R55",
-      "approvalTitle": "Homologação",
-      "approvalNo": "Número de homologação",
-      "approvalMark": "Marca de homologação",
-      "regulation": "Regulamento",
-      "deviceClass": "Classe",
-      "values": "Valores característicos",
-      "authority": "Autoridade de homologação",
-      "granted": "Data de concessão",
-      "approvalNote": "A nossa fábrica em Dongying é indicada na homologação como responsável pela conformidade da produção.",
-      "moreInfo": "Mais informações em"
-    },
-    "coupling": {
-      "name": "Engate de reboque GMC 3000",
-      "seoTitle": "Engate de reboque GMC 3000 – ECE R55",
-      "summary": "Cabeça de engate homologada classe B50-X para reboques com travão e caravanas — homologação UN ECE R55 E57*55R03/00*0158*00.",
-      "body": "O GMC 3000 é uma cabeça de engate classe B50-X para bolas de reboque de 50 mm, homologada segundo o Regulamento UN ECE n.º 55 (série 03) pela autoridade de homologação da República de São Marinho em 3 de julho de 2025. É produzido na nossa fábrica em Dongying, indicada na homologação como responsável pela conformidade da produção. Os ensaios da Automotive Technical Service S.r.l. (relatório ATS-SM-IR-55-22811) abrangeram resistência, fadiga e articulação: a cabeça roda pelo menos 90° para cada lado do eixo central, fecha com engate mecânico positivo e bloqueia, e pode ser engatada e desengatada por uma só pessoa sem ferramentas.",
-      "materials": "Totalmente em aço inoxidável (todas as peças portantes conforme UN ECE R55 §4.2)",
-      "process": "Fabricado e com controlo de produção na nossa fábrica em Dongying (conformidade da produção)",
-      "apps": [
-        "Caravanas e reboques de viagem",
-        "Reboques ligeiros com travão",
-        "Fabricantes de lanças de reboque e carroçadores",
-        "Cabeças de engate de substituição"
-      ],
-      "keywords": [
-        "engate de reboque",
-        "cabeça de engate",
-        "engate de bola",
-        "engate reboque",
-        "engate de caravana",
-        "cabeça de engate reboque com travão",
-        "engate bola 50 mm",
-        "engate ECE R55",
-        "engate B50-X",
-        "engate de reboque GMC 3000"
-      ]
+      "drawingNote": "Todas as peças são feitas conforme seus desenhos e especificações. Envie um desenho 2D/3D e receba um orçamento em até 24 horas."
     },
     "superalloy": {
       "name": "Componentes de turbina em superliga",
@@ -456,7 +393,9 @@
     }
   },
   "seo": {
-    "titles": { "products": "Peças de fundição de precisão" },
+    "titles": {
+      "products": "Peças de fundição de precisão"
+    },
     "keywords": {
       "home": [
         "fundição de precisão",
@@ -546,7 +485,7 @@
       "about": "Fabricante de fundição de precisão e usinagem CNC certificado ISO 9001:2015 em Dongying, China, desde 2000 — peças em superliga, aço inoxidável e aço-carbono conforme seu desenho.",
       "products": "Produtos de fundição de precisão e usinagem CNC em aço inoxidável, aço-carbono e superligas — peças de bombas, turbinas, escape e moldes feitas conforme seu desenho na China.",
       "industries": "Peças fundidas de precisão para automotivo, naval, óleo e gás, bombas, máquinas, construção e equipamentos médicos — uma fundição de precisão ISO 9001 atendendo mais de 40 mercados.",
-      "quality": "ISO 9001:2015, GB/T 19001, CE e UN ECE R55 — veja como nossa fundição chinesa de precisão controla a qualidade com ensaios de materiais, inspeção CMM e relatórios documentados.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE — veja como nossa fundição chinesa de precisão controla a qualidade com ensaios de materiais, inspeção CMM e relatórios documentados.",
       "factory": "Dentro da nossa fundição em Dongying: 21 centros de usinagem CNC, uma oficina de moldes interna, 14 engenheiros de P&D e cerca de 5.000 m² de área de produção para fundição e usinagem.",
       "contact": "Solicite um orçamento de fundição à Dongying Casting. Envie seus desenhos 2D/3D e nossos engenheiros respondem com um orçamento detalhado, normalmente em até 24 horas.",
       "blog": "Guias técnicos sobre fundição de precisão, fundição por cera perdida, graus de aço inoxidável, usinagem CNC, acabamento superficial e tratamento térmico de peças metálicas fundidas."

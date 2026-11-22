@@ -179,10 +179,6 @@
       "medical": {
         "name": "Medizintechnik",
         "desc": "Saubere Edelstahl-Feingussteile für Medizingeräte und -ausrüstung."
-      },
-      "trailer": {
-        "name": "Anhänger & Zugtechnik",
-        "desc": "Typgenehmigte Kupplungsköpfe für Wohnwagen und gebremste Anhänger — darunter unsere GMC 3000 Zugkugelkupplung (UN ECE R55, E57)."
       }
     }
   },
@@ -194,29 +190,7 @@
     "testing": "Prüfausrüstung",
     "testingBody": "CAM- und CAE-Simulationsanalyse, statistische Qualitätskontrolle (SQC) und Regelkarten.",
     "inspection": "Prüfprozess",
-    "inspectionBody": "Wareneingangsprüfung, Prozessüberwachung, Versandprüfung und Kundendienst.",
-    "approval": {
-      "title": "Internationale Typgenehmigung (UN ECE R55)",
-      "body": "Dongying Wanlong ist als das für die Übereinstimmung der Produktion verantwortliche Unternehmen einer mechanischen Verbindungseinrichtung benannt, die eine europäische Typgenehmigung nach UN-ECE-Regelung Nr. 55 besitzt — ein Beleg dafür, dass die Gussteile unserer Gießerei internationale Typgenehmigungsanforderungen erfüllen.",
-      "rows": [
-        [
-          "Norm",
-          "UN-ECE-Regelung Nr. 55 — mechanische Verbindungseinrichtungen"
-        ],
-        [
-          "Genehmigungszeichen",
-          "E57 · 55R-03 0158 (Republik San Marino)"
-        ],
-        [
-          "Bauteil",
-          "Mechanische Verbindung Klasse B50-X (D/Dc 14,2 kN, S 150 kg)"
-        ],
-        [
-          "Erteilt",
-          "Juli 2025"
-        ]
-      ]
-    }
+    "inspectionBody": "Wareneingangsprüfung, Prozessüberwachung, Versandprüfung und Kundendienst."
   },
   "factory": {
     "title": "Fabrik & Produktionskapazitäten",
@@ -290,43 +264,7 @@
       "viewDetails": "Details ansehen",
       "viewAlibaba": "Auf Alibaba ansehen",
       "others": "Weitere Produktlinien",
-      "drawingNote": "Alle Teile werden nach Ihren Zeichnungen und Spezifikationen gefertigt. Senden Sie eine 2D-/3D-Zeichnung und erhalten Sie innerhalb von 24 Stunden ein Angebot.",
-      "approvedBadge": "UN ECE R55 typgenehmigt",
-      "approvalTitle": "Typgenehmigung",
-      "approvalNo": "Genehmigungsnummer",
-      "approvalMark": "Genehmigungszeichen",
-      "regulation": "Regelung",
-      "deviceClass": "Klasse",
-      "values": "Kennwerte",
-      "authority": "Genehmigungsbehörde",
-      "granted": "Erteilt am",
-      "approvalNote": "Unser Werk in Dongying ist in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt.",
-      "moreInfo": "Weitere Informationen unter"
-    },
-    "coupling": {
-      "name": "GMC 3000 Zugkugelkupplung",
-      "seoTitle": "Zugkugelkupplung GMC 3000 – ECE R55",
-      "summary": "Typgenehmigter Kupplungskopf der Klasse B50-X für gebremste Anhänger und Wohnwagen — UN ECE R55 Genehmigung E57*55R03/00*0158*00.",
-      "body": "Der GMC 3000 ist ein Kupplungskopf der Klasse B50-X für 50-mm-Kupplungskugeln, typgenehmigt nach UN ECE Regelung Nr. 55 (Änderungsserie 03) durch die Genehmigungsbehörde der Republik San Marino am 3. Juli 2025. Er wird in unserem Werk in Dongying gefertigt, das in der Genehmigung als verantwortlich für die Übereinstimmung der Produktion benannt ist. Die Prüfungen durch Automotive Technical Service S.r.l. (Bericht ATS-SM-IR-55-22811) umfassten Festigkeit, Dauerfestigkeit und Beweglichkeit: Der Kopf dreht mindestens 90° zu jeder Seite der Mittellinie, schließt formschlüssig und verriegelt, und lässt sich von einer Person ohne Werkzeug an- und abkuppeln.",
-      "materials": "Komplett aus Edelstahl (alle tragenden Teile gemäß UN ECE R55 §4.2)",
-      "process": "Gefertigt und produktionsüberwacht in unserem Werk in Dongying (Übereinstimmung der Produktion)",
-      "apps": [
-        "Wohnwagen und Reiseanhänger",
-        "Gebremste leichte Anhänger",
-        "Zugdeichsel-Hersteller und Aufbauhersteller",
-        "Ersatz-Kupplungsköpfe"
-      ],
-      "keywords": [
-        "Zugkugelkupplung",
-        "Kugelkopfkupplung",
-        "Kugelkupplung Anhänger",
-        "Anhänger Kupplungskopf",
-        "Wohnwagen Kupplung",
-        "Zugkugelkupplung 50 mm",
-        "ECE R55 Kupplung",
-        "B50-X Kupplung",
-        "GMC 3000 Zugkugelkupplung"
-      ]
+      "drawingNote": "Alle Teile werden nach Ihren Zeichnungen und Spezifikationen gefertigt. Senden Sie eine 2D-/3D-Zeichnung und erhalten Sie innerhalb von 24 Stunden ein Angebot."
     },
     "superalloy": {
       "name": "Turbinenkomponenten aus Superlegierungen",
@@ -455,7 +393,9 @@
     }
   },
   "seo": {
-    "titles": { "products": "Feingussteile & Produkte" },
+    "titles": {
+      "products": "Feingussteile & Produkte"
+    },
     "keywords": {
       "home": [
         "Feinguss",
@@ -552,7 +492,7 @@
       "about": "ISO 9001:2015-zertifizierter Feinguss- und CNC-Hersteller in Dongying, China, seit 2000 — Teile aus Superlegierungen, Edelstahl und Stahl nach Ihrer Zeichnung.",
       "products": "Feinguss- und CNC-Produkte aus Edelstahl, Stahl und Superlegierungen — Pumpen-, Turbinen-, Abgas- und Formteile nach Ihrer Zeichnung aus China.",
       "industries": "Präzisionsguss für Automobil, Schiffbau, Öl & Gas, Pumpen, Maschinen, Bau und Medizintechnik — eine ISO-9001-Feinguss-Gießerei für 40+ Märkte.",
-      "quality": "ISO 9001:2015, GB/T 19001, CE und UN ECE R55 — wie unsere chinesische Feinguss-Gießerei die Qualität mit Werkstoffprüfung, CMM-Messung und Prüfberichten sichert.",
+      "quality": "ISO 9001:2015, GB/T 19001, CE — wie unsere chinesische Feinguss-Gießerei die Qualität mit Werkstoffprüfung, CMM-Messung und Prüfberichten sichert.",
       "factory": "In unserer Gießerei in Dongying: 21 CNC-Bearbeitungszentren, eigener Formenbau, 14 F&E-Ingenieure und rund 5.000 m² Produktionsfläche für Guss und Bearbeitung.",
       "contact": "Fordern Sie ein Gussangebot von Dongying Casting an. Laden Sie Ihre 2D-/3D-Zeichnungen hoch — unsere Ingenieure antworten meist innerhalb von 24 Stunden.",
       "blog": "Technische Leitfäden zu Feinguss, Wachsausschmelzguss, Edelstahlgüten, CNC-Bearbeitung, Oberflächenbehandlung und Wärmebehandlung von Gussteilen."

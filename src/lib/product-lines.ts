@@ -5,19 +5,8 @@ import type { Dictionary } from '@/i18n/config';
 
 const ALI = 'https://www.alibaba.com/product-detail/';
 
-export type LineKey = 'coupling' | 'superalloy' | 'pump' | 'exhaust' | 'impeller' | 'mould';
+export type LineKey = 'superalloy' | 'pump' | 'exhaust' | 'impeller' | 'mould';
 
-// UN ECE type-approval data, copied verbatim from the approval communication.
-export type TypeApproval = {
-  number: string;            // approval number
-  mark: string;              // approval mark shown on the part (next to the E-circle)
-  eCode: string;             // approving country code, e.g. "E57"
-  regulation: string;
-  deviceClass: string;
-  values: [string, string][]; // characteristic values, e.g. ["D", "14.208 kN"]
-  authority: string;
-  granted: string;           // ISO date
-};
 
 export type ProductLine = {
   key: LineKey;
@@ -28,39 +17,9 @@ export type ProductLine = {
   alibaba?: string;          // representative Alibaba listing
   photo?: boolean;           // full-bleed photos/renders (object-cover) instead of white-background product shots
   cardImage?: string;        // listing-card image when images[0] has text that a 4:3 crop would cut
-  brand?: string;            // product brand when it differs from the site name
-  infoUrl?: string;          // brand owner's product page ("more information at …")
-  approval?: TypeApproval;
-  document?: { title: string; href: string; cover: string }; // downloadable PDF shown as the last gallery tile
-  // Published B2B price (only lines with a fixed price are typed as schema.org Product with offers;
-  // custom castings are typed as Service, so Google does not flag them for missing offers).
-  offer?: { price: number; currency: string; moq: number; leadDays: number; warrantyYears: number; seller: string; url: string };
 };
 
 export const PRODUCT_LINES: ProductLine[] = [
-  {
-    key: 'coupling',
-    slug: 'gmc-3000-hitch-coupling',
-    // No images at the owner's request (photos and the approval-mark graphic removed). Pages render text-only until new photos are supplied.
-    images: [],
-    photo: true,
-    brand: 'GMC Hitch Coupling',
-    infoUrl: 'https://gmc-innovations.com/hitch-coupling/',
-    // Order terms published on gmc-innovations.com/hitch-coupling/#terms (EUR 149 excl. VAT, MOQ 150, 120 days, 5-year warranty)
-    offer: { price: 149, currency: 'EUR', moq: 150, leadDays: 120, warrantyYears: 5, seller: 'GMC Innovations', url: 'https://gmc-innovations.com/hitch-coupling/#terms' },
-    // Source: Republic of San Marino approval communication E57*55R03/00*0158*00,
-    // test report ATS-SM-IR-55-22811 (Automotive Technical Service S.r.l.).
-    approval: {
-      number: 'E57*55R03/00*0158*00',
-      mark: '55R – 03 0158',
-      eCode: 'E57',
-      regulation: 'UN ECE R55 (03 series)',
-      deviceClass: 'B50-X',
-      values: [['D / Dc', '14.208 kN'], ['S', '150 kg']],
-      authority: 'Republic of San Marino (E57)',
-      granted: '2025-07-03'
-    }
-  },
   {
     key: 'superalloy',
     slug: 'superalloy-turbine-components',
@@ -101,7 +60,6 @@ export const PRODUCT_LINES: ProductLine[] = [
 
 export const getLine = (slug: string) => PRODUCT_LINES.find((l) => l.slug === slug);
 
-export const FEATURED_LINE = PRODUCT_LINES[0];
 
 export function moqText(t: Dictionary, n: number): string {
   const l = t.lines.labels;
