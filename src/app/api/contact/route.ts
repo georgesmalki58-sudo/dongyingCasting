@@ -4,6 +4,7 @@ import { inquirySchema, validateUpload, verifyFileSignature, type InquiryInput }
 import { edgeRateLimit, clientIp, verifyTurnstile } from '@/lib/rate-limit';
 import { SITE } from '@/lib/site';
 import { scanUpload, safeAttachmentName } from '@/lib/file-scan';
+import { log } from '@/lib/log';
 
 type Attachment = { filename: string; content: Buffer };
 
@@ -20,7 +21,7 @@ async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): 
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
   if (!host || !user || !pass) {
-    console.warn('[contact] SMTP not configured — inquiry not emailed.', { to: SITE.contactTo, name: data.name });
+    log.error('smtp_not_configured', { to: SITE.contactTo });
     return false;
   }
   const port = Number(process.env.SMTP_PORT || 465);
@@ -83,7 +84,7 @@ async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): 
           attachments: withFiles ? fileAtt : []
         });
       } catch (e) {
-        console.error('[contact] private copy failed (inquiry still delivered)', e);
+        log.warn('contact_copy_failed', { kind: 'private', err: e });
       }
     }
 
@@ -111,7 +112,7 @@ async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): 
           attachments: withFiles ? fileAtt : []
         });
       } catch (e) {
-        console.error('[contact] Chinese copy failed (inquiry still delivered)', e);
+        log.warn('contact_copy_failed', { kind: 'zh', err: e });
       }
     }
 
@@ -131,12 +132,12 @@ async function sendInquiryEmail(data: InquiryInput, attachments: Attachment[]): 
         html: ack
       });
     } catch (e) {
-      console.error('[contact] auto-reply failed (inquiry still delivered)', e);
+      log.warn('contact_autoreply_failed', { err: e });
     }
 
     return true;
   } catch (e) {
-    console.error('[contact] SMTP send failed', e);
+    log.error('smtp_send_failed', { err: e });
     return false;
   }
 }
@@ -236,7 +237,7 @@ export async function POST(req: Request) {
     if (sigErr) return NextResponse.json({ error: `${safeAttachmentName(file.name)}: ${sigErr}` }, { status: 422 });
     const threat = scanUpload(file.name, buf);
     if (threat) {
-      console.warn(JSON.stringify({ evt: 'upload_blocked', ip, ts: Date.now(), file: safeAttachmentName(file.name), size: file.size, reason: threat }));
+      log.warn('upload_blocked', { ip, file: safeAttachmentName(file.name), size: file.size, reason: threat });
       return NextResponse.json(
         { error: `${safeAttachmentName(file.name)}: this file was rejected by our security scan. Please send a plain PDF, STEP, DWG/DXF or image file (no macros, passwords or nested archives).` },
         { status: 422 }
@@ -247,7 +248,7 @@ export async function POST(req: Request) {
 
   // Deliver the inquiry to the company inbox (SITE.contactTo).
   const sent = await sendInquiryEmail(parsed.data, attachments);
-  console.log(JSON.stringify({ evt: 'inquiry', ip, ts: Date.now(), files: files.length, delivered: sent }));
+  log[sent ? 'info' : 'error']('inquiry', { ip, files: files.length, delivered: sent });
   if (!sent) {
     // Never report success for an inquiry that didn't reach the inbox.
     return NextResponse.json(
@@ -259,7 +260,7 @@ export async function POST(req: Request) {
   return NextResponse.json({ ok: true });
   } catch (e) {
     // Any unexpected error becomes a readable JSON response instead of an opaque 500.
-    console.error('[contact] unhandled error', e);
+    log.error('contact_unhandled', { err: e });
     const msg =
       process.env.NODE_ENV === 'production'
         ? 'Server error. Please email us directly at the address shown.'

@@ -48,7 +48,7 @@ export async function verifyTurnstile(token: string | undefined, ip: string): Pr
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret) {
     if (process.env.NODE_ENV === 'production') {
-      console.error('[security] TURNSTILE_SECRET_KEY is not set — contact form has no bot verification.');
+      console.error(JSON.stringify({ ts: new Date().toISOString(), level: 'error', evt: 'turnstile_secret_missing' }));
     }
     return true;
   }
