@@ -22,7 +22,7 @@ export type TypeApproval = {
 export type ProductLine = {
   key: LineKey;
   slug: string;
-  images: string[];          // first = main image
+  images: string[];          // first = main image; may be empty (text-only page/cards)
   moq?: number;              // minimum order quantity (pieces)
   banner?: string;           // optional full-width banner image
   alibaba?: string;          // representative Alibaba listing
@@ -41,8 +41,8 @@ export const PRODUCT_LINES: ProductLine[] = [
   {
     key: 'coupling',
     slug: 'gmc-3000-hitch-coupling',
-    // Product photos removed at the owner's request; neutral approval-mark graphic until new photos are supplied.
-    images: ['/images/products/dongying-casting-gmc-3000-trailer-hitch-coupling-ece-r55.webp'],
+    // No images at the owner's request (photos and the approval-mark graphic removed). Pages render text-only until new photos are supplied.
+    images: [],
     photo: true,
     brand: 'GMC Hitch Coupling',
     infoUrl: 'https://gmc-innovations.com/hitch-coupling/',

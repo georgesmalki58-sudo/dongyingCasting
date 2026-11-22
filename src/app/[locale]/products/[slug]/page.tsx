@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const line = getLine(slug);
   if (!line) return {};
   const c = getDictionary(locale).lines[line.key];
-  return buildMetadata({ locale, path: `products/${slug}`, title: c.seoTitle ?? c.name, description: c.summary, image: line.images[0], keywords: c.keywords });
+  return buildMetadata({ locale, path: `products/${slug}`, title: c.seoTitle ?? c.name, description: c.summary, image: line.images[0] ?? undefined, keywords: c.keywords });
 }
 
 export default async function ProductLinePage({ params }: Params) {
@@ -43,7 +43,7 @@ export default async function ProductLinePage({ params }: Params) {
     '@type': 'Product',
     name: c.name,
     description: `${c.summary} ${c.body}`,
-    image: line.images.map((i) => `${SITE.url}${i}`),
+    image: (line.images.length ? line.images : [SITE.ogImage]).map((i) => `${SITE.url}${i}`),
     url,
     material: c.materials,
     brand: { '@type': 'Brand', name: line.brand ?? SITE.name },
@@ -75,7 +75,7 @@ export default async function ProductLinePage({ params }: Params) {
     '@type': 'Service',
     name: c.name,
     description: `${c.summary} ${c.body}`,
-    image: line.images.map((i) => `${SITE.url}${i}`),
+    image: (line.images.length ? line.images : [SITE.ogImage]).map((i) => `${SITE.url}${i}`),
     url,
     serviceType: t.products.title,
     provider: { '@type': 'Organization', name: SITE.legalName, url: SITE.url },
@@ -111,7 +111,8 @@ export default async function ProductLinePage({ params }: Params) {
           </div>
         ) : null}
 
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className={line.images.length ? 'grid gap-10 lg:grid-cols-2' : 'mx-auto max-w-3xl'}>
+          {line.images.length ? (
           <div>
             <div className={`relative overflow-hidden rounded-xl border border-steel-200 ${frame}`}>
               <Image src={line.images[0]} alt={c.name} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className={fit} />
@@ -136,6 +137,7 @@ export default async function ProductLinePage({ params }: Params) {
               </ul>
             ) : null}
           </div>
+          ) : null}
 
           <div className="flex flex-col gap-6">
             {line.approval ? (
@@ -197,9 +199,11 @@ export default async function ProductLinePage({ params }: Params) {
             {others.map((o) => (
               <li key={o.slug}>
                 <Link href={`/${locale}/products/${o.slug}`} className="group block overflow-hidden rounded-xl border border-steel-200 bg-white transition-shadow hover:shadow-md">
+                  {o.cardImage ?? o.images[0] ? (
                   <div className={`relative aspect-[4/3] ${o.photo ? 'bg-steel-950' : 'bg-white'}`}>
-                    <Image src={o.cardImage ?? o.images[0]} alt={t.lines[o.key].name} fill sizes="(min-width: 1024px) 25vw, 50vw" className={o.photo ? 'object-cover' : 'object-contain p-3'} />
+                    <Image src={(o.cardImage ?? o.images[0])!} alt={t.lines[o.key].name} fill sizes="(min-width: 1024px) 25vw, 50vw" className={o.photo ? 'object-cover' : 'object-contain p-3'} />
                   </div>
+                  ) : null}
                   <p className="border-t border-steel-200 px-4 py-3 text-sm font-semibold text-brand">{t.lines[o.key].name}</p>
                 </Link>
               </li>

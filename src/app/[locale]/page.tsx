@@ -79,11 +79,13 @@ export default async function Home({ params }: { params: Promise<{ locale: Local
 
       {/* FEATURED PRODUCT — type-approved GMC 3000 trailer hitch coupling */}
       <section className="container-x pt-20">
-        <article className="grid overflow-hidden rounded-2xl border border-steel-200 bg-white shadow-sm lg:grid-cols-5">
+        <article className={`grid overflow-hidden rounded-2xl border border-steel-200 bg-white shadow-sm ${featured.images.length ? 'lg:grid-cols-5' : ''}`}>
+          {featured.images.length ? (
           <Link href={`${base}/products/${featured.slug}`} className="relative block aspect-[3/2] bg-steel-950 lg:col-span-3 lg:aspect-auto lg:min-h-[420px]">
             <Image src={featured.images[1] ?? featured.images[0]} alt={fc.name} fill sizes="(min-width: 1024px) 60vw, 100vw" className="object-cover" />
           </Link>
-          <div className="flex flex-col justify-center gap-4 p-6 md:p-10 lg:col-span-2">
+          ) : null}
+          <div className={`flex flex-col justify-center gap-4 p-6 md:p-10 ${featured.images.length ? 'lg:col-span-2' : ''}`}>
             <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">{t.lines.labels.approvedBadge}</span>
             <h2 className="text-2xl font-bold text-brand md:text-3xl">{fc.name}</h2>
             <p className="prose-muted">{fc.summary}</p>

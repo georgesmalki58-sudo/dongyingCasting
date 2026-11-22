@@ -63,13 +63,18 @@ export default async function Products({ params }: { params: Promise<{ locale: L
               <li key={l.slug}>
                 <Link href={`/${locale}/products/${l.slug}`}
                       className="group flex h-full flex-col overflow-hidden rounded-xl border border-steel-200 bg-white transition-shadow hover:shadow-md">
+                  {l.cardImage ?? l.images[0] ? (
                   <div className={`relative aspect-[4/3] ${l.photo ? 'bg-steel-950' : 'bg-white'}`}>
-                    <Image src={l.cardImage ?? l.images[0]} alt={t.lines[l.key].name} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className={l.photo ? 'object-cover' : 'object-contain p-4'} />
+                    <Image src={(l.cardImage ?? l.images[0])!} alt={t.lines[l.key].name} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className={l.photo ? 'object-cover' : 'object-contain p-4'} />
                     {l.approval ? (
                       <span className="absolute start-3 top-3 rounded-full bg-brand px-3 py-1 text-xs font-semibold text-white shadow">{t.lines.labels.approvedBadge}</span>
                     ) : null}
                   </div>
-                  <div className="flex flex-1 flex-col gap-2 border-t border-steel-200 p-5">
+                  ) : null}
+                  <div className={`flex flex-1 flex-col gap-2 p-5 ${l.cardImage ?? l.images[0] ? 'border-t border-steel-200' : ''}`}>
+                    {!(l.cardImage ?? l.images[0]) && l.approval ? (
+                      <span className="inline-flex w-fit rounded-full bg-brand px-3 py-1 text-xs font-semibold text-white">{t.lines.labels.approvedBadge}</span>
+                    ) : null}
                     <h3 className="text-lg font-semibold text-brand group-hover:text-brand">{t.lines[l.key].name}</h3>
                     <p className="prose-muted text-xl">{t.lines[l.key].summary}</p>
                     {l.moq ? (

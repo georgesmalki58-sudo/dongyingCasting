@@ -38,10 +38,12 @@ export default async function Industries({ params }: { params: Promise<{ locale:
             </div>
           ))}
           {/* Towing & trailers — links to our type-approved GMC 3000 coupling */}
-          <article className="card grid gap-5 sm:col-span-2 md:grid-cols-2">
+          <article className={`card grid gap-5 sm:col-span-2 ${p.cardImage ?? p.images[0] ? 'md:grid-cols-2' : ''}`}>
+            {p.cardImage ?? p.images[0] ? (
             <Link href={`/${locale}/products/${p.slug}`} className="relative block aspect-[16/9] overflow-hidden rounded-lg bg-steel-950">
-              <Image src={p.cardImage ?? p.images[0]} alt={t.lines[p.key].name} fill sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
+              <Image src={(p.cardImage ?? p.images[0])!} alt={t.lines[p.key].name} fill sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
             </Link>
+            ) : null}
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
                 <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-accent" />
