@@ -46,7 +46,7 @@ fi
 pm2 save >/dev/null
 
 # Prune old rollback snapshots and failed builds (keep the newest $KEEP_PREV).
-ls -1dt /var/www/dongyingCasting-prev-* 2>/dev/null | tail -n +$((KEEP_PREV+1)) | xargs -r rm -rf
-ls -1dt /var/www/dongying-release-*.failed 2>/dev/null | tail -n +2 | xargs -r rm -rf
+{ ls -1dt /var/www/dongyingCasting-prev-* 2>/dev/null || true; } | tail -n +$((KEEP_PREV+1)) | xargs -r rm -rf
+{ ls -1dt /var/www/dongying-release-*.failed 2>/dev/null || true; } | tail -n +2 | xargs -r rm -rf
 
 echo "DEPLOY_OK $TS $SHA  (rollback: scripts/rollback-vps.sh -> $PREV)"
